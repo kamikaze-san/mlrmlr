@@ -1,0 +1,309 @@
+==================== HS-IC-0020 (14 iters) ====================
+--- iter 1 ---
+```repl
+print("context:", context if 'context' in dir() else 'n/a')
+print("---")
+# Check available variables/functions
+print([x for x in dir() if not x.startswith('__')])
+```
+
+Wait — I need to check what's in the REPL. The prompt says context is a str of 194 total characters, but also mentions 10 contexts (context_0 through context_9). Let me probe.```repl
+print(str(context)[:500])
+print("---vars---")
+print([n for n in dir() if not n.startswith('__')])
+```
+
+--- iter 2 ---
+```repl
+print("=== client ==="); print(client if 'client' in dir() else None)
+print("=== facts ==="); print(facts if 'facts' in dir() else None)
+print("=== full_facts ==="); print(full_facts if 'full_facts' in dir() else None)
+print("=== works ==="); print(works if 'works' in dir() else None)
+print("=== cc_hits ==="); print(cc_hits if 'cc_hits' in dir() else None)
+print("=== rl_hits ==="); print(rl_hits if 'rl_hits' in dir() else None)
+print("=== cc_ids ==="); print(cc_ids if 'cc_ids' in dir() else None)
+print("=== vc ==="); print(vc if 'vc' in dir() else None)
+```
+
+--- iter 3 ---
+```repl
+print(list_doc_types())
+print("---hist0---"); print(str(history_0)[:1000])
+print("---cached---"); print(cached)
+print("---cached2---"); print(cached2)
+```
+
+--- iter 4 ---
+```repl
+print("answer:", answer)
+print("---hist8 tail---")
+print(str(history_8)[-2000:])
+print("---cache lookup---")
+print(cache_lookup("Jal Nigam, Jharkhand"))
+```
+
+--- iter 5 ---
+```repl
+vc = verify_client_work_count("Jal Nigam, Jharkhand")
+print("VC:", vc)
+
+# Search reference letters for this client
+import json
+rl = grep_documents("Jal Nigam, Jharkhand", doc_type="reference_letter")
+print("RL hits:", [(d['doc_id'], d['filename']) for d in rl])
+
+# Look for formal verification terminology
+fv = grep_documents("formal verification", doc_type=None)
+print("FV hits count:", len(fv))
+for d in fv[:10]:
+    print(d['doc_id'], d['doc_type'], d['matching_lines'][:2])
+```
+
+Need check output.```repl
+# Also print what the current contexts contain (they may be prior question text)
+print("ctx type:", type(ctx), "len:", len(ctx) if hasattr(ctx,'__len__') else '?')
+print(str(ctx)[:300])
+print("----")
+for i in range(10):
+    cvar = eval(f"context_{i}")
+    print(i, str(cvar)[:150])
+```
+
+--- iter 6 ---
+```repl
+# Search for verification-related terms
+for term in ["verification", "verified", "reference letter", "Reference Letter"]:
+    hits = grep_documents(term, doc_type=None)
+    print(term, "->", len(hits))
+    for d in hits[:5]:
+        print("  ", d['doc_id'], d['doc_type'])
+
+# Check completion certs / ref letter for Jal Nigam
+print("---DOC-CC-012---")
+print(read_document("DOC-CC-012"))
+print("---DOC-REF-011---")
+print(read_document("DOC-REF-011"))
+```
+
+--- iter 7 ---
+```repl
+# Thorough search for Jal Nigam in reference letters (any variant)
+hits_jn = grep_documents("Jal Nigam", doc_type="reference_letter")
+print("Jal Nigam ref letter hits:", [(d['doc_id'], d['matching_lines']) for d in hits_jn])
+
+# Search for package names in reference letters
+for p in ["Pkg-115", "Pkg-131", "Pkg-12"]:
+    h = grep_documents(p, doc_type="reference_letter")
+    print(p, "->", [(d['doc_id'], d['filename']) for d in h])
+
+# Also search past_performance_portfolio for Jal Nigam
+h2 = grep_documents("Jal Nigam", doc_type="past_performance_portfolio")
+print("portfolio hits:", [(d['doc_id'], d['matching_lines']) for d in h2])
+```
+
+--- iter 8 ---
+```repl
+for i in range(10):
+    print(i, repr(str(eval(f"context_{i}"))[:400]))
+print("=== hist summaries ===")
+for h in [history_0, history_1, history_2, history_3, history_4, history_5, history_6, history_7, history_8]:
+    if isinstance(h, list):
+        for m in h:
+            if isinstance(m, dict) and m.get('role')=='user':
+                print("USER:", str(m.get('content'))[:250])
+            elif isinstance(m, dict) and m.get('role')=='assistant':
+                print("ASST:", str(m.get('content'))[:250])
+```
+
+--- iter 9 ---
+```repl
+# Avoid eval; use globals
+for i in range(10):
+    cvar = globals().get(f"context_{i}")
+    print(i, repr(str(cvar)[:300]))
+print("=== done contexts ===")
+```
+
+Note: REPL may have `eval` shadowed; use globals().get. Let's run that.```repl
+# Search for project names in reference letters
+for pat in ["Material Handling Plant", "Cable Stayed Bridge", "Pipeline Laying"]:
+    h = grep_documents(pat, doc_type="reference_letter")
+    print(pat, "->", [(d['doc_id'], d['filename']) for d in h])
+
+# Also search within all docs for "Jal Nigam, Jharkhand" to see all doc types that mention this exact client
+h3 = grep_documents("Jal Nigam, Jharkhand", doc_type=None)
+print("ALL hits for exact client string:")
+from collections import Counter
+counts = Counter(d['doc_type'] for d in h3)
+print(counts)
+for d in h3:
+    print(d['doc_id'], d['doc_type'])
+```
+
+--- iter 10 ---
+```repl
+for d in ["DOC-REF-119", "DOC-REF-121", "DOC-REF-123", "DOC-REF-108"]:
+    print("---", d, "---")
+    txt = read_document(d)
+    # only print first ~600 chars to find client
+    print(str(txt)[:600])
+```
+
+--- iter 11 ---
+```repl
+# Search reference letters for Jharkhand
+print("---JH refs---")
+for d in grep_documents("Jharkhand", doc_type="reference_letter"):
+    print(d['doc_id'], d['matching_lines'])
+
+print("---verif variants---")
+for term in ["formal verification", "Formal Verification", "verification on file", "Verification on file", "verified on file"]:
+    hits = grep_documents(term, doc_type=None)
+    print(term, len(hits))
+    for d in hits[:8]:
+        print("  ", d['doc_id'], d['doc_type'], d['matching_lines'][:1])
+```
+
+--- iter 12 ---
+```repl
+# Inspect contexts safely
+for i in range(10):
+    cvar = globals().get(f"context_{i}")
+    print(i, repr(str(cvar))[:250])
+```
+
+Then search history for "whole number" phrasing.```repl
+# Search histories for "whole number" and "verification"
+for hname in ["history_0","history_1","history_2","history_3","history_4","history_5","history_6","history_7","history_8"]:
+    h = globals().get(hname)
+    if isinstance(h, list):
+        for m in h:
+            if isinstance(m, dict):
+                s = str(m.get('content',''))
+                if 'whole number' in s.lower() or 'defensible' in s.lower() or 'formal verification' in s.lower():
+                    print(hname, m.get('role'), s[:400])
+                    print("-----")
+```
+
+--- iter 13 ---
+```repl
+# Exhaustive check: search reference letters for the two packages and any Jal Nigam Jharkhand variant
+for term in ["Pkg-115", "Pkg-131", "Jal Nigam Jharkhand", "Jal Nigam , Jharkhand", "Jharkhand Pkg-115", "Jharkhand Pkg-131"]:
+    h = grep_documents(term, doc_type="reference_letter")
+    print(term, "->", [(d['doc_id'], d['filename']) for d in h])
+
+print("full_facts:", full_facts)
+```
+
+Then finalize.
+
+--- iter 14 ---
+```repl
+# Final verification summary
+print("Jal Nigam, Jharkhand completed works:", full_facts['num_works'])
+print("Works with reference letter (formal verification) on file:", full_facts['num_works'] - full_facts['num_without_reference_letter'])
+share = (full_facts['num_works'] - full_facts['num_without_reference_letter']) / full_facts['num_works'] * 100
+print("Percentage:", share)
+print("Whole number out of 100:", int(share))
+
+# Save cache for future questions
+cache_save("Jal Nigam, Jharkhand", {
+    "num_works": 3,
+    "works_with_reference_letter": ["DOC-CC-012 / DOC-REF-011"],
+    "num_with_reference_letter": 1,
+    "share_pct_whole": 33,
+    "completion_certificate_ids": ["DOC-CC-012", "DOC-CC-115", "DOC-CC-131"],
+    "counts_match": True
+})
+
+answer["content"] = "Jal Nigam, Jharkhand has 3 completed works on file (verified: completion and company certificate counts match). Only 1 of them (Pkg-12, DOC-REF-011) carries a client reference letter / formal verification on file. 1/3 = 
+
+==================== HS-IC-0024 (10 iters) ====================
+--- iter 1 ---
+```repl
+print("context_0:", repr(context_0))
+print("context_1:", repr(context_1))
+```
+
+--- iter 2 ---
+```repl
+print(cache_lookup("Jal Nigam, Jharkhand"))
+print(cache_lookup("Jal Nigam, Jharkhand works"))
+```
+
+--- iter 3 ---
+```repl
+print(verify_client_work_count("Jal Nigam, Jharkhand"))
+for doc_id in ["DOC-CC-012", "DOC-CC-115", "DOC-CC-131"]:
+    txt = read_document(doc_id)
+    print("====", doc_id, "len", len(txt))
+    print(txt[:1500])
+```
+
+--- iter 4 ---
+```repl
+print(read_document("DOC-CC-131"))
+```
+
+--- iter 5 ---
+```repl
+for i in range(13):
+    print(i, repr(globals().get(f"context_{i}")))
+```
+
+--- iter 6 ---
+```repl
+print("context:", repr(context))
+print("context_2:", repr(context_2))
+print("context_3:", repr(context_3))
+```
+
+--- iter 7 ---
+```repl
+for i in range(4, 13):
+    c = globals().get(f"context_{i}")
+    if c is not None:
+        print(i, repr(c))
+for i in range(12):
+    h = globals().get(f"history_{i}")
+    if h is not None:
+        print("H", i, repr(h)[:500])
+```
+
+--- iter 8 ---
+```repl
+print("c4:", repr(context_4))
+print("c5:", repr(context_5))
+print("c6:", repr(context_6))
+print("c7:", repr(context_7))
+print("c8:", repr(context_8))
+print("c9:", repr(context_9))
+print("c10:", repr(context_10))
+print("c11:", repr(context_11))
+print("c12:", repr(context_12))
+```
+
+--- iter 9 ---
+```repl
+print("vals:", vals if 'vals' in dir() else None)
+print("total:", total if 'total' in dir() else None)
+print("vals_cr:", vals_cr if 'vals_cr' in dir() else None)
+print("vals_rs:", vals_rs if 'vals_rs' in dir() else None)
+print("hits_jn:", hits_jn if 'hits_jn' in dir() else None)
+print("h3:", h3 if 'h3' in dir() else None)
+print("counts:", counts if 'counts' in dir() else None)
+print("share:", share if 'share' in dir() else None)
+print("prime_sum:", prime_sum if 'prime_sum' in dir() else None)
+print("docs:", docs if 'docs' in dir() else None)
+```
+
+--- iter 10 ---
+```repl
+vals_jn = [730200000, 814400000, 69200000]
+total_jn = sum(vals_jn)
+print("sum:", total_jn)
+cache_save("Jal Nigam, Jharkhand works", {"completion_certificate_ids": ["DOC-CC-012","DOC-CC-115","DOC-CC-131"], "values_rupees": vals_jn, "total_rupees": total_jn})
+answer["content"] = f"Combined value of Jal Nigam, Jharkhand's completed works: 1,613,800,000 rupees.\nFINAL({total_jn})"
+answer["ready"] = True
+print(answer["content"])
+```

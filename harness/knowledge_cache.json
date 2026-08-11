@@ -1,0 +1,1195 @@
+{
+  "Jal Nigam, Jharkhand": {
+    "num_works": 3,
+    "works_with_reference_letter": [
+      "DOC-CC-012 / DOC-REF-011"
+    ],
+    "num_with_reference_letter": 1,
+    "share_pct_whole": 33,
+    "completion_certificate_ids": [
+      "DOC-CC-012",
+      "DOC-CC-115",
+      "DOC-CC-131"
+    ],
+    "counts_match": true
+  },
+  "Jharkhand Municipal Corporation": {
+    "client": "Jharkhand Municipal Corporation",
+    "completed_works_count": 3,
+    "works": [
+      {
+        "doc": "DOC-CC-022",
+        "name": "RCC Bridge -- Jharkhand Pkg-22",
+        "category": "Bridges Flyovers",
+        "value_inr": 87400000,
+        "completion_date": "2013-06-01",
+        "role": "JV Partner"
+      },
+      {
+        "doc": "DOC-CC-072",
+        "name": "WTP Augmentation -- Jharkhand Pkg-72",
+        "category": "Water Treatment",
+        "value_inr": 314600000,
+        "completion_date": "2010-12-11",
+        "role": "Prime"
+      },
+      {
+        "doc": "DOC-CC-153",
+        "name": "Rural Road Upgradation -- Jharkhand Pkg-153",
+        "category": "Roads Maintenance",
+        "value_inr": 69500000,
+        "completion_date": "2017-11-03",
+        "role": "Prime"
+      }
+    ],
+    "value_excluding_roads_maintenance_inr": 402000000
+  },
+  "Tamil Nadu Municipal Corporation": {
+    "completed_works": [
+      {
+        "work": "Six-Lane Highway -- Tamil Nadu Pkg-119",
+        "category": "Expressways",
+        "value_inr": 1464800000,
+        "completion": "2018-09-22",
+        "role": "JV Partner",
+        "ref": "CC/4/2018/119"
+      },
+      {
+        "work": "Pumping Station -- Tamil Nadu Pkg-16",
+        "category": "Water Treatment",
+        "value_inr": 268000000,
+        "completion": "2013-03-02",
+        "role": "Prime",
+        "ref": "CC/4/2013/016"
+      },
+      {
+        "work": "Box Culvert Chain -- Tamil Nadu Pkg-92",
+        "category": "Bridges Flyovers",
+        "value_inr": 100500000,
+        "completion": "2012-02-14",
+        "role": "JV Partner",
+        "ref": "CC/4/2012/092"
+      }
+    ],
+    "count": 3,
+    "total_value_inr": 1833300000
+  },
+  "Peninsular Petroleum Corporation": {
+    "completed_works": [
+      {
+        "work": "Residential Quarters -- Odisha Pkg-4",
+        "value_inr": 112300000,
+        "completion_date": "2023-05-17",
+        "certificate": "DOC-CC-004"
+      },
+      {
+        "work": "Institutional Building -- Uttar Pradesh Pkg-11",
+        "value_inr": 240500000,
+        "completion_date": "2024-10-08",
+        "certificate": "DOC-CC-011"
+      },
+      {
+        "work": "Hospital Block -- Odisha Pkg-39",
+        "value_inr": 181700000,
+        "completion_date": "2014-12-05",
+        "certificate": "DOC-CC-039"
+      },
+      {
+        "work": "Check Dam -- Maharashtra Pkg-69",
+        "value_inr": 491100000,
+        "completion_date": "2021-01-26",
+        "certificate": "DOC-CC-069"
+      },
+      {
+        "work": "Water Treatment Plant -- Delhi Pkg-86",
+        "value_inr": 164000000,
+        "completion_date": "2016-02-04",
+        "certificate": "DOC-CC-086"
+      },
+      {
+        "work": "Road Widening -- Odisha Pkg-98",
+        "value_inr": 148500000,
+        "completion_date": "2019-09-27",
+        "certificate": "DOC-CC-098"
+      },
+      {
+        "work": "Pipeline Laying -- Maharashtra Pkg-140",
+        "value_inr": 28200000,
+        "completion_date": "2019-08-28",
+        "certificate": "DOC-CC-140"
+      }
+    ],
+    "count": 7,
+    "total_value_inr": 1366300000,
+    "verified": "yes"
+  },
+  "Asha Nair": {
+    "pmp_cert_no": "PMI-200030",
+    "pmp_issue_date": "2021-03-10",
+    "pmp_valid_through": "2027-08-31"
+  },
+  "Irrigation & Waterways Dept, Govt of West Bengal": {
+    "works": [
+      {
+        "doc_id": "DOC-CC-060",
+        "name": "Hospital Block -- West Bengal Pkg-60",
+        "category": "Buildings",
+        "value_lakh": 4037.0,
+        "excluded": true
+      },
+      {
+        "doc_id": "DOC-CC-120",
+        "name": "Highway Tunnel -- West Bengal Pkg-120",
+        "category": "Tunnels",
+        "value_lakh": 7466.0,
+        "excluded": false
+      },
+      {
+        "doc_id": "DOC-CC-152",
+        "name": "Mini Water Supply -- West Bengal Pkg-152",
+        "category": "Water Supply",
+        "value_lakh": 167.0,
+        "excluded": false
+      }
+    ],
+    "total_all_lakh": 11670.0,
+    "total_excluding_buildings_lakh": 7633.0,
+    "total_excluding_buildings_rupees": 763300000,
+    "counts_match": true
+  },
+  "Public Works Department, Govt of Maharashtra": {
+    "works": [
+      "DOC-CC-021",
+      "DOC-CC-087",
+      "DOC-CC-093",
+      "DOC-CC-097",
+      "DOC-CC-103",
+      "DOC-CC-125"
+    ],
+    "values": [
+      193299999,
+      176600000,
+      214200000,
+      307300000,
+      586900000,
+      529900000
+    ],
+    "roads_highways_total": 193299999,
+    "sewerage_drainage_total": 176600000,
+    "spread": 16699999,
+    "verified": true
+  },
+  "Lakshya Engineering & Construction": {
+    "works": [
+      {
+        "doc": "DOC-CC-018",
+        "value_rupees": 98000000
+      },
+      {
+        "doc": "DOC-CC-030",
+        "value_rupees": 182600000
+      },
+      {
+        "doc": "DOC-CC-046",
+        "value_rupees": 318900000
+      },
+      {
+        "doc": "DOC-CC-051",
+        "value_rupees": 149200000
+      },
+      {
+        "doc": "DOC-CC-067",
+        "value_rupees": 161700000
+      },
+      {
+        "doc": "DOC-CC-101",
+        "value_rupees": 977200000
+      },
+      {
+        "doc": "DOC-CC-144",
+        "value_rupees": 56700000
+      }
+    ],
+    "n": 7,
+    "avg_rupees": 277757142.85714287,
+    "median_rupees": 161700000,
+    "avg_minus_median": 116057142.85714287
+  },
+  "Irrigation & Waterways Dept, Govt of Uttar Pradesh": {
+    "client": "Irrigation & Waterways Dept, Govt of Uttar Pradesh",
+    "ageing_invoices": 21,
+    "invoiced_rupees": 548609701,
+    "cleared_received_rupees": 543387527,
+    "net_outstanding_rupees": 5222174,
+    "works": [
+      "DOC-CC-026",
+      "DOC-CC-134"
+    ],
+    "counts_match": true
+  },
+  "Public Health Engineering Dept, Gujarat": {
+    "client": "Public Health Engineering Dept, Gujarat",
+    "works": [
+      {
+        "work": "STP -- Gujarat Pkg-66",
+        "cc": "DOC-CC-066",
+        "value_inr": 134000000,
+        "completion_date": "2017-07-04",
+        "ref_letter": "DOC-REF-058",
+        "role": "Prime"
+      },
+      {
+        "work": "Drainage Works -- Gujarat Pkg-135",
+        "cc": "DOC-CC-135",
+        "value_inr": 23300000,
+        "completion_date": "2010-10-16",
+        "ref_letter": null,
+        "role": "Prime"
+      }
+    ],
+    "total_works": 2,
+    "total_value_as_prime_inr": 157300000
+  },
+  "Chandan Banerjee": {
+    "completion_certificates": [
+      "DOC-CC-033",
+      "DOC-CC-051",
+      "DOC-CC-116"
+    ],
+    "company_records": [
+      "DOC-CCC-033",
+      "DOC-CCC-051",
+      "DOC-CCC-116"
+    ],
+    "categories": [
+      "Industrial Epc",
+      "Water Treatment",
+      "Expressways"
+    ],
+    "distinct_categories": 3,
+    "pmp_cert": "DOC-PCERT-012 (issued 2021-03-10, valid through 2027-08-31)",
+    "note": "Other 'Banerjee' hits (CC-005/014/016/027/063/070) are Meera Banerjee, not Chandan."
+  },
+  "Gautam Joshi": {
+    "pmp_issue": "2021-03-10",
+    "works": [
+      {
+        "doc": "DOC-CC-048",
+        "name": "Canal Lining UP Pkg-48",
+        "client": "Subarnarekha Valley Corporation",
+        "value": 135600000,
+        "completed": "2010-07-29"
+      },
+      {
+        "doc": "DOC-CC-061",
+        "name": "Material Handling Plant Jharkhand Pkg-61",
+        "client": "National Expressway Development Authority",
+        "value": 449000000,
+        "completed": "2021-07-31"
+      },
+      {
+        "doc": "DOC-CC-131",
+        "name": "Pipeline Laying Jharkhand Pkg-131",
+        "client": "Jal Nigam, Jharkhand",
+        "value": 69200000,
+        "completed": "2021-08-17"
+      }
+    ]
+  },
+  "WTP Augmentation West Bengal Pkg-51": {
+    "completion_date": "2022-12-16",
+    "project_manager": "Chandan Banerjee",
+    "client": "Lakshya Engineering & Construction",
+    "value_rupees": 1492000000,
+    "interval_days_from_pmp": 646
+  },
+  "Asha Nair works": {
+    "works": [
+      {
+        "id": "DOC-CC-038",
+        "name": "STP -- Jharkhand Pkg-38",
+        "completion": "2013-09-07",
+        "value": 321400000
+      },
+      {
+        "id": "DOC-CC-093",
+        "name": "WTP Augmentation -- Maharashtra Pkg-93",
+        "completion": "2021-05-26",
+        "value": 214200000
+      },
+      {
+        "id": "DOC-CC-115",
+        "name": "Cable Stayed Bridge -- Jharkhand Pkg-115",
+        "completion": "2018-02-23",
+        "value": 814400000
+      },
+      {
+        "id": "DOC-CC-145",
+        "name": "School Building -- Madhya Pradesh Pkg-145",
+        "completion": "2025-06-26",
+        "value": 30000000
+      }
+    ],
+    "pmp_issue_date": "2021-03-10",
+    "works_completed_after_pmp": [
+      "DOC-CC-093",
+      "DOC-CC-145"
+    ],
+    "combined_value_after_pmp_inr": 244200000
+  },
+  "Public Works Department, Govt of Gujarat": {
+    "works": [
+      "DOC-CC-003",
+      "DOC-CC-062",
+      "DOC-CC-138"
+    ],
+    "values_cr": [
+      20.92,
+      46.73,
+      1.2
+    ],
+    "values_rs": [
+      209200000.00000003,
+      467299999.99999994,
+      12000000.0
+    ],
+    "mean_rs": 229500000,
+    "verified": true
+  },
+  "Jal Nigam, Jharkhand works": {
+    "completion_certificate_ids": [
+      "DOC-CC-012",
+      "DOC-CC-115",
+      "DOC-CC-131"
+    ],
+    "values_rupees": [
+      730200000,
+      814400000,
+      69200000
+    ],
+    "total_rupees": 1613800000
+  },
+  "Maharashtra Municipal Corporation": {
+    "client": "Maharashtra Municipal Corporation",
+    "works": [
+      {
+        "pkg": 50,
+        "cc": "DOC-CC-050",
+        "desc": "Bridges Flyovers (RCC Bridge)",
+        "value": 573700000,
+        "value_cr": 57.37,
+        "completed": "2021-02-28",
+        "role": "Prime",
+        "ge6": true
+      },
+      {
+        "pkg": 96,
+        "cc": "DOC-CC-096",
+        "desc": "Industrial Epc (Material Handling Plant)",
+        "value": 60800000,
+        "value_cr": 6.08,
+        "completed": "2013-05-04",
+        "role": "Prime",
+        "ge6": true
+      },
+      {
+        "pkg": 147,
+        "cc": "DOC-CC-147",
+        "desc": "Roads Maintenance (Patch Repair)",
+        "value": 19000000,
+        "value_cr": 1.9,
+        "completed": "2021-08-18",
+        "role": "JV Partner",
+        "ge6": false
+      }
+    ],
+    "count": 3,
+    "counts_match": true,
+    "aggregate_ge_6cr": 634500000
+  },
+  "Jal Nigam, Jharkhand works crossing 73 Cr": {
+    "works": {
+      "DOC-CC-012": 730200000,
+      "DOC-CC-115": 814400000
+    },
+    "total_rupees": 1544600000
+  },
+  "Jal Nigam, Gujarat ageing": {
+    "num_invoices": 35,
+    "invoice_ids": [
+      "AR-2020-00030",
+      "AR-2020-00035",
+      "AR-2020-00031",
+      "AR-2020-00036",
+      "AR-2021-00032",
+      "AR-2021-00037",
+      "AR-2021-00033",
+      "AR-2021-00038",
+      "AR-2021-00406",
+      "AR-2022-00407",
+      "AR-2022-00034",
+      "AR-2022-00408",
+      "AR-2022-00409",
+      "AR-2022-00039",
+      "AR-2022-00410",
+      "AR-2022-00411",
+      "AR-2022-00412",
+      "AR-2022-00413",
+      "AR-2022-00414",
+      "AR-2022-00415",
+      "AR-2023-00416",
+      "AR-2023-00417",
+      "AR-2023-00418",
+      "AR-2023-00419",
+      "AR-2023-00420",
+      "AR-2023-00421",
+      "AR-2023-00422",
+      "AR-2024-00234",
+      "AR-2024-00235",
+      "AR-2025-00302",
+      "AR-2025-00236",
+      "AR-2025-00303",
+      "AR-2025-00304",
+      "AR-2026-00237",
+      "AR-2026-00305"
+    ],
+    "total_net_outstanding_rupees": 330010947,
+    "total_invoiced_rupees": 1741452262,
+    "total_received_rupees": 1411441315,
+    "source": "DOC-XL-AGEING sheet AR Ageing",
+    "verified_by_row_sum": true
+  },
+  "Meera Roy": {
+    "pmp_issue_date": "2021-03-10",
+    "projects_led": [
+      "DOC-CC-002",
+      "DOC-CC-017",
+      "DOC-CC-029",
+      "DOC-CC-039",
+      "DOC-CC-065",
+      "DOC-CC-082",
+      "DOC-CC-117"
+    ],
+    "post_cert_projects": [
+      "DOC-CC-017",
+      "DOC-CC-029",
+      "DOC-CC-117"
+    ],
+    "clients_with_post_cert_projects": [
+      "Arunodaya Infrastructure",
+      "Public Health Engineering Dept, Odisha"
+    ],
+    "outstanding_total": 597573146,
+    "verified": true
+  },
+  "Rahul Menon": {
+    "pmp_issued": "2021-03-10",
+    "completion_certs": [
+      "DOC-CC-089",
+      "DOC-CC-095",
+      "DOC-CC-120",
+      "DOC-CC-125",
+      "DOC-CC-129",
+      "DOC-CC-140",
+      "DOC-CC-148",
+      "DOC-CC-153"
+    ],
+    "largest_executed_work": "DOC-CC-120 Highway Tunnel West Bengal Pkg-120",
+    "largest_executed_value": 746600000,
+    "state": "West Bengal",
+    "wb_owned_safety_equipment_cost": 1403600000
+  },
+  "Irrigation & Waterways Dept, Govt of Rajasthan": {
+    "works": [
+      {
+        "doc_id": "DOC-CC-010",
+        "name": "Sewerage Network -- Rajasthan Pkg-10",
+        "value_lakh": 2348,
+        "excluded": false
+      },
+      {
+        "doc_id": "DOC-CC-027",
+        "name": "Check Dam -- Rajasthan Pkg-27",
+        "value_lakh": 1952,
+        "excluded": false
+      },
+      {
+        "doc_id": "DOC-CC-041",
+        "name": "Lift Irrigation -- Rajasthan Pkg-41",
+        "value_lakh": 3107,
+        "excluded": false
+      },
+      {
+        "doc_id": "DOC-CC-058",
+        "name": "Water Treatment Plant -- Rajasthan Pkg-58",
+        "value_lakh": 2639,
+        "excluded": true
+      },
+      {
+        "doc_id": "DOC-CC-100",
+        "name": "Pumping Station -- Rajasthan Pkg-100",
+        "value_lakh": 1773,
+        "excluded": true
+      },
+      {
+        "doc_id": "DOC-CC-124",
+        "name": "Extradosed Bridge -- Rajasthan Pkg-124",
+        "value_lakh": 7759,
+        "excluded": false
+      }
+    ],
+    "verified_count": 6,
+    "total_excluding_water_treatment_lakh": 15166,
+    "total_excluding_water_treatment_rupees": 1516600000
+  },
+  "National Expressway Development Authority": {
+    "completion_cert_ids": [
+      "DOC-CC-020",
+      "DOC-CC-040",
+      "DOC-CC-047",
+      "DOC-CC-056",
+      "DOC-CC-061",
+      "DOC-CC-107",
+      "DOC-CC-129",
+      "DOC-CC-139",
+      "DOC-CC-142"
+    ],
+    "work_count": 9,
+    "values": {
+      "DOC-CC-020": 239200000,
+      "DOC-CC-040": 101300000,
+      "DOC-CC-047": 129400000,
+      "DOC-CC-056": 211500000,
+      "DOC-CC-061": 449000000,
+      "DOC-CC-107": 1329700000,
+      "DOC-CC-129": 400000000,
+      "DOC-CC-139": 28000000,
+      "DOC-CC-142": 54300000
+    },
+    "total_all_rupees": 2942400000,
+    "roads_highways_cert": "DOC-CC-056",
+    "roads_highways_value_rupees": 211500000,
+    "total_excluding_roads_highways_rupees": 2730900000,
+    "verification": "counts_match=True"
+  },
+  "Public Works Department, Govt of West Bengal": {
+    "project": "Ring Road -- West Bengal Pkg-128",
+    "doc_ids": [
+      "DOC-CC-128",
+      "DOC-CCC-128"
+    ],
+    "client": "Public Works Department, Govt of West Bengal",
+    "project_manager": "Amit Iyer",
+    "billed_total": 347767752,
+    "received_total": 313643044,
+    "outstanding_total": 34124708,
+    "collection_out_of_100": 90.19,
+    "collection_exact_pct": 90.18750076631602,
+    "verified": true
+  },
+  "TB FY2023-24 Contract Revenue credit turnover": {
+    "total_credit_inr": 2421825979,
+    "net_inr": 2410310659,
+    "streams": 11
+  },
+  "Meera Roy post-cert outstanding": {
+    "clients": [
+      "Arunodaya Infrastructure",
+      "Public Health Engineering Dept, Odisha"
+    ],
+    "outstanding_total_net": 440403101,
+    "outstanding_total_positive_only_trap": 597573146,
+    "derivation": "net sum incl negative rows across all invoices for the two clients",
+    "pmp_issue_date": "2021-03-10",
+    "post_cert_projects": [
+      "DOC-CC-017",
+      "DOC-CC-029",
+      "DOC-CC-117"
+    ]
+  },
+  "ROB Gujarat Pkg-71 BOQ (Rohit Singh)": {
+    "contract": "ROB -- Gujarat Pkg-71",
+    "client": "Jal Nigam, Gujarat",
+    "pm": "Rohit Singh",
+    "boq_workbook": "DOC-XL-BOQ-071",
+    "largest_line_item": 221058142,
+    "largest_item_desc": "Bituminous concrete (BC)"
+  },
+  "Public Health Engineering Dept, Odisha": {
+    "billed_inr": 1031628164,
+    "received_inr": 850084152,
+    "outstanding_inr": 181544012,
+    "collection_pct_100": 82.40218536724633,
+    "inv_rows": 21,
+    "source": "AR Ageing workbook"
+  },
+  "Tanvir Menon": {
+    "completion_certs": [
+      "DOC-CC-058",
+      "DOC-CC-094",
+      "DOC-CC-099",
+      "DOC-CC-102",
+      "DOC-CC-108",
+      "DOC-CC-137"
+    ],
+    "categories": {
+      "DOC-CC-058": "Water Treatment",
+      "DOC-CC-094": "Sewerage Drainage",
+      "DOC-CC-099": "Bridges Flyovers",
+      "DOC-CC-102": "Tunnels",
+      "DOC-CC-108": "Tunnels",
+      "DOC-CC-137": "Water Supply"
+    },
+    "distinct_categories": 5
+  },
+  "Trishakti Large Bridges + Water Supply": {
+    "large_bridges": [
+      "DOC-CC-112",
+      1061900000
+    ],
+    "water_supply": [
+      "DOC-CC-137",
+      19200000
+    ],
+    "total": 1081100000
+  },
+  "Jharkhand Municipal Corporation category breakdown": {
+    "roads_maintenance_inr": 69500000,
+    "water_treatment_inr": 314600000,
+    "category_variance_inr": 245100000,
+    "combined_inr": 384100000,
+    "verified_sources": [
+      "DOC-CC-153",
+      "DOC-CC-072",
+      "DOC-CCC-153",
+      "DOC-CCC-072",
+      "DOC-REF-063",
+      "DOC-PPP-001",
+      "DOC-DOSSIER-0165"
+    ]
+  },
+  "PWD Gujarat works": {
+    "cc_ids": [
+      "DOC-CC-003",
+      "DOC-CC-062",
+      "DOC-CC-138"
+    ],
+    "sewerage": 209200000,
+    "roads": 12000000,
+    "irrigation": 467299999
+  },
+  "Mahanadi Steel Corporation": {
+    "client": "Mahanadi Steel Corporation",
+    "completion_certificate_ids": [
+      "DOC-CC-007",
+      "DOC-CC-009",
+      "DOC-CC-019",
+      "DOC-CC-023",
+      "DOC-CC-032",
+      "DOC-CC-049",
+      "DOC-CC-052",
+      "DOC-CC-054",
+      "DOC-CC-064",
+      "DOC-CC-070",
+      "DOC-CC-141",
+      "DOC-CC-143"
+    ],
+    "work_count": 12,
+    "contract_total_rupees": 3296200000,
+    "invoiced_rupees": 567334799,
+    "received_rupees": 505984876,
+    "outstanding_rupees": 61349923,
+    "shortfall_contract_minus_invoiced_rupees": 2728865201,
+    "works": {
+      "DOC-CC-007": 375200000.00000006,
+      "DOC-CC-009": 113200000,
+      "DOC-CC-019": 153900000,
+      "DOC-CC-023": 349200000.0,
+      "DOC-CC-032": 145700000,
+      "DOC-CC-049": 298700000.0,
+      "DOC-CC-052": 155200000,
+      "DOC-CC-054": 270500000,
+      "DOC-CC-064": 680900000,
+      "DOC-CC-070": 682400000,
+      "DOC-CC-141": 39900000,
+      "DOC-CC-143": 31400000
+    }
+  },
+  "Suvarna Projects Limited": {
+    "completion_certificates": {
+      "count": 9,
+      "ids": [
+        "DOC-CC-005",
+        "DOC-CC-013",
+        "DOC-CC-015",
+        "DOC-CC-028",
+        "DOC-CC-073",
+        "DOC-CC-076",
+        "DOC-CC-105",
+        "DOC-CC-146",
+        "DOC-CC-149"
+      ],
+      "total_executed_value": 2341700000,
+      "verified": true
+    },
+    "ageing": {
+      "n_invoices": 31,
+      "billed": 990290653,
+      "received": 916032953,
+      "net_outstanding": 74257700
+    }
+  },
+  "Subarnarekha Valley Corporation": {
+    "works": 9,
+    "completion_certificate_ids": [
+      "DOC-CC-048",
+      "DOC-CC-078",
+      "DOC-CC-082",
+      "DOC-CC-091",
+      "DOC-CC-094",
+      "DOC-CC-102",
+      "DOC-CC-104",
+      "DOC-CC-132",
+      "DOC-CC-154"
+    ],
+    "contract_values_inr": {
+      "DOC-CC-048": 135600000,
+      "DOC-CC-078": 98000000,
+      "DOC-CC-082": 414200000,
+      "DOC-CC-091": 208700000,
+      "DOC-CC-094": 219300000,
+      "DOC-CC-102": 1722200000,
+      "DOC-CC-104": 860900000,
+      "DOC-CC-132": 20400000,
+      "DOC-CC-154": 19400000
+    },
+    "sum_inr": 3698700000,
+    "average_inr": 410966666.6666667,
+    "median_inr": 208700000,
+    "gap_avg_minus_median_inr": 202266666.6666667
+  },
+  "Meridian Constructors & Co.": {
+    "client": "Meridian Constructors & Co.",
+    "completion_certificates": {
+      "DOC-CC-008": 17.08,
+      "DOC-CC-024": 19.19,
+      "DOC-CC-042": 18.26,
+      "DOC-CC-057": 7.29,
+      "DOC-CC-099": 23.16,
+      "DOC-CC-127": 129.88
+    },
+    "total_contract_value_cr": 214.86,
+    "total_contract_value_inr": 2148600000,
+    "ageing_invoiced_inr": 1273088178,
+    "ageing_outstanding_inr": 141252125,
+    "gap_secured_minus_billed_inr": 875511822,
+    "counts_match": true
+  },
+  "Arunodaya Infrastructure": {
+    "client_identified_by": "Arunodaya Infrastructure (ageing workbook + 7 CCs)",
+    "ageing_invoices": 37,
+    "invoiced": 1186226960,
+    "received": 927367871,
+    "net_outstanding": 258859089,
+    "verified_work_count": true
+  },
+  "Irrigation & Waterways Dept, Govt of Rajasthan_unpaid_balance": {
+    "unpaid_balance_net_inr": 25044542,
+    "invoice_count": 3
+  },
+  "Public Health Engineering Dept, West Bengal": {
+    "client": "Public Health Engineering Dept, West Bengal",
+    "contract": "Contract #74 (DOC-FINBILL-0074)",
+    "num_invoices": 17,
+    "total_invoiced_inr": 974532497,
+    "total_received_inr": 890837358,
+    "net_outstanding_inr": 83695139,
+    "note": "Net sum of Outstanding (INR) across all 17 RA invoices in DOC-XL-AGEING; includes negative (overpaid) rows."
+  },
+  "Mega Infrastructure Authority": {
+    "client_identified_by": "Uma Sen's 6S-500164 CC on Check Dam UP Pkg-83",
+    "completion_certificates": [
+      "DOC-CC-002",
+      "DOC-CC-068",
+      "DOC-CC-074",
+      "DOC-CC-083",
+      "DOC-CC-108",
+      "DOC-CC-126",
+      "DOC-CC-145"
+    ],
+    "values_inr": [
+      248500000,
+      434200000,
+      128000000,
+      314000000,
+      1988800000,
+      954600000,
+      30000000
+    ],
+    "total_inr": 4098100000,
+    "note": "Question asked for ALL completed assignments delivered to Mega Infrastructure Authority (client-level, not just Uma Sen's project). verify_client_work_count confirmed 7/7."
+  },
+  "Gujarat Municipal Corporation": {
+    "invoices": [
+      {
+        "Invoice No": "AR-2022-00192",
+        "Client": "Gujarat Municipal Corporation",
+        "Invoice Date": "2022-09-05",
+        "Invoiced (INR)": 23426770,
+        "Status": "paid",
+        "Received (INR)": 26003715,
+        "Outstanding (INR)": -2576945
+      },
+      {
+        "Invoice No": "AR-2022-00193",
+        "Client": "Gujarat Municipal Corporation",
+        "Invoice Date": "2022-12-25",
+        "Invoiced (INR)": 23426770,
+        "Status": "paid",
+        "Received (INR)": 26003715,
+        "Outstanding (INR)": -2576945
+      },
+      {
+        "Invoice No": "AR-2023-00194",
+        "Client": "Gujarat Municipal Corporation",
+        "Invoice Date": "2023-04-15",
+        "Invoiced (INR)": 23426770,
+        "Status": "part_paid",
+        "Received (INR)": 13001858,
+        "Outstanding (INR)": 10424912
+      }
+    ],
+    "total_outstanding_inr": 5271022,
+    "sum_method": "net sum of Outstanding (INR) across all 3 ageing_workbook rows, including negative rows"
+  },
+  "Central Works & Buildings Bureau": {
+    "completion_certificates": {
+      "DOC-CC-038": {
+        "completion": "2013-09-07",
+        "value_inr": 321400000
+      },
+      "DOC-CC-053": {
+        "completion": "2015-07-28",
+        "value_inr": 90300000
+      },
+      "DOC-CC-079": {
+        "completion": "2018-06-30",
+        "value_inr": 358600000
+      },
+      "DOC-CC-095": {
+        "completion": "2018-02-22",
+        "value_inr": 352200000
+      },
+      "DOC-CC-118": {
+        "completion": "2017-10-02",
+        "value_inr": 400000000
+      },
+      "DOC-CC-133": {
+        "completion": "2012-03-25",
+        "value_inr": 68700000
+      }
+    }
+  },
+  "National Special Projects Office": {
+    "works": {
+      "DOC-CC-001": 333800000,
+      "DOC-CC-034": 413500000,
+      "DOC-CC-081": 415800000,
+      "DOC-CC-106": 400000000,
+      "DOC-CC-109": 1136000000,
+      "DOC-CC-113": 2000000000
+    },
+    "highest": 2000000000,
+    "second": 1136000000,
+    "diff": 864000000
+  },
+  "Public Health Engineering Dept, Gujarat account": {
+    "billed_inr": 62396808,
+    "received_inr": 34630228,
+    "net_outstanding_inr": 27766580,
+    "invoice_rows": [
+      {
+        "Invoice No": "AR-2024-00285",
+        "Client": "Public Health Engineering Dept, Gujarat",
+        "Invoice Date": "2024-09-03",
+        "Invoiced (INR)": 15599202,
+        "Status": "part_paid",
+        "Received (INR)": 8657557,
+        "Outstanding (INR)": 6941645
+      },
+      {
+        "Invoice No": "AR-2025-00286",
+        "Client": "Public Health Engineering Dept, Gujarat",
+        "Invoice Date": "2025-02-04",
+        "Invoiced (INR)": 15599202,
+        "Status": "due",
+        "Received (INR)": 0,
+        "Outstanding (INR)": 15599202
+      },
+      {
+        "Invoice No": "AR-2025-00287",
+        "Client": "Public Health Engineering Dept, Gujarat",
+        "Invoice Date": "2025-07-09",
+        "Invoiced (INR)": 15599202,
+        "Status": "paid",
+        "Received (INR)": 17315114,
+        "Outstanding (INR)": -1715912
+      },
+      {
+        "Invoice No": "AR-2025-00288",
+        "Client": "Public Health Engineering Dept, Gujarat",
+        "Invoice Date": "2025-12-10",
+        "Invoiced (INR)": 15599202,
+        "Status": "part_paid",
+        "Received (INR)": 8657557,
+        "Outstanding (INR)": 6941645
+      }
+    ]
+  },
+  "Public Works Department, Govt of Tamil Nadu": {
+    "client": "Public Works Department, Govt of Tamil Nadu",
+    "source": "ageing_workbook DOC-XL-AGEING",
+    "invoice_count": 5,
+    "invoices": [
+      "AR-2024-00512",
+      "AR-2025-00513",
+      "AR-2025-00514",
+      "AR-2025-00515",
+      "AR-2026-00516"
+    ],
+    "invoiced_total": 7821255,
+    "received_total": 7813453,
+    "net_outstanding": 7822
+  },
+  "Trishakti Power Generation Corporation": {
+    "full_client_name": "Trishakti Power Generation Corporation",
+    "works": [
+      {
+        "doc": "DOC-CC-014",
+        "name": "Roads Highways",
+        "value": 101100000
+      },
+      {
+        "doc": "DOC-CC-025",
+        "name": "Residential Quarters UP Pkg-25",
+        "value": 417100000
+      },
+      {
+        "doc": "DOC-CC-031",
+        "name": "Sewerage Drainage",
+        "value": 721000000
+      },
+      {
+        "doc": "DOC-CC-033",
+        "name": "Industrial EPC",
+        "value": 210400000
+      },
+      {
+        "doc": "DOC-CC-037",
+        "name": "Water Treatment",
+        "value": 67500000
+      },
+      {
+        "doc": "DOC-CC-043",
+        "name": "Bridges/Flyovers",
+        "value": 140300000
+      },
+      {
+        "doc": "DOC-CC-044",
+        "name": "Water Treatment",
+        "value": 178300000
+      },
+      {
+        "doc": "DOC-CC-055",
+        "name": "Irrigation",
+        "value": 121300000
+      },
+      {
+        "doc": "DOC-CC-075",
+        "name": "Industrial EPC",
+        "value": 413400000
+      },
+      {
+        "doc": "DOC-CC-080",
+        "name": "Sewerage Drainage",
+        "value": 283800000
+      },
+      {
+        "doc": "DOC-CC-085",
+        "name": "Industrial EPC",
+        "value": 251000000
+      },
+      {
+        "doc": "DOC-CC-089",
+        "name": "Industrial EPC",
+        "value": 136500000
+      },
+      {
+        "doc": "DOC-CC-110",
+        "name": "Expressways",
+        "value": 2000000000
+      },
+      {
+        "doc": "DOC-CC-112",
+        "name": "Large Bridges",
+        "value": 1061900000
+      },
+      {
+        "doc": "DOC-CC-116",
+        "name": "Expressways",
+        "value": 2000000000
+      },
+      {
+        "doc": "DOC-CC-123",
+        "name": "Tunnels",
+        "value": 400000000
+      },
+      {
+        "doc": "DOC-CC-137",
+        "name": "Dams",
+        "value": 19200000
+      },
+      {
+        "doc": "DOC-CC-148",
+        "name": "Small Buildings",
+        "value": 15400000
+      },
+      {
+        "doc": "DOC-CC-151",
+        "name": "Small Buildings",
+        "value": 25000000
+      }
+    ],
+    "count": 19,
+    "sum_rupees": 8563200000,
+    "average_rupees": 450694736.84210527,
+    "median_rupees": 210400000,
+    "avg_minus_median_rupees": 240294736.84210527
+  },
+  "Trishakti endorsements": {
+    "works": 19,
+    "endorsed_packages": [
+      14,
+      25,
+      31,
+      33,
+      37,
+      44,
+      55,
+      75,
+      80,
+      89,
+      110,
+      112,
+      116,
+      123,
+      137,
+      148,
+      151
+    ],
+    "missing_endorsement_pkgs": [
+      43,
+      85
+    ],
+    "cleared_pct": 89.47
+  },
+  "PWD Gujarat ageing": {
+    "client": "Public Works Department, Govt of Gujarat",
+    "num_invoices": 15,
+    "net_outstanding_inr": 47628436,
+    "due_only_inr": 90702503
+  },
+  "Rahul Das": {
+    "employee_id": "EMP-023",
+    "pmp_issued": "2021-03-10",
+    "completed_works": {
+      "DOC-CC-049": {
+        "completion": "2025-02-26",
+        "value": 298700000
+      },
+      "DOC-CC-064": {
+        "completion": "2017-01-26",
+        "value": 680900000,
+        "excluded_before_pmp": true
+      },
+      "DOC-CC-074": {
+        "completion": "2018-08-11",
+        "value": 128000000,
+        "excluded_before_pmp": true
+      },
+      "DOC-CC-081": {
+        "completion": "2025-04-21",
+        "value": 415800000
+      }
+    },
+    "combined_value_works_finished_after_pmp": 714500000
+  },
+  "Rahul Menon works after 2021-03-10": {
+    "works": [
+      "DOC-CC-089",
+      "DOC-CC-120",
+      "DOC-CC-148"
+    ],
+    "values": [
+      136500000,
+      746600000,
+      15400000
+    ],
+    "total": 898500000,
+    "threshold": "2021-03-10"
+  },
+  "Imran Joshi": {
+    "works": [
+      {
+        "doc": "DOC-CC-012",
+        "value": 730200000
+      },
+      {
+        "doc": "DOC-CC-087",
+        "value": 176600000
+      },
+      {
+        "doc": "DOC-CC-103",
+        "value": 586900000
+      },
+      {
+        "doc": "DOC-CC-122",
+        "value": 400000000
+      },
+      {
+        "doc": "DOC-CC-132",
+        "value": 20400000
+      }
+    ],
+    "avg": 382820000,
+    "median": 400000000,
+    "gap": -17180000
+  },
+  "Sunita Joshi": {
+    "pmp_id": "PMI-200039",
+    "pmp_issue": "2021-03-10",
+    "neda_works": [
+      {
+        "doc": "DOC-CC-107",
+        "name": "Ring Road -- Uttar Pradesh Pkg-107",
+        "value_rupees": 1329700000,
+        "completion": "2012-08-16"
+      }
+    ],
+    "neda_total_rupees": 1329700000
+  },
+  "Pooja Sen": {
+    "six_sigma_cert": "6S-500157",
+    "suvarna_works": [
+      {
+        "doc": "DOC-CC-105",
+        "project": "Hydro Tunnel -- West Bengal Pkg-105",
+        "value": 1015700000,
+        "pm": "Pooja Sen"
+      }
+    ],
+    "other_clients": [
+      "Trishakti Power Generation Corporation (DOC-CC-044)"
+    ]
+  }
+}
