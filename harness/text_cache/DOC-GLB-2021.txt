@@ -1,0 +1,2463 @@
+              NATIONAL INFRASTRUCTURE CORP. LTD.
+
+                          Books of Account � General Ledger � FY 2021�22
+
+                 GENERAL LEDGER -- FISCAL YEAR 2021�22
+
+Volume: GL/2021  1007 posted lines � system-generated
+
+Grouped by account per the chart of accounts. Amounts in INR. Balances are running account
+balances (Dr positive). Narrations reference the originating voucher.
+
+DOC-GLB-2021                                                              Page 1 of 60
+ACCOUNT 1010 -- BANK (ASSET)
+
+DATE          VOUCHER / NARRATION        DEBIT       CREDIT      BALANCE
+                                                     51,167,788
+2021-04-02 Vendor payment #12            29,525,036  48,494,266  51,167,788
+                                         22,594,788              Cr
+2021-04-02 Vendor payment #61                        7,541,001
+                                         40,808,246  926,348     99,662,054
+2021-04-03 Receipt against invoice       50,275,475              Cr
+                     (rcpt #35)          8,285,906   45,834,930
+                                         49,491,841  10,308,786  70,137,018
+2021-04-06 Receipt against invoice                               Cr
+                     (rcpt #47)          15,536,289  29,014,959
+                                         45,331,314  17,449,045  47,542,230
+2021-04-07 Vendor payment #97                        19,834,722  Cr
+                                                     60,384,663
+2021-04-07 TDS deposited (202103)                    29,411,254  55,083,231
+                                                                 Cr
+2021-04-10 Receipt against invoice
+                     (rcpt #22)                                  56,009,579
+                                                                 Cr
+2021-04-10 Receipt against invoice
+                     (rcpt #66)                                  15,201,333
+                                                                 Cr
+2021-04-10 Receipt against invoice
+                     (rcpt #91)                                  35,074,142
+                                                                 Dr
+2021-04-11 Vendor payment #89
+                                                                 43,360,048
+2021-04-15 Receipt against invoice                               Dr
+                     (rcpt #61)
+                                                                 2,474,882 Cr
+2021-04-17 Vendor payment #270
+                                                                 47,016,959
+2021-04-22 Receipt against invoice                               Dr
+                     (rcpt #57)
+                                                                 36,708,173
+2021-04-23 Receipt against invoice                               Dr
+                     (rcpt #39)
+                                                                 52,244,462
+2021-04-23 Vendor payment #3                                     Dr
+
+2021-04-24 Vendor payment #51                                    97,575,776
+                                                                 Dr
+2021-04-26 Vendor payment #74
+                                                                 68,560,817
+2021-04-28 Monthly salaries & site                               Dr
+                     overheads (202104)
+                                                                 51,111,772
+2021-05-01 Vendor payment #36                                    Dr
+
+                                                                 31,277,050
+                                                                 Dr
+
+                                                                 29,107,613
+                                                                 Cr
+
+                                                                 58,518,867
+                                                                 Cr
+
+DOC-GLB-2021                                                     Page 2 of 60
+2021-05-07 TDS deposited (202104)                    3,959,401   62,478,268
+                                                     23,060,050  Cr
+2021-05-08 Vendor payment #56
+                                                     16,713,940  85,538,318
+2021-05-12 Receipt against invoice       34,985,220  60,384,663  Cr
+                     (rcpt #45)          40,808,246  16,809,132
+                                         15,445,291  26,444,819  50,553,098
+2021-05-17 Receipt against invoice                   1,482,660   Cr
+                     (rcpt #23)                      1,959,205
+                                                     7,854,911   9,744,852 Cr
+2021-05-19 Receipt against invoice
+                     (rcpt #3)                       27,761,915  5,700,439 Dr
+                                                     60,384,663
+2021-05-28 Vendor payment #57                                    11,013,501
+                                                                 Cr
+2021-05-28 Monthly salaries & site       64,300,767
+                     overheads (202105)                          71,398,164
+                                                                 Cr
+2021-05-31 Receipt against invoice
+                     (rcpt #292)                                 7,097,397 Cr
+
+2021-05-31 Vendor payment #91                                    23,906,529
+                                                                 Cr
+2021-06-02 Receipt against invoice       71,195,382
+                     (rcpt #305)                                 47,288,853
+                                                                 Dr
+2021-06-07 Vendor payment #26
+                                                                 20,844,034
+2021-06-07 TDS deposited (202105)                                Dr
+
+2021-06-09 Receipt against invoice       45,331,314              19,361,374
+                     (rcpt #40)                                  Dr
+
+2021-06-09 Vendor payment #66                                    64,692,688
+                                                                 Dr
+2021-06-15 Vendor payment #73
+                                                                 62,733,483
+2021-06-16 Receipt against invoice       54,704,163              Dr
+                     (rcpt #283)         40,945,720
+                                         32,802,821              54,878,572
+2021-06-18 Receipt against invoice                               Dr
+                     (rcpt #52)
+                                                                 109,582,735
+2021-06-20 Receipt against invoice                               Dr
+                     (rcpt #16)
+                                                                 150,528,455
+2021-06-26 Vendor payment #96                                    Dr
+
+2021-06-28 Monthly salaries & site                               183,331,276
+                     overheads (202106)                          Dr
+
+                                                                 155,569,361
+                                                                 Dr
+
+                                                                 95,184,698
+                                                                 Dr
+
+DOC-GLB-2021                                                     Page 3 of 60
+2021-07-04 Receipt against invoice       49,491,841              144,676,539
+                     (rcpt #62)                                  Dr
+                                                     1,103,806
+2021-07-07 TDS deposited (202106)                    49,689,821  143,572,733
+                                                                 Dr
+2021-07-09 Vendor payment #14                        36,798,679
+                                                     60,384,663  93,882,912
+2021-07-11 Receipt against invoice       11,297,394  22,347,098  Dr
+                     (rcpt #48)          23,513,088  1,491,180
+                                                     20,637,725  105,180,306
+2021-07-11 Receipt against invoice                   60,384,663  Dr
+                     (rcpt #86)
+                                                     17,613,373  128,693,394
+2021-07-15 Vendor payment #24                        741,116     Dr
+
+2021-07-22 Receipt against invoice       45,445,081              91,894,715
+                     (rcpt #29)                                  Dr
+
+2021-07-28 Monthly salaries & site                               137,339,796
+                     overheads (202107)                          Dr
+
+2021-08-04 Vendor payment #1                                     76,955,133
+                                                                 Dr
+2021-08-07 TDS deposited (202107)
+                                                                 54,608,035
+2021-08-08 Receipt against invoice       15,445,291              Dr
+                     (rcpt #4)
+                                                                 53,116,855
+2021-08-17 Vendor payment #44                                    Dr
+
+2021-08-28 Receipt against invoice       28,152,333              68,562,146
+                     (rcpt #77)                                  Dr
+                                         10,348,968
+2021-08-28 Monthly salaries & site       35,597,690              47,924,421
+                     overheads (202108)  29,070,912              Dr
+
+2021-09-01 Receipt against invoice                               76,076,754
+                     (rcpt #81)                                  Dr
+
+2021-09-01 Receipt against invoice                               15,692,091
+                     (rcpt #306)                                 Dr
+
+2021-09-05 Receipt against invoice                               26,041,059
+                     (rcpt #94)                                  Dr
+
+2021-09-05 Vendor payment #2                                     61,638,749
+                                                                 Dr
+2021-09-07 TDS deposited (202108)
+                                                                 90,709,661
+2021-09-08 Receipt against invoice       32,150,383              Dr
+                     (rcpt #293)
+                                                                 73,096,288
+                                                                 Dr
+
+                                                                 72,355,172
+                                                                 Dr
+
+                                                                 104,505,555
+                                                                 Dr
+
+DOC-GLB-2021                                                     Page 4 of 60
+2021-09-09 Receipt against invoice       34,985,220               139,490,775
+                     (rcpt #46)          40,945,720               Dr
+
+2021-09-15 Receipt against invoice                   36,555,186   180,436,495
+                     (rcpt #53)                      60,384,663   Dr
+                                                     154,900,000
+2021-09-19 Vendor payment #30                                     143,881,309
+                                                     30,526,672   Dr
+2021-09-28 Monthly salaries & site       22,665,657
+                     overheads (202109)  27,352,081               83,496,646
+                                                                  Dr
+2021-10-01 Plant & machinery
+                     additions FY2021                             71,403,354
+                                                                  Cr
+2021-10-01 Receipt against invoice
+                     (rcpt #41)                                   48,737,697
+                                                                  Cr
+2021-10-03 Receipt against invoice
+                     (rcpt #284)                                  21,385,616
+                                                                  Cr
+2021-10-03 Vendor payment #79
+                                                                  51,912,288
+2021-10-06 Receipt against invoice       50,275,475               Cr
+                     (rcpt #67)
+                                         26,079,176               1,636,813 Cr
+2021-10-07 TDS deposited (202109)        54,704,163
+                                         64,300,767  933,939      2,570,752 Cr
+2021-10-10 Receipt against invoice
+                     (rcpt #71)                      30,870,234   23,508,424
+                                                     54,660,771   Dr
+2021-10-10 Receipt against invoice                   5,223,758
+                     (rcpt #285)                     8,386,002    78,212,587
+                                                                  Dr
+2021-10-10 Receipt against invoice
+                     (rcpt #294)                                  142,513,354
+                                                                  Dr
+2021-10-10 Vendor payment #58
+                                                                  111,643,120
+2021-10-12 Receipt against invoice       31,072,578               Dr
+                     (rcpt #58)
+                                                                  142,715,698
+2021-10-14 Vendor payment #47                                     Dr
+
+2021-10-19 Vendor payment #48                                     88,054,927
+                                                                  Dr
+2021-10-20 Receipt against invoice       16,571,810
+                     (rcpt #92)                                   82,831,169
+                                                                  Dr
+2021-10-21 Vendor payment #53
+                                                                  99,402,979
+2021-10-23 Receipt against invoice       49,491,841               Dr
+                     (rcpt #63)          11,822,370
+                                                                  91,016,977
+2021-10-23                                                        Dr
+
+                                                                  140,508,818
+                                                                  Dr
+
+DOC-GLB-2021                                                      Page 5 of 60
+                     Receipt against invoice              53,919,859  152,331,188
+                     (rcpt #69)                           60,384,663  Dr
+
+2021-10-27 Vendor payment #324                            3,165,295   98,411,329
+                                                          21,422,005  Dr
+2021-10-28 Monthly salaries & site            7,851,299
+                     overheads (202110)       44,093,023  44,269,043  38,026,666
+                                                          60,384,663  Dr
+2021-11-02 Receipt against invoice                        16,574,528
+                     (rcpt #25)                           5,096,957   45,877,965
+                                                          1,132,603   Dr
+2021-11-06 Receipt against invoice
+                     (rcpt #98)                           21,665,293  89,970,988
+                                                                      Dr
+2021-11-07 TDS deposited (202110)
+                                                                      86,805,693
+2021-11-13 Receipt against invoice            8,807,272               Dr
+                     (rcpt #119)
+                                                                      95,612,965
+2021-11-14 Vendor payment #95                                         Dr
+
+2021-11-17 Receipt against invoice            35,597,690              74,190,960
+                     (rcpt #307)              20,697,935              Dr
+
+2021-11-22 Receipt against invoice                                    109,788,650
+                     (rcpt #82)                                       Dr
+
+2021-11-23 Vendor payment #277                                        130,486,585
+                                                                      Dr
+2021-11-27 Receipt against invoice            62,507,089
+                     (rcpt #311)              63,631,240              86,217,542
+                                                                      Dr
+2021-11-28 Monthly salaries & site
+                     overheads (202111)                               148,724,631
+                                                                      Dr
+2021-12-02 Receipt against invoice
+                     (rcpt #323)                                      88,339,968
+                                                                      Dr
+2021-12-03 Vendor payment #326
+                                                                      151,971,208
+2021-12-04 Receipt against invoice            15,536,289              Dr
+                     (rcpt #59)
+                                                                      135,396,680
+2021-12-05 Vendor payment #76                                         Dr
+
+2021-12-07 TDS deposited (202111)                                     150,932,969
+                                                                      Dr
+2021-12-12 Receipt against invoice            50,275,475
+                     (rcpt #68)               3,420,744               145,836,012
+                                                                      Dr
+2021-12-12 Receipt against invoice
+                     (rcpt #400)                                      144,703,409
+                                                                      Dr
+2021-12-13 Vendor payment #114
+                                                                      194,978,884
+                                                                      Dr
+
+                                                                      198,399,628
+                                                                      Dr
+
+DOC-GLB-2021                                                          Page 6 of 60
+2021-12-18 Receipt against invoice       28,152,333              176,734,335
+                     (rcpt #78)                                  Dr
+                                                     54,653,154
+2021-12-21 Vendor payment #115                       18,988,402  204,886,668
+                                                     41,040,559  Dr
+2021-12-22 Vendor payment #280                       60,384,663
+                                                     48,045,793  150,233,514
+2021-12-26 Vendor payment #113                                   Dr
+                                                     49,330,703
+2021-12-28 Monthly salaries & site                               131,245,112
+                     overheads (202112)              48,663,736  Dr
+                                                     3,552,835
+2021-12-30 Vendor payment #327                                   90,204,553
+                                                     6,657,114   Dr
+2022-01-01 Receipt against invoice       3,660,846
+                     (rcpt #394)                     34,079,006  29,819,890
+                                                                 Dr
+2022-01-01 Vendor payment #272
+                                                                 18,225,903
+2022-01-05 Receipt against invoice       64,300,767              Cr
+                     (rcpt #295)
+                                                                 14,565,057
+2022-01-05 Vendor payment #117                                   Cr
+
+2022-01-07 TDS deposited (202112)                                63,895,760
+                                                                 Cr
+2022-01-08 Receipt against invoice       13,039,588
+                     (rcpt #72)                                  405,007 Dr
+
+2022-01-08 Vendor payment #269                                   48,258,729
+                                                                 Cr
+2022-01-09 Receipt against invoice       22,778,386
+                     (rcpt #350)         31,815,619              51,811,564
+                                                                 Cr
+2022-01-12 Receipt against invoice
+                     (rcpt #324)                                 38,771,976
+                                                                 Cr
+2022-01-14 Vendor payment #275
+                                                                 45,429,090
+2022-01-16 Receipt against invoice       15,445,291              Cr
+                     (rcpt #5)           74,852,454
+                                         20,697,935              22,650,704
+2022-01-16 Receipt against invoice       32,150,383              Cr
+                     (rcpt #338)
+                                                                 9,164,915 Dr
+2022-01-17 Receipt against invoice
+                     (rcpt #83)                                  24,914,091
+                                                                 Cr
+2022-01-17
+                                                                 9,468,800 Cr
+
+                                                                 65,383,654
+                                                                 Dr
+
+                                                                 86,081,589
+                                                                 Dr
+
+DOC-GLB-2021                                                     Page 7 of 60
+                     Receipt against invoice  22,594,788  60,384,663  118,231,972
+                     (rcpt #296)              63,631,240              Dr
+                                                          26,654,449
+2022-01-26 Receipt against invoice            31,792,019  46,141,590  140,826,760
+                     (rcpt #49)               63,631,240  2,391,904   Dr
+
+2022-01-28 Receipt against invoice                        2,498,554   204,458,000
+                     (rcpt #326)                          45,742,775  Dr
+                                                          55,015,134
+2022-01-28 Monthly salaries & site                                    144,073,337
+                     overheads (202101)                   26,095,047  Dr
+                                                          60,384,663
+2022-01-29 Receipt against invoice                        51,929,113  175,865,356
+                     (rcpt #106)                                      Dr
+                                                          3,485,299
+2022-01-31 Receipt against invoice                                    239,496,596
+                     (rcpt #325)                                      Dr
+
+2022-02-07 Vendor payment #4                                          212,842,147
+                                                                      Dr
+2022-02-07 Vendor payment #312
+                                                                      166,700,557
+2022-02-07 TDS deposited (202201)                                     Dr
+
+2022-02-09 Receipt against invoice            23,513,088              164,308,653
+                     (rcpt #87)                                       Dr
+
+2022-02-09 Vendor payment #39                                         187,821,741
+                                                                      Dr
+2022-02-12 Vendor payment #111
+                                                                      185,323,187
+2022-02-12 Vendor payment #315                                        Dr
+
+2022-02-13 Receipt against invoice            54,704,163              139,580,412
+                     (rcpt #286)              45,445,081              Dr
+
+2022-02-16 Receipt against invoice                                    84,565,278
+                     (rcpt #30)                                       Dr
+
+2022-02-17 Vendor payment #321                                        139,269,441
+                                                                      Dr
+2022-02-28 Monthly salaries & site
+                     overheads (202102)                               184,714,522
+                                                                      Dr
+2022-03-01 Vendor payment #78
+                                                                      158,619,475
+2022-03-05 Receipt against invoice            46,399,014              Dr
+                     (rcpt #110)
+                                                                      98,234,812
+2022-03-07 TDS deposited (202202)                                     Dr
+
+                                                                      46,305,699
+                                                                      Dr
+
+                                                                      92,704,713
+                                                                      Dr
+
+                                                                      89,219,414
+                                                                      Dr
+
+2022-03-08                                    44,093,023
+
+DOC-GLB-2021                                                          Page 8 of 60
+                     Receipt against invoice                          133,312,437
+                     (rcpt #99)                                       Dr
+
+2022-03-09 Receipt against invoice            71,195,382              204,507,819
+                     (rcpt #308)                                      Dr
+
+2022-03-11 Vendor payment #309                            46,781,491  157,726,328
+                                                                      Dr
+2022-03-14 Vendor payment #323
+                                                          28,035,532  129,690,796
+2022-03-16 Receipt against invoice                                    Dr
+                     (rcpt #84)
+                                              20,697,935              150,388,731
+2022-03-16 Receipt against invoice                                    Dr
+                     (rcpt #95)
+                                              29,070,912              179,459,643
+2022-03-17 Receipt against invoice                                    Dr
+                     (rcpt #100)
+                                              44,093,023              223,552,666
+2022-03-18 Receipt against invoice                                    Dr
+                     (rcpt #313)
+                                              62,507,089              286,059,755
+2022-03-21 Receipt against invoice                                    Dr
+                     (rcpt #122)
+                                              31,870,335              317,930,090
+2022-03-23 Receipt against invoice                                    Dr
+                     (rcpt #309)
+                                              71,195,382              389,125,472
+2022-03-26 Receipt against invoice                                    Dr
+                     (rcpt #126)
+                                              14,763,237              403,888,709
+2022-03-28 Receipt against invoice                                    Dr
+                     (rcpt #297)
+                                              64,300,767              468,189,476
+2022-03-28 Monthly salaries & site                                    Dr
+                     overheads (202103)
+                                                          60,384,665  407,804,811
+2022-03-30 Receipt against invoice                                    Dr
+                     (rcpt #136)
+                                              13,349,817              421,154,628
+2022-03-31 Receipt against invoice                                    Dr
+                     (rcpt #287)
+                                              54,704,163              475,858,791
+TOTALS                                                                Dr
+
+                                              2,866,011,014 2,390,152,223 475,858,791
+                                                                                                    DR
+
+DOC-GLB-2021                                                          Page 9 of 60
+ACCOUNT 1100 -- ACCOUNTS RECEIVABLE (ASSET)
+
+DATE          VOUCHER / NARRATION   DEBIT       CREDIT      BALANCE
+                                    41,651,680  30,034,088  41,651,680 Dr
+2021-04-01 Client invoice                       24,019,684  11,617,592 Dr
+                     AR-2021-00066  46,873,663  43,381,738  12,402,092 Cr
+                                                53,446,000  55,783,830 Cr
+2021-04-03 Receipt against invoice  48,310,986  8,808,439   109,229,830 Cr
+                     (rcpt #35)     48,190,045  4,217,050   118,038,269 Cr
+                                    52,612,947  52,612,947  122,255,319 Cr
+2021-04-06 Receipt against invoice  3,891,709   16,516,054  75,381,656 Cr
+                     (rcpt #47)     37,191,494  48,190,045  127,994,603 Cr
+                                    22,003,209              144,510,657 Cr
+2021-04-10 Receipt against invoice              1,977,926   192,700,702 Cr
+                     (rcpt #22)                 37,191,494  144,389,716 Cr
+                                                            96,199,671 Cr
+2021-04-10 Receipt against invoice              43,381,738  43,586,724 Cr
+                     (rcpt #66)                             45,564,650 Cr
+                                                            41,672,941 Cr
+2021-04-10 Receipt against invoice                          78,864,435 Cr
+                     (rcpt #91)                             41,672,941 Cr
+                                                            19,669,732 Cr
+2021-04-11 Credit note #7                                   63,051,470 Cr
+
+2021-04-13 Client invoice
+                     AR-2021-00125
+
+2021-04-15 Receipt against invoice
+                     (rcpt #61)
+
+2021-04-22 Receipt against invoice
+                     (rcpt #57)
+
+2021-04-23 Receipt against invoice
+                     (rcpt #39)
+
+2021-04-25 Client invoice
+                     AR-2021-00037
+
+2021-04-27 Client invoice
+                     AR-2021-00051
+
+2021-04-27 Client invoice
+                     AR-2021-00078
+
+2021-05-03 Credit note #10
+
+2021-05-04 Client invoice
+                     AR-2021-00476
+
+2021-05-12 Receipt against invoice
+                     (rcpt #45)
+
+2021-05-12 Client invoice
+                     AR-2021-00060
+
+2021-05-12 Client invoice
+                     AR-2021-00104
+
+2021-05-17
+
+DOC-GLB-2021                                                Page 10 of 60
+                     Receipt against invoice  17,616,878  16,419,317  45,434,592 Cr
+                     (rcpt #23)               68,355,769              61,853,909 Cr
+                                              23,918,486  68,355,769  6,501,860 Dr
+2021-05-17 Client invoice                     24,019,684  72,422,888  30,420,346 Dr
+                     AR-2021-00117                        6,372,252   37,935,423 Cr
+                                              72,422,888  48,190,045  13,915,739 Cr
+2021-05-19 Receipt against invoice            58,153,974              86,338,627 Cr
+                     (rcpt #3)                29,927,705  58,153,974  92,710,879 Cr
+                                                          41,651,680  20,287,991 Cr
+2021-05-19 Client invoice                     53,446,000  33,368,386  68,478,036 Cr
+                     AR-2021-00354            33,032,109  3,325,734   10,324,062 Cr
+                                              27,723,808              19,603,643 Dr
+2021-05-21 Client invoice                                 52,612,947  38,550,331 Cr
+                     AR-2021-00109                                    80,202,011 Cr
+                                                                      113,570,397 Cr
+2021-05-31 Receipt against invoice                                    60,124,397 Cr
+                     (rcpt #292)                                      63,450,131 Cr
+                                                                      30,418,022 Cr
+2021-06-01 Client invoice                                             2,694,214 Cr
+                     AR-2021-00062                                    55,307,161 Cr
+
+2021-06-02 Receipt against invoice
+                     (rcpt #305)
+
+2021-06-05 Credit note #24
+
+2021-06-07 Client invoice
+                     AR-2021-00370
+
+2021-06-09 Receipt against invoice
+                     (rcpt #40)
+
+2021-06-09 Client invoice
+                     AR-2021-00345
+
+2021-06-16 Client invoice
+                     AR-2021-00100
+
+2021-06-16 Receipt against invoice
+                     (rcpt #283)
+
+2021-06-18 Receipt against invoice
+                     (rcpt #52)
+
+2021-06-20 Receipt against invoice
+                     (rcpt #16)
+
+2021-06-27 Client invoice
+                     AR-2021-00085
+
+2021-06-27 Credit note #23
+
+2021-07-02 Client invoice
+                     AR-2021-00073
+
+2021-07-02 Client invoice
+                     AR-2021-00092
+
+2021-07-04 Receipt against invoice
+                     (rcpt #62)
+
+DOC-GLB-2021                                                          Page 11 of 60
+2021-07-06 Client invoice           16,419,317  12,009,841  38,887,844 Cr
+                     AR-2021-00005              23,918,486  50,897,685 Cr
+                                    68,355,769  48,310,986  74,816,171 Cr
+2021-07-11 Receipt against invoice                          6,460,402 Cr
+                     (rcpt #48)     48,190,045  16,419,317  54,771,388 Cr
+                                    12,026,203              6,581,343 Cr
+2021-07-11 Receipt against invoice  17,616,878  6,118,694   5,444,860 Dr
+                     (rcpt #86)     30,904,212  29,927,705  23,061,738 Dr
+                                    46,873,663  11,001,604  53,965,950 Dr
+2021-07-19 Client invoice                       36,211,443  100,839,613 Dr
+                     AR-2021-00355  22,003,209  30,904,212  84,420,296 Dr
+                                    52,612,947              106,423,505 Dr
+2021-07-22 Receipt against invoice  16,692,852              159,036,452 Dr
+                     (rcpt #29)     41,651,680              152,917,758 Dr
+                                                            169,610,610 Dr
+2021-07-23 Client invoice           72,422,888              211,262,290 Dr
+                     AR-2021-00052                          181,334,585 Dr
+                                                            253,757,473 Dr
+2021-07-24 Client invoice                                   242,755,869 Dr
+                     AR-2021-00088                          206,544,426 Dr
+                                                            175,640,214 Dr
+2021-07-24 Client invoice
+                     AR-2021-00118
+
+2021-07-26 Client invoice
+                     AR-2021-00120
+
+2021-07-27 Client invoice
+                     AR-2021-00126
+
+2021-08-08 Receipt against invoice
+                     (rcpt #4)
+
+2021-08-12 Client invoice
+                     AR-2021-00105
+
+2021-08-15 Client invoice
+                     AR-2021-00079
+
+2021-08-17 Credit note #3
+
+2021-08-20 Client invoice
+                     AR-2021-00033
+
+2021-08-20 Client invoice
+                     AR-2021-00067
+
+2021-08-28 Receipt against invoice
+                     (rcpt #77)
+
+2021-08-31 Client invoice
+                     AR-2021-00371
+
+2021-09-01 Receipt against invoice
+                     (rcpt #81)
+
+2021-09-01 Receipt against invoice
+                     (rcpt #306)
+
+2021-09-05
+
+DOC-GLB-2021                                                Page 12 of 60
+                     Receipt against invoice  67,644,020  34,177,884  243,284,234 Dr
+                     (rcpt #94)                           37,191,494  209,106,350 Dr
+                                              58,153,974              171,914,856 Dr
+2021-09-07 Client invoice                     17,918,244  41,651,680  230,068,830 Dr
+                     AR-2021-00389            29,927,705              247,987,074 Dr
+                                              68,355,769  4,638,344   277,914,779 Dr
+2021-09-08 Receipt against invoice            33,368,386              236,263,099 Dr
+                     (rcpt #293)              27,715,840  24,095,022  304,618,868 Dr
+                                                          29,076,986  299,980,524 Dr
+2021-09-09 Receipt against invoice            67,644,020  53,446,000  333,348,910 Dr
+                     (rcpt #46)                                       361,064,750 Dr
+                                              53,446,000  27,723,808  336,969,728 Dr
+2021-09-09 Client invoice                                 58,153,974  307,892,742 Dr
+                     AR-2021-00346                        68,355,769  254,446,742 Dr
+                                                          33,032,109  322,090,762 Dr
+2021-09-13 Client invoice                                             294,366,954 Dr
+                     AR-2021-00153                                    236,212,980 Dr
+                                                                      167,857,211 Dr
+2021-09-14 Client invoice                                             134,825,102 Dr
+                     AR-2021-00101                                    188,271,102 Dr
+
+2021-09-15 Receipt against invoice
+                     (rcpt #53)
+
+2021-09-19 Client invoice
+                     AR-2021-00356
+
+2021-09-20 Credit note #25
+
+2021-09-21 Client invoice
+                     AR-2021-00021
+
+2021-09-24 Client invoice
+                     AR-2021-00131
+
+2021-10-01 Receipt against invoice
+                     (rcpt #41)
+
+2021-10-03 Receipt against invoice
+                     (rcpt #284)
+
+2021-10-06 Receipt against invoice
+                     (rcpt #67)
+
+2021-10-07 Client invoice
+                     AR-2021-00390
+
+2021-10-10 Receipt against invoice
+                     (rcpt #71)
+
+2021-10-10 Receipt against invoice
+                     (rcpt #285)
+
+2021-10-10 Receipt against invoice
+                     (rcpt #294)
+
+2021-10-12 Receipt against invoice
+                     (rcpt #58)
+
+2021-10-13 Client invoice
+                     AR-2021-00086
+
+DOC-GLB-2021                                                          Page 13 of 60
+2021-10-17 Client invoice           33,032,109  17,616,878  221,303,211 Dr
+                     AR-2021-00074  48,190,045  52,612,947  269,493,256 Dr
+                                                12,026,203  251,876,378 Dr
+2021-10-18 Client invoice           48,310,986  8,346,425   300,187,364 Dr
+                     AR-2021-00053                          247,574,417 Dr
+                                    66,448,976  46,873,663  235,548,214 Dr
+2021-10-20 Receipt against invoice                          301,997,190 Dr
+                     (rcpt #92)     16,419,317  8,959,121   293,650,765 Dr
+                                    23,918,486  36,211,443  310,070,082 Dr
+2021-10-22 Client invoice           24,019,684              333,988,568 Dr
+                     AR-2021-00038                          358,008,252 Dr
+                                    67,644,020              311,134,589 Dr
+2021-10-23 Receipt against invoice  46,873,663              378,778,609 Dr
+                     (rcpt #63)     33,796,920              425,652,272 Dr
+                                    46,342,233              459,449,192 Dr
+2021-10-23 Receipt against invoice  3,891,709               505,791,425 Dr
+                     (rcpt #69)     22,003,209              509,683,134 Dr
+                                                            531,686,343 Dr
+2021-10-27 Client invoice                                   522,727,222 Dr
+                     AR-2021-00377                          486,515,779 Dr
+
+2021-11-02 Receipt against invoice
+                     (rcpt #25)
+
+2021-11-03 Client invoice
+                     AR-2021-00006
+
+2021-11-03 Client invoice
+                     AR-2021-00110
+
+2021-11-04 Client invoice
+                     AR-2021-00063
+
+2021-11-06 Receipt against invoice
+                     (rcpt #98)
+
+2021-11-06 Client invoice
+                     AR-2021-00391
+
+2021-11-08 Client invoice
+                     AR-2021-00127
+
+2021-11-10 Client invoice
+                     AR-2021-00136
+
+2021-11-10 Client invoice
+                     AR-2021-00423
+
+2021-11-10 Client invoice
+                     AR-2021-00477
+
+2021-11-12 Client invoice
+                     AR-2021-00106
+
+2021-11-13 Receipt against invoice
+                     (rcpt #119)
+
+2021-11-17 Receipt against invoice
+                     (rcpt #307)
+
+DOC-GLB-2021                                                Page 14 of 60
+2021-11-17 Client invoice           6,959,444   22,003,209  493,475,223 Dr
+                     AR-2021-00485  27,723,808  66,448,976  521,199,031 Dr
+                                    68,355,769  67,644,020  589,554,800 Dr
+2021-11-20 Client invoice           72,422,888  16,516,054  567,551,591 Dr
+                     AR-2021-00093  79,572,878              639,974,479 Dr
+                                    52,612,947  53,446,000  573,525,503 Dr
+2021-11-20 Client invoice           67,644,020  3,479,722   653,098,381 Dr
+                     AR-2021-00357  15,694,251  29,927,705  585,454,361 Dr
+                                    58,153,974  3,891,709   638,067,308 Dr
+2021-11-22 Receipt against invoice                          621,551,254 Dr
+                     (rcpt #82)     66,448,976              689,195,274 Dr
+                                    17,918,244              704,889,525 Dr
+2021-11-23 Client invoice           30,904,212              763,043,499 Dr
+                     AR-2021-00372                          709,597,499 Dr
+                                                            706,117,777 Dr
+2021-11-27 Receipt against invoice                          772,566,753 Dr
+                     (rcpt #311)                            742,639,048 Dr
+                                                            760,557,292 Dr
+2021-12-01 Client invoice                                   756,665,583 Dr
+                     AR-2021-00406                          787,569,795 Dr
+
+2021-12-02 Receipt against invoice
+                     (rcpt #323)
+
+2021-12-03 Client invoice
+                     AR-2021-00080
+
+2021-12-04 Receipt against invoice
+                     (rcpt #59)
+
+2021-12-06 Client invoice
+                     AR-2021-00392
+
+2021-12-07 Client invoice
+                     AR-2021-00162
+
+2021-12-10 Client invoice
+                     AR-2021-00347
+
+2021-12-12 Receipt against invoice
+                     (rcpt #68)
+
+2021-12-12 Receipt against invoice
+                     (rcpt #400)
+
+2021-12-15 Client invoice
+                     AR-2021-00378
+
+2021-12-18 Receipt against invoice
+                     (rcpt #78)
+
+2021-12-25 Client invoice
+                     AR-2021-00154
+
+2022-01-01 Receipt against invoice
+                     (rcpt #394)
+
+2022-01-04 Client invoice
+                     AR-2022-00121
+
+DOC-GLB-2021                                                Page 15 of 60
+2022-01-05 Receipt against invoice  67,644,020  68,355,769  719,214,026 Dr
+                     (rcpt #295)    41,651,680              786,858,046 Dr
+                                    33,880,175  13,861,903  828,509,726 Dr
+2022-01-05 Client invoice           23,741,661  23,171,116  862,389,901 Dr
+                     AR-2022-00393  79,572,878              848,527,998 Dr
+                                                33,822,009  825,356,882 Dr
+2022-01-07 Client invoice           68,355,769              849,098,543 Dr
+                     AR-2022-00068              16,419,317  815,276,534 Dr
+                                    46,342,233  79,572,878  894,849,412 Dr
+2022-01-07 Client invoice           33,032,109  22,003,209  878,430,095 Dr
+                     AR-2022-00158              34,177,884  798,857,217 Dr
+                                                            776,854,008 Dr
+2022-01-08 Receipt against invoice              24,019,684  742,676,124 Dr
+                     (rcpt #72)                 67,644,020  811,031,893 Dr
+                                                33,796,920  787,012,209 Dr
+2022-01-09 Receipt against invoice                          719,368,189 Dr
+                     (rcpt #350)                67,644,020  685,571,269 Dr
+                                                10,108,373  731,913,502 Dr
+2022-01-12 Client invoice                                   664,269,482 Dr
+                     AR-2022-00167                          654,161,109 Dr
+                                                            687,193,218 Dr
+2022-01-12 Receipt against invoice
+                     (rcpt #324)
+
+2022-01-14 Client invoice
+                     AR-2022-00407
+
+2022-01-16 Receipt against invoice
+                     (rcpt #5)
+
+2022-01-16 Receipt against invoice
+                     (rcpt #338)
+
+2022-01-17 Receipt against invoice
+                     (rcpt #83)
+
+2022-01-17 Receipt against invoice
+                     (rcpt #296)
+
+2022-01-20 Client invoice
+                     AR-2022-00358
+
+2022-01-26 Receipt against invoice
+                     (rcpt #49)
+
+2022-01-28 Receipt against invoice
+                     (rcpt #326)
+
+2022-01-29 Receipt against invoice
+                     (rcpt #106)
+
+2022-01-29 Client invoice
+                     AR-2022-00424
+
+2022-01-31 Receipt against invoice
+                     (rcpt #325)
+
+2022-01-31 Credit note #29
+
+2022-02-02
+
+DOC-GLB-2021                                                Page 16 of 60
+                     Client invoice  66,448,976  5,691,588   753,642,194 Dr
+                     AR-2022-00075   67,644,020  23,918,486
+                                     16,692,852              821,286,214 Dr
+2022-02-02 Client invoice            27,715,840  58,153,974
+                     AR-2022-00379   15,694,251  48,310,986  837,979,066 Dr
+                                     49,325,077
+2022-02-04 Client invoice                        49,325,077  865,694,906 Dr
+                     AR-2022-00394   43,526,389  46,873,663
+                                     13,579,986  72,422,888  881,389,157 Dr
+2022-02-06 Client invoice            22,003,209
+                     AR-2022-00034                           875,697,569 Dr
+                                     72,422,888              925,022,646 Dr
+2022-02-06 Client invoice
+                     AR-2022-00132   46,873,663              901,104,160 Dr
+                                     79,572,878
+2022-02-06 Client invoice                                    944,630,549 Dr
+                     AR-2022-00163   67,644,020
+                                                             958,210,535 Dr
+2022-02-07 Credit note #5
+                                                             980,213,744 Dr
+2022-02-08 Client invoice
+                     AR-2022-00140                           922,059,770 Dr
+
+2022-02-09 Receipt against invoice                           994,482,658 Dr
+                     (rcpt #87)
+                                                             946,171,672 Dr
+2022-02-09 Client invoice
+                     AR-2022-00145                           993,045,335 Dr
+
+2022-02-09 Client invoice                                    1,072,618,213
+                     AR-2022-00173                           Dr
+                                                             1,023,293,136
+2022-02-12 Client invoice                                    Dr
+                     AR-2022-00107                           1,090,937,156
+                                                             Dr
+2022-02-13 Receipt against invoice                           1,044,063,493
+                     (rcpt #286)                             Dr
+                                                             971,640,605 Dr
+2022-02-15 Client invoice
+                     AR-2022-00373
+
+2022-02-16 Receipt against invoice
+                     (rcpt #30)
+
+2022-02-20 Client invoice
+                     AR-2022-00128
+
+2022-02-27 Client invoice
+                     AR-2022-00408
+
+2022-03-05 Receipt against invoice
+                     (rcpt #110)
+
+2022-03-06 Client invoice
+                     AR-2022-00395
+
+2022-03-08 Receipt against invoice
+                     (rcpt #99)
+
+2022-03-09 Receipt against invoice
+                     (rcpt #308)
+
+DOC-GLB-2021                                                 Page 17 of 60
+2022-03-11 Client invoice           58,153,974              1,029,794,579
+                     AR-2022-00348  6,959,444               Dr
+                                    12,026,203
+2022-03-12 Client invoice           4,742,994               1,036,754,023
+                     AR-2022-00486                          Dr
+                                                22,003,209
+2022-03-13 Client invoice                       30,904,212  1,048,780,226
+                     AR-2022-00089              46,873,663  Dr
+
+2022-03-14 Client invoice                                   1,053,523,220
+                     AR-2022-00481                          Dr
+
+2022-03-16 Receipt against invoice                          1,031,520,011
+                     (rcpt #84)                             Dr
+
+2022-03-16 Receipt against invoice                          1,000,615,799
+                     (rcpt #95)                             Dr
+
+2022-03-17 Receipt against invoice                          953,742,136 Dr
+                     (rcpt #100)
+                                                66,448,976  887,293,160 Dr
+2022-03-18 Receipt against invoice
+                     (rcpt #313)                3,591,507   883,701,653 Dr
+                                                            907,443,314 Dr
+2022-03-19 Credit note #8           23,741,661
+
+2022-03-19 Client invoice                       33,880,175  873,563,139 Dr
+                     AR-2022-00168
+                                    52,612,947              926,176,086 Dr
+2022-03-21 Receipt against invoice
+                     (rcpt #122)    68,355,769              994,531,855 Dr
+
+2022-03-23 Client invoice                       72,422,888  922,108,967 Dr
+                     AR-2022-00081
+                                    66,448,976              988,557,943 Dr
+2022-03-23 Client invoice
+                     AR-2022-00359              15,694,251  972,863,692 Dr
+
+2022-03-23 Receipt against invoice              68,355,769  904,507,923 Dr
+                     (rcpt #309)
+                                                13,579,986  890,927,937 Dr
+2022-03-23 Client invoice
+                     AR-2022-00380              58,153,974  832,773,963 Dr
+
+2022-03-26 Receipt against invoice  3,900,995,965 3,068,222,002 832,773,963 DR
+                     (rcpt #126)
+
+2022-03-28 Receipt against invoice
+                     (rcpt #297)
+
+2022-03-30 Receipt against invoice
+                     (rcpt #136)
+
+2022-03-31 Receipt against invoice
+                     (rcpt #287)
+
+TOTALS
+
+DOC-GLB-2021                                                Page 18 of 60
+ACCOUNT 1110 -- RETENTION MONEY RECEIVABLE (ASSET)
+
+DATE          VOUCHER / NARRATION         DEBIT       CREDIT BALANCE
+                                                                    1,017,783 Dr
+2021-04-06 Receipt against invoice (rcpt  1,017,783                 2,855,992 Dr
+                     #47)                                           5,120,653 Dr
+                                                                    5,493,891 Dr
+2021-04-10 Receipt against invoice (rcpt  1,838,209                 7,723,253 Dr
+                     #22)                                           8,423,085 Dr
+                                                                    10,465,036 Dr
+2021-04-10 Receipt against invoice (rcpt  2,264,661                 12,040,946 Dr
+                     #66)                                           13,879,155 Dr
+                                                                    14,574,888 Dr
+2021-04-10 Receipt against invoice (rcpt  373,238                   17,471,318 Dr
+                     #91)                                           19,513,269 Dr
+                                                                    21,977,420 Dr
+2021-04-15 Receipt against invoice (rcpt  2,229,362                 24,206,782 Dr
+                     #61)                                           24,715,673 Dr
+                                                                    26,762,748 Dr
+2021-04-22 Receipt against invoice (rcpt  699,832                   27,458,481 Dr
+                     #57)                                           28,726,604 Dr
+                                                                    29,192,773 Dr
+2021-04-23 Receipt against invoice (rcpt  2,041,951                 30,502,273 Dr
+                     #39)
+
+2021-05-12 Receipt against invoice (rcpt  1,575,910
+                     #45)
+
+2021-05-17 Receipt against invoice (rcpt  1,838,209
+                     #23)
+
+2021-05-19 Receipt against invoice (rcpt #3) 695,733
+
+2021-05-31 Receipt against invoice (rcpt  2,896,430
+                     #292)
+
+2021-06-09 Receipt against invoice (rcpt  2,041,951
+                     #40)
+
+2021-06-16 Receipt against invoice (rcpt  2,464,151
+                     #283)
+
+2021-07-04 Receipt against invoice (rcpt  2,229,362
+                     #62)
+
+2021-07-11 Receipt against invoice (rcpt  508,891
+                     #48)
+
+2021-07-22 Receipt against invoice (rcpt  2,047,075
+                     #29)
+
+2021-08-08 Receipt against invoice (rcpt #4) 695,733
+
+2021-08-28 Receipt against invoice (rcpt  1,268,123
+                     #77)
+
+2021-09-01 Receipt against invoice (rcpt  466,169
+                     #81)
+
+2021-09-05                                1,309,500
+
+DOC-GLB-2021                                          Page 19 of 60
+                     Receipt against invoice (rcpt  1,448,215  31,950,488 Dr
+                     #94)                           1,575,910  33,526,398 Dr
+                                                    1,020,975  34,547,373 Dr
+2021-09-08 Receipt against invoice (rcpt            1,232,075  35,779,448 Dr
+                     #293)                          2,264,661  38,044,109 Dr
+                                                    1,174,737  39,218,846 Dr
+2021-09-09 Receipt against invoice (rcpt            2,464,151  41,682,997 Dr
+                     #46)                           2,896,430  44,579,427 Dr
+                                                    1,399,665  45,979,092 Dr
+2021-10-01 Receipt against invoice (rcpt            746,477    46,725,569 Dr
+                     #41)                           2,229,362  48,954,931 Dr
+                                                    353,662    49,308,593 Dr
+2021-10-03 Receipt against invoice (rcpt            1,986,172  51,294,765 Dr
+                     #284)                          932,339    52,227,104 Dr
+                                                    2,815,634  55,042,738 Dr
+2021-10-06 Receipt against invoice (rcpt            2,866,272  57,909,010 Dr
+                     #67)                           699,832    58,608,842 Dr
+                                                    2,264,661  60,873,503 Dr
+2021-10-10 Receipt against invoice (rcpt            1,268,123  62,141,626 Dr
+                     #71)                           164,902    62,306,528 Dr
+
+2021-10-10 Receipt against invoice (rcpt                                Page 20 of 60
+                     #285)
+
+2021-10-10 Receipt against invoice (rcpt
+                     #294)
+
+2021-10-12 Receipt against invoice (rcpt
+                     #58)
+
+2021-10-20 Receipt against invoice (rcpt
+                     #92)
+
+2021-10-23 Receipt against invoice (rcpt
+                     #63)
+
+2021-11-02 Receipt against invoice (rcpt
+                     #25)
+
+2021-11-06 Receipt against invoice (rcpt
+                     #98)
+
+2021-11-22 Receipt against invoice (rcpt
+                     #82)
+
+2021-11-27 Receipt against invoice (rcpt
+                     #311)
+
+2021-12-02 Receipt against invoice (rcpt
+                     #323)
+
+2021-12-04 Receipt against invoice (rcpt
+                     #59)
+
+2021-12-12 Receipt against invoice (rcpt
+                     #68)
+
+2021-12-18 Receipt against invoice (rcpt
+                     #78)
+
+2022-01-01
+
+DOC-GLB-2021
+              Receipt against invoice (rcpt
+              #394)
+
+2022-01-05 Receipt against invoice (rcpt     2,896,430  65,202,958 Dr
+                     #295)                              65,790,326 Dr
+                                                        67,223,462 Dr
+2022-01-08 Receipt against invoice (rcpt     587,368    67,919,195 Dr
+                     #72)                               71,290,927 Dr
+                                                        72,223,266 Dr
+2022-01-12 Receipt against invoice (rcpt     1,433,136  73,671,481 Dr
+                     #324)                              74,689,264 Dr
+                                                        77,555,536 Dr
+2022-01-16 Receipt against invoice (rcpt #5) 695,733    78,987,608 Dr
+                                                        81,853,880 Dr
+2022-01-16 Receipt against invoice (rcpt     3,371,732  84,318,031 Dr
+                     #338)                              86,365,106 Dr
+                                                        88,455,151 Dr
+2022-01-17 Receipt against invoice (rcpt     932,339    90,441,323 Dr
+                     #83)                               91,373,662 Dr
+                                                        92,683,162 Dr
+2022-01-17 Receipt against invoice (rcpt     1,448,215  94,669,334 Dr
+                     #296)                              97,484,968 Dr
+                                                        98,920,568 Dr
+2022-01-26 Receipt against invoice (rcpt     1,017,783
+                     #49)                                        Page 21 of 60
+
+2022-01-28 Receipt against invoice (rcpt     2,866,272
+                     #326)
+
+2022-01-29 Receipt against invoice (rcpt     1,432,072
+                     #106)
+
+2022-01-31 Receipt against invoice (rcpt     2,866,272
+                     #325)
+
+2022-02-13 Receipt against invoice (rcpt     2,464,151
+                     #286)
+
+2022-02-16 Receipt against invoice (rcpt     2,047,075
+                     #30)
+
+2022-03-05 Receipt against invoice (rcpt     2,090,045
+                     #110)
+
+2022-03-08 Receipt against invoice (rcpt     1,986,172
+                     #99)
+
+2022-03-16 Receipt against invoice (rcpt     932,339
+                     #84)
+
+2022-03-16 Receipt against invoice (rcpt     1,309,500
+                     #95)
+
+2022-03-17 Receipt against invoice (rcpt     1,986,172
+                     #100)
+
+2022-03-18 Receipt against invoice (rcpt     2,815,634
+                     #313)
+
+2022-03-21 Receipt against invoice (rcpt     1,435,600
+                     #122)
+
+DOC-GLB-2021
+2022-03-26 Receipt against invoice (rcpt  665,010        99,585,578 Dr
+                     #126)                2,896,430
+                                          2,464,151      102,482,008
+2022-03-28 Receipt against invoice (rcpt  104,946,159 0  Dr
+                     #297)                               104,946,159
+                                                         Dr
+2022-03-31 Receipt against invoice (rcpt                 104,946,159
+                     #287)                               DR
+
+TOTALS
+
+DOC-GLB-2021                                             Page 22 of 60
+ACCOUNT 1120 -- TDS RECEIVABLE (ASSET)
+
+DATE          VOUCHER / NARRATION             DEBIT       CREDIT BALANCE
+                                                                        509,052 Dr
+2021-04-03 Receipt against invoice (rcpt #35) 509,052                   916,165 Dr
+                                                                        1,651,448 Dr
+2021-04-06 Receipt against invoice (rcpt #47) 407,113                   2,557,312 Dr
+                                                                        2,706,607 Dr
+2021-04-10 Receipt against invoice (rcpt #22) 735,283                   3,598,351 Dr
+                                                                        3,878,284 Dr
+2021-04-10 Receipt against invoice (rcpt #66) 905,864                   4,695,064 Dr
+                                                                        5,325,428 Dr
+2021-04-10 Receipt against invoice (rcpt #91) 149,295                   6,060,711 Dr
+                                                                        6,339,004 Dr
+2021-04-15 Receipt against invoice (rcpt #61) 891,744                   7,497,576 Dr
+                                                                        8,725,082 Dr
+2021-04-22 Receipt against invoice (rcpt #57) 279,933                   9,541,862 Dr
+                                                                        10,527,522 Dr
+2021-04-23 Receipt against invoice (rcpt #39) 816,780                   11,233,482 Dr
+                                                                        11,799,047 Dr
+2021-05-12 Receipt against invoice (rcpt #45) 630,364                   12,690,791 Dr
+                                                                        12,894,347 Dr
+2021-05-17 Receipt against invoice (rcpt #23) 735,283                   13,299,745 Dr
+                                                                        14,118,575 Dr
+2021-05-19 Receipt against invoice (rcpt #3)  278,293                   14,396,868 Dr
+                                                                        14,904,117 Dr
+2021-05-31 Receipt against invoice (rcpt #292) 1,158,572                15,090,584 Dr
+                                                                        15,704,337 Dr
+2021-06-02 Receipt against invoice (rcpt #305) 1,227,506                16,228,137 Dr
+                                                                        16,807,423 Dr
+2021-06-09 Receipt against invoice (rcpt #40) 816,780                   17,437,787 Dr
+                                                                        18,143,747 Dr
+2021-06-16 Receipt against invoice (rcpt #283) 985,660                  18,552,137 Dr
+                                                                        19,044,967 Dr
+2021-06-18 Receipt against invoice (rcpt #52) 705,960
+
+2021-06-20 Receipt against invoice (rcpt #16) 565,565
+
+2021-07-04 Receipt against invoice (rcpt #62) 891,744
+
+2021-07-11 Receipt against invoice (rcpt #48) 203,556
+
+2021-07-11 Receipt against invoice (rcpt #86) 405,398
+
+2021-07-22 Receipt against invoice (rcpt #29) 818,830
+
+2021-08-08 Receipt against invoice (rcpt #4)  278,293
+
+2021-08-28 Receipt against invoice (rcpt #77) 507,249
+
+2021-09-01 Receipt against invoice (rcpt #81) 186,467
+
+2021-09-01 Receipt against invoice (rcpt #306) 613,753
+
+2021-09-05 Receipt against invoice (rcpt #94) 523,800
+
+2021-09-08 Receipt against invoice (rcpt #293) 579,286
+
+2021-09-09 Receipt against invoice (rcpt #46) 630,364
+
+2021-09-15 Receipt against invoice (rcpt #53) 705,960
+
+2021-10-01 Receipt against invoice (rcpt #41) 408,390
+
+2021-10-03 Receipt against invoice (rcpt #284) 492,830
+
+DOC-GLB-2021                                              Page 23 of 60
+2021-10-06 Receipt against invoice (rcpt #67) 905,864     19,950,831 Dr
+                                                          20,420,726 Dr
+2021-10-10 Receipt against invoice (rcpt #71) 469,895     21,406,386 Dr
+                                                          22,564,958 Dr
+2021-10-10 Receipt against invoice (rcpt #285) 985,660    23,124,824 Dr
+                                                          23,423,415 Dr
+2021-10-10 Receipt against invoice (rcpt #294) 1,158,572  24,315,159 Dr
+                                                          24,518,992 Dr
+2021-10-12 Receipt against invoice (rcpt #58) 559,866     24,660,456 Dr
+                                                          25,454,924 Dr
+2021-10-20 Receipt against invoice (rcpt #92) 298,591     25,606,773 Dr
+                                                          26,220,526 Dr
+2021-10-23 Receipt against invoice (rcpt #63) 891,744     26,593,461 Dr
+                                                          27,719,714 Dr
+2021-10-23 Receipt against invoice (rcpt #69) 203,833     28,866,222 Dr
+                                                          29,146,155 Dr
+2021-11-02 Receipt against invoice (rcpt #25) 141,464     30,052,019 Dr
+                                                          30,110,997 Dr
+2021-11-06 Receipt against invoice (rcpt #98) 794,468     30,618,246 Dr
+                                                          30,684,207 Dr
+2021-11-13 Receipt against invoice (rcpt #119) 151,849    31,842,779 Dr
+                                                          32,077,726 Dr
+2021-11-17 Receipt against invoice (rcpt #307) 613,753    32,470,456 Dr
+                                                          33,043,710 Dr
+2021-11-22 Receipt against invoice (rcpt #82) 372,935     33,322,003 Dr
+                                                          34,670,695 Dr
+2021-11-27 Receipt against invoice (rcpt #311) 1,126,253  35,043,630 Dr
+                                                          35,622,916 Dr
+2021-12-02 Receipt against invoice (rcpt #323) 1,146,508  36,030,029 Dr
+                                                          37,176,537 Dr
+2021-12-04 Receipt against invoice (rcpt #59) 279,933     37,749,366 Dr
+                                                          38,895,874 Dr
+2021-12-12 Receipt against invoice (rcpt #68) 905,864     39,301,272 Dr
+                                                          40,286,932 Dr
+2021-12-12 Receipt against invoice (rcpt #400) 58,978
+                                                                 Page 24 of 60
+2021-12-18 Receipt against invoice (rcpt #78) 507,249
+
+2022-01-01 Receipt against invoice (rcpt #394) 65,961
+
+2022-01-05 Receipt against invoice (rcpt #295) 1,158,572
+
+2022-01-08 Receipt against invoice (rcpt #72) 234,947
+
+2022-01-09 Receipt against invoice (rcpt #350) 392,730
+
+2022-01-12 Receipt against invoice (rcpt #324) 573,254
+
+2022-01-16 Receipt against invoice (rcpt #5)  278,293
+
+2022-01-16 Receipt against invoice (rcpt #338) 1,348,692
+
+2022-01-17 Receipt against invoice (rcpt #83) 372,935
+
+2022-01-17 Receipt against invoice (rcpt #296) 579,286
+
+2022-01-26 Receipt against invoice (rcpt #49) 407,113
+
+2022-01-28 Receipt against invoice (rcpt #326) 1,146,508
+
+2022-01-29 Receipt against invoice (rcpt #106) 572,829
+
+2022-01-31 Receipt against invoice (rcpt #325) 1,146,508
+
+2022-02-09 Receipt against invoice (rcpt #87) 405,398
+
+2022-02-13 Receipt against invoice (rcpt #286) 985,660
+
+DOC-GLB-2021
+2022-02-16 Receipt against invoice (rcpt #30) 818,830     41,105,762 Dr
+                                                          41,941,780 Dr
+2022-03-05 Receipt against invoice (rcpt #110) 836,018    42,736,248 Dr
+                                                          43,963,754 Dr
+2022-03-08 Receipt against invoice (rcpt #99) 794,468     44,336,689 Dr
+                                                          44,860,489 Dr
+2022-03-09 Receipt against invoice (rcpt #308) 1,227,506  45,654,957 Dr
+                                                          46,781,210 Dr
+2022-03-16 Receipt against invoice (rcpt #84) 372,935     47,355,450 Dr
+                                                          48,582,956 Dr
+2022-03-16 Receipt against invoice (rcpt #95) 523,800     48,848,960 Dr
+                                                          50,007,532 Dr
+2022-03-17 Receipt against invoice (rcpt #100) 794,468    50,237,701 Dr
+                                                          51,223,361 Dr
+2022-03-18 Receipt against invoice (rcpt #313) 1,126,253  51,223,361 DR
+
+2022-03-21 Receipt against invoice (rcpt #122) 574,240
+
+2022-03-23 Receipt against invoice (rcpt #309) 1,227,506
+
+2022-03-26 Receipt against invoice (rcpt #126) 266,004
+
+2022-03-28 Receipt against invoice (rcpt #297) 1,158,572
+
+2022-03-30 Receipt against invoice (rcpt #136) 230,169
+
+2022-03-31 Receipt against invoice (rcpt #287) 985,660
+
+TOTALS        51,223,361 0
+
+DOC-GLB-2021                                              Page 25 of 60
+ACCOUNT 1130 -- GST INPUT CREDIT (ASSET)
+
+DATE          VOUCHER / NARRATION  DEBIT      CREDIT      BALANCE
+                                   6,562,802
+2021-04-03 Vendor bill #70         5,155,688              6,562,802 Dr
+                                   577,276
+2021-04-05 Vendor bill #114                               11,718,490 Dr
+                                   2,608,313
+2021-04-13 Vendor bill #92                                12,295,766 Dr
+
+2021-04-19 GST settlement (period             121,060,015 108,764,249
+                     20204)                                          Cr
+
+2021-04-20 Vendor bill #121                               106,155,936
+                                                          Cr
+
+2021-04-25 Vendor bill #85         304,014                105,851,922
+                                                          Cr
+
+2021-04-29 Vendor bill #128        4,307,883              101,544,039
+                                                          Cr
+
+2021-05-10 Vendor bill #76         2,593,542              98,950,497 Cr
+2021-05-17 Vendor bill #93         1,218,865
+2021-05-25 Vendor bill #18         7,710,489              97,731,632 Cr
+2021-06-17 Vendor bill #29         5,710,139
+2021-07-05 Vendor bill #43         7,878,884              90,021,143 Cr
+2021-07-11 Vendor bill #1          3,467,653
+2021-07-13 Vendor bill #37         5,672,356              84,311,004 Cr
+2021-07-14 Vendor bill #342        8,755,043
+2021-07-17 Vendor bill #77         4,790,208              76,432,120 Cr
+2021-07-17 Vendor bill #95         3,142,222
+2021-07-20 Vendor bill #57         3,202,405              72,964,467 Cr
+2021-07-20 GST settlement (period
+                                   2,733,109              67,292,111 Cr
+                     20211)
+2021-08-02 Vendor bill #2                                 58,537,068 Cr
+
+                                                          53,746,860 Cr
+
+                                                          50,604,638 Cr
+
+                                                          47,402,233 Cr
+
+                                              96,512,662  143,914,895
+                                                          Cr
+
+                                                          141,181,786
+                                                          Cr
+
+2021-08-10 Vendor bill #61         8,481,843              132,699,943
+                                                          Cr
+
+2021-08-13 Vendor bill #69         1,301,276              131,398,667
+                                                          Cr
+
+2021-08-15 Vendor bill #101        4,736,897              126,661,770
+                                                          Cr
+
+2021-09-08 Vendor bill #127        3,324,104              123,337,666
+                                                          Cr
+
+DOC-GLB-2021                                              Page 26 of 60
+2021-09-12 Vendor bill #45         5,229,397                         118,108,269
+2021-09-17 Vendor bill #361        3,768,065                         Cr
+2021-09-21 Vendor bill #62         810,583
+2021-09-22 Vendor bill #357        6,869,334                         114,340,204
+2021-09-26 Vendor bill #415        8,366,874                         Cr
+2021-10-11 Vendor bill #98         790,907
+2021-10-17 Vendor bill #106        6,137,293                         113,529,621
+2021-10-20 GST settlement (period                                    Cr
+                                   8,289,632
+                     20212)        3,361,855                         106,660,287
+2021-11-03 Vendor bill #94         6,368,362                         Cr
+2021-11-06 Vendor bill #148        3,049,611
+2021-11-08 Vendor bill #147        387,706                           98,293,413 Cr
+2021-11-10 Vendor bill #68         2,571,909
+2021-11-12 Vendor bill #50         7,098,016                         97,502,506 Cr
+2021-11-12 Vendor bill #417        2,946,476
+2021-11-15 Vendor bill #145        8,480,661                         91,365,213 Cr
+2021-11-16 Vendor bill #365        1,033,000
+2021-11-17 Vendor bill #149        5,288,121  121,858,844 213,224,057
+2021-11-21 Vendor bill #344        7,455,381                         Cr
+2021-11-23 Vendor bill #352        1,393,096
+2021-12-04 Vendor bill #418        7,654,764                         204,934,425
+2021-12-07 Vendor bill #156                                          Cr
+2021-12-08 Vendor bill #347
+                                                                     201,572,570
+                                                                     Cr
+
+                                                                     195,204,208
+                                                                     Cr
+
+                                                                     192,154,597
+                                                                     Cr
+
+                                                                     191,766,891
+                                                                     Cr
+
+                                                                     189,194,982
+                                                                     Cr
+
+                                                                     182,096,966
+                                                                     Cr
+
+                                                                     179,150,490
+                                                                     Cr
+
+                                                                     170,669,829
+                                                                     Cr
+
+                                                                     169,636,829
+                                                                     Cr
+
+                                                                     164,348,708
+                                                                     Cr
+
+                                                                     156,893,327
+                                                                     Cr
+
+                                                                     155,500,231
+                                                                     Cr
+
+DOC-GLB-2021                                  Page 27 of 60
+    2021-12-12 Vendor bill #152        7,551,269                         147,845,467
+    2021-12-14 Vendor bill #414        4,350,341                         Cr
+    2021-12-25 Vendor bill #100        8,057,965
+    2021-12-26 Vendor bill #5          4,136,035                         140,294,198
+    2021-12-28 Vendor bill #405        8,536,831                         Cr
+    2022-01-04 Vendor bill #399        7,259,196
+    2022-01-09 Vendor bill #51         67,846                            135,943,857
+    2022-01-11 Vendor bill #360        1,259,802                         Cr
+    2022-01-14 Vendor bill #402        7,159,901
+    2022-01-19 GST settlement (period                                    127,885,892
+                                       4,049,231                         Cr
+                         20213)        7,464,151
+    2022-01-21 Vendor bill #412        1,523,486                         123,749,857
+    2022-01-23 Vendor bill #419        8,778,468                         Cr
+    2022-02-07 Vendor bill #420        6,020,041
+    2022-02-19 Vendor bill #102        2,789,115                         115,213,026
+    2022-02-23 Vendor bill #144        2,307,877                         Cr
+    2022-02-23 Vendor bill #358        6,812,930
+    2022-03-01 Vendor bill #97         7,461,292                         107,953,830
+    2022-03-02 Vendor bill #20         5,175,952                         Cr
+    2022-03-12 Vendor bill #32
+    2022-03-12 Vendor bill #416                                          107,885,984
+                                                                         Cr
+DOC-GLB-2021
+                                                                         106,626,182
+                                                                         Cr
+
+                                                                         99,466,281 Cr
+
+                                                  173,210,110 272,676,391
+                                                                         Cr
+
+                                                                         268,627,160
+                                                                         Cr
+
+                                                                         261,163,009
+                                                                         Cr
+
+                                                                         259,639,523
+                                                                         Cr
+
+                                                                         250,861,055
+                                                                         Cr
+
+                                                                         244,841,014
+                                                                         Cr
+
+                                                                         242,051,899
+                                                                         Cr
+
+                                                                         239,744,022
+                                                                         Cr
+
+                                                                         232,931,092
+                                                                         Cr
+
+                                                                         225,469,800
+                                                                         Cr
+
+                                                                         220,293,848
+                                                                         Cr
+
+                                                  Page 28 of 60
+2022-03-22 Vendor bill #65  1,883,753  218,410,095
+TOTALS                                 Cr
+
+                            294,231,536 512,641,631 218,410,095
+                                                                           CR
+
+DOC-GLB-2021                           Page 29 of 60
+ACCOUNT 1200 -- PLANT & MACHINERY (ASSET)
+
+DATE          VOUCHER / NARRATION       DEBIT            CREDIT BALANCE
+
+2021-10-01 Plant & machinery additions  154,900,000      154,900,000 Dr
+                     FY2021
+
+2021-10-01 Plant additions funded by term 1,371,500,000  1,526,400,000
+                     loan FY2021                         Dr
+
+TOTALS                                  1,526,400,000 0  1,526,400,000
+                                                         DR
+
+DOC-GLB-2021                                             Page 30 of 60
+ACCOUNT 1210 -- ACCUMULATED DEPRECIATION (ASSET_CONTRA)
+
+DATE          VOUCHER / NARRATION         DEBIT  CREDIT       BALANCE
+2022-03-31    Annual depreciation FY2021  0      652,180,000  652,180,000 Cr
+TOTALS                                           652,180,000  652,180,000 CR
+
+DOC-GLB-2021                                                  Page 31 of 60
+ACCOUNT 2100 -- ACCOUNTS PAYABLE (LIABILITY)
+
+DATE          VOUCHER / NARRATION  DEBIT       CREDIT      BALANCE
+2021-04-02    Vendor payment #12   52,049,991              52,049,991 Dr
+2021-04-02    Vendor payment #61   49,330,374  43,022,818  101,380,365 Dr
+2021-04-03    Vendor bill #70                  33,798,400  58,357,547 Dr
+2021-04-05    Vendor bill #114     7,671,018               24,559,147 Dr
+2021-04-07    Vendor payment #97   46,625,187  3,784,367   32,230,165 Dr
+2021-04-11    Vendor payment #89               17,098,944  78,855,352 Dr
+2021-04-13    Vendor bill #92      10,486,523              75,070,985 Dr
+2021-04-17    Vendor payment #270              1,992,984   85,557,508 Dr
+2021-04-20    Vendor bill #121     29,515,216  28,240,568  68,458,564 Dr
+2021-04-23    Vendor payment #3    17,749,890              97,973,780 Dr
+2021-04-24    Vendor payment #51               17,002,111  115,723,670 Dr
+2021-04-25    Vendor bill #85      20,176,699  7,990,340   113,730,686 Dr
+2021-04-26    Vendor payment #74               50,546,542  133,907,385 Dr
+2021-04-29    Vendor bill #128     29,918,344              105,666,817 Dr
+2021-05-01    Vendor payment #36   23,457,637  37,433,138  135,585,161 Dr
+2021-05-08    Vendor payment #56               51,650,462  159,042,798 Dr
+2021-05-10    Vendor bill #76      17,002,111  22,732,392  142,040,687 Dr
+2021-05-17    Vendor bill #93      17,098,944  37,185,447  134,050,347 Dr
+2021-05-25    Vendor bill #18      26,900,764  57,394,171  83,503,805 Dr
+2021-05-28    Vendor payment #57   1,992,984               100,505,916 Dr
+2021-05-31    Vendor payment #91   7,990,340               117,604,860 Dr
+2021-06-07    Vendor payment #26                           144,505,624 Dr
+2021-06-09    Vendor payment #66   28,240,568              146,498,608 Dr
+2021-06-15    Vendor payment #73                           154,488,948 Dr
+2021-06-17    Vendor bill #29      50,546,542              117,055,810 Dr
+2021-06-26    Vendor payment #96                           145,296,378 Dr
+2021-07-05    Vendor bill #43                              93,645,916 Dr
+2021-07-09    Vendor payment #14                           144,192,458 Dr
+2021-07-11    Vendor bill #1                               121,460,066 Dr
+2021-07-13    Vendor bill #37                              84,274,619 Dr
+2021-07-14    Vendor bill #342                             26,880,448 Dr
+
+DOC-GLB-2021                                               Page 32 of 60
+2021-07-15    Vendor payment #24   37,433,138  31,402,479  64,313,586 Dr
+2021-07-17    Vendor bill #77                  20,599,015  32,911,107 Dr
+2021-07-17    Vendor bill #95      22,732,392  20,993,547  12,312,092 Dr
+2021-07-20    Vendor bill #57                  17,917,051  8,681,455 Cr
+2021-08-02    Vendor bill #2       20,993,547              26,598,506 Cr
+2021-08-04    Vendor payment #1    17,917,051  55,603,198  3,866,114 Cr
+2021-08-10    Vendor bill #61                  8,530,588   59,469,312 Cr
+2021-08-13    Vendor bill #69      37,185,447  31,052,993  67,999,900 Cr
+2021-08-15    Vendor bill #101                             99,052,893 Cr
+2021-08-17    Vendor payment #44   31,052,993  21,791,349  78,059,346 Cr
+2021-09-05    Vendor payment #2    31,402,479  34,281,605  60,142,295 Cr
+2021-09-08    Vendor bill #127     55,603,198  24,701,762  81,933,644 Cr
+2021-09-12    Vendor bill #45      5,313,822               116,215,249 Cr
+2021-09-17    Vendor bill #361     8,530,588   5,313,822   140,917,011 Cr
+2021-09-19    Vendor payment #30   54,849,511  45,032,302  103,731,564 Cr
+2021-09-21    Vendor bill #62                  54,849,511  109,045,386 Cr
+2021-09-22    Vendor bill #357     21,791,349              154,077,688 Cr
+2021-09-26    Vendor bill #415                 5,184,835   208,927,199 Cr
+2021-10-03    Vendor payment #79                           177,874,206 Cr
+2021-10-10    Vendor payment #58               40,233,368  146,471,727 Cr
+2021-10-11    Vendor bill #98                              151,656,562 Cr
+2021-10-14    Vendor payment #47               54,343,145  96,053,364 Cr
+2021-10-17    Vendor bill #106                 22,038,832  136,286,732 Cr
+2021-10-19    Vendor payment #48               41,748,154  130,972,910 Cr
+2021-10-21    Vendor payment #53               19,991,896  122,442,322 Cr
+2021-10-27    Vendor payment #324              2,541,632   67,592,811 Cr
+2021-11-03    Vendor bill #94                  16,860,295  121,935,956 Cr
+2021-11-06    Vendor bill #148                             143,974,788 Cr
+2021-11-08    Vendor bill #147                 46,531,443  185,722,942 Cr
+2021-11-10    Vendor bill #68                              205,714,838 Cr
+2021-11-12    Vendor bill #50                              208,256,470 Cr
+2021-11-12    Vendor bill #417                             225,116,765 Cr
+2021-11-14    Vendor payment #95                           203,325,416 Cr
+2021-11-15    Vendor bill #145                             249,856,859 Cr
+
+DOC-GLB-2021                                               Page 33 of 60
+2021-11-16    Vendor bill #365     45,032,302  19,315,788  269,172,647 Cr
+2021-11-17    Vendor bill #149     16,860,295  55,595,449  324,768,096 Cr
+2021-11-21    Vendor bill #344     5,184,835   6,771,891   331,539,987 Cr
+2021-11-23    Vendor bill #352                 34,666,575  366,206,562 Cr
+2021-11-23    Vendor payment #277  22,038,832              321,174,260 Cr
+2021-12-03    Vendor payment #326  55,595,449  48,874,168  304,313,965 Cr
+2021-12-04    Vendor bill #418     19,315,788  9,132,523   353,188,133 Cr
+2021-12-05    Vendor payment #76               50,181,232  348,003,298 Cr
+2021-12-07    Vendor bill #156     41,748,154  49,502,765  357,135,821 Cr
+2021-12-08    Vendor bill #347     48,874,168  28,518,903  407,317,053 Cr
+2021-12-12    Vendor bill #152     50,181,232              456,819,818 Cr
+2021-12-13    Vendor payment #114  49,502,765  52,824,442  434,780,986 Cr
+2021-12-14    Vendor bill #414     6,771,891   27,114,008  463,299,889 Cr
+2021-12-21    Vendor payment #115              55,963,670  407,704,440 Cr
+2021-12-22    Vendor payment #280  34,666,575              388,388,652 Cr
+2021-12-25    Vendor bill #100                 47,588,068  441,213,094 Cr
+2021-12-26    Vendor bill #5       27,114,008              468,327,102 Cr
+2021-12-26    Vendor payment #113  46,937,134  444,773     426,578,948 Cr
+2021-12-28    Vendor bill #405     2,541,632   8,258,706   482,542,618 Cr
+2021-12-30    Vendor payment #327              46,937,134  433,668,450 Cr
+2022-01-01    Vendor payment #272              26,544,961  383,487,218 Cr
+2022-01-04    Vendor bill #399                 48,931,657  431,075,286 Cr
+2022-01-05    Vendor payment #117                          381,572,521 Cr
+2022-01-08    Vendor payment #269              9,987,301   374,800,630 Cr
+2022-01-09    Vendor bill #51                              375,245,403 Cr
+2022-01-11    Vendor bill #360                             383,504,109 Cr
+2022-01-14    Vendor payment #275                          348,837,534 Cr
+2022-01-14    Vendor bill #402                             395,774,668 Cr
+2022-01-21    Vendor bill #412                             422,319,629 Cr
+2022-01-23    Vendor bill #419                             471,251,286 Cr
+2022-02-07    Vendor payment #4                            444,137,278 Cr
+2022-02-07    Vendor payment #312                          397,200,144 Cr
+2022-02-07    Vendor bill #420                             407,187,445 Cr
+2022-02-09    Vendor payment #39                           404,645,813 Cr
+
+DOC-GLB-2021                                               Page 34 of 60
+2022-02-12    Vendor payment #111  46,531,443     57,547,740     358,114,370 Cr
+2022-02-12    Vendor payment #315  55,963,670     39,464,716     302,150,700 Cr
+2022-02-17    Vendor payment #321  26,544,961     18,284,199     275,605,739 Cr
+2022-02-19    Vendor bill #102                    15,129,418     333,153,479 Cr
+2022-02-23    Vendor bill #144     52,824,442                    372,618,195 Cr
+2022-02-23    Vendor bill #358     47,588,068     44,662,544     390,902,394 Cr
+2022-03-01    Vendor bill #97                                    406,031,812 Cr
+2022-03-01    Vendor payment #78   28,518,903     48,912,919     353,207,370 Cr
+2022-03-02    Vendor bill #20      1,511,895,194  33,931,243     397,869,914 Cr
+2022-03-11    Vendor payment #309                                350,281,846 Cr
+2022-03-12    Vendor bill #32                     12,349,050     399,194,765 Cr
+2022-03-12    Vendor bill #416                    1,928,851,349  433,126,008 Cr
+2022-03-14    Vendor payment #323                                404,607,105 Cr
+2022-03-22    Vendor bill #65                                    416,956,155 Cr
+TOTALS                                                           416,956,155 CR
+
+DOC-GLB-2021                                                     Page 35 of 60
+ACCOUNT 2110 -- OUTPUT GST PAYABLE (LIABILITY)
+
+DATE          VOUCHER / NARRATION        DEBIT        CREDIT      BALANCE
+                                                                  6,353,646 Cr
+2021-04-01 Client invoice AR-2021-00066               6,353,646   5,710,368 Cr
+                                                                  12,860,587 Cr
+2021-04-11 Credit note #7                643,278                  108,199,428
+                                                                  Dr
+2021-04-13 Client invoice AR-2021-00125               7,150,219   100,829,956
+                                                                  Dr
+2021-04-19 GST settlement (period        121,060,015              93,478,933 Dr
+                     20204)                                       85,453,230 Dr
+                                                                  85,754,947 Dr
+2021-04-25 Client invoice AR-2021-00037               7,369,472   85,161,297 Dr
+                                                                  79,488,019 Dr
+2021-04-27 Client invoice AR-2021-00051               7,351,023   76,131,598 Dr
+                                                      8,025,703   73,444,278 Dr
+2021-04-27 Client invoice AR-2021-00078                           63,017,127 Dr
+                                                      593,650     59,368,545 Dr
+2021-05-03 Credit note #10               301,717      5,673,278   55,704,526 Dr
+                                                      3,356,421   56,676,564 Dr
+2021-05-04 Client invoice AR-2021-00476               2,687,320   45,629,005 Dr
+                                                      10,427,151  36,758,060 Dr
+2021-05-12 Client invoice AR-2021-00060               3,648,582   32,192,817 Dr
+                                                      3,664,019   24,040,038 Dr
+2021-05-12 Client invoice AR-2021-00104                           24,547,353 Dr
+                                                      11,047,559  19,508,557 Dr
+2021-05-17 Client invoice AR-2021-00117               8,870,945   15,279,502 Dr
+                                                      4,565,243   12,774,861 Dr
+2021-05-19 Client invoice AR-2021-00354               8,152,779   2,347,710 Dr
+                                                                  98,860,372 Dr
+2021-05-21 Client invoice AR-2021-00109               5,038,796
+                                                      4,229,055   91,509,349 Dr
+2021-06-01 Client invoice AR-2021-00062               2,504,641   89,674,844 Dr
+                                                      10,427,151  86,987,524 Dr
+2021-06-05 Credit note #24               972,038
+                                                      7,351,023
+2021-06-07 Client invoice AR-2021-00370               1,834,505
+                                                      2,687,320
+2021-06-09 Client invoice AR-2021-00345
+
+2021-06-16 Client invoice AR-2021-00100
+
+2021-06-27 Client invoice AR-2021-00085
+
+2021-06-27 Credit note #23               507,315
+
+2021-07-02 Client invoice AR-2021-00073
+
+2021-07-02 Client invoice AR-2021-00092
+
+2021-07-06 Client invoice AR-2021-00005
+
+2021-07-19 Client invoice AR-2021-00355
+
+2021-07-20 GST settlement (period        96,512,662
+                     20211)
+
+2021-07-23 Client invoice AR-2021-00052
+
+2021-07-24 Client invoice AR-2021-00088
+
+2021-07-24 Client invoice AR-2021-00118
+
+DOC-GLB-2021                                                      Page 36 of 60
+2021-07-26 Client invoice AR-2021-00120               4,714,201   82,273,323 Dr
+                                                                  75,123,104 Dr
+2021-07-27 Client invoice AR-2021-00126               7,150,219   71,766,683 Dr
+                                                                  63,740,980 Dr
+2021-08-12 Client invoice AR-2021-00105               3,356,421   64,674,340 Dr
+                                                                  62,127,973 Dr
+2021-08-15 Client invoice AR-2021-00079               8,025,703   55,774,327 Dr
+                                                                  44,726,768 Dr
+2021-08-17 Credit note #3                933,360                  34,408,189 Dr
+                                                                  25,537,244 Dr
+2021-08-20 Client invoice AR-2021-00033               2,546,367   22,803,953 Dr
+                                                                  18,238,710 Dr
+2021-08-20 Client invoice AR-2021-00067               6,353,646   7,811,559 Dr
+                                                                  8,519,103 Dr
+2021-08-31 Client invoice AR-2021-00371               11,047,559  3,429,011 Dr
+                                                                  798,829 Cr
+2021-09-07 Client invoice AR-2021-00389               10,318,579  11,117,408 Cr
+                                                                  19,270,187 Cr
+2021-09-09 Client invoice AR-2021-00346               8,870,945   24,308,983 Cr
+                                                                  31,660,006 Cr
+2021-09-13 Client invoice AR-2021-00153               2,733,291   90,198,838 Dr
+
+2021-09-14 Client invoice AR-2021-00101               4,565,243   82,829,366 Dr
+                                                                  72,693,082 Dr
+2021-09-19 Client invoice AR-2021-00356               10,427,151  70,188,441 Dr
+                                                                  66,539,859 Dr
+2021-09-20 Credit note #25               707,544                  62,875,840 Dr
+                                                                  52,557,261 Dr
+2021-09-21 Client invoice AR-2021-00021               5,090,092   45,407,042 Dr
+                                                                  40,251,580 Dr
+2021-09-24 Client invoice AR-2021-00131               4,227,840   33,182,426 Dr
+                                                                  32,588,776 Dr
+2021-10-07 Client invoice AR-2021-00390               10,318,579  29,232,355 Dr
+                                                                  28,170,745 Dr
+2021-10-13 Client invoice AR-2021-00086               8,152,779
+
+2021-10-17 Client invoice AR-2021-00074               5,038,796
+
+2021-10-18 Client invoice AR-2021-00053               7,351,023
+
+2021-10-20 GST settlement (period        121,858,844
+                     20212)
+
+2021-10-22 Client invoice AR-2021-00038               7,369,472
+
+2021-10-27 Client invoice AR-2021-00377               10,136,284
+
+2021-11-03 Client invoice AR-2021-00006               2,504,641
+
+2021-11-03 Client invoice AR-2021-00110               3,648,582
+
+2021-11-04 Client invoice AR-2021-00063               3,664,019
+
+2021-11-06 Client invoice AR-2021-00391               10,318,579
+
+2021-11-08 Client invoice AR-2021-00127               7,150,219
+
+2021-11-10 Client invoice AR-2021-00136               5,155,462
+
+2021-11-10 Client invoice AR-2021-00423               7,069,154
+
+2021-11-10 Client invoice AR-2021-00477               593,650
+
+2021-11-12 Client invoice AR-2021-00106               3,356,421
+
+2021-11-17 Client invoice AR-2021-00485               1,061,610
+
+DOC-GLB-2021                                                      Page 37 of 60
+2021-11-20 Client invoice AR-2021-00093               4,229,055   23,941,690 Dr
+                                                                  13,514,539 Dr
+2021-11-20 Client invoice AR-2021-00357               10,427,151  2,466,980 Dr
+                                                                  9,671,255 Cr
+2021-11-23 Client invoice AR-2021-00372               11,047,559  17,696,958 Cr
+                                                                  28,015,537 Cr
+2021-12-01 Client invoice AR-2021-00406               12,138,235  30,409,575 Cr
+                                                                  39,280,520 Cr
+2021-12-03 Client invoice AR-2021-00080               8,025,703   49,416,804 Cr
+                                                                  52,150,095 Cr
+2021-12-06 Client invoice AR-2021-00392               10,318,579  56,864,296 Cr
+                                                                  67,182,875 Cr
+2021-12-07 Client invoice AR-2021-00162               2,394,038   73,536,521 Cr
+                                                                  78,704,683 Cr
+2021-12-10 Client invoice AR-2021-00347               8,870,945   82,326,292 Cr
+                                                                  94,464,527 Cr
+2021-12-15 Client invoice AR-2021-00378               10,136,284  78,745,583 Dr
+
+2021-12-25 Client invoice AR-2021-00154               2,733,291   68,318,432 Dr
+                                                                  61,249,278 Dr
+2022-01-04 Client invoice AR-2022-00121               4,714,201   62,791,233 Dr
+                                                                  57,752,437 Dr
+2022-01-05 Client invoice AR-2022-00393               10,318,579  47,616,153 Dr
+                                                                  37,297,574 Dr
+2022-01-07 Client invoice AR-2022-00068               6,353,646   34,751,207 Dr
+                                                                  30,523,367 Dr
+2022-01-07 Client invoice AR-2022-00158               5,168,162   28,129,329 Dr
+                                                                  28,997,537 Dr
+2022-01-12 Client invoice AR-2022-00167               3,621,609   21,473,373 Dr
+                                                                  14,833,755 Dr
+2022-01-14 Client invoice AR-2022-00407               12,138,235  12,762,232 Dr
+                                                                  9,405,811 Dr
+2022-01-19 GST settlement (period        173,210,110              1,641,748 Cr
+                     20213)                                       8,791,967 Cr
+
+2022-01-20 Client invoice AR-2022-00358               10,427,151
+
+2022-01-29 Client invoice AR-2022-00424               7,069,154
+
+2022-01-31 Credit note #29               1,541,955
+
+2022-02-02 Client invoice AR-2022-00075               5,038,796
+
+2022-02-02 Client invoice AR-2022-00379               10,136,284
+
+2022-02-04 Client invoice AR-2022-00394               10,318,579
+
+2022-02-06 Client invoice AR-2022-00034               2,546,367
+
+2022-02-06 Client invoice AR-2022-00132               4,227,840
+
+2022-02-06 Client invoice AR-2022-00163               2,394,038
+
+2022-02-07 Credit note #5                868,208
+
+2022-02-08 Client invoice AR-2022-00140               7,524,164
+
+2022-02-09 Client invoice AR-2022-00145               6,639,618
+
+2022-02-09 Client invoice AR-2022-00173               2,071,523
+
+2022-02-12 Client invoice AR-2022-00107               3,356,421
+
+2022-02-15 Client invoice AR-2022-00373               11,047,559
+
+2022-02-20 Client invoice AR-2022-00128               7,150,219
+
+DOC-GLB-2021                                                      Page 38 of 60
+2022-02-27 Client invoice AR-2022-00408           12,138,235 20,930,202 Cr
+
+2022-03-06 Client invoice AR-2022-00395           10,318,579 31,248,781 Cr
+
+2022-03-11 Client invoice AR-2022-00348           8,870,945 40,119,726 Cr
+
+2022-03-12 Client invoice AR-2022-00486           1,061,610 41,181,336 Cr
+
+2022-03-13 Client invoice AR-2022-00089           1,834,505 43,015,841 Cr
+
+2022-03-14 Client invoice AR-2022-00481           723,507  43,739,348 Cr
+
+2022-03-19 Credit note #8                547,857           43,191,491 Cr
+
+2022-03-19 Client invoice AR-2022-00168           3,621,609 46,813,100 Cr
+
+2022-03-23 Client invoice AR-2022-00081           8,025,703 54,838,803 Cr
+
+2022-03-23 Client invoice AR-2022-00359           10,427,151 65,265,954 Cr
+
+2022-03-23 Client invoice AR-2022-00380           10,136,284 75,402,238 Cr
+
+TOTALS                                   519,664,903 595,067,141 75,402,238 CR
+
+DOC-GLB-2021                                               Page 39 of 60
+ACCOUNT 2120 -- TDS PAYABLE (LIABILITY)
+
+DATE          VOUCHER / NARRATION     DEBIT      CREDIT   BALANCE
+2021-04-02    Vendor payment #12      926,348    882,203  882,203 Cr
+2021-04-02    Vendor payment #61                 836,108  1,718,311 Cr
+2021-04-07    Vendor payment #97      3,959,401  130,017  1,848,328 Cr
+2021-04-07    TDS deposited (202103)  1,482,660           921,980 Cr
+2021-04-11    Vendor payment #89      1,103,806  790,257  1,712,237 Cr
+2021-04-17    Vendor payment #270     1,491,180  177,737  1,889,974 Cr
+2021-04-23    Vendor payment #3       741,116    500,257  2,390,231 Cr
+2021-04-24    Vendor payment #51      933,939    300,845  2,691,076 Cr
+2021-04-26    Vendor payment #74                 341,977  3,033,053 Cr
+2021-05-01    Vendor payment #36                 507,090  3,540,143 Cr
+2021-05-07    TDS deposited (202104)                      419,258 Dr
+2021-05-08    Vendor payment #56                 397,587  21,671 Dr
+2021-05-28    Vendor payment #57                 288,171  266,500 Cr
+2021-05-31    Vendor payment #91                 289,812  556,312 Cr
+2021-06-07    Vendor payment #26                 455,945  1,012,257 Cr
+2021-06-07    TDS deposited (202105)                      470,403 Dr
+2021-06-09    Vendor payment #66                 33,779   436,624 Dr
+2021-06-15    Vendor payment #73                 135,429  301,195 Dr
+2021-06-26    Vendor payment #96                 478,653  177,458 Cr
+2021-07-07    TDS deposited (202106)                      926,348 Dr
+2021-07-09    Vendor payment #14                 856,721  69,627 Dr
+2021-07-15    Vendor payment #24                 634,459  564,832 Cr
+2021-08-04    Vendor payment #1                  385,294  950,126 Cr
+2021-08-07    TDS deposited (202107)                      541,054 Dr
+2021-08-17    Vendor payment #44                 355,822  185,232 Dr
+2021-09-05    Vendor payment #2                  303,678  118,446 Cr
+2021-09-07    TDS deposited (202108)                      622,670 Dr
+2021-09-19    Vendor payment #30                 630,261  7,591 Cr
+2021-10-03    Vendor payment #79                 526,321  533,912 Cr
+2021-10-07    TDS deposited (202109)                      400,027 Dr
+2021-10-10    Vendor payment #58                 532,245  132,218 Cr
+
+DOC-GLB-2021                                              Page 40 of 60
+2021-10-14    Vendor payment #47      3,165,295   942,427     1,074,645 Cr
+2021-10-19    Vendor payment #48      1,132,603   90,064      1,164,709 Cr
+2021-10-21    Vendor payment #53                  144,586     1,309,295 Cr
+2021-10-27    Vendor payment #324     3,552,835   929,652     2,238,947 Cr
+2021-11-07    TDS deposited (202110)  2,391,904               926,348 Dr
+2021-11-14    Vendor payment #95      3,485,299   369,344     557,004 Dr
+2021-11-23    Vendor payment #277     24,366,386  763,259     206,255 Cr
+2021-12-03    Vendor payment #326                 285,767     492,022 Cr
+2021-12-05    Vendor payment #76                  87,878      579,900 Cr
+2021-12-07    TDS deposited (202111)                          552,703 Dr
+2021-12-13    Vendor payment #114                 373,539     179,164 Dr
+2021-12-21    Vendor payment #115                 942,295     763,131 Cr
+2021-12-22    Vendor payment #280                 327,386     1,090,517 Cr
+2021-12-26    Vendor payment #113                 707,595     1,798,112 Cr
+2021-12-30    Vendor payment #327                 828,375     2,626,487 Cr
+2022-01-01    Vendor payment #272                 850,529     3,477,016 Cr
+2022-01-05    Vendor payment #117                 839,029     4,316,045 Cr
+2022-01-07    TDS deposited (202112)                          763,210 Cr
+2022-01-08    Vendor payment #269                 114,777     877,987 Cr
+2022-01-14    Vendor payment #275                 587,569     1,465,556 Cr
+2022-02-07    Vendor payment #4                   459,559     1,925,115 Cr
+2022-02-07    Vendor payment #312                 795,544     2,720,659 Cr
+2022-02-07    TDS deposited (202201)                          328,755 Cr
+2022-02-09    Vendor payment #39                  43,078      371,833 Cr
+2022-02-12    Vendor payment #111                 788,668     1,160,501 Cr
+2022-02-12    Vendor payment #315                 948,536     2,109,037 Cr
+2022-02-17    Vendor payment #321                 449,914     2,558,951 Cr
+2022-03-01    Vendor payment #78                  895,329     3,454,280 Cr
+2022-03-07    TDS deposited (202202)                          31,019 Dr
+2022-03-11    Vendor payment #309                 806,577     775,558 Cr
+2022-03-14    Vendor payment #323                 483,371     1,258,929 Cr
+TOTALS                                            25,625,315  1,258,929 CR
+
+DOC-GLB-2021                                                  Page 41 of 60
+ACCOUNT 2200 -- TERM LOANS (SECURED) (LIABILITY)
+
+DATE          VOUCHER / NARRATION          DEBIT CREDIT  BALANCE
+
+2021-10-01 Plant additions funded by term     1,371,500,000 1,371,500,000
+                     loan FY2021                                         Cr
+
+TOTALS                                     0  1,371,500,000 1,371,500,000
+
+                                                         CR
+
+DOC-GLB-2021                                                 Page 42 of 60
+ACCOUNT 4001 -- CONTRACT REVENUE -- ROADS & HIGHWAYS (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT  CREDIT      BALANCE
+2021-06-01    Client invoice AR-2021-00062  0      20,355,665  20,355,665 Cr
+2021-09-13    Client invoice AR-2021-00153         15,184,953  35,540,618 Cr
+2021-11-04    Client invoice AR-2021-00063         20,355,665  55,896,283 Cr
+2021-11-10    Client invoice AR-2021-00136         28,641,458  84,537,741 Cr
+2021-12-25    Client invoice AR-2021-00154         15,184,953  99,722,694 Cr
+TOTALS                                             99,722,694  99,722,694 CR
+
+DOC-GLB-2021                                                   Page 43 of 60
+ACCOUNT 4002 -- CONTRACT REVENUE -- BRIDGES & FLYOVERS (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT CREDIT    BALANCE
+2021-04-27    Client invoice AR-2021-00078                  44,587,244 Cr
+2021-06-16    Client invoice AR-2021-00100     44,587,244   69,949,706 Cr
+2021-08-15    Client invoice AR-2021-00079                  114,536,950 Cr
+2021-09-14    Client invoice AR-2021-00101     25,362,462   139,899,412 Cr
+2021-12-03    Client invoice AR-2021-00080                  184,486,656 Cr
+2021-12-07    Client invoice AR-2021-00162     44,587,244   197,786,869 Cr
+2022-02-06    Client invoice AR-2022-00163                  211,087,082 Cr
+2022-02-09    Client invoice AR-2022-00173     25,362,462   222,595,545 Cr
+2022-03-23    Client invoice AR-2022-00081                  267,182,789 Cr
+TOTALS                                         44,587,244   267,182,789 CR
+
+                                               13,300,213
+
+                                               13,300,213
+
+                                               11,508,463
+
+                                               44,587,244
+
+                                            0  267,182,789
+
+DOC-GLB-2021                                                Page 44 of 60
+ACCOUNT 4003 -- CONTRACT REVENUE -- WATER TREATMENT (REVENUE)
+
+DATE          VOUCHER / NARRATION        DEBIT      CREDIT  BALANCE
+
+2021-04-13 Client invoice AR-2021-00125             39,723,444 39,723,444 Cr
+
+2021-04-27 Client invoice AR-2021-00051             40,839,022 80,562,466 Cr
+
+2021-05-21 Client invoice AR-2021-00109             20,269,904 100,832,370 Cr
+
+2021-07-23 Client invoice AR-2021-00052             40,839,022 141,671,392 Cr
+
+2021-07-27 Client invoice AR-2021-00126             39,723,444 181,394,836 Cr
+
+2021-08-17 Credit note #3                5,185,334          176,209,502 Cr
+
+2021-10-18 Client invoice AR-2021-00053             40,839,022 217,048,524 Cr
+
+2021-11-03 Client invoice AR-2021-00110             20,269,904 237,318,428 Cr
+
+2021-11-08 Client invoice AR-2021-00127             39,723,444 277,041,872 Cr
+
+2022-02-09 Client invoice AR-2022-00145             36,886,771 313,928,643 Cr
+
+2022-02-20 Client invoice AR-2022-00128             39,723,444 353,652,087 Cr
+
+TOTALS                                   5,185,334 358,837,421 353,652,087 CR
+
+DOC-GLB-2021                                                Page 45 of 60
+ACCOUNT 4004 -- CONTRACT REVENUE -- SEWERAGE & DRAINAGE (REVENUE)
+
+DATE          VOUCHER / NARRATION        DEBIT      CREDIT  BALANCE
+
+2021-04-01 Client invoice AR-2021-00066             35,298,034 35,298,034 Cr
+
+2021-04-11 Credit note #7                3,573,772          31,724,262 Cr
+
+2021-04-25 Client invoice AR-2021-00037             40,941,514 72,665,776 Cr
+
+2021-05-03 Credit note #10               1,676,209          70,989,567 Cr
+
+2021-05-17 Client invoice AR-2021-00117             14,929,558 85,919,125 Cr
+
+2021-06-27 Client invoice AR-2021-00085             45,293,221 131,212,346 Cr
+
+2021-07-02 Client invoice AR-2021-00073             27,993,313 159,205,659 Cr
+
+2021-07-06 Client invoice AR-2021-00005             13,914,676 173,120,335 Cr
+
+2021-07-24 Client invoice AR-2021-00088             10,191,698 183,312,033 Cr
+
+2021-07-24 Client invoice AR-2021-00118             14,929,558 198,241,591 Cr
+
+2021-08-20 Client invoice AR-2021-00067             35,298,034 233,539,625 Cr
+
+2021-09-21 Client invoice AR-2021-00021             28,278,294 261,817,919 Cr
+
+2021-10-13 Client invoice AR-2021-00086             45,293,221 307,111,140 Cr
+
+2021-10-17 Client invoice AR-2021-00074             27,993,313 335,104,453 Cr
+
+2021-10-22 Client invoice AR-2021-00038             40,941,514 376,045,967 Cr
+
+2021-11-03 Client invoice AR-2021-00006             13,914,676 389,960,643 Cr
+
+2022-01-07 Client invoice AR-2022-00068             35,298,034 425,258,677 Cr
+
+2022-02-02 Client invoice AR-2022-00075             27,993,313 453,251,990 Cr
+
+2022-02-07 Credit note #5                4,823,380          448,428,610 Cr
+
+2022-03-13 Client invoice AR-2022-00089             10,191,698 458,620,308 Cr
+
+2022-03-19 Credit note #8                3,043,650          455,576,658 Cr
+
+TOTALS                                   13,117,011 468,693,669 455,576,658 CR
+
+DOC-GLB-2021                                                Page 46 of 60
+ACCOUNT 4005 -- CONTRACT REVENUE -- BUILDINGS (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT CREDIT    BALANCE
+2021-05-12    Client invoice AR-2021-00060                  31,518,216 Cr
+2021-05-12    Client invoice AR-2021-00104     31,518,216   50,165,004 Cr
+2021-08-12    Client invoice AR-2021-00105                  68,811,792 Cr
+2021-11-12    Client invoice AR-2021-00106     18,646,788   87,458,580 Cr
+2022-01-12    Client invoice AR-2022-00167                  107,578,632 Cr
+2022-02-12    Client invoice AR-2022-00107     18,646,788   126,225,420 Cr
+2022-03-19    Client invoice AR-2022-00168                  146,345,472 Cr
+TOTALS                                         18,646,788   146,345,472 CR
+
+                                               20,120,052
+
+                                               18,646,788
+
+                                               20,120,052
+
+                                            0  146,345,472
+
+DOC-GLB-2021                                                Page 47 of 60
+ACCOUNT 4006 -- CONTRACT REVENUE -- INDUSTRIAL EPC (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT CREDIT    BALANCE
+2021-08-20    Client invoice AR-2021-00033                  14,146,485 Cr
+2021-09-24    Client invoice AR-2021-00131     14,146,485   37,634,485 Cr
+2022-01-07    Client invoice AR-2022-00158                  66,346,498 Cr
+2022-02-06    Client invoice AR-2022-00034     23,488,000   80,492,983 Cr
+2022-02-06    Client invoice AR-2022-00132                  103,980,983 Cr
+2022-02-08    Client invoice AR-2022-00140     28,712,013   145,781,896 Cr
+TOTALS                                                      145,781,896 CR
+                                               14,146,485
+
+                                               23,488,000
+
+                                               41,800,913
+
+                                            0  145,781,896
+
+DOC-GLB-2021                                                  Page 48 of 60
+ACCOUNT 4007 -- CONTRACT REVENUE -- IRRIGATION (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT  CREDIT      BALANCE
+2021-07-02    Client invoice AR-2021-00092  0      23,494,753  23,494,753 Cr
+2021-07-26    Client invoice AR-2021-00120         26,190,011  49,684,764 Cr
+2021-11-20    Client invoice AR-2021-00093         23,494,753  73,179,517 Cr
+2022-01-04    Client invoice AR-2022-00121         26,190,011  99,369,528 Cr
+TOTALS                                             99,369,528  99,369,528 CR
+
+DOC-GLB-2021                                                   Page 49 of 60
+ACCOUNT 4008 -- CONTRACT REVENUE -- TUNNELS (REVENUE)
+
+DATE          VOUCHER / NARRATION        DEBIT      CREDIT  BALANCE
+
+2021-05-19 Client invoice AR-2021-00354             57,928,618 57,928,618 Cr
+
+2021-06-05 Credit note #24               5,400,214          52,528,404 Cr
+
+2021-06-09 Client invoice AR-2021-00345             49,283,029 101,811,433 Cr
+
+2021-06-27 Credit note #23               2,818,419          98,993,014 Cr
+
+2021-07-19 Client invoice AR-2021-00355             57,928,618 156,921,632 Cr
+
+2021-09-09 Client invoice AR-2021-00346             49,283,029 206,204,661 Cr
+
+2021-09-19 Client invoice AR-2021-00356             57,928,618 264,133,279 Cr
+
+2021-11-10 Client invoice AR-2021-00423             39,273,079 303,406,358 Cr
+
+2021-11-20 Client invoice AR-2021-00357             57,928,618 361,334,976 Cr
+
+2021-12-10 Client invoice AR-2021-00347             49,283,029 410,618,005 Cr
+
+2022-01-20 Client invoice AR-2022-00358             57,928,618 468,546,623 Cr
+
+2022-01-29 Client invoice AR-2022-00424             39,273,079 507,819,702 Cr
+
+2022-03-11 Client invoice AR-2022-00348             49,283,029 557,102,731 Cr
+
+2022-03-23 Client invoice AR-2022-00359             57,928,618 615,031,349 Cr
+
+TOTALS                                   8,218,633 623,249,982 615,031,349 CR
+
+DOC-GLB-2021                                                Page 50 of 60
+ACCOUNT 4009 -- CONTRACT REVENUE -- LARGE BRIDGES (REVENUE)
+
+DATE          VOUCHER / NARRATION        DEBIT      CREDIT  BALANCE
+
+2021-12-01 Client invoice AR-2021-00406             67,434,643 67,434,643 Cr
+
+2022-01-14 Client invoice AR-2022-00407             67,434,643 134,869,286 Cr
+
+2022-01-31 Credit note #29               8,566,418          126,302,868 Cr
+
+2022-02-27 Client invoice AR-2022-00408             67,434,643 193,737,511 Cr
+
+TOTALS                                   8,566,418 202,303,929 193,737,511 CR
+
+DOC-GLB-2021                                                 Page 51 of 60
+ACCOUNT 4010 -- CONTRACT REVENUE -- EXPRESSWAYS (REVENUE)
+
+DATE          VOUCHER / NARRATION        DEBIT      CREDIT  BALANCE
+
+2021-06-07 Client invoice AR-2021-00370             61,375,329 61,375,329 Cr
+
+2021-08-31 Client invoice AR-2021-00371             61,375,329 122,750,658 Cr
+
+2021-09-07 Client invoice AR-2021-00389             57,325,441 180,076,099 Cr
+
+2021-09-20 Credit note #25               3,930,800          176,145,299 Cr
+
+2021-10-07 Client invoice AR-2021-00390             57,325,441 233,470,740 Cr
+
+2021-10-27 Client invoice AR-2021-00377             56,312,692 289,783,432 Cr
+
+2021-11-06 Client invoice AR-2021-00391             57,325,441 347,108,873 Cr
+
+2021-11-23 Client invoice AR-2021-00372             61,375,329 408,484,202 Cr
+
+2021-12-06 Client invoice AR-2021-00392             57,325,441 465,809,643 Cr
+
+2021-12-15 Client invoice AR-2021-00378             56,312,692 522,122,335 Cr
+
+2022-01-05 Client invoice AR-2022-00393             57,325,441 579,447,776 Cr
+
+2022-02-02 Client invoice AR-2022-00379             56,312,692 635,760,468 Cr
+
+2022-02-04 Client invoice AR-2022-00394             57,325,441 693,085,909 Cr
+
+2022-02-15 Client invoice AR-2022-00373             61,375,329 754,461,238 Cr
+
+2022-03-06 Client invoice AR-2022-00395             57,325,441 811,786,679 Cr
+
+2022-03-23 Client invoice AR-2022-00380             56,312,692 868,099,371 Cr
+
+TOTALS                                   3,930,800 872,030,171 868,099,371 CR
+
+DOC-GLB-2021                                                Page 52 of 60
+ACCOUNT 4012 -- CONTRACT REVENUE -- SMALL BUILDINGS (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT  CREDIT      BALANCE
+2021-05-04    Client invoice AR-2021-00476  0      3,298,059   3,298,059 Cr
+2021-11-10    Client invoice AR-2021-00477         3,298,059   6,596,118 Cr
+2021-11-17    Client invoice AR-2021-00485         5,897,834   12,493,952 Cr
+2022-03-12    Client invoice AR-2022-00486         5,897,834   18,391,786 Cr
+2022-03-14    Client invoice AR-2022-00481         4,019,487   22,411,273 Cr
+TOTALS                                             22,411,273  22,411,273 CR
+
+DOC-GLB-2021                                                   Page 53 of 60
+ACCOUNT 5100 -- MATERIALS CONSUMED (EXPENSE)
+
+DATE          VOUCHER / NARRATION  DEBIT        CREDIT  BALANCE
+2021-07-17    Vendor bill #77      26,612,271   0       26,612,271 Dr
+2021-09-08    Vendor bill #127     18,467,245           45,079,516 Dr
+2021-09-21    Vendor bill #62      4,503,239            49,582,755 Dr
+2021-10-17    Vendor bill #106     34,096,075           83,678,830 Dr
+2021-12-28    Vendor bill #405     47,426,839           131,105,669 Dr
+2022-01-04    Vendor bill #399     40,328,872           171,434,541 Dr
+2022-01-23    Vendor bill #419     41,467,506           212,902,047 Dr
+2022-02-19    Vendor bill #102     48,769,272           261,671,319 Dr
+2022-03-12    Vendor bill #416     28,755,291           290,426,610 Dr
+TOTALS                             290,426,610          290,426,610 DR
+
+DOC-GLB-2021                                            Page 54 of 60
+ACCOUNT 5110 -- SUBCONTRACTING CHARGES (EXPENSE)
+
+DATE          VOUCHER / NARRATION  DEBIT        CREDIT  BALANCE
+2021-04-03    Vendor bill #70      36,460,016   0       36,460,016 Dr
+2021-05-17    Vendor bill #93      6,771,475            43,231,491 Dr
+2021-06-17    Vendor bill #29      31,722,999           74,954,490 Dr
+2021-07-17    Vendor bill #95      17,456,793           92,411,283 Dr
+2021-07-20    Vendor bill #57      17,791,142           110,202,425 Dr
+2021-08-10    Vendor bill #61      47,121,355           157,323,780 Dr
+2021-11-10    Vendor bill #68      16,942,285           174,266,065 Dr
+2021-11-12    Vendor bill #417     14,288,386           188,554,451 Dr
+2021-11-23    Vendor bill #352     29,378,454           217,932,905 Dr
+2022-03-01    Vendor bill #97      12,821,541           230,754,446 Dr
+2022-03-22    Vendor bill #65      10,465,297           241,219,743 Dr
+TOTALS                             241,219,743          241,219,743 DR
+
+DOC-GLB-2021                                            Page 55 of 60
+ACCOUNT 5120 -- EQUIPMENT HIRE CHARGES (EXPENSE)
+
+DATE          VOUCHER / NARRATION  DEBIT        CREDIT  BALANCE
+2021-04-05    Vendor bill #114     28,642,712   0       28,642,712 Dr
+2021-04-13    Vendor bill #92      3,207,091            31,849,803 Dr
+2021-05-25    Vendor bill #18      42,836,053           74,685,856 Dr
+2021-07-13    Vendor bill #37      31,513,091           106,198,947 Dr
+2021-07-14    Vendor bill #342     48,639,128           154,838,075 Dr
+2021-09-22    Vendor bill #357     38,162,968           193,001,043 Dr
+2021-10-11    Vendor bill #98      4,393,928            197,394,971 Dr
+2021-11-15    Vendor bill #145     39,433,427           236,828,398 Dr
+2021-11-17    Vendor bill #149     47,114,788           283,943,186 Dr
+2022-01-09    Vendor bill #51      376,927              284,320,113 Dr
+2022-01-14    Vendor bill #402     39,777,233           324,097,346 Dr
+2022-02-23    Vendor bill #358     15,495,084           339,592,430 Dr
+2022-03-12    Vendor bill #32      41,451,627           381,044,057 Dr
+TOTALS                             381,044,057          381,044,057 DR
+
+DOC-GLB-2021                                            Page 56 of 60
+ACCOUNT 5130 -- SITE SERVICES (EXPENSE)
+
+DATE          VOUCHER / NARRATION  DEBIT        CREDIT  BALANCE
+2021-04-25    Vendor bill #85      1,688,970    0       1,688,970 Dr
+2021-07-05    Vendor bill #43      43,771,578           45,460,548 Dr
+2021-07-11    Vendor bill #1       19,264,739           64,725,287 Dr
+2021-08-02    Vendor bill #2       15,183,942           79,909,229 Dr
+2021-08-13    Vendor bill #69      7,229,312            87,138,541 Dr
+2021-08-15    Vendor bill #101     26,316,096           113,454,637 Dr
+2021-09-17    Vendor bill #361     20,933,697           134,388,334 Dr
+2021-11-03    Vendor bill #94      46,053,513           180,441,847 Dr
+2021-11-06    Vendor bill #148     18,676,977           199,118,824 Dr
+2021-11-08    Vendor bill #147     35,379,792           234,498,616 Dr
+2021-11-12    Vendor bill #50      2,153,926            236,652,542 Dr
+2021-11-16    Vendor bill #365     16,369,312           253,021,854 Dr
+2021-11-21    Vendor bill #344     5,738,891            258,760,745 Dr
+2021-12-04    Vendor bill #418     41,418,787           300,179,532 Dr
+2021-12-07    Vendor bill #156     7,739,427            307,918,959 Dr
+2021-12-12    Vendor bill #152     41,951,496           349,870,455 Dr
+2021-12-26    Vendor bill #5       22,977,973           372,848,428 Dr
+2022-01-11    Vendor bill #360     6,998,904            379,847,332 Dr
+TOTALS                             379,847,332          379,847,332 DR
+
+DOC-GLB-2021                                            Page 57 of 60
+ACCOUNT 5140 -- SPECIALIST WORKS (EXPENSE)
+
+DATE          VOUCHER / NARRATION  DEBIT        CREDIT  BALANCE
+2021-04-20    Vendor bill #121     14,490,631   0       14,490,631 Dr
+2021-04-29    Vendor bill #128     23,932,685           38,423,316 Dr
+2021-05-10    Vendor bill #76      14,408,569           52,831,885 Dr
+2021-09-12    Vendor bill #45      29,052,208           81,884,093 Dr
+2021-09-26    Vendor bill #415     46,482,637           128,366,730 Dr
+2021-12-08    Vendor bill #347     42,526,468           170,893,198 Dr
+2021-12-14    Vendor bill #414     24,168,562           195,061,760 Dr
+2021-12-25    Vendor bill #100     44,766,477           239,828,237 Dr
+2022-01-21    Vendor bill #412     22,495,730           262,323,967 Dr
+2022-02-07    Vendor bill #420     8,463,815            270,787,782 Dr
+2022-02-23    Vendor bill #144     33,444,675           304,232,457 Dr
+2022-03-02    Vendor bill #20      37,849,614           342,082,071 Dr
+TOTALS                             342,082,071          342,082,071 DR
+
+DOC-GLB-2021                                            Page 58 of 60
+ACCOUNT 5200 -- SALARIES & SITE OVERHEADS (EXPENSE)
+
+DATE          VOUCHER / NARRATION             DEBIT       CREDIT BALANCE
+                                              60,384,663                60,384,663 Dr
+2021-04-28 Monthly salaries & site overheads
+                     (202104)
+
+2021-05-28 Monthly salaries & site overheads  60,384,663     120,769,326
+                     (202105)                 60,384,663     Dr
+                                              60,384,663
+2021-06-28 Monthly salaries & site overheads  60,384,663     181,153,989
+                     (202106)                 60,384,663     Dr
+                                              60,384,663
+2021-07-28 Monthly salaries & site overheads  60,384,663     241,538,652
+                     (202107)                 60,384,663     Dr
+                                              60,384,663
+2021-08-28 Monthly salaries & site overheads  60,384,663     301,923,315
+                     (202108)                 60,384,665     Dr
+                                              724,615,958 0
+2021-09-28 Monthly salaries & site overheads                 362,307,978
+                     (202109)                                Dr
+
+2021-10-28 Monthly salaries & site overheads                 422,692,641
+                     (202110)                                Dr
+
+2021-11-28 Monthly salaries & site overheads                 483,077,304
+                     (202111)                                Dr
+
+2021-12-28 Monthly salaries & site overheads                 543,461,967
+                     (202112)                                Dr
+
+2022-01-28 Monthly salaries & site overheads                 603,846,630
+                     (202101)                                Dr
+
+2022-02-28 Monthly salaries & site overheads                 664,231,293
+                     (202102)                                Dr
+
+2022-03-28 Monthly salaries & site overheads                 724,615,958
+                     (202103)                                Dr
+
+TOTALS                                                       724,615,958
+                                                             DR
+
+DOC-GLB-2021                                                 Page 59 of 60
+ACCOUNT 5300 -- DEPRECIATION EXPENSE (EXPENSE)
+
+DATE          VOUCHER / NARRATION         DEBIT        CREDIT  BALANCE
+2022-03-31    Annual depreciation FY2021  652,180,000  0       652,180,000 Dr
+TOTALS                                    652,180,000          652,180,000 DR
+
+Accounts Officer  Authorised Signatory, National Infrastructure Corp. Ltd.
+
+DOC-GLB-2021                                                   Page 60 of 60
+

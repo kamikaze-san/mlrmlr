@@ -1,0 +1,72 @@
+=== SHEET: BOQ ===
+Item No	Description	Unit	Quantity	Rate (INR)	Amount (INR)
+1	Earthwork in excavation & embankment	cum	419155.621	280	117363574
+2	Granular sub-base (GSB)	cum	64798.105	1598	103547372
+3	Wet mix macadam (WMM)	cum	35288.227	1900	67047631
+4	Dense bituminous macadam (DBM)	MT	22466.328	6104	137134468
+5	Bituminous concrete (BC)	MT	19964.148	6526	130286027
+6	RCC M30 for structures	cum	8668.139	6542	56706968
+7	Reinforcement steel Fe500	MT	855.971	74379	63666264
+TOTAL					675752304
+=== SHEET: Measurements ===
+RA No	Measured On	Item No	Description	Qty Measured	Amount (INR)
+1	2021-10-27 00:00:00	3	Wet mix macadam (WMM)	7229.711	13736451
+1	2021-10-27 00:00:00	5	Bituminous concrete (BC)	2797.374	18255660
+1	2021-10-27 00:00:00	6	RCC M30 for structures	2254.89	14751488
+1	2021-10-27 00:00:00	7	Reinforcement steel Fe500	128.653	9569093
+2	2021-12-15 00:00:00	3	Wet mix macadam (WMM)	6645.654	12626742
+2	2021-12-15 00:00:00	4	Dense bituminous macadam (DBM)	1495.814	9130448
+2	2021-12-15 00:00:00	5	Bituminous concrete (BC)	1825.018	11910065
+2	2021-12-15 00:00:00	6	RCC M30 for structures	1676.255	10966059
+2	2021-12-15 00:00:00	7	Reinforcement steel Fe500	157.025	11679378
+3	2022-02-02 00:00:00	1	Earthwork in excavation & embankment	25762.189	7213413
+3	2022-02-02 00:00:00	2	Granular sub-base (GSB)	10234.161	16354190
+3	2022-02-02 00:00:00	3	Wet mix macadam (WMM)	3113.481	5915614
+3	2022-02-02 00:00:00	5	Bituminous concrete (BC)	2324.416	15169136
+3	2022-02-02 00:00:00	6	RCC M30 for structures	1782.381	11660339
+4	2022-03-23 00:00:00	4	Dense bituminous macadam (DBM)	4139.754	25269058
+4	2022-03-23 00:00:00	6	RCC M30 for structures	3062.308	20033620
+4	2022-03-23 00:00:00	7	Reinforcement steel Fe500	148.026	11010014
+5	2022-05-11 00:00:00	3	Wet mix macadam (WMM)	11045.631	20986699
+5	2022-05-11 00:00:00	4	Dense bituminous macadam (DBM)	1837.078	11213524
+5	2022-05-11 00:00:00	5	Bituminous concrete (BC)	3694.831	24112469
+6	2022-06-29 00:00:00	1	Earthwork in excavation & embankment	24057.396	6736071
+6	2022-06-29 00:00:00	2	Granular sub-base (GSB)	8691.465	13888961
+6	2022-06-29 00:00:00	3	Wet mix macadam (WMM)	4245.381	8066224
+6	2022-06-29 00:00:00	4	Dense bituminous macadam (DBM)	1792.847	10943538
+6	2022-06-29 00:00:00	5	Bituminous concrete (BC)	1064.682	6948112
+6	2022-06-29 00:00:00	7	Reinforcement steel Fe500	130.814	9729786
+7	2022-08-17 00:00:00	2	Granular sub-base (GSB)	19496.615	31155591
+7	2022-08-17 00:00:00	3	Wet mix macadam (WMM)	5574.725	10591977
+7	2022-08-17 00:00:00	7	Reinforcement steel Fe500	195.823	14565124
+8	2022-10-05 00:00:00	1	Earthwork in excavation & embankment	27414.104	7675949
+8	2022-10-05 00:00:00	3	Wet mix macadam (WMM)	4500.007	8550013
+8	2022-10-05 00:00:00	4	Dense bituminous macadam (DBM)	2323.743	14184126
+8	2022-10-05 00:00:00	5	Bituminous concrete (BC)	1388.959	9064345
+8	2022-10-05 00:00:00	6	RCC M30 for structures	1176.847	7698936
+8	2022-10-05 00:00:00	7	Reinforcement steel Fe500	122.875	9139323
+9	2022-11-23 00:00:00	2	Granular sub-base (GSB)	8943.472	14291669
+9	2022-11-23 00:00:00	3	Wet mix macadam (WMM)	7012.304	13323377
+9	2022-11-23 00:00:00	5	Bituminous concrete (BC)	1742.01	11368357
+9	2022-11-23 00:00:00	6	RCC M30 for structures	1230.845	8052191
+9	2022-11-23 00:00:00	7	Reinforcement steel Fe500	124.727	9277098
+10	2023-01-11 00:00:00	2	Granular sub-base (GSB)	16286.795	26026298
+10	2023-01-11 00:00:00	5	Bituminous concrete (BC)	1212.222	7910959
+10	2023-01-11 00:00:00	6	RCC M30 for structures	3420.274	22375435
+11	2023-03-01 00:00:00	1	Earthwork in excavation & embankment	58253.125	16310875
+11	2023-03-01 00:00:00	2	Granular sub-base (GSB)	10774.169	17217122
+11	2023-03-01 00:00:00	4	Dense bituminous macadam (DBM)	819.566	5002633
+11	2023-03-01 00:00:00	6	RCC M30 for structures	1577.111	10317463
+11	2023-03-01 00:00:00	7	Reinforcement steel Fe500	100.359	7464599
+12	2023-04-19 00:00:00	1	Earthwork in excavation & embankment	43848.311	12277527
+12	2023-04-19 00:00:00	3	Wet mix macadam (WMM)	6028.868	11454850
+12	2023-04-19 00:00:00	4	Dense bituminous macadam (DBM)	1669.201	10188803
+12	2023-04-19 00:00:00	5	Bituminous concrete (BC)	543.013	3543706
+12	2023-04-19 00:00:00	6	RCC M30 for structures	1047.427	6852270
+12	2023-04-19 00:00:00	7	Reinforcement steel Fe500	161.276	11995536
+TOTAL					675752304
+=== SHEET: Notes ===
+Bill of Quantities and measurement register — contract 73.
+Agency: National Infrastructure Corp. Ltd..
+Quantities are as measured jointly and recorded in the measurement book.
+The measurement total reconciles to the running-account bills raised.

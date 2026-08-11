@@ -1,0 +1,525 @@
+=== SHEET: AR Ageing ===
+Invoice No	Client	Invoice Date	Invoiced (INR)	Status	Received (INR)	Outstanding (INR)
+AR-2019-00007	National Special Projects Office	2019-07-06	20108242	paid	22320149	-2211907
+AR-2019-00008	National Special Projects Office	2019-09-17	20108242	paid	22320149	-2211907
+AR-2019-00017	Tamil Nadu Municipal Corporation	2019-10-02	28278294	due	0	28278294
+AR-2019-00012	Arunodaya Infrastructure	2019-10-11	44148703	paid	49005060	-4856357
+AR-2019-00009	National Special Projects Office	2019-11-29	20108242	due	0	20108242
+AR-2019-00054	Public Health Engineering Dept, Odisha	2019-12-01	31518216	due	0	31518216
+AR-2019-00022	Arunodaya Infrastructure	2019-12-20	36764185	paid	40808246	-4044061
+AR-2020-00040	Meridian Constructors & Co.	2020-01-01	25452617	paid	29525036	-4072419
+AR-2020-00013	Arunodaya Infrastructure	2020-02-04	44148703	paid	49005060	-4856357
+AR-2020-00010	National Special Projects Office	2020-02-10	20108242	paid	22320149	-2211907
+AR-2020-00046	National Expressway Development Authority	2020-02-15	40839022	due	0	40839022
+AR-2020-00023	Arunodaya Infrastructure	2020-02-20	36764185	due	0	36764185
+AR-2020-00055	Public Health Engineering Dept, Odisha	2020-02-27	31518216	paid	34985220	-3467004
+AR-2020-00041	Meridian Constructors & Co.	2020-03-11	25452617	due	0	25452617
+AR-2020-00001	Trishakti Power Generation Corporation	2020-03-13	13914676	paid	15445291	-1530615
+AR-2020-00030	Jal Nigam, Gujarat	2020-03-26	14146485	part_paid	7851299	6295186
+AR-2020-00018	Tamil Nadu Municipal Corporation	2020-03-30	28278294	part_paid	16401411	11876883
+AR-2020-00024	Arunodaya Infrastructure	2020-04-22	36764185	paid	40808246	-4044061
+AR-2020-00011	National Special Projects Office	2020-04-23	20108242	paid	22320149	-2211907
+AR-2020-00035	Jal Nigam, Gujarat	2020-04-30	40941514	paid	45445081	-4503567
+AR-2020-00047	National Expressway Development Authority	2020-05-12	40839022	paid	45331314	-4492292
+AR-2020-00042	Meridian Constructors & Co.	2020-05-20	25452617	part_paid	14762517	10690100
+AR-2020-00056	Public Health Engineering Dept, Odisha	2020-05-25	31518216	due	0	31518216
+AR-2020-00014	Arunodaya Infrastructure	2020-05-30	44148703	paid	49005060	-4856357
+AR-2020-00025	Arunodaya Infrastructure	2020-06-23	36764185	paid	40808246	-4044061
+AR-2020-00366	Subarnarekha Valley Corporation	2020-07-05	61375329	paid	71195382	-9820053
+AR-2020-00002	Trishakti Power Generation Corporation	2020-07-11	13914676	due	0	13914676
+AR-2020-00043	Meridian Constructors & Co.	2020-07-29	25452617	paid	29525036	-4072419
+AR-2020-00082	National Expressway Development Authority	2020-08-05	45293221	paid	50275475	-4982254
+AR-2020-00048	National Expressway Development Authority	2020-08-08	40839022	paid	45331314	-4492292
+AR-2020-00057	Public Health Engineering Dept, Odisha	2020-08-21	31518216	paid	34985220	-3467004
+AR-2020-00026	Arunodaya Infrastructure	2020-08-24	36764185	part_paid	20404123	16360062
+AR-2020-00031	Jal Nigam, Gujarat	2020-09-13	14146485	due	0	14146485
+AR-2020-00097	Lakshya Engineering & Construction	2020-09-20	25362462	due	0	25362462
+AR-2020-00015	Arunodaya Infrastructure	2020-09-23	44148703	due	0	44148703
+AR-2020-00019	Tamil Nadu Municipal Corporation	2020-09-26	28278294	paid	32802821	-4524527
+AR-2020-00367	Subarnarekha Valley Corporation	2020-09-27	61375329	paid	71195382	-9820053
+AR-2020-00044	Meridian Constructors & Co.	2020-10-07	25452617	due	0	25452617
+AR-2020-00027	Arunodaya Infrastructure	2020-10-25	36764185	paid	40808246	-4044061
+AR-2020-00114	Trishakti Power Generation Corporation	2020-10-25	14929558	paid	16571810	-1642252
+AR-2020-00036	Jal Nigam, Gujarat	2020-10-27	40941514	paid	45445081	-4503567
+AR-2020-00049	National Expressway Development Authority	2020-11-03	40839022	part_paid	22665657	18173365
+AR-2020-00003	Trishakti Power Generation Corporation	2020-11-08	13914676	paid	15445291	-1530615
+AR-2020-00102	Suvarna Projects Limited	2020-11-09	18646788	paid	20697935	-2051147
+AR-2020-00065	Trishakti Power Generation Corporation	2020-11-11	35298034	paid	40945720	-5647686
+AR-2020-00058	Public Health Engineering Dept, Odisha	2020-11-17	31518216	paid	34985220	-3467004
+AR-2020-00083	National Expressway Development Authority	2020-11-22	45293221	due	0	45293221
+AR-2020-00071	Lakshya Engineering & Construction	2020-11-28	27993313	paid	31072578	-3079265
+AR-2020-00087	National Special Projects Office	2020-12-04	10191698	due	0	10191698
+AR-2020-00108	Subarnarekha Valley Corporation	2020-12-06	20269904	part_paid	11756544	8513360
+AR-2020-00343	Suvarna Projects Limited	2020-12-08	49283029	due	0	49283029
+AR-2020-00045	Meridian Constructors & Co.	2020-12-16	25452617	paid	29525036	-4072419
+AR-2020-00098	Lakshya Engineering & Construction	2020-12-19	25362462	paid	28152333	-2789871
+AR-2020-00368	Subarnarekha Valley Corporation	2020-12-21	61375329	due	0	61375329
+AR-2020-00028	Arunodaya Infrastructure	2020-12-26	36764185	paid	40808246	-4044061
+AR-2020-00061	Mahanadi Steel Corporation	2020-12-27	20355665	paid	22594788	-2239123
+AR-2020-00124	Meridian Constructors & Co.	2020-12-30	39723444	paid	44093023	-4369579
+AR-2021-00115	Trishakti Power Generation Corporation	2021-01-01	14929558	paid	16571810	-1642252
+AR-2021-00077	Meridian Constructors & Co.	2021-01-07	44587244	paid	49491841	-4904597
+AR-2021-00352	Public Health Engineering Dept, Odisha	2021-01-15	57928618	part_paid	32150383	25778235
+AR-2021-00016	Arunodaya Infrastructure	2021-01-17	44148703	paid	49005060	-4856357
+AR-2021-00050	National Expressway Development Authority	2021-01-29	40839022	paid	45331314	-4492292
+AR-2021-00103	Suvarna Projects Limited	2021-02-09	18646788	paid	20697935	-2051147
+AR-2021-00091	Subarnarekha Valley Corporation	2021-02-11	23494753	due	0	23494753
+AR-2021-00059	Public Health Engineering Dept, Odisha	2021-02-13	31518216	paid	34985220	-3467004
+AR-2021-00119	Subarnarekha Valley Corporation	2021-02-15	26190011	paid	29070912	-2880901
+AR-2021-00029	Arunodaya Infrastructure	2021-02-26	36764185	paid	40808246	-4044061
+AR-2021-00032	Jal Nigam, Gujarat	2021-03-02	14146485	due	0	14146485
+AR-2021-00004	Trishakti Power Generation Corporation	2021-03-08	13914676	paid	15445291	-1530615
+AR-2021-00116	Trishakti Power Generation Corporation	2021-03-10	14929558	part_paid	8285906	6643652
+AR-2021-00344	Suvarna Projects Limited	2021-03-10	49283029	paid	54704163	-5421134
+AR-2021-00084	National Expressway Development Authority	2021-03-10	45293221	paid	50275475	-4982254
+AR-2021-00369	Subarnarekha Valley Corporation	2021-03-15	61375329	paid	71195382	-9820053
+AR-2021-00072	Lakshya Engineering & Construction	2021-03-16	27993313	part_paid	15536289	12457024
+AR-2021-00353	Public Health Engineering Dept, Odisha	2021-03-18	57928618	paid	64300767	-6372149
+AR-2021-00099	Lakshya Engineering & Construction	2021-03-19	25362462	due	0	25362462
+AR-2021-00020	Tamil Nadu Municipal Corporation	2021-03-25	28278294	paid	32802821	-4524527
+AR-2021-00066	Trishakti Power Generation Corporation	2021-04-01	35298034	paid	40945720	-5647686
+AR-2021-00125	Meridian Constructors & Co.	2021-04-13	39723444	due	0	39723444
+AR-2021-00037	Jal Nigam, Gujarat	2021-04-25	40941514	paid	45445081	-4503567
+AR-2021-00078	Meridian Constructors & Co.	2021-04-27	44587244	paid	49491841	-4904597
+AR-2021-00051	National Expressway Development Authority	2021-04-27	40839022	paid	45331314	-4492292
+AR-2021-00476	Subarnarekha Valley Corporation	2021-05-04	3298059	due	0	3298059
+AR-2021-00104	Suvarna Projects Limited	2021-05-12	18646788	part_paid	10348968	8297820
+AR-2021-00060	Public Health Engineering Dept, Odisha	2021-05-12	31518216	paid	34985220	-3467004
+AR-2021-00117	Trishakti Power Generation Corporation	2021-05-17	14929558	due	0	14929558
+AR-2021-00354	Public Health Engineering Dept, Odisha	2021-05-19	57928618	part_paid	32150383	25778235
+AR-2021-00109	Subarnarekha Valley Corporation	2021-05-21	20269904	paid	23513088	-3243184
+AR-2021-00062	Mahanadi Steel Corporation	2021-06-01	20355665	part_paid	11297394	9058271
+AR-2021-00370	Subarnarekha Valley Corporation	2021-06-07	61375329	part_paid	35597690	25777639
+AR-2021-00345	Suvarna Projects Limited	2021-06-09	49283029	part_paid	27352081	21930948
+AR-2021-00100	Lakshya Engineering & Construction	2021-06-16	25362462	paid	28152333	-2789871
+AR-2021-00085	National Expressway Development Authority	2021-06-27	45293221	paid	50275475	-4982254
+AR-2021-00073	Lakshya Engineering & Construction	2021-07-02	27993313	paid	31072578	-3079265
+AR-2021-00092	Subarnarekha Valley Corporation	2021-07-02	23494753	paid	26079176	-2584423
+AR-2021-00005	Trishakti Power Generation Corporation	2021-07-06	13914676	paid	15445291	-1530615
+AR-2021-00355	Public Health Engineering Dept, Odisha	2021-07-19	57928618	paid	64300767	-6372149
+AR-2021-00052	National Expressway Development Authority	2021-07-23	40839022	part_paid	22665657	18173365
+AR-2021-00088	National Special Projects Office	2021-07-24	10191698	paid	11822370	-1630672
+AR-2021-00118	Trishakti Power Generation Corporation	2021-07-24	14929558	paid	16571810	-1642252
+AR-2021-00120	Subarnarekha Valley Corporation	2021-07-26	26190011	paid	29070912	-2880901
+AR-2021-00126	Meridian Constructors & Co.	2021-07-27	39723444	paid	44093023	-4369579
+AR-2021-00105	Suvarna Projects Limited	2021-08-12	18646788	paid	20697935	-2051147
+AR-2021-00079	Meridian Constructors & Co.	2021-08-15	44587244	paid	49491841	-4904597
+AR-2021-00067	Trishakti Power Generation Corporation	2021-08-20	35298034	paid	40945720	-5647686
+AR-2021-00033	Jal Nigam, Gujarat	2021-08-20	14146485	part_paid	7851299	6295186
+AR-2021-00371	Subarnarekha Valley Corporation	2021-08-31	61375329	part_paid	35597690	25777639
+AR-2021-00389	Public Health Engineering Dept, West Bengal	2021-09-07	57325441	paid	63631240	-6305799
+AR-2021-00346	Suvarna Projects Limited	2021-09-09	49283029	paid	54704163	-5421134
+AR-2021-00153	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2021-09-13	15184953	part_paid	8807272	6377681
+AR-2021-00101	Lakshya Engineering & Construction	2021-09-14	25362462	paid	28152333	-2789871
+AR-2021-00356	Public Health Engineering Dept, Odisha	2021-09-19	57928618	paid	64300767	-6372149
+AR-2021-00021	Tamil Nadu Municipal Corporation	2021-09-21	28278294	due	0	28278294
+AR-2021-00131	Arunodaya Infrastructure	2021-09-24	23488000	due	0	23488000
+AR-2021-00390	Public Health Engineering Dept, West Bengal	2021-10-07	57325441	part_paid	31815619	25509822
+AR-2021-00086	National Expressway Development Authority	2021-10-13	45293221	paid	50275475	-4982254
+AR-2021-00074	Lakshya Engineering & Construction	2021-10-17	27993313	part_paid	15536289	12457024
+AR-2021-00053	National Expressway Development Authority	2021-10-18	40839022	due	0	40839022
+AR-2021-00038	Jal Nigam, Gujarat	2021-10-22	40941514	paid	45445081	-4503567
+AR-2021-00377	Trishakti Power Generation Corporation	2021-10-27	56312692	paid	62507089	-6194397
+AR-2021-00006	Trishakti Power Generation Corporation	2021-11-03	13914676	paid	15445291	-1530615
+AR-2021-00110	Subarnarekha Valley Corporation	2021-11-03	20269904	paid	23513088	-3243184
+AR-2021-00063	Mahanadi Steel Corporation	2021-11-04	20355665	paid	22594788	-2239123
+AR-2021-00391	Public Health Engineering Dept, West Bengal	2021-11-06	57325441	paid	63631240	-6305799
+AR-2021-00127	Meridian Constructors & Co.	2021-11-08	39723444	paid	44093023	-4369579
+AR-2021-00136	Suvarna Projects Limited	2021-11-10	28641458	paid	31792019	-3150561
+AR-2021-00477	Subarnarekha Valley Corporation	2021-11-10	3298059	paid	3660846	-362787
+AR-2021-00423	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2021-11-10	39273079	part_paid	22778386	16494693
+AR-2021-00106	Suvarna Projects Limited	2021-11-12	18646788	paid	20697935	-2051147
+AR-2021-00485	Central Works & Buildings Bureau	2021-11-17	5897834	part_paid	3420744	2477090
+AR-2021-00357	Public Health Engineering Dept, Odisha	2021-11-20	57928618	part_paid	32150383	25778235
+AR-2021-00093	Subarnarekha Valley Corporation	2021-11-20	23494753	part_paid	13039588	10455165
+AR-2021-00372	Subarnarekha Valley Corporation	2021-11-23	61375329	paid	71195382	-9820053
+AR-2021-00406	Jal Nigam, Gujarat	2021-12-01	67434643	paid	74852454	-7417811
+AR-2021-00080	Meridian Constructors & Co.	2021-12-03	44587244	due	0	44587244
+AR-2021-00392	Public Health Engineering Dept, West Bengal	2021-12-06	57325441	due	0	57325441
+AR-2021-00162	Peninsular Petroleum Corporation	2021-12-07	13300213	paid	14763237	-1463024
+AR-2021-00347	Suvarna Projects Limited	2021-12-10	49283029	paid	54704163	-5421134
+AR-2021-00378	Trishakti Power Generation Corporation	2021-12-15	56312692	paid	62507089	-6194397
+AR-2021-00154	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2021-12-25	15184953	due	0	15184953
+AR-2022-00121	Subarnarekha Valley Corporation	2022-01-04	26190011	paid	29070912	-2880901
+AR-2022-00393	Public Health Engineering Dept, West Bengal	2022-01-05	57325441	paid	63631240	-6305799
+AR-2022-00158	Mega Infrastructure Authority	2022-01-07	28712013	paid	31870335	-3158322
+AR-2022-00068	Trishakti Power Generation Corporation	2022-01-07	35298034	due	0	35298034
+AR-2022-00167	Maharashtra Municipal Corporation	2022-01-12	20120052	paid	22333258	-2213206
+AR-2022-00407	Jal Nigam, Gujarat	2022-01-14	67434643	due	0	67434643
+AR-2022-00358	Public Health Engineering Dept, Odisha	2022-01-20	57928618	paid	64300767	-6372149
+AR-2022-00424	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2022-01-29	39273079	paid	45556772	-6283693
+AR-2022-00379	Trishakti Power Generation Corporation	2022-02-02	56312692	paid	62507089	-6194397
+AR-2022-00075	Lakshya Engineering & Construction	2022-02-02	27993313	due	0	27993313
+AR-2022-00394	Public Health Engineering Dept, West Bengal	2022-02-04	57325441	paid	63631240	-6305799
+AR-2022-00132	Arunodaya Infrastructure	2022-02-06	23488000	paid	27246080	-3758080
+AR-2022-00163	Peninsular Petroleum Corporation	2022-02-06	13300213	paid	14763237	-1463024
+AR-2022-00034	Jal Nigam, Gujarat	2022-02-06	14146485	paid	15702599	-1556114
+AR-2022-00140	Peninsular Petroleum Corporation	2022-02-08	41800913	paid	46399014	-4598101
+AR-2022-00173	Mahanadi Steel Corporation	2022-02-09	11508463	paid	13349817	-1841354
+AR-2022-00145	Peninsular Petroleum Corporation	2022-02-09	36886771	paid	40944316	-4057545
+AR-2022-00107	Suvarna Projects Limited	2022-02-12	18646788	paid	20697935	-2051147
+AR-2022-00373	Subarnarekha Valley Corporation	2022-02-15	61375329	paid	71195382	-9820053
+AR-2022-00128	Meridian Constructors & Co.	2022-02-20	39723444	paid	44093023	-4369579
+AR-2022-00408	Jal Nigam, Gujarat	2022-02-27	67434643	paid	74852454	-7417811
+AR-2022-00395	Public Health Engineering Dept, West Bengal	2022-03-06	57325441	paid	63631240	-6305799
+AR-2022-00348	Suvarna Projects Limited	2022-03-11	49283029	paid	54704163	-5421134
+AR-2022-00486	Central Works & Buildings Bureau	2022-03-12	5897834	paid	6841488	-943654
+AR-2022-00089	National Special Projects Office	2022-03-13	10191698	due	0	10191698
+AR-2022-00481	Meridian Constructors & Co.	2022-03-14	4019487	paid	4461631	-442144
+AR-2022-00168	Maharashtra Municipal Corporation	2022-03-19	20120052	paid	22333258	-2213206
+AR-2022-00359	Public Health Engineering Dept, Odisha	2022-03-23	57928618	paid	64300767	-6372149
+AR-2022-00380	Trishakti Power Generation Corporation	2022-03-23	56312692	paid	62507089	-6194397
+AR-2022-00081	Meridian Constructors & Co.	2022-03-23	44587244	paid	49491841	-4904597
+AR-2022-00159	Mega Infrastructure Authority	2022-04-03	28712013	paid	31870335	-3158322
+AR-2022-00396	Public Health Engineering Dept, West Bengal	2022-04-05	57325441	paid	63631240	-6305799
+AR-2022-00164	Peninsular Petroleum Corporation	2022-04-07	13300213	due	0	13300213
+AR-2022-00155	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2022-04-08	15184953	paid	17614545	-2429592
+AR-2022-00064	Mahanadi Steel Corporation	2022-04-09	20355665	part_paid	11297394	9058271
+AR-2022-00094	Subarnarekha Valley Corporation	2022-04-10	23494753	paid	26079176	-2584423
+AR-2022-00409	Jal Nigam, Gujarat	2022-04-12	67434643	paid	74852454	-7417811
+AR-2022-00111	Subarnarekha Valley Corporation	2022-04-17	20269904	part_paid	11756544	8513360
+AR-2022-00425	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2022-04-18	39273079	paid	45556772	-6283693
+AR-2022-00137	Suvarna Projects Limited	2022-04-19	28641458	part_paid	15896010	12745448
+AR-2022-00039	Jal Nigam, Gujarat	2022-04-20	40941514	paid	45445081	-4503567
+AR-2022-00397	Public Health Engineering Dept, West Bengal	2022-05-05	57325441	paid	63631240	-6305799
+AR-2022-00374	Subarnarekha Valley Corporation	2022-05-11	61375329	part_paid	35597690	25777639
+AR-2022-00381	Trishakti Power Generation Corporation	2022-05-11	56312692	paid	62507089	-6194397
+AR-2022-00478	Subarnarekha Valley Corporation	2022-05-19	3298059	due	0	3298059
+AR-2022-00146	Peninsular Petroleum Corporation	2022-05-20	36886771	paid	40944316	-4057545
+AR-2022-00076	Lakshya Engineering & Construction	2022-05-21	27993313	paid	31072578	-3079265
+AR-2022-00169	Maharashtra Municipal Corporation	2022-05-24	20120052	paid	22333258	-2213206
+AR-2022-00360	Public Health Engineering Dept, Odisha	2022-05-24	57928618	paid	64300767	-6372149
+AR-2022-00410	Jal Nigam, Gujarat	2022-05-26	67434643	part_paid	37426226	30008417
+AR-2022-00069	Trishakti Power Generation Corporation	2022-05-28	35298034	part_paid	20472860	14825174
+AR-2022-00398	Public Health Engineering Dept, West Bengal	2022-06-04	57325441	due	0	57325441
+AR-2022-00129	Meridian Constructors & Co.	2022-06-05	39723444	paid	44093023	-4369579
+AR-2022-00165	Peninsular Petroleum Corporation	2022-06-07	13300213	paid	14763237	-1463024
+AR-2022-00349	Suvarna Projects Limited	2022-06-11	49283029	paid	54704163	-5421134
+AR-2022-00122	Subarnarekha Valley Corporation	2022-06-14	26190011	paid	29070912	-2880901
+AR-2022-00141	Peninsular Petroleum Corporation	2022-06-16	41800913	paid	46399014	-4598101
+AR-2022-00133	Arunodaya Infrastructure	2022-06-21	23488000	paid	27246080	-3758080
+AR-2022-00174	Mahanadi Steel Corporation	2022-06-26	11508463	paid	13349817	-1841354
+AR-2022-00382	Trishakti Power Generation Corporation	2022-06-29	56312692	paid	62507089	-6194397
+AR-2022-00160	Mega Infrastructure Authority	2022-06-29	28712013	paid	31870335	-3158322
+AR-2022-00433	Mega Infrastructure Authority	2022-06-29	49807555	part_paid	27643193	22164362
+AR-2022-00399	Public Health Engineering Dept, West Bengal	2022-07-04	57325441	paid	63631240	-6305799
+AR-2022-00487	Central Works & Buildings Bureau	2022-07-04	5897834	paid	6841488	-943654
+AR-2022-00426	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2022-07-07	39273079	paid	45556772	-6283693
+AR-2022-00411	Jal Nigam, Gujarat	2022-07-09	67434643	due	0	67434643
+AR-2022-00494	Arunodaya Infrastructure	2022-07-13	8559519	paid	9501067	-941548
+AR-2022-00482	Meridian Constructors & Co.	2022-07-16	4019487	due	0	4019487
+AR-2022-00156	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2022-07-20	15184953	due	0	15184953
+AR-2022-00361	Public Health Engineering Dept, Odisha	2022-07-24	57928618	paid	64300767	-6372149
+AR-2022-00170	Maharashtra Municipal Corporation	2022-07-29	20120052	paid	22333258	-2213206
+AR-2022-00375	Subarnarekha Valley Corporation	2022-08-03	61375329	due	0	61375329
+AR-2022-00400	Public Health Engineering Dept, West Bengal	2022-08-03	57325441	part_paid	31815619	25509822
+AR-2022-00166	Peninsular Petroleum Corporation	2022-08-06	13300213	part_paid	7381618	5918595
+AR-2022-00383	Trishakti Power Generation Corporation	2022-08-17	56312692	paid	62507089	-6194397
+AR-2022-00412	Jal Nigam, Gujarat	2022-08-22	67434643	paid	74852454	-7417811
+AR-2022-00434	Mega Infrastructure Authority	2022-08-23	49807555	paid	55286386	-5478831
+AR-2022-00184	Arunodaya Infrastructure	2022-08-25	39607537	due	0	39607537
+AR-2022-00147	Peninsular Petroleum Corporation	2022-08-28	36886771	paid	40944316	-4057545
+AR-2022-00095	Subarnarekha Valley Corporation	2022-08-29	23494753	paid	26079176	-2584423
+AR-2022-00401	Public Health Engineering Dept, West Bengal	2022-09-02	57325441	paid	63631240	-6305799
+AR-2022-00192	Gujarat Municipal Corporation	2022-09-05	23426770	paid	26003715	-2576945
+AR-2022-00350	Suvarna Projects Limited	2022-09-10	49283029	part_paid	27352081	21930948
+AR-2022-00178	Jal Nigam, Jharkhand	2022-09-13	20404087	part_paid	11324268	9079819
+AR-2022-00130	Meridian Constructors & Co.	2022-09-17	39723444	paid	44093023	-4369579
+AR-2022-00161	Mega Infrastructure Authority	2022-09-23	28712013	paid	31870335	-3158322
+AR-2022-00427	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2022-09-24	39273079	paid	45556772	-6283693
+AR-2022-00362	Public Health Engineering Dept, Odisha	2022-09-24	57928618	due	0	57928618
+AR-2022-00138	Suvarna Projects Limited	2022-09-25	28641458	paid	31792019	-3150561
+AR-2022-00495	Arunodaya Infrastructure	2022-09-29	8559519	paid	9501067	-941548
+AR-2022-00112	Subarnarekha Valley Corporation	2022-09-30	20269904	due	0	20269904
+AR-2022-00402	Public Health Engineering Dept, West Bengal	2022-10-02	57325441	paid	63631240	-6305799
+AR-2022-00171	Maharashtra Municipal Corporation	2022-10-03	20120052	paid	22333258	-2213206
+AR-2022-00384	Trishakti Power Generation Corporation	2022-10-05	56312692	paid	62507089	-6194397
+AR-2022-00413	Jal Nigam, Gujarat	2022-10-05	67434643	paid	74852454	-7417811
+AR-2022-00070	Trishakti Power Generation Corporation	2022-10-16	35298034	paid	40945720	-5647686
+AR-2022-00435	Mega Infrastructure Authority	2022-10-18	49807555	due	0	49807555
+AR-2022-00142	Peninsular Petroleum Corporation	2022-10-22	41800913	due	0	41800913
+AR-2022-00200	Lakshya Engineering & Construction	2022-10-25	50605876	paid	56172523	-5566647
+AR-2022-00376	Subarnarekha Valley Corporation	2022-10-26	61375329	due	0	61375329
+AR-2022-00090	National Special Projects Office	2022-10-31	10191698	paid	11822370	-1630672
+AR-2022-00157	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2022-10-31	15184953	paid	17614545	-2429592
+AR-2022-00403	Public Health Engineering Dept, West Bengal	2022-11-01	57325441	paid	63631240	-6305799
+AR-2022-00491	Central Works & Buildings Bureau	2022-11-01	8164414	paid	9062500	-898086
+AR-2022-00134	Arunodaya Infrastructure	2022-11-03	23488000	due	0	23488000
+AR-2022-00175	Mahanadi Steel Corporation	2022-11-10	11508463	part_paid	6674908	4833555
+AR-2022-00185	Arunodaya Infrastructure	2022-11-16	39607537	paid	43964367	-4356830
+AR-2022-00483	Meridian Constructors & Co.	2022-11-17	4019487	paid	4461631	-442144
+AR-2022-00414	Jal Nigam, Gujarat	2022-11-18	67434643	due	0	67434643
+AR-2022-00488	National Expressway Development Authority	2022-11-20	7405317	paid	8219903	-814586
+AR-2022-00123	Subarnarekha Valley Corporation	2022-11-22	26190011	due	0	26190011
+AR-2022-00385	Trishakti Power Generation Corporation	2022-11-23	56312692	paid	62507089	-6194397
+AR-2022-00479	Subarnarekha Valley Corporation	2022-11-24	3298059	paid	3660846	-362787
+AR-2022-00363	Public Health Engineering Dept, Odisha	2022-11-25	57928618	paid	64300767	-6372149
+AR-2022-00404	Public Health Engineering Dept, West Bengal	2022-12-01	57325441	paid	63631240	-6305799
+AR-2022-00148	Peninsular Petroleum Corporation	2022-12-06	36886771	paid	40944316	-4057545
+AR-2022-00195	Suvarna Projects Limited	2022-12-07	23732395	part_paid	13764789	9967606
+AR-2022-00172	Maharashtra Municipal Corporation	2022-12-08	20120052	paid	22333258	-2213206
+AR-2022-00351	Suvarna Projects Limited	2022-12-11	49283029	paid	54704163	-5421134
+AR-2022-00436	Mega Infrastructure Authority	2022-12-12	49807555	paid	55286386	-5478831
+AR-2022-00428	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2022-12-13	39273079	paid	45556772	-6283693
+AR-2022-00496	Arunodaya Infrastructure	2022-12-16	8559519	paid	9501067	-941548
+AR-2022-00208	Lakshya Engineering & Construction	2022-12-19	25400941	paid	28195045	-2794104
+AR-2022-00193	Gujarat Municipal Corporation	2022-12-25	23426770	paid	26003715	-2576945
+AR-2022-00415	Jal Nigam, Gujarat	2022-12-31	67434643	paid	74852454	-7417811
+AR-2022-00405	Public Health Engineering Dept, West Bengal	2022-12-31	57325441	paid	63631240	-6305799
+AR-2023-00386	Trishakti Power Generation Corporation	2023-01-11	56312692	paid	62507089	-6194397
+AR-2023-00096	Subarnarekha Valley Corporation	2023-01-17	23494753	paid	26079176	-2584423
+AR-2023-00364	Public Health Engineering Dept, Odisha	2023-01-25	57928618	paid	64300767	-6372149
+AR-2023-00201	Lakshya Engineering & Construction	2023-02-02	50605876	paid	56172523	-5566647
+AR-2023-00437	Mega Infrastructure Authority	2023-02-05	49807555	part_paid	27643193	22164362
+AR-2023-00186	Arunodaya Infrastructure	2023-02-07	39607537	part_paid	21982183	17625354
+AR-2023-00416	Jal Nigam, Gujarat	2023-02-13	67434643	paid	74852454	-7417811
+AR-2023-00179	Jal Nigam, Jharkhand	2023-02-13	20404087	part_paid	11324268	9079819
+AR-2023-00143	Peninsular Petroleum Corporation	2023-02-27	41800913	due	0	41800913
+AR-2023-00387	Trishakti Power Generation Corporation	2023-03-01	56312692	paid	62507089	-6194397
+AR-2023-00429	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2023-03-02	39273079	paid	45556772	-6283693
+AR-2023-00139	Suvarna Projects Limited	2023-03-04	28641458	paid	31792019	-3150561
+AR-2023-00497	Arunodaya Infrastructure	2023-03-04	8559519	paid	9501067	-941548
+AR-2023-00492	Central Works & Buildings Bureau	2023-03-12	8164414	due	0	8164414
+AR-2023-00113	Subarnarekha Valley Corporation	2023-03-15	20269904	due	0	20269904
+AR-2023-00149	Peninsular Petroleum Corporation	2023-03-16	36886771	paid	40944316	-4057545
+AR-2023-00135	Arunodaya Infrastructure	2023-03-18	23488000	paid	27246080	-3758080
+AR-2023-00484	Meridian Constructors & Co.	2023-03-21	4019487	paid	4461631	-442144
+AR-2023-00176	Mahanadi Steel Corporation	2023-03-27	11508463	paid	13349817	-1841354
+AR-2023-00365	Public Health Engineering Dept, Odisha	2023-03-28	57928618	due	0	57928618
+AR-2023-00417	Jal Nigam, Gujarat	2023-03-29	67434643	paid	74852454	-7417811
+AR-2023-00489	National Expressway Development Authority	2023-04-01	7405317	paid	8219903	-814586
+AR-2023-00438	Mega Infrastructure Authority	2023-04-02	49807555	paid	55286386	-5478831
+AR-2023-00194	Gujarat Municipal Corporation	2023-04-15	23426770	part_paid	13001858	10424912
+AR-2023-00388	Trishakti Power Generation Corporation	2023-04-19	56312692	paid	62507089	-6194397
+AR-2023-00209	Lakshya Engineering & Construction	2023-04-25	25400941	paid	28195045	-2794104
+AR-2023-00187	Arunodaya Infrastructure	2023-05-01	39607537	paid	43964367	-4356830
+AR-2023-00196	Suvarna Projects Limited	2023-05-04	23732395	paid	27529579	-3797184
+AR-2023-00418	Jal Nigam, Gujarat	2023-05-12	67434643	paid	74852454	-7417811
+AR-2023-00202	Lakshya Engineering & Construction	2023-05-13	50605876	paid	56172523	-5566647
+AR-2023-00498	Arunodaya Infrastructure	2023-05-21	8559519	part_paid	4750533	3808986
+AR-2023-00430	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2023-05-21	39273079	paid	45556772	-6283693
+AR-2023-00439	Mega Infrastructure Authority	2023-05-27	49807555	paid	55286386	-5478831
+AR-2023-00480	Subarnarekha Valley Corporation	2023-06-02	3298059	paid	3660846	-362787
+AR-2023-00150	Peninsular Petroleum Corporation	2023-06-24	36886771	due	0	36886771
+AR-2023-00419	Jal Nigam, Gujarat	2023-06-25	67434643	paid	74852454	-7417811
+AR-2023-00144	Peninsular Petroleum Corporation	2023-07-05	41800913	paid	46399014	-4598101
+AR-2023-00504	Subarnarekha Valley Corporation	2023-07-12	3049545	due	0	3049545
+AR-2023-00180	Jal Nigam, Jharkhand	2023-07-16	20404087	paid	22648537	-2244450
+AR-2023-00493	Central Works & Buildings Bureau	2023-07-21	8164414	paid	9062500	-898086
+AR-2023-00440	Mega Infrastructure Authority	2023-07-21	49807555	due	0	49807555
+AR-2023-00188	Arunodaya Infrastructure	2023-07-22	39607537	part_paid	21982183	17625354
+AR-2023-00254	Arunodaya Infrastructure	2023-08-05	32378679	paid	35940335	-3561656
+AR-2023-00420	Jal Nigam, Gujarat	2023-08-08	67434643	due	0	67434643
+AR-2023-00431	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2023-08-08	39273079	paid	45556772	-6283693
+AR-2023-00490	National Expressway Development Authority	2023-08-10	7405317	paid	8219903	-814586
+AR-2023-00260	Meridian Constructors & Co.	2023-08-10	32521328	due	0	32521328
+AR-2023-00177	Mahanadi Steel Corporation	2023-08-11	11508463	paid	13349817	-1841354
+AR-2023-00218	National Special Projects Office	2023-08-18	39329192	paid	45621863	-6292671
+AR-2023-00203	Lakshya Engineering & Construction	2023-08-21	50605876	part_paid	28086262	22519614
+AR-2023-00210	Lakshya Engineering & Construction	2023-08-30	25400941	due	0	25400941
+AR-2023-00212	Subarnarekha Valley Corporation	2023-09-10	35976671	paid	39934105	-3957434
+AR-2023-00441	Mega Infrastructure Authority	2023-09-15	49807555	paid	55286386	-5478831
+AR-2023-00226	Central Works & Buildings Bureau	2023-09-17	9604525	paid	10661023	-1056498
+AR-2023-00421	Jal Nigam, Gujarat	2023-09-21	67434643	due	0	67434643
+AR-2023-00505	Subarnarekha Valley Corporation	2023-09-26	3049545	paid	3384996	-335451
+AR-2023-00197	Suvarna Projects Limited	2023-09-29	23732395	paid	27529579	-3797184
+AR-2023-00151	Peninsular Petroleum Corporation	2023-10-02	36886771	due	0	36886771
+AR-2023-00189	Arunodaya Infrastructure	2023-10-13	39607537	due	0	39607537
+AR-2023-00261	Meridian Constructors & Co.	2023-10-18	32521328	paid	36098675	-3577347
+AR-2023-00432	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2023-10-27	39273079	paid	45556772	-6283693
+AR-2023-00219	National Special Projects Office	2023-11-02	39329192	due	0	39329192
+AR-2023-00422	Jal Nigam, Gujarat	2023-11-04	67434643	paid	74852454	-7417811
+AR-2023-00442	Mega Infrastructure Authority	2023-11-09	49807555	paid	55286386	-5478831
+AR-2023-00213	Subarnarekha Valley Corporation	2023-11-26	35976671	paid	39934105	-3957434
+AR-2023-00204	Lakshya Engineering & Construction	2023-11-30	50605876	paid	56172523	-5566647
+AR-2023-00255	Arunodaya Infrastructure	2023-12-02	32378679	part_paid	17970168	14408511
+AR-2023-00506	Subarnarekha Valley Corporation	2023-12-11	3049545	due	0	3049545
+AR-2023-00450	Lakshya Engineering & Construction	2023-12-13	50089928	paid	55599821	-5509893
+AR-2023-00181	Jal Nigam, Jharkhand	2023-12-15	20404087	paid	22648537	-2244450
+AR-2023-00262	Meridian Constructors & Co.	2023-12-27	32521328	paid	36098675	-3577347
+AR-2023-00227	Central Works & Buildings Bureau	2023-12-31	9604525	paid	10661023	-1056498
+AR-2024-00499	Peninsular Petroleum Corporation	2024-01-01	1541921	paid	1788628	-246707
+AR-2024-00190	Arunodaya Infrastructure	2024-01-04	39607537	part_paid	21982183	17625354
+AR-2024-00211	Lakshya Engineering & Construction	2024-01-04	25400941	paid	28195045	-2794104
+AR-2024-00152	Peninsular Petroleum Corporation	2024-01-10	36886771	paid	40944316	-4057545
+AR-2024-00451	Lakshya Engineering & Construction	2024-01-11	50089928	paid	55599821	-5509893
+AR-2024-00220	National Special Projects Office	2024-01-17	39329192	due	0	39329192
+AR-2024-00443	Trishakti Power Generation Corporation	2024-01-20	36623214	paid	40651768	-4028554
+AR-2024-00452	Lakshya Engineering & Construction	2024-02-09	50089928	paid	55599821	-5509893
+AR-2024-00214	Subarnarekha Valley Corporation	2024-02-11	35976671	paid	39934105	-3957434
+AR-2024-00238	Meridian Constructors & Co.	2024-02-23	46955613	paid	54468511	-7512898
+AR-2024-00198	Suvarna Projects Limited	2024-02-24	23732395	paid	27529579	-3797184
+AR-2024-00507	Subarnarekha Valley Corporation	2024-02-25	3049545	paid	3384996	-335451
+AR-2024-00246	Mahanadi Steel Corporation	2024-03-05	50587777	paid	56152433	-5564656
+AR-2024-00263	Meridian Constructors & Co.	2024-03-05	32521328	part_paid	18049337	14471991
+AR-2024-00205	Lakshya Engineering & Construction	2024-03-09	50605876	paid	56172523	-5566647
+AR-2024-00453	Lakshya Engineering & Construction	2024-03-09	50089928	due	0	50089928
+AR-2024-00230	Public Works Department, Govt of Gujarat	2024-03-10	29970199	paid	33266922	-3296723
+AR-2024-00191	Arunodaya Infrastructure	2024-03-27	39607537	paid	43964367	-4356830
+AR-2024-00256	Arunodaya Infrastructure	2024-03-30	32378679	paid	35940335	-3561656
+AR-2024-00221	National Special Projects Office	2024-04-02	39329192	paid	45621863	-6292671
+AR-2024-00444	Trishakti Power Generation Corporation	2024-04-04	36623214	due	0	36623214
+AR-2024-00454	Lakshya Engineering & Construction	2024-04-07	50089928	part_paid	27799910	22290018
+AR-2024-00228	Central Works & Buildings Bureau	2024-04-14	9604525	due	0	9604525
+AR-2024-00215	Subarnarekha Valley Corporation	2024-04-28	35976671	part_paid	19967053	16009618
+AR-2024-00455	Lakshya Engineering & Construction	2024-05-06	50089928	due	0	50089928
+AR-2024-00509	Subarnarekha Valley Corporation	2024-05-08	11342512	paid	12590189	-1247677
+AR-2024-00508	Subarnarekha Valley Corporation	2024-05-11	3049545	due	0	3049545
+AR-2024-00264	Meridian Constructors & Co.	2024-05-13	32521328	paid	36098675	-3577347
+AR-2024-00182	Jal Nigam, Jharkhand	2024-05-16	20404087	paid	22648537	-2244450
+AR-2024-00234	Jal Nigam, Gujarat	2024-05-17	34407881	paid	38192748	-3784867
+AR-2024-00500	Peninsular Petroleum Corporation	2024-05-29	1541921	part_paid	894313	647608
+AR-2024-00456	Lakshya Engineering & Construction	2024-06-04	50089928	paid	55599821	-5509893
+AR-2024-00239	Meridian Constructors & Co.	2024-06-05	46955613	part_paid	27234255	19721358
+AR-2024-00206	Lakshya Engineering & Construction	2024-06-17	50605876	paid	56172523	-5566647
+AR-2024-00222	National Special Projects Office	2024-06-18	39329192	part_paid	22810932	16518260
+AR-2024-00445	Trishakti Power Generation Corporation	2024-06-18	36623214	paid	40651768	-4028554
+AR-2024-00247	Mahanadi Steel Corporation	2024-06-19	50587777	due	0	50587777
+AR-2024-00457	Lakshya Engineering & Construction	2024-07-03	50089928	paid	55599821	-5509893
+AR-2024-00295	Jal Nigam, Jharkhand	2024-07-11	30557832	paid	33919194	-3361362
+AR-2024-00216	Subarnarekha Valley Corporation	2024-07-14	35976671	paid	39934105	-3957434
+AR-2024-00199	Suvarna Projects Limited	2024-07-21	23732395	paid	27529579	-3797184
+AR-2024-00265	Meridian Constructors & Co.	2024-07-22	32521328	paid	36098675	-3577347
+AR-2024-00257	Arunodaya Infrastructure	2024-07-27	32378679	paid	35940335	-3561656
+AR-2024-00229	Central Works & Buildings Bureau	2024-07-28	9604525	paid	10661023	-1056498
+AR-2024-00458	Lakshya Engineering & Construction	2024-08-01	50089928	paid	55599821	-5509893
+AR-2024-00459	Lakshya Engineering & Construction	2024-08-30	50089928	paid	55599821	-5509893
+AR-2024-00446	Trishakti Power Generation Corporation	2024-09-01	36623214	paid	40651768	-4028554
+AR-2024-00223	National Special Projects Office	2024-09-02	39329192	paid	45621863	-6292671
+AR-2024-00285	Public Health Engineering Dept, Gujarat	2024-09-03	15599202	part_paid	8657557	6941645
+AR-2024-00240	Meridian Constructors & Co.	2024-09-15	46955613	paid	54468511	-7512898
+AR-2024-00296	Jal Nigam, Jharkhand	2024-09-16	30557832	due	0	30557832
+AR-2024-00207	Lakshya Engineering & Construction	2024-09-25	50605876	part_paid	28086262	22519614
+AR-2024-00460	Lakshya Engineering & Construction	2024-09-28	50089928	paid	55599821	-5509893
+AR-2024-00266	Meridian Constructors & Co.	2024-09-29	32521328	paid	36098675	-3577347
+AR-2024-00217	Subarnarekha Valley Corporation	2024-09-29	35976671	paid	39934105	-3957434
+AR-2024-00289	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2024-09-30	13325691	due	0	13325691
+AR-2024-00248	Mahanadi Steel Corporation	2024-10-03	50587777	paid	56152433	-5564656
+AR-2024-00272	Lakshya Engineering & Construction	2024-10-10	25358838	paid	28148311	-2789473
+AR-2024-00183	Jal Nigam, Jharkhand	2024-10-16	20404087	paid	22648537	-2244450
+AR-2024-00501	Peninsular Petroleum Corporation	2024-10-25	1541921	due	0	1541921
+AR-2024-00461	Lakshya Engineering & Construction	2024-10-27	50089928	paid	55599821	-5509893
+AR-2024-00318	Lakshya Engineering & Construction	2024-10-29	21943033	due	0	21943033
+AR-2024-00231	Public Works Department, Govt of Gujarat	2024-10-29	29970199	paid	33266922	-3296723
+AR-2024-00322	Jal Nigam, Jharkhand	2024-11-01	32812038	paid	38061964	-5249926
+AR-2024-00447	Trishakti Power Generation Corporation	2024-11-15	36623214	paid	40651768	-4028554
+AR-2024-00224	National Special Projects Office	2024-11-17	39329192	part_paid	22810932	16518260
+AR-2024-00297	Jal Nigam, Jharkhand	2024-11-21	30557832	due	0	30557832
+AR-2024-00258	Arunodaya Infrastructure	2024-11-23	32378679	part_paid	17970168	14408511
+AR-2024-00462	Lakshya Engineering & Construction	2024-11-25	50089928	paid	55599821	-5509893
+AR-2024-00512	Public Works Department, Govt of Tamil Nadu	2024-11-28	1564255	paid	1736323	-172068
+AR-2024-00290	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2024-12-07	13325691	paid	14791518	-1465827
+AR-2024-00235	Jal Nigam, Gujarat	2024-12-08	34407881	part_paid	19096374	15311507
+AR-2024-00306	Trishakti Power Generation Corporation	2024-12-14	42116106	paid	46748878	-4632772
+AR-2024-00463	Lakshya Engineering & Construction	2024-12-24	50089928	due	0	50089928
+AR-2024-00311	Public Works Department, Govt of Gujarat	2024-12-25	30476271	paid	33828661	-3352390
+AR-2024-00241	Meridian Constructors & Co.	2024-12-27	46955613	paid	54468511	-7512898
+AR-2025-00510	Subarnarekha Valley Corporation	2025-01-01	11342512	paid	12590189	-1247677
+AR-2025-00249	Mahanadi Steel Corporation	2025-01-17	50587777	part_paid	28076216	22511561
+AR-2025-00267	Suvarna Projects Limited	2025-01-19	29530737	paid	34255655	-4724918
+AR-2025-00298	Jal Nigam, Jharkhand	2025-01-27	30557832	paid	33919194	-3361362
+AR-2025-00448	Trishakti Power Generation Corporation	2025-01-29	36623214	part_paid	20325884	16297330
+AR-2025-00280	Mega Infrastructure Authority	2025-01-29	15723254	part_paid	9119487	6603767
+AR-2025-00277	Irrigation & Waterways Dept, Govt of Rajasthan	2025-01-31	18759958	paid	20823554	-2063596
+AR-2025-00225	National Special Projects Office	2025-02-01	39329192	part_paid	22810932	16518260
+AR-2025-00286	Public Health Engineering Dept, Gujarat	2025-02-04	15599202	due	0	15599202
+AR-2025-00325	Central Works & Buildings Bureau	2025-02-07	31018902	paid	34430981	-3412079
+AR-2025-00291	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2025-02-12	13325691	part_paid	7395759	5929932
+AR-2025-00273	Lakshya Engineering & Construction	2025-02-26	25358838	part_paid	14074156	11284682
+AR-2025-00312	Public Works Department, Govt of Gujarat	2025-03-01	30476271	paid	33828661	-3352390
+AR-2025-00302	Jal Nigam, Gujarat	2025-03-10	45497953	paid	52777625	-7279672
+AR-2025-00259	Arunodaya Infrastructure	2025-03-22	32378679	due	0	32378679
+AR-2025-00502	Peninsular Petroleum Corporation	2025-03-23	1541921	paid	1788628	-246707
+AR-2025-00513	Public Works Department, Govt of Tamil Nadu	2025-03-25	1564255	paid	1736323	-172068
+AR-2025-00299	Jal Nigam, Jharkhand	2025-04-04	30557832	paid	33919194	-3361362
+AR-2025-00319	Lakshya Engineering & Construction	2025-04-05	21943033	part_paid	12178383	9764650
+AR-2025-00242	Meridian Constructors & Co.	2025-04-08	46955613	paid	54468511	-7512898
+AR-2025-00307	Trishakti Power Generation Corporation	2025-04-11	42116106	part_paid	23374439	18741667
+AR-2025-00281	Mega Infrastructure Authority	2025-04-14	15723254	paid	18238974	-2515720
+AR-2025-00449	Trishakti Power Generation Corporation	2025-04-14	36623214	paid	40651768	-4028554
+AR-2025-00292	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2025-04-21	13325691	paid	14791518	-1465827
+AR-2025-00268	Suvarna Projects Limited	2025-04-23	29530737	paid	34255655	-4724918
+AR-2025-00326	Central Works & Buildings Bureau	2025-04-26	31018902	paid	34430981	-3412079
+AR-2025-00323	Jal Nigam, Jharkhand	2025-04-30	32812038	paid	38061964	-5249926
+AR-2025-00250	Mahanadi Steel Corporation	2025-05-03	50587777	paid	56152433	-5564656
+AR-2025-00313	Public Works Department, Govt of Gujarat	2025-05-05	30476271	paid	33828661	-3352390
+AR-2025-00275	Suvarna Projects Limited	2025-05-17	26990586	paid	29959551	-2968965
+AR-2025-00300	Jal Nigam, Jharkhand	2025-06-09	30557832	paid	33919194	-3361362
+AR-2025-00232	Public Works Department, Govt of Gujarat	2025-06-20	29970199	due	0	29970199
+AR-2025-00293	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2025-06-27	13325691	paid	14791518	-1465827
+AR-2025-00282	Mega Infrastructure Authority	2025-06-28	15723254	paid	18238974	-2515720
+AR-2025-00236	Jal Nigam, Gujarat	2025-07-01	34407881	paid	38192748	-3784867
+AR-2025-00303	Jal Nigam, Gujarat	2025-07-01	45497953	due	0	45497953
+AR-2025-00287	Public Health Engineering Dept, Gujarat	2025-07-09	15599202	paid	17315114	-1715912
+AR-2025-00314	Public Works Department, Govt of Gujarat	2025-07-10	30476271	paid	33828661	-3352390
+AR-2025-00468	Public Works Department, Govt of West Bengal	2025-07-11	43470969	due	0	43470969
+AR-2025-00327	Central Works & Buildings Bureau	2025-07-13	31018902	paid	34430981	-3412079
+AR-2025-00274	Lakshya Engineering & Construction	2025-07-15	25358838	paid	28148311	-2789473
+AR-2025-00243	Meridian Constructors & Co.	2025-07-20	46955613	paid	54468511	-7512898
+AR-2025-00514	Public Works Department, Govt of Tamil Nadu	2025-07-20	1564255	paid	1736323	-172068
+AR-2025-00269	Suvarna Projects Limited	2025-07-26	29530737	part_paid	17127827	12402910
+AR-2025-00337	Public Works Department, Govt of Gujarat	2025-08-04	30366152	due	0	30366152
+AR-2025-00308	Trishakti Power Generation Corporation	2025-08-07	42116106	paid	46748878	-4632772
+AR-2025-00278	Irrigation & Waterways Dept, Govt of Rajasthan	2025-08-15	18759958	due	0	18759958
+AR-2025-00301	Jal Nigam, Jharkhand	2025-08-15	30557832	paid	33919194	-3361362
+AR-2025-00469	Public Works Department, Govt of West Bengal	2025-08-16	43470969	paid	48252776	-4781807
+AR-2025-00251	Mahanadi Steel Corporation	2025-08-16	50587777	paid	56152433	-5564656
+AR-2025-00503	Peninsular Petroleum Corporation	2025-08-19	1541921	due	0	1541921
+AR-2025-00464	Peninsular Petroleum Corporation	2025-08-21	52542005	due	0	52542005
+AR-2025-00511	Subarnarekha Valley Corporation	2025-08-26	11342512	paid	12590189	-1247677
+AR-2025-00517	Subarnarekha Valley Corporation	2025-09-03	4946865	due	0	4946865
+AR-2025-00294	Irrigation & Waterways Dept, Govt of Uttar Pradesh	2025-09-03	13325691	paid	14791518	-1465827
+AR-2025-00320	Lakshya Engineering & Construction	2025-09-10	21943033	paid	24356767	-2413734
+AR-2025-00283	Mega Infrastructure Authority	2025-09-11	15723254	paid	18238974	-2515720
+AR-2025-00315	Public Works Department, Govt of Gujarat	2025-09-14	30476271	paid	33828661	-3352390
+AR-2025-00470	Public Works Department, Govt of West Bengal	2025-09-21	43470969	part_paid	24126388	19344581
+AR-2025-00328	Central Works & Buildings Bureau	2025-09-29	31018902	part_paid	17215491	13803411
+AR-2025-00304	Jal Nigam, Gujarat	2025-10-21	45497953	paid	52777625	-7279672
+AR-2025-00338	Public Works Department, Govt of Gujarat	2025-10-23	30366152	paid	35224736	-4858584
+AR-2025-00324	Jal Nigam, Jharkhand	2025-10-26	32812038	paid	38061964	-5249926
+AR-2025-00334	Trishakti Power Generation Corporation	2025-10-27	25402059	paid	28196286	-2794227
+AR-2025-00471	Public Works Department, Govt of West Bengal	2025-10-27	43470969	paid	48252776	-4781807
+AR-2025-00270	Suvarna Projects Limited	2025-10-28	29530737	paid	34255655	-4724918
+AR-2025-00244	Meridian Constructors & Co.	2025-10-30	46955613	paid	54468511	-7512898
+AR-2025-00465	Peninsular Petroleum Corporation	2025-10-31	52542005	due	0	52542005
+AR-2025-00331	Mega Infrastructure Authority	2025-11-02	34871610	due	0	34871610
+AR-2025-00341	Subarnarekha Valley Corporation	2025-11-14	22571938	paid	25054852	-2482914
+AR-2025-00515	Public Works Department, Govt of Tamil Nadu	2025-11-14	1564255	paid	1736323	-172068
+AR-2025-00316	Public Works Department, Govt of Gujarat	2025-11-18	30476271	paid	33828661	-3352390
+AR-2025-00284	Mega Infrastructure Authority	2025-11-25	15723254	part_paid	9119487	6603767
+AR-2025-00336	Lakshya Engineering & Construction	2025-11-28	21637027	paid	24017100	-2380073
+AR-2025-00252	Mahanadi Steel Corporation	2025-11-30	50587777	paid	56152433	-5564656
+AR-2025-00472	Public Works Department, Govt of West Bengal	2025-12-02	43470969	paid	48252776	-4781807
+AR-2025-00309	Trishakti Power Generation Corporation	2025-12-03	42116106	paid	46748878	-4632772
+AR-2025-00276	Suvarna Projects Limited	2025-12-06	26990586	due	0	26990586
+AR-2025-00288	Public Health Engineering Dept, Gujarat	2025-12-10	15599202	part_paid	8657557	6941645
+AR-2025-00330	Mahanadi Steel Corporation	2025-12-29	23667608	part_paid	13135522	10532086
+AR-2026-00473	Public Works Department, Govt of West Bengal	2026-01-07	43470969	paid	48252776	-4781807
+AR-2026-00466	Peninsular Petroleum Corporation	2026-01-10	52542005	paid	60948725	-8406720
+AR-2026-00339	Public Works Department, Govt of Gujarat	2026-01-11	30366152	paid	35224736	-4858584
+AR-2026-00237	Jal Nigam, Gujarat	2026-01-22	34407881	paid	38192748	-3784867
+AR-2026-00317	Public Works Department, Govt of Gujarat	2026-01-23	30476271	paid	33828661	-3352390
+AR-2026-00518	Subarnarekha Valley Corporation	2026-01-24	4946865	paid	5738363	-791498
+AR-2026-00271	Suvarna Projects Limited	2026-01-30	29530737	paid	34255655	-4724918
+AR-2026-00233	Public Works Department, Govt of Gujarat	2026-02-08	29970199	paid	33266922	-3296723
+AR-2026-00245	Meridian Constructors & Co.	2026-02-10	46955613	due	0	46955613
+AR-2026-00305	Jal Nigam, Gujarat	2026-02-11	45497953	paid	52777625	-7279672
+AR-2026-00474	Public Works Department, Govt of West Bengal	2026-02-12	43470969	paid	48252776	-4781807
+AR-2026-00321	Lakshya Engineering & Construction	2026-02-15	21943033	paid	24356767	-2413734
+AR-2026-00329	Peninsular Petroleum Corporation	2026-02-16	5740497	paid	6371953	-631456
+AR-2026-00333	Lakshya Engineering & Construction	2026-02-20	42495793	due	0	42495793
+AR-2026-00332	Mega Infrastructure Authority	2026-02-23	34871610	part_paid	20225533	14646077
+AR-2026-00279	Irrigation & Waterways Dept, Govt of Rajasthan	2026-02-28	18759958	part_paid	10411778	8348180
+AR-2026-00335	Trishakti Power Generation Corporation	2026-03-01	25402059	paid	28196286	-2794227
+AR-2026-00516	Public Works Department, Govt of Tamil Nadu	2026-03-11	1564255	part_paid	868161	696094
+AR-2026-00253	Mahanadi Steel Corporation	2026-03-16	50587777	paid	56152433	-5564656
+AR-2026-00342	Subarnarekha Valley Corporation	2026-03-17	22571938	paid	25054852	-2482914
+AR-2026-00475	Public Works Department, Govt of West Bengal	2026-03-20	43470969	paid	48252776	-4781807
+AR-2026-00467	Peninsular Petroleum Corporation	2026-03-23	52542005	paid	60948725	-8406720
+AR-2026-00310	Trishakti Power Generation Corporation	2026-03-31	42116106	paid	46748878	-4632772
+AR-2026-00340	Public Works Department, Govt of Gujarat	2026-03-31	30366152	due	0	30366152
+TOTAL			17499999732		14868182090	2631817642
+=== SHEET: Notes ===
+Accounts-receivable ageing extracted from the sales ledger.
+Outstanding = invoiced less receipts; retention and TDS are shown gross here.
+Figures agree with the annual financial statements for the same period.

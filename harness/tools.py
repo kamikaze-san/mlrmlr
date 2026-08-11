@@ -3,9 +3,11 @@ these into REPL globals via custom_tools={name: fn}."""
 import csv
 import os
 import re
+import sqlite3
 from pathlib import Path
 
 import openpyxl
+from dateutil import parser as dateparser
 from openpyxl.utils.cell import range_boundaries
 
 HERE = Path(__file__).resolve().parent
@@ -16,6 +18,7 @@ ROOT = Path(os.environ.get("DATASET_ROOT", r"C:\Users\NewGr\Downloads\BITS-Hacka
 INDEX_CSV = ROOT / "document_index.csv"
 DOCS = ROOT / "documents"
 CACHE = HERE / "text_cache"
+DB_PATH = HERE / "estate.db"
 
 _INDEX = list(csv.DictReader(open(INDEX_CSV, encoding="utf-8")))
 _BY_ID = {r["doc_id"]: r for r in _INDEX}
@@ -157,3 +160,117 @@ def verify_client_work_count(client_name: str) -> dict:
         "company_completion_certificate_ids": ccc_ids,
         "counts_match": len(cc_ids) == len(ccc_ids),
     }
+
+
+_ISO_DATE_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})$")
+
+
+def parse_inr(val: str) -> int | None:
+    """Lossless Indian-currency-rendering parser -> exact integer rupees.
+    Handles 'INR 33.38 Cr', '3,338.00 Lakh', '33,38,00,000/-', '333800000'.
+    Returns None if val does not parse as a recognizable money amount."""
+    if val is None:
+        return None
+    s = str(val).strip().replace(",", "").replace("/-", "").strip()
+    s = re.sub(r"^(INR|Rs\.?|Rupees)\s*", "", s, flags=re.IGNORECASE).strip()
+    m = re.search(r"([\d.]+)\s*(Cr|Crore)\b", s, re.IGNORECASE)
+    if m:
+        return round(float(m.group(1)) * 10_000_000)
+    m = re.search(r"([\d.]+)\s*Lakh\b", s, re.IGNORECASE)
+    if m:
+        return round(float(m.group(1)) * 100_000)
+    m = re.search(r"^([\d.]+)$", s)
+    if m:
+        return round(float(m.group(1)))
+    return None
+
+
+def parse_date_flexible(val: str) -> str | None:
+    """Returns ISO YYYY-MM-DD or None. dayfirst=True since every OTHER date
+    format observed in this corpus is Indian-convention (DD/MM/YYYY,
+    "13 Nov 2020", etc.) -- ambiguous DD/MM vs MM/DD cases resolve to
+    day-first.
+
+    IMPORTANT: dates already in YYYY-MM-DD form must be returned as-is, NOT
+    passed through dateutil with dayfirst=True. dateutil's dayfirst flag
+    applies even to already-unambiguous ISO strings and silently swaps
+    day/month whenever both are <=12 -- e.g. parse("2011-02-06",
+    dayfirst=True) wrongly returns 2011-06-02 instead of 2011-02-06."""
+    if not val:
+        return None
+    val = val.strip()
+    m = _ISO_DATE_RE.match(val)
+    if m:
+        return val
+    try:
+        return dateparser.parse(val, dayfirst=True).date().isoformat()
+    except (ValueError, OverflowError):
+        return None
+
+
+def query_db(sql: str, params: tuple = ()) -> list[dict] | dict:
+    """Run a read-only SQL query against estate.db, the structured
+    knowledge-layer built from this corpus's completion_certificate +
+    company_completion_certificate + personnel_certificate +
+    past_performance_portfolio + reference_letter documents (155 packages,
+    validated 21/21 against the sample question set). Prefer this over
+    grepping raw document text for anything expressible as SQL --
+    aggregates, counts, thresholds, rankings, date spans across clients/
+    engineers/projects -- it's far more reliable than re-deriving these by
+    hand from prose every time. Still read the underlying documents
+    (read_document) for fields not captured in this schema, and to verify
+    a specific number before finalizing an answer.
+
+    Schema:
+      clients(client_id, canonical_name)
+      engineers(engineer_id, canonical_name)
+      projects(package, doc_id_cc, doc_id_ccc, client_id, project_name,
+               category, value, has_discrepancy, completion_date,
+               engineer_id, has_reference_letter, role)
+        -- value: exact integer rupees (already parsed from Cr/Lakh/etc).
+        -- completion_date: ISO 'YYYY-MM-DD', sortable as text or via
+           SQLite's julianday() for day-span math.
+        -- has_reference_letter: 1/0.
+        -- role: 'Prime' or 'JV Partner' (from past_performance_portfolio;
+           always present, 155/155).
+        -- has_discrepancy: 1 if the completion_certificate and
+           company_completion_certificate for this package disagree on
+           value -- the row is NOT dropped, `value` picks the
+           client-signed completion_certificate's number as tie-break, but
+           check both doc_id_cc/doc_id_ccc directly if precision matters
+           (only 1 package in the whole corpus has this flag set).
+      credentials(doc_id, engineer_id, credential_id, credential_type,
+                  issued_date)
+        -- credential_type: 'PMP' or 'Six Sigma Black Belt'. Not every
+           engineer has a credential on file (only 22/39), and some have
+           both types -- filter credential_type explicitly for "PMP
+           issuance date" style questions, don't assume one row per
+           engineer.
+
+    Join engineers/clients to projects via engineer_id/client_id. Client
+    and engineer names may need a LIKE '%partial%' match rather than
+    exact-equals -- canonical_name is the fuller/non-uppercase variant but
+    questions often reference clients/engineers by a shorter form."""
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    try:
+        cur = conn.execute(sql, params)
+        return [dict(r) for r in cur.fetchall()]
+    except sqlite3.Error as e:
+        return {"error": str(e)}
+    finally:
+        conn.close()
+
+
+def find_client(name_pattern: str) -> list[dict]:
+    """Shortcut for query_db("select * from clients where canonical_name
+    like '%...%'") -- saves writing that boilerplate every time you need a
+    client_id. Returns a list of {client_id, canonical_name} matches (0, 1,
+    or several -- if more than one, pick the right one yourself, don't just
+    take the first)."""
+    return query_db("select * from clients where canonical_name like ?", (f"%{name_pattern}%",))
+
+
+def find_engineer(name_pattern: str) -> list[dict]:
+    """Same as find_client but for the engineers table."""
+    return query_db("select * from engineers where canonical_name like ?", (f"%{name_pattern}%",))

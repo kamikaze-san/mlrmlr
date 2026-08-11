@@ -1,0 +1,217 @@
+=== SHEET: Plant Register ===
+Asset ID	Type	Make	Acquired	Cost (INR)	Condition	Location	Ownership	Safety Certified
+1	Excavator	TerraForm Machines	2022	15700000	new	Odisha	owned	True
+2	Hydraulic Crane 50T	Vulcan Plant Works	2014	26700000	good	Uttar Pradesh	owned	True
+3	Concrete Batching Plant	IndoCrane Industries	2021	10100000	good	Tamil Nadu	owned	True
+4	Transit Mixer	EarthMaster Equipments	2025	6000000	good	Uttar Pradesh	owned	True
+5	Soil Compactor	Vulcan Plant Works	2025	4000000	good	Delhi	owned	True
+6	Motor Grader	TerraForm Machines	2019	10900000	fair	Bihar	leased	True
+7	Tipper Truck	IndoCrane Industries	2013	3600000	new	Gujarat	leased	True
+8	Piling Rig	Girnar Plant & Machinery	2022	39700000	new	Odisha	owned	True
+9	DG Set 250kVA	IndoCrane Industries	2012	1500000	new	West Bengal	leased	True
+10	Water Tanker	EarthMaster Equipments	2019	800000	fair	Rajasthan	owned	True
+11	Tower Crane	Girnar Plant & Machinery	2015	23900000	fair	Delhi	owned	True
+12	Paver Finisher	Vulcan Plant Works	2012	16300000	good	Delhi	owned	True
+13	 Tunnel Boring Machine	EarthMaster Equipments	2016	484400000	good	Maharashtra	owned	True
+14	Gantry Crane	Vulcan Plant Works	2012	16000000	fair	Tamil Nadu	leased	True
+15	Vibratory Roller	Girnar Plant & Machinery	2018	4200000	new	Madhya Pradesh	owned	True
+16	Excavator	Girnar Plant & Machinery	2017	6000000	new	Tamil Nadu	owned	True
+17	Hydraulic Crane 50T	Vulcan Plant Works	2016	36300000	fair	Rajasthan	leased	True
+18	Concrete Batching Plant	Girnar Plant & Machinery	2020	11100000	fair	Rajasthan	owned	True
+19	Transit Mixer	IndoCrane Industries	2013	3700000	good	Jharkhand	owned	True
+20	Soil Compactor	EarthMaster Equipments	2021	5400000	fair	Maharashtra	leased	True
+21	Motor Grader	Mahadev Heavy Machinery	2015	16900000	new	Jharkhand	leased	True
+22	Tipper Truck	Girnar Plant & Machinery	2016	2400000	good	West Bengal	leased	True
+23	Piling Rig	IndoCrane Industries	2012	52400000	new	Jharkhand	leased	True
+24	DG Set 250kVA	TerraForm Machines	2016	1000000	new	Delhi	owned	False
+25	Water Tanker	Ashva Engineering	2018	1800000	fair	Jharkhand	owned	True
+26	Tower Crane	TerraForm Machines	2019	19900000	new	Rajasthan	owned	True
+27	Paver Finisher	Vulcan Plant Works	2024	11900000	new	Jharkhand	owned	True
+28	 Tunnel Boring Machine	EarthMaster Equipments	2019	768700000	good	Tamil Nadu	owned	True
+29	Gantry Crane	Mahadev Heavy Machinery	2019	19100000	new	Maharashtra	owned	True
+30	Vibratory Roller	Vulcan Plant Works	2023	3300000	fair	Tamil Nadu	leased	True
+31	Excavator	TerraForm Machines	2013	9300000	good	West Bengal	owned	True
+32	Hydraulic Crane 50T	Girnar Plant & Machinery	2012	24200000	fair	Madhya Pradesh	owned	True
+33	Concrete Batching Plant	Girnar Plant & Machinery	2016	18500000	fair	Maharashtra	owned	True
+34	Transit Mixer	Vulcan Plant Works	2023	2900000	good	Maharashtra	owned	True
+35	Soil Compactor	Mahadev Heavy Machinery	2017	2700000	good	Tamil Nadu	owned	True
+36	Motor Grader	Ashva Engineering	2024	18700000	fair	Gujarat	leased	True
+37	Tipper Truck	Girnar Plant & Machinery	2013	3800000	good	Bihar	owned	True
+38	Piling Rig	Ashva Engineering	2023	53100000	fair	Gujarat	leased	True
+39	DG Set 250kVA	Girnar Plant & Machinery	2014	1300000	fair	Delhi	owned	True
+40	Water Tanker	IndoCrane Industries	2022	1000000	good	Jharkhand	owned	True
+41	Tower Crane	Girnar Plant & Machinery	2016	34900000	good	Delhi	leased	True
+42	Paver Finisher	EarthMaster Equipments	2025	19600000	fair	Jharkhand	leased	True
+43	 Tunnel Boring Machine	Girnar Plant & Machinery	2021	405500000	new	Rajasthan	owned	True
+44	Gantry Crane	Vulcan Plant Works	2019	24000000	new	Uttar Pradesh	owned	True
+45	Vibratory Roller	IndoCrane Industries	2023	6200000	fair	Bihar	owned	True
+46	Excavator	Girnar Plant & Machinery	2023	16000000	fair	Odisha	owned	True
+47	Hydraulic Crane 50T	IndoCrane Industries	2013	32400000	new	Tamil Nadu	owned	True
+48	Concrete Batching Plant	EarthMaster Equipments	2013	16100000	new	Madhya Pradesh	owned	True
+49	Transit Mixer	TerraForm Machines	2012	2800000	good	Delhi	owned	True
+50	Soil Compactor	IndoCrane Industries	2025	2700000	good	West Bengal	owned	True
+51	Motor Grader	Mahadev Heavy Machinery	2023	15800000	fair	Rajasthan	owned	True
+52	Tipper Truck	Girnar Plant & Machinery	2012	3100000	fair	Odisha	owned	True
+53	Piling Rig	TerraForm Machines	2019	45500000	fair	Tamil Nadu	owned	True
+54	DG Set 250kVA	Ashva Engineering	2017	800000	new	Uttar Pradesh	owned	True
+55	Water Tanker	Ashva Engineering	2023	1600000	new	West Bengal	owned	True
+56	Tower Crane	Mahadev Heavy Machinery	2012	29000000	good	Maharashtra	leased	True
+57	Paver Finisher	TerraForm Machines	2018	25400000	fair	Tamil Nadu	owned	True
+58	 Tunnel Boring Machine	Vulcan Plant Works	2021	522000000	good	Rajasthan	owned	True
+59	Gantry Crane	Vulcan Plant Works	2020	16400000	new	Maharashtra	leased	True
+60	Vibratory Roller	EarthMaster Equipments	2015	4000000	fair	West Bengal	leased	True
+61	Excavator	Girnar Plant & Machinery	2020	15700000	new	Madhya Pradesh	leased	True
+62	Hydraulic Crane 50T	Ashva Engineering	2017	25200000	new	Uttar Pradesh	leased	False
+63	Concrete Batching Plant	Vulcan Plant Works	2022	24800000	good	Maharashtra	leased	True
+64	Transit Mixer	IndoCrane Industries	2025	3700000	good	Jharkhand	leased	True
+65	Soil Compactor	TerraForm Machines	2025	4000000	fair	Delhi	owned	True
+66	Motor Grader	EarthMaster Equipments	2012	12400000	new	Delhi	owned	False
+67	Tipper Truck	Mahadev Heavy Machinery	2013	3900000	fair	Jharkhand	owned	True
+68	Piling Rig	Ashva Engineering	2021	50300000	fair	Bihar	owned	True
+69	DG Set 250kVA	Ashva Engineering	2015	800000	new	Jharkhand	owned	True
+70	Water Tanker	Girnar Plant & Machinery	2017	1400000	new	Odisha	owned	True
+71	Tower Crane	EarthMaster Equipments	2025	20000000	new	Maharashtra	owned	False
+72	Paver Finisher	EarthMaster Equipments	2012	13800000	new	Tamil Nadu	leased	True
+73	 Tunnel Boring Machine	EarthMaster Equipments	2022	826500000	fair	Delhi	owned	True
+74	Gantry Crane	Vulcan Plant Works	2016	12800000	fair	Uttar Pradesh	leased	True
+75	Vibratory Roller	TerraForm Machines	2023	6900000	good	Uttar Pradesh	owned	True
+76	Excavator	Ashva Engineering	2012	10000000	fair	Tamil Nadu	owned	True
+77	Hydraulic Crane 50T	IndoCrane Industries	2025	27900000	fair	West Bengal	owned	False
+78	Concrete Batching Plant	TerraForm Machines	2024	23000000	fair	Bihar	owned	True
+79	Transit Mixer	Ashva Engineering	2014	2500000	new	Gujarat	owned	True
+80	Soil Compactor	Girnar Plant & Machinery	2018	2300000	good	Maharashtra	owned	True
+81	Motor Grader	Mahadev Heavy Machinery	2018	9800000	fair	Uttar Pradesh	leased	True
+82	Tipper Truck	Girnar Plant & Machinery	2020	3000000	good	Tamil Nadu	owned	True
+83	Piling Rig	Mahadev Heavy Machinery	2021	29500000	good	West Bengal	owned	True
+84	DG Set 250kVA	Girnar Plant & Machinery	2012	1600000	good	Rajasthan	owned	True
+85	Water Tanker	Girnar Plant & Machinery	2015	1700000	new	Rajasthan	leased	True
+86	Tower Crane	EarthMaster Equipments	2017	17400000	good	West Bengal	owned	True
+87	Paver Finisher	EarthMaster Equipments	2023	19100000	fair	Bihar	owned	True
+88	 Tunnel Boring Machine	Ashva Engineering	2016	892700000	new	West Bengal	leased	True
+89	Gantry Crane	IndoCrane Industries	2016	13100000	good	Tamil Nadu	owned	True
+90	Vibratory Roller	Mahadev Heavy Machinery	2021	5900000	fair	Maharashtra	owned	True
+91	Excavator	IndoCrane Industries	2012	16400000	new	Delhi	owned	True
+92	Hydraulic Crane 50T	Girnar Plant & Machinery	2013	18900000	fair	Bihar	owned	True
+93	Concrete Batching Plant	Mahadev Heavy Machinery	2016	22400000	new	Delhi	owned	True
+94	Transit Mixer	Girnar Plant & Machinery	2022	5400000	fair	Maharashtra	owned	True
+95	Soil Compactor	EarthMaster Equipments	2019	4800000	good	Odisha	owned	True
+96	Motor Grader	Mahadev Heavy Machinery	2014	17700000	fair	Tamil Nadu	owned	True
+97	Tipper Truck	Vulcan Plant Works	2021	3100000	fair	Madhya Pradesh	leased	False
+98	Piling Rig	Ashva Engineering	2019	59300000	good	Bihar	owned	True
+99	DG Set 250kVA	Mahadev Heavy Machinery	2016	1500000	new	Tamil Nadu	leased	True
+100	Water Tanker	Ashva Engineering	2021	800000	good	Rajasthan	owned	True
+101	Tower Crane	EarthMaster Equipments	2020	34400000	fair	West Bengal	owned	True
+102	Paver Finisher	Ashva Engineering	2013	13800000	good	Odisha	leased	True
+103	 Tunnel Boring Machine	EarthMaster Equipments	2019	721200000	fair	West Bengal	owned	True
+104	Gantry Crane	TerraForm Machines	2023	16800000	fair	Delhi	owned	True
+105	Vibratory Roller	EarthMaster Equipments	2018	3800000	new	Gujarat	leased	True
+106	Excavator	EarthMaster Equipments	2022	9800000	new	Bihar	owned	True
+107	Hydraulic Crane 50T	TerraForm Machines	2019	21500000	good	Bihar	leased	True
+108	Concrete Batching Plant	Vulcan Plant Works	2014	9200000	good	Delhi	owned	True
+109	Transit Mixer	Girnar Plant & Machinery	2023	5600000	fair	West Bengal	owned	True
+110	Soil Compactor	EarthMaster Equipments	2013	3000000	new	Delhi	owned	True
+111	Motor Grader	TerraForm Machines	2018	16600000	good	Jharkhand	owned	True
+112	Tipper Truck	EarthMaster Equipments	2020	3000000	good	Odisha	owned	False
+113	Piling Rig	Vulcan Plant Works	2018	25900000	fair	Bihar	owned	True
+114	DG Set 250kVA	Vulcan Plant Works	2015	1400000	fair	Maharashtra	owned	True
+115	Water Tanker	TerraForm Machines	2024	1500000	fair	Madhya Pradesh	owned	True
+116	Tower Crane	Mahadev Heavy Machinery	2016	32900000	fair	Bihar	owned	True
+117	Paver Finisher	Ashva Engineering	2025	11000000	good	Jharkhand	owned	True
+118	 Tunnel Boring Machine	Girnar Plant & Machinery	2019	755300000	good	Gujarat	owned	True
+119	Gantry Crane	TerraForm Machines	2014	23500000	good	Maharashtra	owned	True
+120	Vibratory Roller	IndoCrane Industries	2023	4600000	fair	Odisha	leased	True
+121	Excavator	Girnar Plant & Machinery	2014	15500000	new	West Bengal	owned	True
+122	Hydraulic Crane 50T	IndoCrane Industries	2013	28400000	good	Bihar	owned	True
+123	Concrete Batching Plant	IndoCrane Industries	2021	9000000	fair	Gujarat	leased	True
+124	Transit Mixer	Vulcan Plant Works	2025	2900000	good	Delhi	owned	True
+125	Soil Compactor	Vulcan Plant Works	2015	3000000	new	Madhya Pradesh	owned	True
+126	Motor Grader	Ashva Engineering	2022	9800000	good	Gujarat	owned	True
+127	Tipper Truck	TerraForm Machines	2022	3800000	good	Jharkhand	owned	True
+128	Piling Rig	EarthMaster Equipments	2025	45100000	good	Uttar Pradesh	owned	True
+129	DG Set 250kVA	TerraForm Machines	2022	1000000	fair	Bihar	owned	True
+130	Water Tanker	IndoCrane Industries	2023	1500000	good	Jharkhand	owned	True
+131	Tower Crane	Ashva Engineering	2022	26300000	new	Maharashtra	leased	True
+132	Paver Finisher	Ashva Engineering	2016	21500000	fair	West Bengal	owned	False
+133	 Tunnel Boring Machine	IndoCrane Industries	2017	412100000	fair	Maharashtra	owned	True
+134	Gantry Crane	Vulcan Plant Works	2018	10800000	new	Bihar	owned	True
+135	Vibratory Roller	Mahadev Heavy Machinery	2012	5800000	new	Bihar	owned	True
+136	Excavator	Girnar Plant & Machinery	2021	9000000	fair	Maharashtra	owned	True
+137	Hydraulic Crane 50T	Ashva Engineering	2016	15200000	fair	Jharkhand	owned	False
+138	Concrete Batching Plant	Ashva Engineering	2021	11800000	fair	Delhi	leased	True
+139	Transit Mixer	Vulcan Plant Works	2015	3600000	new	Maharashtra	owned	True
+140	Soil Compactor	TerraForm Machines	2016	4500000	fair	Maharashtra	owned	True
+141	Motor Grader	Mahadev Heavy Machinery	2015	9300000	fair	Madhya Pradesh	owned	True
+142	Tipper Truck	EarthMaster Equipments	2012	3800000	fair	Gujarat	leased	True
+143	Piling Rig	Ashva Engineering	2023	37600000	good	Madhya Pradesh	leased	False
+144	DG Set 250kVA	Mahadev Heavy Machinery	2023	1200000	good	Odisha	owned	True
+145	Water Tanker	EarthMaster Equipments	2025	800000	fair	Tamil Nadu	owned	True
+146	Tower Crane	Vulcan Plant Works	2024	12300000	good	Madhya Pradesh	leased	True
+147	Paver Finisher	IndoCrane Industries	2013	12000000	new	Jharkhand	owned	True
+148	 Tunnel Boring Machine	Vulcan Plant Works	2021	444000000	good	West Bengal	owned	True
+149	Gantry Crane	Vulcan Plant Works	2013	19200000	fair	Maharashtra	leased	True
+150	Vibratory Roller	Vulcan Plant Works	2021	3100000	new	Tamil Nadu	owned	True
+151	Excavator	Vulcan Plant Works	2024	18000000	good	Delhi	leased	True
+152	Hydraulic Crane 50T	Girnar Plant & Machinery	2015	29900000	new	Jharkhand	owned	False
+153	Concrete Batching Plant	TerraForm Machines	2023	21700000	good	Odisha	leased	True
+154	Transit Mixer	Ashva Engineering	2021	4800000	fair	Bihar	owned	True
+155	Soil Compactor	TerraForm Machines	2025	4700000	good	Madhya Pradesh	leased	True
+156	Motor Grader	Ashva Engineering	2016	16700000	new	West Bengal	leased	True
+157	Tipper Truck	Mahadev Heavy Machinery	2025	3300000	fair	Gujarat	owned	True
+158	Piling Rig	Girnar Plant & Machinery	2020	58100000	good	Delhi	owned	True
+159	DG Set 250kVA	Girnar Plant & Machinery	2020	800000	good	Bihar	owned	True
+160	Water Tanker	TerraForm Machines	2024	1200000	good	Gujarat	owned	False
+161	Tower Crane	EarthMaster Equipments	2013	20600000	fair	Odisha	owned	True
+162	Paver Finisher	TerraForm Machines	2024	14800000	good	Bihar	leased	True
+163	 Tunnel Boring Machine	Vulcan Plant Works	2024	403200000	good	Bihar	leased	True
+164	Gantry Crane	EarthMaster Equipments	2019	14500000	good	Maharashtra	owned	True
+165	Vibratory Roller	Vulcan Plant Works	2015	3200000	good	Maharashtra	owned	True
+166	Excavator	EarthMaster Equipments	2014	10000000	fair	Tamil Nadu	owned	True
+167	Hydraulic Crane 50T	Girnar Plant & Machinery	2024	21100000	good	Delhi	owned	True
+168	Concrete Batching Plant	Girnar Plant & Machinery	2021	21900000	fair	Gujarat	owned	True
+169	Transit Mixer	Girnar Plant & Machinery	2016	2600000	good	Jharkhand	owned	True
+170	Soil Compactor	Ashva Engineering	2018	5100000	fair	Tamil Nadu	owned	True
+171	Motor Grader	Mahadev Heavy Machinery	2015	9900000	new	Maharashtra	owned	True
+172	Tipper Truck	Mahadev Heavy Machinery	2024	4300000	good	Tamil Nadu	owned	False
+173	Piling Rig	TerraForm Machines	2015	51900000	good	West Bengal	owned	True
+174	DG Set 250kVA	EarthMaster Equipments	2014	1200000	good	Gujarat	leased	True
+175	Water Tanker	TerraForm Machines	2021	900000	new	West Bengal	owned	False
+176	Tower Crane	IndoCrane Industries	2016	23400000	fair	Bihar	owned	True
+177	Paver Finisher	Mahadev Heavy Machinery	2012	23300000	fair	Maharashtra	leased	True
+178	 Tunnel Boring Machine	Girnar Plant & Machinery	2017	474600000	fair	Maharashtra	leased	True
+179	Gantry Crane	IndoCrane Industries	2014	18200000	new	Jharkhand	leased	False
+180	Vibratory Roller	Mahadev Heavy Machinery	2018	7000000	fair	Gujarat	owned	True
+181	Excavator	Vulcan Plant Works	2017	14600000	fair	Bihar	owned	True
+182	Hydraulic Crane 50T	EarthMaster Equipments	2025	21300000	fair	Jharkhand	owned	True
+183	Concrete Batching Plant	EarthMaster Equipments	2015	10400000	new	Uttar Pradesh	owned	True
+184	Transit Mixer	IndoCrane Industries	2012	4700000	good	Maharashtra	owned	True
+185	Soil Compactor	TerraForm Machines	2022	2400000	good	Uttar Pradesh	owned	True
+186	Motor Grader	Ashva Engineering	2015	11000000	fair	Madhya Pradesh	owned	True
+187	Tipper Truck	Girnar Plant & Machinery	2025	4100000	fair	Tamil Nadu	owned	True
+188	Piling Rig	IndoCrane Industries	2025	53400000	good	West Bengal	owned	True
+189	DG Set 250kVA	TerraForm Machines	2018	1200000	good	Delhi	owned	True
+190	Water Tanker	Ashva Engineering	2020	1100000	good	Madhya Pradesh	owned	True
+191	Tower Crane	Girnar Plant & Machinery	2012	25600000	good	Tamil Nadu	leased	True
+192	Paver Finisher	EarthMaster Equipments	2021	18600000	good	Gujarat	owned	True
+193	 Tunnel Boring Machine	Ashva Engineering	2016	452000000	new	Jharkhand	leased	True
+194	Gantry Crane	TerraForm Machines	2018	16500000	fair	Tamil Nadu	owned	True
+195	Vibratory Roller	TerraForm Machines	2023	2500000	new	Madhya Pradesh	owned	True
+196	Excavator	EarthMaster Equipments	2022	16600000	new	Delhi	leased	False
+197	Hydraulic Crane 50T	TerraForm Machines	2019	16700000	fair	Gujarat	owned	True
+198	Concrete Batching Plant	Vulcan Plant Works	2025	17100000	good	West Bengal	owned	True
+199	Transit Mixer	EarthMaster Equipments	2016	3200000	new	Jharkhand	owned	False
+200	Soil Compactor	Ashva Engineering	2015	4400000	new	Tamil Nadu	owned	True
+201	Motor Grader	IndoCrane Industries	2024	19500000	new	Bihar	owned	True
+202	Tipper Truck	Vulcan Plant Works	2013	2300000	good	Delhi	owned	True
+203	Piling Rig	IndoCrane Industries	2020	40900000	new	Uttar Pradesh	leased	True
+204	DG Set 250kVA	EarthMaster Equipments	2014	1300000	new	Odisha	leased	True
+205	Water Tanker	IndoCrane Industries	2023	1800000	good	Maharashtra	leased	True
+206	Tower Crane	Girnar Plant & Machinery	2013	19400000	good	Rajasthan	owned	True
+207	Paver Finisher	Mahadev Heavy Machinery	2023	19600000	fair	Odisha	owned	True
+208	 Tunnel Boring Machine	IndoCrane Industries	2018	679400000	good	Gujarat	owned	True
+209	Gantry Crane	Girnar Plant & Machinery	2020	21400000	fair	Jharkhand	leased	True
+210	Vibratory Roller	Ashva Engineering	2024	3000000	good	Maharashtra	owned	True
+TOTAL				10910600000				
+=== SHEET: Notes ===
+Plant and machinery register maintained by the equipment cell.
+Cost is the acquisition value; depreciation is charged in the books at 10% SL.
+Owned plant is available as technical-capability evidence in bids.

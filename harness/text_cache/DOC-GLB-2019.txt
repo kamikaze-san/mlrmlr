@@ -1,0 +1,506 @@
+              NATIONAL INFRASTRUCTURE CORP. LTD.
+
+                          Books of Account � General Ledger � FY 2019�20
+
+                 GENERAL LEDGER -- FISCAL YEAR 2019�20
+
+Volume: GL/2019  154 posted lines � system-generated
+
+Grouped by account per the chart of accounts. Amounts in INR. Balances are running account
+balances (Dr positive). Narrations reference the originating voucher.
+
+DOC-GLB-2019                                                              Page 1 of 27
+ACCOUNT 1010 -- BANK (ASSET)
+
+DATE          VOUCHER / NARRATION        DEBIT        CREDIT      BALANCE
+
+2019-04-01 Opening capital & plant       400,000,000              400,000,000
+                     brought in                                   Dr
+
+2019-04-02 Working-capital facility      20,000,000               420,000,000
+                     drawdown                                     Dr
+
+2019-04-28 Monthly salaries & site                    802,761     419,197,239
+                     overheads (201904)                           Dr
+
+2019-05-28 Monthly salaries & site                    802,761     418,394,478
+                     overheads (201905)                           Dr
+
+2019-06-28 Monthly salaries & site                    802,761     417,591,717
+                     overheads (201906)                           Dr
+
+2019-07-28 Monthly salaries & site                    802,761     416,788,956
+                     overheads (201907)                           Dr
+
+2019-08-06 Receipt against invoice (rcpt 22,320,149               439,109,105
+                     #6)                                          Dr
+
+2019-08-28 Monthly salaries & site                    802,761     438,306,344
+                     overheads (201908)                           Dr
+
+2019-09-11 Vendor payment #8                          35,115,513  403,190,831
+                                                                  Dr
+2019-09-28 Monthly salaries & site                    802,761
+                     overheads (201909)               605,439     402,388,070
+                                                                  Dr
+2019-10-07 TDS deposited (201909)
+                                                                  401,782,631
+2019-10-23 Receipt against invoice (rcpt 22,320,149   802,761     Dr
+                     #7)                              802,761
+                                                      802,761     424,102,780
+2019-10-28 Monthly salaries & site                    2,172,038   Dr
+                     overheads (201910)
+                                                                  423,300,019
+2019-11-28 Monthly salaries & site                                Dr
+                     overheads (201911)
+                                                                  422,497,258
+2019-12-28 Monthly salaries & site                                Dr
+                     overheads (201912)
+                                                                  421,694,497
+2020-01-07 Vendor payment #29                                     Dr
+
+2020-01-20 Receipt against invoice (rcpt 40,808,246               419,522,459
+                     #17)                                         Dr
+
+2020-01-24 Receipt against invoice (rcpt 49,005,060               460,330,705
+                     #10)                                         Dr
+
+2020-01-28                                                        509,335,765
+                                                                  Dr
+
+                                                      802,761
+
+DOC-GLB-2019                                                      Page 2 of 27
+              Monthly salaries & site                            508,533,004
+              overheads (201901)                                 Dr
+
+2020-02-06 Vendor payment #20                        19,545,006  488,987,998
+                                                                 Dr
+
+2020-02-07 TDS deposited (202001)                    37,448      488,950,550
+                                                                 Dr
+
+2020-02-26 Vendor payment #5                         54,531,364  434,419,186
+                                                                 Dr
+
+2020-02-28 Monthly salaries & site                   802,761     433,616,425
+                     overheads (201902)                          Dr
+
+2020-03-07 TDS deposited (202002)                    1,277,177   432,339,248
+                                                                 Dr
+
+2020-03-14 Vendor payment #33                        32,237,568  400,101,680
+                                                                 Dr
+
+2020-03-28 Receipt against invoice (rcpt 49,005,060              449,106,740
+                     #11)                                        Dr
+
+2020-03-28 Monthly salaries & site                   802,772     448,303,968
+                     overheads (201903)                          Dr
+
+TOTALS                                   603,458,664 155,154,696 448,303,968
+                                                                                        DR
+
+DOC-GLB-2019                                                     Page 3 of 27
+ACCOUNT 1100 -- ACCOUNTS RECEIVABLE (ASSET)
+
+DATE          VOUCHER / NARRATION        DEBIT       CREDIT      BALANCE
+                                         23,727,725  23,727,725
+2019-07-06 Client invoice AR-2019-00007                          23,727,725 Dr
+                                         23,727,725  23,727,725
+2019-08-06 Receipt against invoice       33,368,386              0 Dr
+                     (rcpt #6)           52,095,469  43,381,738
+                                                     52,095,469  23,727,725 Dr
+2019-09-17 Client invoice AR-2019-00008  23,727,725
+                                         37,191,494              57,096,111 Dr
+2019-10-02 Client invoice AR-2019-00017  43,381,738
+                                         30,034,088              109,191,580
+2019-10-11 Client invoice AR-2019-00012                          Dr
+                                         52,095,469
+2019-10-23 Receipt against invoice       23,727,725              85,463,855 Dr
+                     (rcpt #7)           48,190,045
+                                         43,381,738              109,191,580
+2019-11-29 Client invoice AR-2019-00009  37,191,494              Dr
+                                         30,034,088
+2019-12-01 Client invoice AR-2019-00054  16,419,317              146,383,074
+                                         16,692,852              Dr
+2019-12-20 Client invoice AR-2019-00022
+                                                                 189,764,812
+2020-01-01 Client invoice AR-2020-00040                          Dr
+
+2020-01-20 Receipt against invoice                               219,798,900
+                     (rcpt #17)                                  Dr
+
+2020-01-24 Receipt against invoice                               176,417,162
+                     (rcpt #10)                                  Dr
+
+2020-02-04 Client invoice AR-2020-00013                          124,321,693
+                                                                 Dr
+2020-02-10 Client invoice AR-2020-00010
+                                                                 176,417,162
+2020-02-15 Client invoice AR-2020-00046                          Dr
+
+2020-02-20 Client invoice AR-2020-00023                          200,144,887
+                                                                 Dr
+2020-02-27 Client invoice AR-2020-00055
+                                                                 248,334,932
+2020-03-11 Client invoice AR-2020-00041                          Dr
+
+2020-03-13 Client invoice AR-2020-00001                          291,716,670
+                                                                 Dr
+2020-03-26 Client invoice AR-2020-00030
+                                                                 328,908,164
+                                                                 Dr
+
+                                                                 358,942,252
+                                                                 Dr
+
+                                                                 375,361,569
+                                                                 Dr
+
+                                                                 392,054,421
+                                                                 Dr
+
+DOC-GLB-2019                                                     Page 4 of 27
+2020-03-28 Receipt against invoice                   52,095,469  339,958,952
+                     (rcpt #11)                                  Dr
+
+2020-03-30 Client invoice AR-2020-00018  33,368,386              373,327,338
+                                                                 Dr
+TOTALS
+                                         568,355,464 195,028,126 373,327,338
+                                                                                        DR
+
+DOC-GLB-2019                                                     Page 5 of 27
+ACCOUNT 1110 -- RETENTION MONEY RECEIVABLE (ASSET)
+
+DATE          VOUCHER / NARRATION              DEBIT      CREDIT BALANCE
+
+2019-08-06 Receipt against invoice (rcpt #6)   1,005,412    1,005,412 Dr
+
+2019-10-23 Receipt against invoice (rcpt #7)   1,005,412    2,010,824 Dr
+
+2020-01-20 Receipt against invoice (rcpt #17)  1,838,209    3,849,033 Dr
+
+2020-01-24 Receipt against invoice (rcpt #10)  2,207,435    6,056,468 Dr
+
+2020-03-28 Receipt against invoice (rcpt #11)  2,207,435    8,263,903 Dr
+
+TOTALS                                         8,263,903 0  8,263,903 DR
+
+DOC-GLB-2019                                                Page 6 of 27
+ACCOUNT 1120 -- TDS RECEIVABLE (ASSET)
+
+DATE          VOUCHER / NARRATION              DEBIT    CREDIT BALANCE
+
+2019-08-06 Receipt against invoice (rcpt #6)   402,164      402,164 Dr
+
+2019-10-23 Receipt against invoice (rcpt #7)   402,164      804,328 Dr
+
+2020-01-20 Receipt against invoice (rcpt #17)  735,283      1,539,611 Dr
+
+2020-01-24 Receipt against invoice (rcpt #10)  882,974      2,422,585 Dr
+
+2020-03-28 Receipt against invoice (rcpt #11)  882,974      3,305,559 Dr
+
+TOTALS                                         3,305,559 0  3,305,559 DR
+
+DOC-GLB-2019                                                Page 7 of 27
+ACCOUNT 1130 -- GST INPUT CREDIT (ASSET)
+
+DATE          VOUCHER / NARRATION         DEBIT      CREDIT  BALANCE
+
+2019-08-14 Vendor bill #11                5,448,958          5,448,958 Dr
+
+2019-10-20 GST settlement (period 20192)             7,238,966 1,790,008 Cr
+
+2019-11-10 Vendor bill #34                337,040            1,452,968 Cr
+
+2019-12-10 Vendor bill #13                8,935,052          7,482,084 Dr
+
+2019-12-25 Vendor bill #24                3,032,845          10,514,929 Dr
+
+2020-01-08 Vendor bill #40                5,002,381          15,517,310 Dr
+
+2020-01-19 GST settlement (period 20193)             28,947,172 13,429,862 Cr
+
+2020-01-22 Vendor bill #41                1,576,540          11,853,322 Cr
+
+2020-01-23 Vendor bill #6                 8,461,763          3,391,559 Cr
+
+2020-02-05 Vendor bill #27                2,712,949          678,610 Cr
+
+2020-02-23 Vendor bill #44                351,816            326,794 Cr
+
+TOTALS                                    35,859,344 36,186,138 326,794 CR
+
+DOC-GLB-2019                                                 Page 8 of 27
+ACCOUNT 1200 -- PLANT & MACHINERY (ASSET)
+
+DATE          VOUCHER / NARRATION   DEBIT          CREDIT BALANCE
+
+2019-04-01 Opening capital & plant  4,883,900,000    4,883,900,000
+                     brought in                      Dr
+
+TOTALS                              4,883,900,000 0  4,883,900,000
+                                                     DR
+
+DOC-GLB-2019                                                       Page 9 of 27
+ACCOUNT 1210 -- ACCUMULATED DEPRECIATION (ASSET_CONTRA)
+
+DATE          VOUCHER / NARRATION         DEBIT  CREDIT       BALANCE
+2020-03-31    Annual depreciation FY2019  0      488,390,000  488,390,000 Cr
+TOTALS                                           488,390,000  488,390,000 CR
+
+DOC-GLB-2019                                                  Page 10 of 27
+ACCOUNT 2100 -- ACCOUNTS PAYABLE (LIABILITY)
+
+DATE          VOUCHER / NARRATION  DEBIT        CREDIT       BALANCE
+2019-08-14    Vendor bill #11      35,720,952   35,720,952   35,720,952 Cr
+2019-09-11    Vendor payment #8                              0 Dr
+2019-11-10    Vendor bill #34      2,209,486    2,209,486    2,209,486 Cr
+2019-12-10    Vendor bill #13                   58,574,230   60,783,716 Cr
+2019-12-25    Vendor bill #24      19,881,988   19,881,988   80,665,704 Cr
+2020-01-07    Vendor payment #29   55,471,559                78,456,218 Cr
+2020-01-08    Vendor bill #40      32,793,388   32,793,388   111,249,606 Cr
+2020-01-22    Vendor bill #41      146,077,373  10,335,096   121,584,702 Cr
+2020-01-23    Vendor bill #6                    55,471,559   177,056,261 Cr
+2020-02-05    Vendor bill #27                   17,784,893   194,841,154 Cr
+2020-02-06    Vendor payment #20                             174,959,166 Cr
+2020-02-23    Vendor bill #44                   2,306,351    177,265,517 Cr
+2020-02-26    Vendor payment #5                              121,793,958 Cr
+2020-03-14    Vendor payment #33                235,077,943  89,000,570 Cr
+TOTALS                                                       89,000,570 CR
+
+DOC-GLB-2019                                                 Page 11 of 27
+ACCOUNT 2110 -- OUTPUT GST PAYABLE (LIABILITY)
+
+DATE          VOUCHER / NARRATION         DEBIT       CREDIT  BALANCE
+
+2019-07-06 Client invoice AR-2019-00007               3,619,483 3,619,483 Cr
+
+2019-09-17 Client invoice AR-2019-00008               3,619,483 7,238,966 Cr
+
+2019-10-02 Client invoice AR-2019-00017               5,090,092 12,329,058 Cr
+
+2019-10-11 Client invoice AR-2019-00012               7,946,766 20,275,824 Cr
+
+2019-10-20 GST settlement (period 20192)  7,238,966           13,036,858 Cr
+
+2019-11-29 Client invoice AR-2019-00009               3,619,483 16,656,341 Cr
+
+2019-12-01 Client invoice AR-2019-00054               5,673,278 22,329,619 Cr
+
+2019-12-20 Client invoice AR-2019-00022               6,617,553 28,947,172 Cr
+
+2020-01-01 Client invoice AR-2020-00040               4,581,471 33,528,643 Cr
+
+2020-01-19 GST settlement (period 20193)  28,947,172          4,581,471 Cr
+
+2020-02-04 Client invoice AR-2020-00013               7,946,766 12,528,237 Cr
+
+2020-02-10 Client invoice AR-2020-00010               3,619,483 16,147,720 Cr
+
+2020-02-15 Client invoice AR-2020-00046               7,351,023 23,498,743 Cr
+
+2020-02-20 Client invoice AR-2020-00023               6,617,553 30,116,296 Cr
+
+2020-02-27 Client invoice AR-2020-00055               5,673,278 35,789,574 Cr
+
+2020-03-11 Client invoice AR-2020-00041               4,581,471 40,371,045 Cr
+
+2020-03-13 Client invoice AR-2020-00001               2,504,641 42,875,686 Cr
+
+2020-03-26 Client invoice AR-2020-00030               2,546,367 45,422,053 Cr
+
+2020-03-30 Client invoice AR-2020-00018               5,090,092 50,512,145 Cr
+
+TOTALS                                    36,186,138 86,698,283 50,512,145 CR
+
+DOC-GLB-2019                                                  Page 12 of 27
+ACCOUNT 2120 -- TDS PAYABLE (LIABILITY)
+
+DATE          VOUCHER / NARRATION     DEBIT      CREDIT     BALANCE
+2019-09-11    Vendor payment #8       605,439    605,439    605,439 Cr
+2019-10-07    TDS deposited (201909)                        0 Dr
+2020-01-07    Vendor payment #29      37,448     37,448     37,448 Cr
+2020-02-06    Vendor payment #20      1,277,177  336,982    374,430 Cr
+2020-02-07    TDS deposited (202001)  1,920,064             336,982 Cr
+2020-02-26    Vendor payment #5                  940,195    1,277,177 Cr
+2020-03-07    TDS deposited (202002)                        0 Dr
+2020-03-14    Vendor payment #33                 555,820    555,820 Cr
+TOTALS                                           2,475,884  555,820 CR
+
+DOC-GLB-2019                                                Page 13 of 27
+ACCOUNT 2210 -- WORKING CAPITAL BORROWINGS (LIABILITY)
+
+DATE          VOUCHER / NARRATION                DEBIT  CREDIT      BALANCE
+2019-04-02    Working-capital facility drawdown  0      20,000,000  20,000,000 Cr
+TOTALS                                                  20,000,000  20,000,000 CR
+
+DOC-GLB-2019                                                        Page 14 of 27
+ACCOUNT 3000 -- SHARE CAPITAL & RESERVES (EQUITY)
+
+DATE          VOUCHER / NARRATION   DEBIT CREDIT   BALANCE
+
+2019-04-01 Opening capital & plant     5,283,900,000 5,283,900,000
+                     brought in                                   Cr
+
+TOTALS                              0  5,283,900,000 5,283,900,000
+
+                                                   CR
+
+DOC-GLB-2019                                           Page 15 of 27
+ACCOUNT 4002 -- CONTRACT REVENUE -- BRIDGES & FLYOVERS (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT CREDIT    BALANCE
+2019-07-06    Client invoice AR-2019-00007                  20,108,242 Cr
+2019-09-17    Client invoice AR-2019-00008     20,108,242   40,216,484 Cr
+2019-10-11    Client invoice AR-2019-00012                  84,365,187 Cr
+2019-11-29    Client invoice AR-2019-00009     20,108,242   104,473,429 Cr
+2020-02-04    Client invoice AR-2020-00013                  148,622,132 Cr
+2020-02-10    Client invoice AR-2020-00010     44,148,703   168,730,374 Cr
+TOTALS                                                      168,730,374 CR
+                                               20,108,242
+
+                                               44,148,703
+
+                                               20,108,242
+
+                                            0  168,730,374
+
+DOC-GLB-2019                                                Page 16 of 27
+ACCOUNT 4003 -- CONTRACT REVENUE -- WATER TREATMENT (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT CREDIT    BALANCE
+2019-12-20    Client invoice AR-2019-00022                  36,764,185 Cr
+2020-01-01    Client invoice AR-2020-00040     36,764,185   62,216,802 Cr
+2020-02-15    Client invoice AR-2020-00046                  103,055,824 Cr
+2020-02-20    Client invoice AR-2020-00023     25,452,617   139,820,009 Cr
+2020-03-11    Client invoice AR-2020-00041                  165,272,626 Cr
+TOTALS                                         40,839,022   165,272,626 CR
+
+                                               36,764,185
+
+                                               25,452,617
+
+                                            0  165,272,626
+
+DOC-GLB-2019                                                Page 17 of 27
+ACCOUNT 4004 -- CONTRACT REVENUE -- SEWERAGE & DRAINAGE (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT  CREDIT      BALANCE
+2019-10-02    Client invoice AR-2019-00017  0      28,278,294  28,278,294 Cr
+2020-03-13    Client invoice AR-2020-00001         13,914,676  42,192,970 Cr
+2020-03-30    Client invoice AR-2020-00018         28,278,294  70,471,264 Cr
+TOTALS                                             70,471,264  70,471,264 CR
+
+DOC-GLB-2019                                                   Page 18 of 27
+ACCOUNT 4005 -- CONTRACT REVENUE -- BUILDINGS (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT  CREDIT      BALANCE
+2019-12-01    Client invoice AR-2019-00054  0      31,518,216  31,518,216 Cr
+2020-02-27    Client invoice AR-2020-00055         31,518,216  63,036,432 Cr
+TOTALS                                             63,036,432  63,036,432 CR
+
+DOC-GLB-2019                                                   Page 19 of 27
+ACCOUNT 4006 -- CONTRACT REVENUE -- INDUSTRIAL EPC (REVENUE)
+
+DATE          VOUCHER / NARRATION           DEBIT  CREDIT      BALANCE
+2020-03-26    Client invoice AR-2020-00030  0      14,146,485  14,146,485 Cr
+TOTALS                                             14,146,485  14,146,485 CR
+
+DOC-GLB-2019                                                   Page 20 of 27
+ACCOUNT 5100 -- MATERIALS CONSUMED (EXPENSE)
+
+DATE          VOUCHER / NARRATION  DEBIT       CREDIT  BALANCE
+2019-12-10    Vendor bill #13      49,639,178  0       49,639,178 Dr
+2020-01-22    Vendor bill #41      8,758,556           58,397,734 Dr
+TOTALS                             58,397,734          58,397,734 DR
+
+DOC-GLB-2019                                           Page 21 of 27
+ACCOUNT 5110 -- SUBCONTRACTING CHARGES (EXPENSE)
+
+DATE          VOUCHER / NARRATION  DEBIT       CREDIT  BALANCE
+2019-12-25    Vendor bill #24      16,849,143  0       16,849,143 Dr
+2020-01-08    Vendor bill #40      27,791,007          44,640,150 Dr
+TOTALS                             44,640,150          44,640,150 DR
+
+DOC-GLB-2019                                           Page 22 of 27
+ACCOUNT 5120 -- EQUIPMENT HIRE CHARGES (EXPENSE)
+
+DATE          VOUCHER / NARRATION  DEBIT       CREDIT  BALANCE
+2020-02-05    Vendor bill #27      15,071,944  0       15,071,944 Dr
+2020-02-23    Vendor bill #44      1,954,535           17,026,479 Dr
+TOTALS                             17,026,479          17,026,479 DR
+
+DOC-GLB-2019                                           Page 23 of 27
+ACCOUNT 5130 -- SITE SERVICES (EXPENSE)
+
+DATE          VOUCHER / NARRATION  DEBIT       CREDIT  BALANCE
+2019-08-14    Vendor bill #11      30,271,994  0       30,271,994 Dr
+2020-01-23    Vendor bill #6       47,009,796          77,281,790 Dr
+TOTALS                             77,281,790          77,281,790 DR
+
+DOC-GLB-2019                                           Page 24 of 27
+ACCOUNT 5140 -- SPECIALIST WORKS (EXPENSE)
+
+DATE          VOUCHER / NARRATION  DEBIT      CREDIT  BALANCE
+2019-11-10    Vendor bill #34      1,872,446  0       1,872,446 Dr
+TOTALS                             1,872,446          1,872,446 DR
+
+DOC-GLB-2019                                          Page 25 of 27
+ACCOUNT 5200 -- SALARIES & SITE OVERHEADS (EXPENSE)
+
+DATE          VOUCHER / NARRATION             DEBIT    CREDIT BALANCE
+                                              802,761                802,761 Dr
+2019-04-28 Monthly salaries & site overheads
+                     (201904)
+
+2019-05-28 Monthly salaries & site overheads  802,761      1,605,522
+                     (201905)                 802,761      Dr
+                                              802,761
+2019-06-28 Monthly salaries & site overheads  802,761      2,408,283
+                     (201906)                 802,761      Dr
+                                              802,761
+2019-07-28 Monthly salaries & site overheads  802,761      3,211,044
+                     (201907)                 802,761      Dr
+                                              802,761
+2019-08-28 Monthly salaries & site overheads  802,761      4,013,805
+                     (201908)                 802,772      Dr
+                                              9,633,143 0
+2019-09-28 Monthly salaries & site overheads               4,816,566
+                     (201909)                              Dr
+
+2019-10-28 Monthly salaries & site overheads               5,619,327
+                     (201910)                              Dr
+
+2019-11-28 Monthly salaries & site overheads               6,422,088
+                     (201911)                              Dr
+
+2019-12-28 Monthly salaries & site overheads               7,224,849
+                     (201912)                              Dr
+
+2020-01-28 Monthly salaries & site overheads               8,027,610
+                     (201901)                              Dr
+
+2020-02-28 Monthly salaries & site overheads               8,830,371
+                     (201902)                              Dr
+
+2020-03-28 Monthly salaries & site overheads               9,633,143
+                     (201903)                              Dr
+
+TOTALS                                                     9,633,143
+                                                           DR
+
+DOC-GLB-2019                                               Page 26 of 27
+ACCOUNT 5300 -- DEPRECIATION EXPENSE (EXPENSE)
+
+DATE          VOUCHER / NARRATION         DEBIT        CREDIT  BALANCE
+2020-03-31    Annual depreciation FY2019  488,390,000  0       488,390,000 Dr
+TOTALS                                    488,390,000          488,390,000 DR
+
+Accounts Officer  Authorised Signatory, National Infrastructure Corp. Ltd.
+
+DOC-GLB-2019                                                   Page 27 of 27
+

@@ -1,16 +1,16 @@
 {
   "Jal Nigam, Jharkhand": {
     "num_works": 3,
-    "works_with_reference_letter": [
-      "DOC-CC-012 / DOC-REF-011"
-    ],
-    "num_with_reference_letter": 1,
-    "share_pct_whole": 33,
     "completion_certificate_ids": [
       "DOC-CC-012",
       "DOC-CC-115",
       "DOC-CC-131"
     ],
+    "works_with_reference_letter": [
+      "DOC-CC-012 / DOC-REF-011"
+    ],
+    "num_with_reference_letter": 1,
+    "num_lacking_reference_letter": 2,
     "counts_match": true
   },
   "Jharkhand Municipal Corporation": {
@@ -180,40 +180,9 @@
     "verified": true
   },
   "Lakshya Engineering & Construction": {
-    "works": [
-      {
-        "doc": "DOC-CC-018",
-        "value_rupees": 98000000
-      },
-      {
-        "doc": "DOC-CC-030",
-        "value_rupees": 182600000
-      },
-      {
-        "doc": "DOC-CC-046",
-        "value_rupees": 318900000
-      },
-      {
-        "doc": "DOC-CC-051",
-        "value_rupees": 149200000
-      },
-      {
-        "doc": "DOC-CC-067",
-        "value_rupees": 161700000
-      },
-      {
-        "doc": "DOC-CC-101",
-        "value_rupees": 977200000
-      },
-      {
-        "doc": "DOC-CC-144",
-        "value_rupees": 56700000
-      }
-    ],
-    "n": 7,
-    "avg_rupees": 277757142.85714287,
-    "median_rupees": 161700000,
-    "avg_minus_median": 116057142.85714287
+    "total_works": 7,
+    "total_value_rupees": 1944300000,
+    "verified_counts_match": true
   },
   "Irrigation & Waterways Dept, Govt of Uttar Pradesh": {
     "client": "Irrigation & Waterways Dept, Govt of Uttar Pradesh",
@@ -275,22 +244,16 @@
     "works": [
       {
         "doc": "DOC-CC-048",
-        "name": "Canal Lining UP Pkg-48",
-        "client": "Subarnarekha Valley Corporation",
         "value": 135600000,
         "completed": "2010-07-29"
       },
       {
         "doc": "DOC-CC-061",
-        "name": "Material Handling Plant Jharkhand Pkg-61",
-        "client": "National Expressway Development Authority",
         "value": 449000000,
         "completed": "2021-07-31"
       },
       {
         "doc": "DOC-CC-131",
-        "name": "Pipeline Laying Jharkhand Pkg-131",
-        "client": "Jal Nigam, Jharkhand",
         "value": 69200000,
         "completed": "2021-08-17"
       }
@@ -1191,5 +1154,41 @@
     "other_clients": [
       "Trishakti Power Generation Corporation (DOC-CC-044)"
     ]
+  },
+  "Asha Nair classifications": {
+    "distinct_work_classifications": 4,
+    "works": [
+      "Sewerage Drainage",
+      "water treatment",
+      "large bridges",
+      "Small Buildings"
+    ]
+  },
+  "Neha Chopra": {
+    "pmp": "PMI-200006",
+    "pmp_issued": "2021-03-10",
+    "works_for_lakshya": [
+      {
+        "package": "030",
+        "value": 182600000
+      },
+      {
+        "package": "067",
+        "value": 161700000
+      },
+      {
+        "package": "144",
+        "value": 56700000
+      }
+    ],
+    "total_own_works_lakshya": 401000000
+  },
+  "Asha Nair works after PMP": {
+    "pmp_issue_date": "2021-03-10",
+    "works_after_pmp": [
+      "DOC-CC-093",
+      "DOC-CC-145"
+    ],
+    "combined_value_inr": 244200000
   }
 }

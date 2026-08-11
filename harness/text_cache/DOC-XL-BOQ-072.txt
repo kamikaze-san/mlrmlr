@@ -1,0 +1,61 @@
+=== SHEET: BOQ ===
+Item No	Description	Unit	Quantity	Rate (INR)	Amount (INR)
+1	Earthwork in excavation & embankment	cum	486052.512	217	105473395
+2	Granular sub-base (GSB)	cum	50146.905	1163	58320851
+3	Wet mix macadam (WMM)	cum	81824.929	1489	121837320
+4	Dense bituminous macadam (DBM)	MT	27439.21	6233	171028599
+5	Bituminous concrete (BC)	MT	22977.217	6773	155624688
+6	RCC M30 for structures	cum	7201.073	8727	62843766
+TOTAL					675128619
+=== SHEET: Measurements ===
+RA No	Measured On	Item No	Description	Qty Measured	Amount (INR)
+1	2020-07-05 00:00:00	1	Earthwork in excavation & embankment	63281.783	13732147
+1	2020-07-05 00:00:00	2	Granular sub-base (GSB)	7349.719	8547723
+1	2020-07-05 00:00:00	3	Wet mix macadam (WMM)	8145.601	12128800
+1	2020-07-05 00:00:00	4	Dense bituminous macadam (DBM)	2985.888	18611040
+1	2020-07-05 00:00:00	5	Bituminous concrete (BC)	1233.666	8355619
+2	2020-09-27 00:00:00	1	Earthwork in excavation & embankment	41252.212	8951730
+2	2020-09-27 00:00:00	2	Granular sub-base (GSB)	8698.115	10115908
+2	2020-09-27 00:00:00	5	Bituminous concrete (BC)	2292.908	15529863
+2	2020-09-27 00:00:00	6	RCC M30 for structures	3068.389	26777828
+3	2020-12-21 00:00:00	1	Earthwork in excavation & embankment	97780.945	21218465
+3	2020-12-21 00:00:00	3	Wet mix macadam (WMM)	7853.167	11693365
+3	2020-12-21 00:00:00	4	Dense bituminous macadam (DBM)	2767.92	17252447
+3	2020-12-21 00:00:00	6	RCC M30 for structures	1284.64	11211052
+4	2021-03-15 00:00:00	1	Earthwork in excavation & embankment	43548.055	9449928
+4	2021-03-15 00:00:00	2	Granular sub-base (GSB)	17735.633	20626541
+4	2021-03-15 00:00:00	5	Bituminous concrete (BC)	1874.285	12694534
+4	2021-03-15 00:00:00	6	RCC M30 for structures	2131.812	18604326
+5	2021-06-07 00:00:00	1	Earthwork in excavation & embankment	45248.157	9818850
+5	2021-06-07 00:00:00	3	Wet mix macadam (WMM)	5439.02	8098701
+5	2021-06-07 00:00:00	4	Dense bituminous macadam (DBM)	3878.286	24173359
+5	2021-06-07 00:00:00	5	Bituminous concrete (BC)	1461.232	9896925
+5	2021-06-07 00:00:00	6	RCC M30 for structures	1075.684	9387494
+6	2021-08-31 00:00:00	3	Wet mix macadam (WMM)	13715.001	20421636
+6	2021-08-31 00:00:00	4	Dense bituminous macadam (DBM)	2811.412	17523533
+6	2021-08-31 00:00:00	6	RCC M30 for structures	2684.79	23430160
+7	2021-11-23 00:00:00	1	Earthwork in excavation & embankment	121598.945	26386971
+7	2021-11-23 00:00:00	3	Wet mix macadam (WMM)	8740.271	13014263
+7	2021-11-23 00:00:00	4	Dense bituminous macadam (DBM)	3525.444	21974095
+8	2022-02-15 00:00:00	1	Earthwork in excavation & embankment	64325.848	13958709
+8	2022-02-15 00:00:00	2	Granular sub-base (GSB)	22368.312	26014347
+8	2022-02-15 00:00:00	5	Bituminous concrete (BC)	1606.07	10877909
+8	2022-02-15 00:00:00	6	RCC M30 for structures	1205.954	10524364
+9	2022-05-11 00:00:00	1	Earthwork in excavation & embankment	41068.571	8911880
+9	2022-05-11 00:00:00	2	Granular sub-base (GSB)	18911.56	21994144
+9	2022-05-11 00:00:00	3	Wet mix macadam (WMM)	9552.562	14223765
+9	2022-05-11 00:00:00	4	Dense bituminous macadam (DBM)	2606.376	16245540
+10	2022-08-03 00:00:00	1	Earthwork in excavation & embankment	64396.032	13973939
+10	2022-08-03 00:00:00	4	Dense bituminous macadam (DBM)	2592.375	16158274
+10	2022-08-03 00:00:00	5	Bituminous concrete (BC)	2474.101	16757084
+10	2022-08-03 00:00:00	6	RCC M30 for structures	1659.91	14486032
+11	2022-10-26 00:00:00	2	Granular sub-base (GSB)	12616.099	14672523
+11	2022-10-26 00:00:00	4	Dense bituminous macadam (DBM)	1586.597	9889261
+11	2022-10-26 00:00:00	5	Bituminous concrete (BC)	2835.132	19202348
+11	2022-10-26 00:00:00	6	RCC M30 for structures	2018.013	17611197
+TOTAL					675128619
+=== SHEET: Notes ===
+Bill of Quantities and measurement register — contract 72.
+Agency: National Infrastructure Corp. Ltd..
+Quantities are as measured jointly and recorded in the measurement book.
+The measurement total reconciles to the running-account bills raised.

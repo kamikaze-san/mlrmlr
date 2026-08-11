@@ -1,0 +1,78 @@
+                     National Infrastructure Corp. Ltd.
+
+                       Tender Response � Compliance Matrix � GSTIN 19NAICC4417O1Z1
+
+                       ComplianCe Cum eligibility matrix                            Bid Value: INR 11.54 Cr
+
+Tender Ref: RFP-132010767
+
+1. bidder partiCulars
+
+Bidder Name                      National Infrastructure Corp. Ltd.
+GSTIN                            19NAICC4417O1Z1
+PAN                              NAICC4417O
+CIN                              U45201WB2005PLC904417
+Bid Reference                    RFP-132010767
+Bid Submission Date              2022-02-16
+Bid Value                        INR 11.54 Cr
+EMD Amount                       INR 23.08 Lakh (2.0%)
+Pricing Model                    L1
+
+2. eligibility ComplianCe
+
+our position against each eligibility condition of the tender is set out below, reconciled against
+the underlying vouchers before issue.
+
+Sr. Requirement                  Status Supporting Evidence / Document Reference
+1 Valid GST Registration         MET GST Certificate -- GSTIN 19NAICC4417O1Z1
+2 Valid PAN Card                 MET PAN Card -- NAICC4417O
+3 ISO 9001:2015 Certification    MET Certificate DOC-CERT-1 (TUV India)
+4 ISO 14001:2015 Certification   MET Certificate DOC-CERT-
+5 ISO 45001:2018 Certification   MET Certificate DOC-CERT-
+6 Annual Turnover >= INR 180 Cr  MET Audited Financial Statements FY2019-FY2025
+
+      (each of last 3 FY)        MET
+7
+
+DOC-CM-0111                                                                         Page 1 of 2
+Comparable project experience            Completion certificates on record (DOC-CC
+(roads highways)                         series)
+                                         Company registration certificate; incorporation
+8 Minimum 5 years in business       MET  N/A
+                                         EMD challan / BG No. EMD-0111
+9 EMD submission                    MET  Self-declaration; verified on CPPP portal
+                                    MET
+10 Not blacklisted by any Central/  MET  Registration No. N/A
+      State agency                  MET
+                                         License on record; renewed annually
+11 SAM/GeM Registration (if
+      applicable)
+
+12 Labour license under Contract
+      Labour Act
+
+3. teChniCal ComplianCe
+
+the clause-by-clause technical position is set out below, as certified by the officers named at the
+foot of this document.
+
+Sr. Requirement                     Status Remarks
+
+13 Key personnel -- Project         MET  CV and PMP certificate submitted (DOC-CV /
+      Manager with PMP                   DOC-PCERT series)
+
+14 Minimum 10 site engineers        MET Staff list enclosed; 486 engineers available
+15 Equipment list for execution
+16 Safety plan (BOCW Act            MET Asset register on record (210 items)
+
+      compliance)                   MET Safety plan enclosed; zero LTI track record
+17 Quality plan
+                                    MET QA/QC plan as per IS codes enclosed
+
+                                                           Authorised Signatory
+                                                    National Infrastructure Corp. Ltd.
+
+                                                            Date: March 31, 2026
+
+DOC-CM-0111                                                                           Page 2 of 2
+

@@ -1,0 +1,45 @@
+Kalinga National Bank                                            Statement of Account � Current Account
+
+                              ACCOUNT STATEMENT -- FY 2026�27                  IFSC: KNBX0004417
+
+A/c: 00417 2210 9944 � National Infrastructure Corp. Ltd.                    Balance
+                                                                             867,408,731
+Date           Particulars                          Withdrawal   Deposit     839,378,128
+2026-04-01     Opening balance b/f                                           833,621,550
+2026-04-01     Vendor payment #263                  28,030,603   33,828,661  867,450,211
+2026-04-02     Vendor payment #239                  5,756,578                861,593,773
+2026-04-03     Receipt against invoice (rcpt #262)               52,777,625  851,003,440
+2026-04-07     TDS deposited (202603)               5,856,438    48,252,776  903,781,065
+2026-04-10     Vendor payment #205                  10,590,333   60,948,725  871,021,320
+2026-04-11     Receipt against invoice (rcpt #250)                           919,274,096
+2026-04-11     Vendor payment #257                  32,759,745   34,255,655  778,141,913
+2026-04-12     Receipt against invoice (rcpt #391)               28,196,286  839,090,638
+2026-04-19     GST settlement (period 20254)        141,132,183  33,266,922  804,540,029
+2026-04-28     Receipt against invoice (rcpt #386)                           802,614,378
+2026-04-28     Vendor payment #297                  34,550,609   20,225,533  797,108,489
+2026-05-07     TDS deposited (202604)               1,925,651    868,161     740,872,615
+2026-05-11     Vendor payment #302                  5,505,889    25,054,852  775,128,270
+2026-05-12     Vendor payment #304                  56,235,874   46,748,878  736,021,864
+2026-05-25     Receipt against invoice (rcpt #223)               48,252,776  764,218,150
+2026-05-26     Vendor payment #262                  39,106,406               797,485,072
+2026-05-30     Receipt against invoice (rcpt #277)                           795,746,311
+2026-05-31     Receipt against invoice (rcpt #189)  1,738,761                740,243,547
+2026-06-07     TDS deposited (202605)               55,502,764               727,657,277
+2026-06-08     Vendor payment #299                  12,586,270               701,977,761
+2026-06-11     Vendor payment #260                  25,679,516               722,203,294
+2026-06-12     Vendor payment #266                                           723,071,455
+2026-06-16     Receipt against invoice (rcpt #275)                           748,126,307
+2026-06-21     Receipt against invoice (rcpt #425)                           794,875,185
+2026-06-23     Receipt against invoice (rcpt #282)                           843,127,961
+2026-07-01     Receipt against invoice (rcpt #255)
+2026-07-05     Receipt against invoice (rcpt #393)
+
+DOC-BANK-2026                                                                Page 1 of 2
+2026-07-06       Receipt against invoice (rcpt #207)             56,152,433                                                                899,280,394
+2026-07-07       TDS deposited (202606)                                                                                                    897,663,696
+Closing balance                                       1,616,698                                                                            897,663,696
+
+Computer-generated statement; does not require signature. Entries are subject to realisation. Please report discrepancies within 30 days.
+
+DOC-BANK-2026                                                                                                                                           Page 2 of 2
+

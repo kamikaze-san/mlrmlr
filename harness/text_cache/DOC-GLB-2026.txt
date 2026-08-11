@@ -1,0 +1,248 @@
+              NATIONAL INFRASTRUCTURE CORP. LTD.
+
+                          Books of Account � General Ledger � FY 2026�27
+
+                 GENERAL LEDGER -- FISCAL YEAR 2026�27
+
+Volume: GL/2026  91 posted lines � system-generated
+
+Grouped by account per the chart of accounts. Amounts in INR. Balances are running account
+balances (Dr positive). Narrations reference the originating voucher.
+
+DOC-GLB-2026                                                              Page 1 of 9
+ACCOUNT 1010 -- BANK (ASSET)
+
+DATE          VOUCHER / NARRATION   DEBIT       CREDIT      BALANCE
+                                    33,828,661  28,030,603  28,030,603 Cr
+2026-04-01 Vendor payment #263                  5,756,578   33,787,181 Cr
+                                                            41,480 Dr
+2026-04-02 Vendor payment #239
+
+2026-04-03 Receipt against invoice
+                     (rcpt #262)
+
+2026-04-07 TDS deposited (202603)               5,856,438   5,814,958 Cr
+                                                10,590,333  16,405,291 Cr
+2026-04-10 Vendor payment #205                              36,372,334 Dr
+
+2026-04-11 Receipt against invoice  52,777,625
+                     (rcpt #250)
+
+2026-04-11 Vendor payment #257                  32,759,745  3,612,589 Dr
+                                                            51,865,365 Dr
+2026-04-12 Receipt against invoice  48,252,776
+                     (rcpt #391)
+
+2026-04-19 GST settlement (period               141,132,183 89,266,818 Cr
+                     20254)
+
+2026-04-28 Receipt against invoice  60,948,725              28,318,093 Cr
+                     (rcpt #386)
+
+2026-04-28 Vendor payment #297                  34,550,609  62,868,702 Cr
+                                                1,925,651   64,794,353 Cr
+2026-05-07 TDS deposited (202604)               5,505,889   70,300,242 Cr
+                                                56,235,874  126,536,116
+2026-05-11 Vendor payment #302                              Cr
+                                                            92,280,461 Cr
+2026-05-12 Vendor payment #304
+
+2026-05-25 Receipt against invoice  34,255,655
+                     (rcpt #223)
+                                                39,106,406  131,386,867
+2026-05-26 Vendor payment #262                              Cr
+
+2026-05-30 Receipt against invoice  28,196,286              103,190,581
+                     (rcpt #277)    33,266,922              Cr
+
+2026-05-31 Receipt against invoice                          69,923,659 Cr
+                     (rcpt #189)
+                                                1,738,761   71,662,420 Cr
+2026-06-07 TDS deposited (202605)               55,502,764
+                                                12,586,270  127,165,184
+2026-06-08 Vendor payment #299                  25,679,516  Cr
+
+2026-06-11 Vendor payment #260                              139,751,454
+                                                            Cr
+2026-06-12 Vendor payment #266
+                                                            165,430,970
+                                                            Cr
+
+DOC-GLB-2026                                                Page 2 of 9
+2026-06-16 Receipt against invoice  20,225,533  145,205,437
+                     (rcpt #275)    868,161     Cr
+                                    25,054,852
+2026-06-21 Receipt against invoice  46,748,878  144,337,276
+                     (rcpt #425)                Cr
+
+2026-06-23 Receipt against invoice              119,282,424
+                     (rcpt #282)                Cr
+
+2026-07-01 Receipt against invoice              72,533,546 Cr
+                     (rcpt #255)
+                                    48,252,776  24,280,770 Cr
+2026-07-05 Receipt against invoice
+                     (rcpt #393)    56,152,433  31,871,663 Dr
+
+2026-07-06 Receipt against invoice                         1,616,698 30,254,965 Dr
+                     (rcpt #207)    488,829,283 458,574,318 30,254,965 DR
+
+2026-07-07 TDS deposited (202606)
+
+TOTALS
+
+DOC-GLB-2026                                    Page 3 of 9
+ACCOUNT 1100 -- ACCOUNTS RECEIVABLE (ASSET)
+
+DATE          VOUCHER / NARRATION         DEBIT CREDIT            BALANCE
+                                                      35,961,999  35,961,999 Cr
+2026-04-03 Receipt against invoice (rcpt
+                     #262)
+
+2026-04-11 Receipt against invoice (rcpt     53,687,584 89,649,583 Cr
+                     #250)
+
+2026-04-12 Receipt against invoice (rcpt     51,295,743           140,945,326
+                     #391)                                        Cr
+
+2026-04-28 Receipt against invoice (rcpt     61,999,565           202,944,891
+                     #386)                                        Cr
+
+2026-05-25 Receipt against invoice (rcpt     34,846,269           237,791,160
+                     #223)                                        Cr
+
+2026-05-30 Receipt against invoice (rcpt     29,974,429           267,765,589
+                     #277)                                        Cr
+
+2026-05-31 Receipt against invoice (rcpt     35,364,834           303,130,423
+                     #189)                                        Cr
+
+2026-06-16 Receipt against invoice (rcpt     20,574,249           323,704,672
+                     #275)                                        Cr
+
+2026-06-21 Receipt against invoice (rcpt     922,909              324,627,581
+                     #425)                                        Cr
+
+2026-06-23 Receipt against invoice (rcpt     26,634,886           351,262,467
+                     #282)                                        Cr
+
+2026-07-01 Receipt against invoice (rcpt     49,697,005           400,959,472
+                     #255)                                        Cr
+
+2026-07-05 Receipt against invoice (rcpt     51,295,743           452,255,215
+                     #393)                                        Cr
+
+2026-07-06 Receipt against invoice (rcpt     59,693,576           511,948,791
+                     #207)                                        Cr
+
+TOTALS                                    0  511,948,791 511,948,791
+
+                                                                  CR
+
+DOC-GLB-2026                                                          Page 4 of 9
+ACCOUNT 1110 -- RETENTION MONEY RECEIVABLE (ASSET)
+
+DATE          VOUCHER / NARRATION  DEBIT                  CREDIT BALANCE
+
+2026-04-03 Receipt against invoice (rcpt #262) 1,523,813  1,523,813 Dr
+
+2026-04-12 Receipt against invoice (rcpt #391) 2,173,548  3,697,361 Dr
+
+2026-05-30 Receipt against invoice (rcpt #277) 1,270,102  4,967,463 Dr
+
+2026-05-31 Receipt against invoice (rcpt #189) 1,498,509  6,465,972 Dr
+
+2026-06-21 Receipt against invoice (rcpt #425) 39,106     6,505,078 Dr
+
+2026-06-23 Receipt against invoice (rcpt #282) 1,128,596  7,633,674 Dr
+
+2026-07-01 Receipt against invoice (rcpt #255) 2,105,805  9,739,479 Dr
+
+2026-07-05 Receipt against invoice (rcpt #393) 2,173,548  11,913,027 Dr
+
+2026-07-06 Receipt against invoice (rcpt #207) 2,529,388  14,442,415 Dr
+
+TOTALS                             14,442,415 0           14,442,415 DR
+
+DOC-GLB-2026                                              Page 5 of 9
+ACCOUNT 1120 -- TDS RECEIVABLE (ASSET)
+
+DATE          VOUCHER / NARRATION               DEBIT      CREDIT BALANCE
+
+2026-04-03 Receipt against invoice (rcpt #262)  609,525      609,525 Dr
+
+2026-04-11 Receipt against invoice (rcpt #250)  909,959      1,519,484 Dr
+
+2026-04-12 Receipt against invoice (rcpt #391)  869,419      2,388,903 Dr
+
+2026-04-28 Receipt against invoice (rcpt #386)  1,050,840    3,439,743 Dr
+
+2026-05-25 Receipt against invoice (rcpt #223)  590,614      4,030,357 Dr
+
+2026-05-30 Receipt against invoice (rcpt #277)  508,041      4,538,398 Dr
+
+2026-05-31 Receipt against invoice (rcpt #189)  599,403      5,137,801 Dr
+
+2026-06-16 Receipt against invoice (rcpt #275)  348,716      5,486,517 Dr
+
+2026-06-21 Receipt against invoice (rcpt #425)  15,642       5,502,159 Dr
+
+2026-06-23 Receipt against invoice (rcpt #282)  451,438      5,953,597 Dr
+
+2026-07-01 Receipt against invoice (rcpt #255)  842,322      6,795,919 Dr
+
+2026-07-05 Receipt against invoice (rcpt #393)  869,419      7,665,338 Dr
+
+2026-07-06 Receipt against invoice (rcpt #207)  1,011,755    8,677,093 Dr
+
+TOTALS                                          8,677,093 0  8,677,093 DR
+
+DOC-GLB-2026                                                 Page 6 of 9
+ACCOUNT 2100 -- ACCOUNTS PAYABLE (LIABILITY)
+
+DATE          VOUCHER / NARRATION  DEBIT        CREDIT  BALANCE
+2026-04-01    Vendor payment #263  28,513,889   0       28,513,889 Dr
+2026-04-02    Vendor payment #239  5,855,829            34,369,718 Dr
+2026-04-10    Vendor payment #205  10,772,924           45,142,642 Dr
+2026-04-11    Vendor payment #257  33,324,568           78,467,210 Dr
+2026-04-28    Vendor payment #297  35,146,309           113,613,519 Dr
+2026-05-11    Vendor payment #302  5,600,818            119,214,337 Dr
+2026-05-12    Vendor payment #304  57,205,458           176,419,795 Dr
+2026-05-26    Vendor payment #262  39,780,654           216,200,449 Dr
+2026-06-08    Vendor payment #299  56,459,708           272,660,157 Dr
+2026-06-11    Vendor payment #260  12,803,274           285,463,431 Dr
+2026-06-12    Vendor payment #266  26,122,266           311,585,697 Dr
+TOTALS                             311,585,697          311,585,697 DR
+
+DOC-GLB-2026                                            Page 7 of 9
+ACCOUNT 2110 -- OUTPUT GST PAYABLE (LIABILITY)
+
+DATE          VOUCHER / NARRATION            DEBIT        CREDIT  BALANCE
+2026-04-19    GST settlement (period 20254)  141,132,183  0       141,132,183 Dr
+TOTALS                                       141,132,183          141,132,183 DR
+
+DOC-GLB-2026                                                      Page 8 of 9
+ACCOUNT 2120 -- TDS PAYABLE (LIABILITY)
+
+DATE          VOUCHER / NARRATION     DEBIT       CREDIT     BALANCE
+2026-04-01    Vendor payment #263     5,856,438   483,286    483,286 Cr
+2026-04-02    Vendor payment #239                 99,251     582,537 Cr
+2026-04-07    TDS deposited (202603)  1,925,651              5,273,901 Dr
+2026-04-10    Vendor payment #205                 182,591    5,091,310 Dr
+2026-04-11    Vendor payment #257     1,738,761   564,823    4,526,487 Dr
+2026-04-28    Vendor payment #297                 595,700    3,930,787 Dr
+2026-05-07    TDS deposited (202604)  1,616,698              5,856,438 Dr
+2026-05-11    Vendor payment #302     11,137,548  94,929     5,761,509 Dr
+2026-05-12    Vendor payment #304                 969,584    4,791,925 Dr
+2026-05-26    Vendor payment #262                 674,248    4,117,677 Dr
+2026-06-07    TDS deposited (202605)                         5,856,438 Dr
+2026-06-08    Vendor payment #299                 956,944    4,899,494 Dr
+2026-06-11    Vendor payment #260                 217,004    4,682,490 Dr
+2026-06-12    Vendor payment #266                 442,750    4,239,740 Dr
+2026-07-07    TDS deposited (202606)                         5,856,438 Dr
+TOTALS                                            5,281,110  5,856,438 DR
+
+Accounts Officer  Authorised Signatory, National Infrastructure Corp. Ltd.
+
+DOC-GLB-2026                                                 Page 9 of 9
+

@@ -34,8 +34,11 @@ from tools import (  # noqa: E402
     grep_documents,
     verify_client_work_count,
     read_workbook_table,
+    query_db,
+    parse_inr,
+    find_client,
+    find_engineer,
 )
-from cache import cache_lookup, cache_save, cache_dump, cache_search  # noqa: E402
 
 RLM_ERRORS = (
     BudgetExceededError,
@@ -157,21 +160,54 @@ Known gotchas about this corpus -- apply them carefully:
     is actually asking for before picking a formula. Defaulting to
     "Outstanding (INR)" because it's the easiest number to grab is a known
     trap: it answers a question that wasn't asked.
+13. You have query_db(sql) -- a pre-built, pre-validated SQL database
+    (estate.db) covering completion_certificate + company_completion_certificate
+    + personnel_certificate + past_performance_portfolio + reference_letter,
+    extracted and cross-checked ahead of time (validated exact-match against
+    21 independent worked examples). For anything about clients, projects,
+    engineers, work categories, contract values, completion dates, roles
+    (Prime/JV Partner), reference-letter presence, or PMP/Six Sigma
+    credential issuance dates -- START with query_db, not grep_documents or
+    manual text parsing. It is far less error-prone than re-deriving these
+    from prose every time (this corpus has repeatedly punished hand-parsing:
+    off-by-power-of-ten money bugs, silently undercounted clients, engineer
+    name mis-splits). Call query_db("select sql from sqlite_master where
+    type='table'") or just try a query against clients/engineers/projects/
+    credentials if you're unsure of the exact columns -- errors come back
+    as {"error": ...}, not a crash, so it's safe to explore interactively.
+    Money is already integer rupees, dates are ISO 'YYYY-MM-DD'. Client/
+    engineer names may need LIKE '%partial%' rather than exact match --
+    find_client(name_pattern)/find_engineer(name_pattern) are shortcuts for
+    that specific lookup, saving you the boilerplate SQL. This
+    DB does NOT cover workbooks (use read_workbook_table, gotcha #9),
+    general_ledger_book, bank_statement, iso_certificate, tender_dossier, or
+    compliance_matrix -- for those, or for anything query_db can't answer,
+    fall back to read_document/grep_documents as before.
+    TRUST a clean query_db result once your query is unambiguous (a single
+    client_id/engineer_id resolved via one clear LIKE match, a well-formed
+    count/sum/avg/date-diff over it) -- finalize from it directly. Do NOT
+    follow it up by re-reading every underlying certificate one-by-one "to
+    be sure" -- that has been observed costing 10+ extra iterations and
+    100,000+ extra tokens on questions where the DB's number was already
+    correct, for zero change in the final answer. Reserve manual
+    read_document verification for when something is actually in question:
+    query_db returns NULL/empty/multiple candidate rows for a name, the
+    number looks implausible given the question's context, or has_discrepancy
+    is set on a row you're relying on -- not as a default extra step on
+    every question.
+    Only add a WHERE condition if the question's own words ask for it --
+    don't import one from a similar-looking question you've seen elsewhere
+    in this batch (confirmed failure mode: "PMP certification" alone got
+    misread as "completed after his PMP issuance date" and added a spurious
+    completion_date filter that wasn't asked for, wrongly cutting 3 works
+    down to 1).
+    BAD: query_db("select category from projects where engineer_id=5 and
+      completion_date >= '2021-03-10'") -- for "how many categories has he
+      led under his PMP certification" (no date mentioned in the question).
+    GOOD: query_db("select category from projects where engineer_id=5")
+      -- only filter by date when the question itself says "after"/"since"/
+      "before" a date.
 
-You also have a durable cache that survives across separate runs, not just
-within this conversation: cache_lookup(entity_name), cache_save(entity_name,
-facts_dict), and cache_search(query). ALWAYS call cache_lookup(entity_name)
-first for any client/engineer/project you need -- it may already be resolved
-from an earlier question, in this run or a previous one, saving you a full
-re-search. cache_lookup only matches the EXACT string -- if it returns None,
-do NOT assume nothing is cached and immediately re-search from scratch; call
-cache_search(query) first to check for a near-match (a typo, a missing comma,
-a different phrasing of the same entity). cache_search returns candidates, it
-does not pick one for you -- compare them yourself, then cache_lookup the
-exact correct key. Once you fully resolve an entity (e.g. a client's complete
-list of works with values/dates/grades/reference-letter status), ALWAYS call
-cache_save(entity_name, facts_dict) with everything you found before you
-finish answering, so future questions benefit from your work.
 
 CODE FORMAT -- use exactly this and nothing else:
 ```repl
@@ -199,16 +235,32 @@ print(list_doc_types())
 print("test")
 ```
 
-CRITICAL OUTPUT REQUIREMENT -- this is checked automatically, not optional:
-The LAST LINE of your final answer text must be exactly:
-FINAL(<number>)
-with nothing else on that line -- no units, no commas, no words, just
-FINAL( followed by a plain number followed by ). Example: FINAL(84200000)
-This is required even if you already stated the answer earlier in prose, and
-even if you also set answer["content"]/answer["ready"] in the REPL -- the
-FINAL(<number>) line is what gets parsed, and a response without it on its
-own last line is treated as unanswered and scores zero regardless of whether
-the correct number appears elsewhere in your text.
+CRITICAL OUTPUT REQUIREMENT -- checked automatically, not optional. This is
+the single most common source of wasted turns in this harness -- some runs
+have burned over half their iteration budget on this one mistake alone, with
+the correct number already known many turns earlier.
+
+GOOD (the ONLY way to finish -- a real repl block, answer["content"] ends
+with its own FINAL(<number>) line):
+```repl
+answer["content"] = "Brief reasoning here if you want it.\n\nFINAL(84200000)"
+answer["ready"] = True
+```
+
+BAD (prose only, no repl block -- nothing executes, nothing ends, this just
+wastes a turn even though it "looks" done):
+FINAL(84200000)
+
+BAD (real repl block, but answer["content"] is the bare number with no
+FINAL() wrapper -- fails validation exactly like leaving it out):
+```repl
+answer["content"] = "84200000"
+answer["ready"] = True
+```
+
+If feedback says "FINAL value failed validation", that's the second BAD
+case -- re-run the GOOD pattern above with the wrapper text included, don't
+just restate the number in prose.
 """
 
 
@@ -291,9 +343,10 @@ def make_rlm(persistent: bool, use_subagents: bool = False) -> RLM:
             "grep_documents": grep_documents,
             "verify_client_work_count": verify_client_work_count,
             "read_workbook_table": read_workbook_table,
-            "cache_lookup": cache_lookup,
-            "cache_search": cache_search,
-            "cache_save": cache_save,
+            "query_db": query_db,
+            "parse_inr": parse_inr,
+            "find_client": find_client,
+            "find_engineer": find_engineer,
         },
         user_prologue=prologue,
         max_iterations=20,
@@ -421,8 +474,6 @@ def main():
           "112,300,000 + 240,500,000 + 181,700,000 + 491,100,000 + 164,000,000 + "
           "148,500,000 + 28,200,000 = 1,366,300,000 total; largest is Check Dam "
           "Pkg-69 at 491,100,000.")
-    print("\n--- DISK CACHE NOW CONTAINS ---")
-    print(cache_dump())
 
 
 if __name__ == "__main__":
