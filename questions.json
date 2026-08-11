@@ -1,0 +1,1675 @@
+{
+  "set_id": "hidden_set_v1.4",
+  "domain": "infrastructure_construction",
+  "company": "National Infrastructure Corp. Ltd.",
+  "frozen": "2026-08-10",
+  "n_questions": 333,
+  "note": "Questions only. Answers are plain numbers.",
+  "questions": [
+    {
+      "qid": "HV-IC-0001",
+      "question": "Starting with Rajesh Rao\u2019s Six Sigma Black Belt (6S-500161) work on the Material Handling Plant \u2014 Uttar Pradesh Pkg-47 project with the National Expressway Development Authority, what is the combined value of every completed assignment he has done for that client right now to lock the submission?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0002",
+      "question": "Irrigation & Waterways Dept, Govt of Rajasthan; excluding water treatment \u2014 what is the auditable sum of every other executed contract value for that portfolio?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0003",
+      "question": "Regarding the Ring Road \u2014 West Bengal Pkg-128 assignment under PMP, with Amit Iyer as the assigned contact, could you please confirm the collection figure out of 100 for all amounts billed to the client?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0006",
+      "question": "Lakshya Engineering & Construction is under audit, so what is the exact gap between the total value of work awarded and the amount we have actually invoiced?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0009",
+      "question": "pmp deepa chatterjee hospital block \u2014 west bengal pkg-18, what\u2019s the collection percentage out of 100 for billed?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0010",
+      "question": "I\u2019m still getting my head around how we track these, but for the PMP assignment Tanvir Menon is handling on the Flyover \u2014 Delhi Pkg-99, what percentage out of 100 has actually been collected against the total billed?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0014",
+      "question": "I\u2019m pretty sure Pooja Bose\u2019s PMP for the Madhya Pradesh water plant was issued back in March 2021, but do you know how many days actually elapsed before that project wrapped up?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0017",
+      "question": "Community Centre \u2014 Uttar Pradesh Pkg-139\u2019s client: what\u2019s the average size of all work we\u2019ve finished for them, and I need that number by 2 PM for the bid cutoff?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0018",
+      "question": "I\u2019m still finding my way around the bid desk, but could you quickly tell me the combined value of all the West Bengal irrigation and waterways projects that meet or exceed the forty crore threshold?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0020",
+      "question": "PMP; Farhan Rao, could you please confirm the total number of distinct work categories he has successfully led to completion?",
+      "answer_type": "count"
+    },
+    {
+      "qid": "HV-IC-0021",
+      "question": "What is the net difference in the value of work completed for Meridian Constructors & Co. between 2020 and 2022?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0023",
+      "question": "Subarnarekha Valley Corporation's active projects require a final reconciliation, so what is the net shortfall between our awarded contract values and the amounts we have formally billed?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0024",
+      "question": "Cross-checking the Jharkhand Pkg-131 pipeline laying entry for Gautam Joshi, whose PMP was issued 2021-03-10, what is the interval from that issue date to the completion date?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0025",
+      "question": "Trishakti Power Generation Corporation\u2019s file is right here, but I\u2019m still getting my bearings\u2014could you tell me how much their total awarded value moved between 2020 and 2024?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0026",
+      "question": "Just trying to wrap my head around the desk workflow, but could you show me how to quickly sum the value of just the Public Health Engineering Dept, Odisha assignments that clear the twenty-three crore mark?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0027",
+      "question": "Mega Infrastructure Authority assignments cross-checked against the forty-three crore cutoff, what is the sum of the assignments that clear that mark?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0028",
+      "question": "Regarding Sunita Joshi\u2019s PMP credential (PMI-200039) and her assignment on the Ring Road \u2014 Uttar Pradesh Pkg-107 project for the National Expressway Development Authority, what is the combined value of all completed assignments she has delivered to that client?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0030",
+      "question": "I\u2019m looking at the scope figure on Suresh Das\u2019s Six Sigma Black Belt entry for Road Widening \u2014 Odisha Pkg-98, but I know that\u2019s just the single-job number, not the real baseline for their account\u2014what\u2019s the actual average size across every project we\u2019ve wrapped up for that client?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0031",
+      "question": "suresh desai\u2019s gujarat pkg-155 handpump pmp issued march 10 2021, how many days to completion?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0032",
+      "question": "Irrigation & Waterways Dept, Govt of Rajasthan, cross-checked against the 23.0 Cr limit, what is the sum?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0033",
+      "question": "Could you walk me through how to calculate the rupee difference between the mean and the median contract value for all the completed works under the client for Tanvir Menon's Six Sigma Black Belt assignment on the Rajasthan Pkg-58 water treatment plant, and make sure the final number is negative if the mean is lower?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0036",
+      "question": "What\u2019s the defensible aggregate of every executed contract value for the Central Works & Buildings Bureau, once we remove the water treatment segment?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0037",
+      "question": "On the PMP assignment Farhan Roy is managing for Stormwater Drainage \u2014 Gujarat Pkg-80, what is the defensible collection percentage out of 100 against the total billed to the client?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0038",
+      "question": "I\u2019m still learning the ropes on our billing side, but while going through the Six Sigma Black Belt file for Uma Sen\u2019s School Building \u2014 Delhi Pkg-154 assignment, what percentage out of 100 has actually cleared against the total billed for that client?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0039",
+      "question": "Sunita Joshi\u2019s PMP issued 2021-03-10\u2014what\u2019s the combined value of the projects she led that completed after that date, since we need it to lock the bid submission?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0040",
+      "question": "on delhi pkg 37 wtp augmentation, who\u2019s the client and what\u2019s the average size across all their finished work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0041",
+      "question": "That number for the UP irrigation account looks too clean, so what's the actual gap between what they've sanctioned and what we've billed?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0043",
+      "question": "Public Works Department, Govt of Gujarat is the account I'm looking at, and I want to make sure I'm reading the numbers right\u2014could you walk me through how to work out the shortfall between the approved contract totals and the amounts we've actually billed?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0044",
+      "question": "imran joshi six sigma black belt project, what\u2019s the rupee gap between avg and median, negative if avg dips?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0045",
+      "question": "I\u2019m fairly certain Jaya Desai\u2019s PMP for the Odisha Pkg-59 stormwater drainage package was issued on March 10th, 2021, but could you confirm whether my recollection is right on how many days actually passed from that date until the project wrapped up?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0046",
+      "question": "Lakshya Engineering & Construction, what is the exact difference in value between our largest completed project and the second-largest?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0048",
+      "question": "Could you please calculate the aggregate value of the works Suresh Desai led that reached completion after his PMP was issued on 2021-03-10?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0049",
+      "question": "Public Works Department, Govt of Maharashtra assignments look off on the first pass, but could you actually filter for anything at or over the twenty-six crore mark and run the proper calculation?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0050",
+      "question": "Trishakti Power Generation Corporation\u2019s 2022 and 2023 work completed values are needed right now for the submission cutoff\u2014what\u2019s the actual dollar amount between them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0051",
+      "question": "I\u2019m still wrapping my head around how we pull these numbers, but what\u2019s the actual gap between the 2015 and 2017 value of work completed for the Central Works & Buildings Bureau?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0053",
+      "question": "I\u2019m pretty sure I saw the collection percentage out of 100 for the PMP assignment Jaya Desai is handling on STP \u2014 Gujarat Pkg-66 somewhere, but I\u2019m not entirely sure my recollection is right\u2014what\u2019s the exact percentage out of 100 against the total billed for that client?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0054",
+      "question": "lakshmi ghosh\u2019s pmp on the gujarat steel truss bridge, what\u2019s the total value of all completed trishakti work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0055",
+      "question": "Mahanadi Steel Corporation was the account I was looking at earlier, and I\u2019m trying to verify my memory\u2014was the shortfall between the total contract value and what we\u2019ve actually billed significantly higher than I thought?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0056",
+      "question": "When finalizing the audit-ready submission for the National Expressway Development Authority, what is the combined value of all completed assignments Priya Patel has delivered under her PMP credential, beginning with her work on the Anganwadi Centre \u2014 Jharkhand Pkg-142 project?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0059",
+      "question": "PMP issued 2021-03-10; Rahul Menon; Material Handling Plant \u2014 Uttar Pradesh Pkg-89, cross-checking against the timeline, what is the count from that issue to the completion date?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0061",
+      "question": "Subarnarekha Valley Corporation shows works we have awarded, so what is the amount after we cross-check against the invoice amount?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0063",
+      "question": "pmp; manoj verma, how many work categories has he actually wrapped up?",
+      "answer_type": "count"
+    },
+    {
+      "qid": "HV-IC-0071",
+      "question": "Jharkhand Municipal Corporation is where I\u2019m starting, but I\u2019m still learning how we track bid credentials\u2014how much more contract value would we need to bring in to hit the fifty crore mark?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0072",
+      "question": "I\u2019m still finding my footing on the bid desk, so when I pull up Sanjay Joshi\u2019s PMP for the West Bengal Pkg-73 STP, how do I calculate the rupee difference between the mean and median contract values for the completed works under that client, and should I leave the result negative if the mean is lower?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0073",
+      "question": "What percentage out of 100 collected aligns with the billed amounts for the Farhan Khan PMP on Highway Construction \u2014 Rajasthan Pkg-77 versus the invoiced totals?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0074",
+      "question": "PMP; Rohit Singh, please advise on the count of separate work categories he has concluded.",
+      "answer_type": "count"
+    },
+    {
+      "qid": "HV-IC-0076",
+      "question": "rahul das mp pkg-49 rigid pavement pmp issued march 10 2021, days to completion?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0080",
+      "question": "I\u2019m checking the initial figure for Tanvir Menon\u2019s Six Sigma Black Belt work on the STP \u2014 Jharkhand Pkg-94, but it doesn\u2019t align with the actual cash movement, so what\u2019s the real collection percentage out of 100 against the total billed after the proper adjustment?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0081",
+      "question": "I\u2019m trying to check my memory on Kavita Reddy\u2019s PMP from 2021-03-10\u2014was the combined value of the projects she led that finished after that date exactly what I\u2019m recalling?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0082",
+      "question": "neha\u2019s pmp bituminous overlay odisha pkg-35, what\u2019s the average size across all our finished work for that client?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0085",
+      "question": "I\u2019m pretty sure Suvarna Projects Limited\u2019s work completed value was sitting near 380 crores back in 2018, but I want to verify my recollection\u2014what\u2019s the actual variance between that 2018 number and their 2021 figure?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0086",
+      "question": "Tanvir Malhotra\u2019s PMP for the Jharkhand Pkg-78 flyover shows a quick read that doesn\u2019t track, so once you actually pull the client\u2019s completed works and run the proper mean against the median, how much larger is the mean in rupees and should I leave it negative if the mean dips below the median?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0088",
+      "question": "Kavita Reddy\u2019s PMP for the Process Piping Package \u2014 Delhi Pkg-75 is in my hand, but I\u2019m still figuring out the bid desk workflow, so how do I actually calculate the rupee difference between the average and median for every completed job under that client, and should I leave it negative if the average turns out smaller?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0090",
+      "question": "sunita joshi\u2019s six sigma black belt on rigid pavement delhi pkg-28, what\u2019s the combined value of completed suvarna work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0091",
+      "question": "PMP; Pooja Sen, I\u2019m still getting used to how we log finished assignments here\u2014just to make sure I\u2019m tracking this right, how many different work categories has she actually brought to a close?",
+      "answer_type": "count"
+    },
+    {
+      "qid": "HV-IC-0092",
+      "question": "Jal Nigam, Uttar Pradesh: by how much does our largest completed contract exceed the second-biggest, needed to lock the bid before the cutoff?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0093",
+      "question": "I\u2019m still getting my head around how we track client history, but when I pull up Deepa Chatterjee\u2019s PMP file for Hospital Block \u2014 West Bengal Pkg-18, I only see the numbers for that single site\u2014how do I find the overall average for every project we\u2019ve actually finished for whoever hired us for that one?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0095",
+      "question": "National Expressway Development Authority \u2014 what\u2019s the out-of-100 figure for the projects that have a testimonial, as I need it locked in before the submission deadline?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0096",
+      "question": "That number on Jaya Desai\u2019s PMP for Stormwater Drainage \u2014 Odisha Pkg-59 only covers this single site, but I need the proper baseline\u2014what\u2019s the mean across all our finished work for the client who brought us on board?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0097",
+      "question": "Neha Chopra PMP Highway Construction \u2014 Maharashtra Pkg-91 billing versus collection, what is the collection percentage out of 100 against the billing total?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0098",
+      "question": "Meera Roy\u2019s PMP credential (PMI-200011) started on the Process Piping Package \u2014 Delhi Pkg-82 for Subarnarekha Valley Corporation, but what\u2019s the combined value of every completed assignment she\u2019s delivered to them before we hit the submission cutoff?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0099",
+      "question": "Sunita Joshi\u2019s Six Sigma Black Belt project on Rigid Pavement \u2014 Delhi Pkg-28 shows a single-site figure, but I\u2019m fairly certain that\u2019s just the local snapshot\u2014what\u2019s the actual mean across all the completed work we\u2019ve delivered for whoever brought us on for this one?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0100",
+      "question": "Regarding Meera Chatterjee\u2019s PMP for the Rigid Pavement \u2014 Jharkhand Pkg-56, could you please calculate the rupee difference between the mean and median contract values for all completed assignments under the originating client, and record the figure as negative if the mean falls below the median?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0104",
+      "question": "I saw the preliminary number you ran for Mega Infrastructure Authority, but that doesn\u2019t look right\u2014did you actually cross-check the final completed values to see how much the largest one exceeds the second?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0105",
+      "question": "Trishakti Power Generation Corporation has a few bids hitting the twenty-five crore mark, but I need the combined value of those clearing that threshold before the submission window closes\u2014can you pull that figure for me?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0110",
+      "question": "I\u2019m just grabbing Deepa Chatterjee\u2019s PMP for the Institutional Building \u2014 Gujarat Pkg-32 and I\u2019m still figuring out how we log this, so what\u2019s the collection percentage out of 100 against the total billed?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0111",
+      "question": "Regarding Meera Roy\u2019s PMP credential (PMI-200011) and her current Hydro Tunnel \u2014 Jharkhand Pkg-117 engagement for Arunodaya Infrastructure, could you please provide the aggregate value of all completed work she has delivered to that client?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0112",
+      "question": "I need to lock down the exact difference in completed work value for the Public Health Engineering Dept, Odisha between 2023 and 2024\u2014what\u2019s the precise figure?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0114",
+      "question": "PMP; Suresh Das, I\u2019m still getting used to how we track his finished assignments\u2014could you let me know how many different work categories he\u2019s actually seen through to the end?",
+      "answer_type": "count"
+    },
+    {
+      "qid": "HV-IC-0115",
+      "question": "I suspect that number on Meera Banerjee\u2019s PMP for the Pumping Station \u2014 Tamil Nadu Pkg-16 only covers this specific site, so what\u2019s the properly-derived average size across all the completed work we\u2019ve delivered for whoever brought us on board?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0118",
+      "question": "I\u2019m reviewing Meera Roy\u2019s March 10th PMP for the Jharkhand hydro tunnel package, but that initial issue date doesn\u2019t match the actual project window I\u2019m seeing\u2014can you calculate the real elapsed period from when that certification was issued until the tunnel work wrapped up?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0119",
+      "question": "The submission deadline is closing, so what\u2019s the average size of every work we\u2019ve completed for whoever brought us on board for the Water Treatment Plant \u2014 Rajasthan Pkg-58, since Tanvir Menon\u2019s PMP only shows the local snapshot?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0120",
+      "question": "Trishakti Power Generation Corporation is the account under review, and could you please confirm the unbilled remainder after comparing the total awarded contract value against our submitted claims?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0121",
+      "question": "I\u2019ve got the March 10th PMP for Meera on the Jharkhand Pkg-29 ROB assignment, but the usual gap doesn\u2019t add up\u2014could you run the actual count from that certification date to the final completion mark?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0122",
+      "question": "National Expressway Development Authority\u2019s 2017 completed work value is a bit fuzzy in my memory, but I want to confirm my impression\u2014what\u2019s the actual gap between that 2017 figure and their 2021 total?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0123",
+      "question": "PMP; Suresh Desai, please confirm the exact count of distinct work categories he has personally directed from initiation through to final delivery.",
+      "answer_type": "count"
+    },
+    {
+      "qid": "HV-IC-0124",
+      "question": "Mega Infrastructure Authority; excluding water treatment\u2014I\u2019m seeing the headline figure, but that\u2019s clearly inflated by the treatment projects, so what\u2019s the actual sum once we carve that out?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0125",
+      "question": "Suvarna Projects Limited; excluding water supply \u2014 what\u2019s the final tally for the rest before we lock the bid?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0127",
+      "question": "I\u2019m up against a submission deadline for the Irrigation & Waterways Dept, Govt of West Bengal, so what\u2019s the outstanding contract value we still need to secure from them to clear the 120 Cr credential threshold?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0129",
+      "question": "I just picked up the Mahanadi Steel Corporation file and I\u2019m still getting used to how we track these, so could you give me the combined value of just the bids that clear the twenty-one crore mark or higher?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0130",
+      "question": "Amit, on your pkg-104 highway pmp, what\u2019s the combined value of all completed subarnarekha work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0131",
+      "question": "Maharashtra Municipal Corporation; excluding industrial epc \u2014 what is the net contract value for the remaining scope ahead of our submission deadline?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0134",
+      "question": "I'm still getting my bearings on the bid desk, but with Jaya Desai's PMP for the Rail Tunnel \u2014 West Bengal Pkg-123 in hand, could you walk me through how to calculate the mean size across all the finished projects we've delivered for the client who originally brought us on for that tunnel?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0135",
+      "question": "mahanadi steel corp, minus the water treatment side, what\u2019s the actual value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0136",
+      "question": "Divya Singh\u2019s March 10th 2021 PMP for the West Bengal Pkg-13 lift irrigation package\u2014what\u2019s the count from that issue date to the final completion mark?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0138",
+      "question": "Irrigation & Waterways Dept, Govt of Rajasthan is the account I\u2019m reviewing, but that first number I pulled doesn\u2019t seem right\u2014could you clarify the actual gap between the total value we\u2019ve secured and the amount we\u2019ve billed so far?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0139",
+      "question": "Can you confirm the collection percentage out of 100 for the Naveen Roy PMP on Handpump Installation \u2014 Uttar Pradesh Pkg-134 relative to the total billed?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0140",
+      "question": "Mahanadi Steel Corporation; excluding bridges flyovers \u2014 what figure aligns with the cross-check against the ledger?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0144",
+      "question": "I\u2019m prepping the audit response, so what is the exact span from the March 10, 2021 PMP issuance for Naveen Roy\u2019s Handpump Installation \u2014 Uttar Pradesh Pkg-134 through to the final completion date?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0146",
+      "question": "The posted collection number for Kavita Reddy\u2019s PMP on the Flyover \u2014 Gujarat Pkg-8 looks too high compared to what we\u2019re actually receiving, so what percentage of everything billed to that client has actually been collected \u2014 as a number out of 100, not a fraction \u2014 once the proper adjustments are factored in?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0148",
+      "question": "Arunodaya Infrastructure, 2022 to 2023, what's the swing in work completed value before the submission cutoff?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0149",
+      "question": "Rohit Singh\u2019s PMP credential (PMI-200033) is currently logged on the Check Dam \u2014 Maharashtra Pkg-69 for Peninsular Petroleum Corporation, but I have a strong feeling just taking that single project figure is going to throw off our bid\u2014what\u2019s the actual combined value of every completed assignment he\u2019s delivered to them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0151",
+      "question": "Cross-checking Naveen Roy\u2019s PMP issued 2021-03-10 against the project entries\u2014what is the sum of the values for the works he led that finished after that date?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0153",
+      "question": "Could you please sum the values of all completed assignments Pooja Sen has delivered to Trishakti Power Generation Corporation under her Six Sigma Black Belt credential (6S-500157), which is currently active on the Water Treatment Plant \u2014 West Bengal Pkg-44 project?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0155",
+      "question": "What\u2019s the auditable net shift in the Public Works Department, Govt of Gujarat\u2019s completed work value from 2016 through 2018?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0156",
+      "question": "Trishakti Power Generation Corporation bids are being reconciled against the forty crore threshold, what is the sum?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0158",
+      "question": "Can you calculate the exact span from Farhan Rao\u2019s March 10, 2021 PMP issue date to the final completion mark for the Uttar Pradesh Pkg-26 material handling plant before we hit the submission deadline?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0159",
+      "question": "Trishakti Power Generation Corporation; excluding expressways \u2014 what value matches the cross-check against the portfolio?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0161",
+      "question": "What is the defensible interval from the March 10, 2021 PMP issuance for Rahul Menon\u2019s West Bengal Pkg-120 highway tunnel scope through to the final completion date?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0162",
+      "question": "I\u2019m looking at Amit Iyer\u2019s Six Sigma Black Belt certification for the Community Centre \u2014 Uttar Pradesh Pkg-139, but the summary figure feels off, so could you actually derive the rupee gap between the average and median contract values for every completed job under that commissioning client, and leave it negative if the average falls short?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0163",
+      "question": "Trishakti Power Generation Corporation shows the contract value, and what is the amount after cross-checking against the claims we submitted?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0164",
+      "question": "gautam joshi\u2019s jharkhand pkg-61 material handling plant pmp from mar 10 2021\u2014what\u2019s the count to final completion?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0167",
+      "question": "Suresh Das\u2019s Six Sigma Black Belt for the Road Widening \u2014 Odisha Pkg-98 points to a specific client, so what\u2019s the rupee difference between the average and median contract values for all their completed jobs right now, and should I leave it negative if the average dips below the median before we lock this submission?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0172",
+      "question": "National Expressway Development Authority, what is the exact surplus value separating our highest-value finished contract from the next one down?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0175",
+      "question": "I\u2019m still learning how we roll up client totals, but while I\u2019m looking at Jaya Desai\u2019s PMP credential (PMI-200032) for the Stormwater Drainage \u2014 Odisha Pkg-59 project, what\u2019s the full tally of every completed scope she\u2019s delivered to the Public Health Engineering Dept, Odisha?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0176",
+      "question": "You handed me the Suvarna Projects Limited figure, but that\u2019s clearly still carrying the industrial epc piece, so what\u2019s the real number once that segment is stripped out?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0177",
+      "question": "I'm still getting my bearings here, but could you walk me through how to calculate the total elapsed time from Sunita Joshi's March 10th PMP issue for the Uttar Pradesh Pkg-25 residential quarters through to the final completion date?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0178",
+      "question": "sanjay joshi's pmp: what's the rupee mean-median gap for his client's works, negative if mean is lower?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0180",
+      "question": "Suvarna Projects Limited \u2014 could you please confirm the final numerical value representing the share of our projects with that client that are supported by client testimonials, expressed as a whole number out of one hundred?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0181",
+      "question": "PMP; Lakshmi Ghosh, what is the verified count of separate work categories she has successfully closed out?",
+      "answer_type": "count"
+    },
+    {
+      "qid": "HV-IC-0183",
+      "question": "I\u2019m still new to the Jal Nigam, Jharkhand portfolio\u2014could you tell me what the year-on-year movement in completed work value was between 2020 and 2021?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0184",
+      "question": "Naveen Roy's PMP for the Cable Stayed Bridge \u2014 Delhi Pkg-109; what's the mean size across the client's full portfolio?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0185",
+      "question": "Could you please confirm the aggregate figure for our Jal Nigam, Uttar Pradesh engagements after the water treatment division is excluded?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0186",
+      "question": "That first total I saw for Lakshmi Ghosh\u2019s PMP issued 2021-03-10 clearly includes earlier completions, so what\u2019s the actual combined value of just the works she led that finished after that March date?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0188",
+      "question": "pooja sen\u2019s six sigma bb for hydro tunnel pkg-105 is site-specific, so what\u2019s the average size for her client?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0189",
+      "question": "Meera Roy's PMP for the Sewerage Network \u2014 Odisha Pkg-17 \u2014 I'm locking the bid submission and need it for the deadline, so what percentage of everything billed to that client has actually been collected \u2014 as a number out of 100, not a fraction?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0191",
+      "question": "Subarnarekha Valley Corporation is still a bit of a puzzle for me, so could you help me figure out the combined value of only the assignments that clear the two crore mark?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0192",
+      "question": "National Expressway Development Authority \u2014 I\u2019m still getting used to how we pull these numbers for the bid pack, so could you show me how to calculate how much our biggest finished contract there exceeds the next one down?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0193",
+      "question": "Neha Chopra\u2019s PMP for the WTP Augmentation \u2014 West Bengal Pkg-30 is on my desk, but the number currently attached to her client\u2019s completed jobs feels off, so could you actually derive how much larger the average contract value of the works we\u2019ve finished for that commissioning client is than the median, and leave it negative if the average is the smaller of the two?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0194",
+      "question": "Pooja Bose\u2019s PMP for the Process Piping Package \u2014 Tamil Nadu Pkg-54 is hitting the cutoff, so what\u2019s the rupee difference showing how much larger the average contract value of the works we\u2019ve completed for that commissioning client is than the median, and should I leave it negative if the average is the smaller of the two before we lock this?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0195",
+      "question": "I\u2019m just pulling Suresh Chopra\u2019s PMP for the Substation EPC \u2014 Tamil Nadu Pkg-19 and I\u2019m still getting my bearings with how we track incoming payments, so what percentage of everything billed to that client has actually been collected \u2014 as a number out of 100, not a fraction?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0196",
+      "question": "gujarat pw, how much more value do we need to clear the 70cr bar?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0197",
+      "question": "Maharashtra Municipal Corporation is showing a total awarded figure that feels off, so can you calculate the actual shortfall between the contract value and what we\u2019ve actually billed?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0198",
+      "question": "Arunodaya Infrastructure is pulling up a number that doesn\u2019t seem right, so could you actually work out the true gap between the full value of their awards and what we\u2019ve managed to invoice?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0200",
+      "question": "how many days from lakshmi's mar 10 pmp for the mp pkg-42 widening to handover?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0202",
+      "question": "Public Health Engineering Dept, Odisha has several assignments in our pipeline, and could you please calculate the combined value of those meeting or exceeding the eighteen crore threshold for our submission file?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0206",
+      "question": "I\u2019m reviewing Uma Sen\u2019s Six Sigma Black Belt (6S-500164) on the Check Dam \u2014 Uttar Pradesh Pkg-83 scope for Mega Infrastructure Authority, but I suspect just pulling that single project figure is going to skew our bid\u2014what\u2019s the actual combined value of every completed assignment she\u2019s delivered to them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0207",
+      "question": "Regarding Meera Roy\u2019s PMP issued on March 10, 2021, what is the precise combined value of the assignments she directed that wrapped up after that date?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0209",
+      "question": "Amit Iyer\u2019s Six Sigma Black Belt certification for the Rigid Pavement \u2014 Madhya Pradesh Pkg-7 job is on my desk, but the number currently circulating feels like a localized read rather than the full picture, so what\u2019s the actual mean size across every project we\u2019ve wrapped up for the organization that brought us in for that pavement contract?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0211",
+      "question": "Could you verify the completed work values for Jharkhand Municipal Corporation in 2013 and 2017 so I can back up the variance for the audit?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0212",
+      "question": "mega infra authority contract value seems high, can you pull the delta between secured work and submitted claims?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0214",
+      "question": "Starting from the PMP for Amit Iyer on the Community Centre \u2014 Uttar Pradesh Pkg-139, I suspect the collection rate currently showing is inflated, so what\u2019s the verified collection percentage out of 100 for that client\u2019s total billed amount once we factor in the actual receipts?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0215",
+      "question": "Subarnarekha Valley Corporation is coming up in the auditor review, so what\u2019s the defensible figure we should quote once we filter out the industrial epc work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0216",
+      "question": "peninsular petroleum corporation excluding buildings, what\u2019s the actual sum we\u2019re quoting?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0217",
+      "question": "Meridian Constructors & Co., please confirm how much our largest work exceeds the second-largest.",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0220",
+      "question": "peninsular petroleum bids, what\u2019s the sum for anything hitting fifteen crore or more?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0222",
+      "question": "priya's rajasthan pumping station pmp is here, but what's the mean volume across all her client's completed jobs?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0223",
+      "question": "Trishakti Power Generation Corporation is hitting the submission window, so what\u2019s the actual sum we need to quote right now after dropping the industrial epc work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0224",
+      "question": "I\u2019m pulling up Uma Sen\u2019s Six Sigma Black Belt (6S-500164) on the Pumping Station \u2014 Odisha Pkg-79 scope for the Central Works & Buildings Bureau, but I need the full rollup of every completed assignment she\u2019s delivered to them before we submit\u2014what\u2019s that combined total?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0225",
+      "question": "PMP; Sunita Joshi, that quick count I\u2019m looking at doesn\u2019t quite add up\u2014could you confirm the actual number of distinct work categories she\u2019s personally led to completion?",
+      "answer_type": "count"
+    },
+    {
+      "qid": "HV-IC-0226",
+      "question": "I\u2019m still getting my bearings on the bid desk, but when I start with the Tamil Nadu Municipal Corporation portfolio and exclude the bridges and flyovers, how do I calculate the right figure for the rest?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0227",
+      "question": "Jal Nigam, Jharkhand is on my desk and I'm still getting used to how we track our billing\u2014could you point me to the actual shortfall between the total value of the projects they've handed over and what we've managed to bill so far?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0228",
+      "question": "Could you verify the finalized completed work valuations for Mega Infrastructure Authority in both 2014 and 2025 so I can reconcile the period-over-period shift for the audit file?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0229",
+      "question": "Cross-checking Pooja Sen\u2019s Six Sigma Black Belt (6S-500157) against the Hydro Tunnel \u2014 West Bengal Pkg-105 scope, I need to verify the exact aggregate for the audit file\u2014what is the combined value of every completed assignment she has delivered to Suvarna Projects Limited?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0232",
+      "question": "I\u2019m looking at the draft breakdown for Peninsular Petroleum Corporation, but that initial figure seems off\u2014could you verify the actual calculation to see how much our top finished contract beats the one just behind it by?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0233",
+      "question": "I'm looking at Jaya Desai's PMP credential (PMI-200032) for the Drainage Works \u2014 Tamil Nadu Pkg-141 scope with Mahanadi Steel Corporation and I'm not clear on whether I should just use this line item or sum up her entire track record\u2014what's the total value of all her completed projects for Mahanadi Steel Corporation?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0234",
+      "question": "Cross-checking against the client roster for Sanjay Joshi\u2019s PMP on the Material Handling Plant \u2014 Maharashtra Pkg-96, what is the mean size across work we delivered to that organization?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0235",
+      "question": "national expressway development authority excluding industrial epc, what\u2019s the real number we\u2019re locking in?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0236",
+      "question": "Tamil Nadu Municipal Corporation is coming up in my head and I have a half-remembered sense of how much our top finished contract there beats the second one, but I want to verify if my memory is right\u2014could you confirm the exact figure?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0240",
+      "question": "Regarding Asha Nair\u2019s Six Sigma Black Belt certification tied to the WTP Augmentation \u2014 Maharashtra Pkg-93 assignment, could you please determine the typical project scale across all finished engagements we have delivered to the commissioning authority?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0242",
+      "question": "Trishakti Power Generation Corporation submissions require verification, could you please provide the aggregate value for all proposals meeting the seven crore rupee threshold?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0243",
+      "question": "Arunodaya Infrastructure is on my desk and I\u2019m still finding my way through the bid compilation process, so could you quickly tell me by how much our largest completed project there exceeds the second one?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0244",
+      "question": "pritis pmp hit mar 10 2021 for the west bengal hospital block, how many days to wrap up?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0248",
+      "question": "That quick figure you pulled for the Maharashtra PWD looks suspiciously round\u2014could you actually run the math to confirm exactly how much our largest completed project exceeds the second one by?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0249",
+      "question": "I'm still getting my bearings with the Tamil Nadu Municipal Corporation portfolio\u2014could you point me to the 2013 and 2018 completed work totals so I can see how they compare?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0253",
+      "question": "Hey, I\u2019m still getting my bearings with the bid workflow \u2014 for the Maharashtra PWD projects, what\u2019s the whole number out of a hundred that represents the portion of our work backed by a client reference?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0255",
+      "question": "The figure circulating for Suvarna Projects Limited looks too neat to be accurate\u2014could you actually verify the completed project values and work out the real difference between our largest one and the second largest?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0256",
+      "question": "I\u2019m checking Priti Pillai\u2019s PMP for the Material Handling Plant \u2014 Madhya Pradesh Pkg-68 and I\u2019m fairly certain the collection figure we\u2019re tracking is in the mid-seventies, but I want to confirm whether my recollection is right\u2014what percentage of everything billed to that client has actually been collected as a number out of 100, not a fraction?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0258",
+      "question": "Subarnarekha Valley Corporation has several active tenders, and could you please calculate the cumulative figure for those valued at twenty-two crore rupees or higher?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0259",
+      "question": "Tanvir Menon\u2019s PMP for the Hydro Tunnel \u2014 Madhya Pradesh Pkg-108 requires a precise valuation, so could you calculate the rupee difference between the average and median contract values for all completed projects under the commissioning client, leaving the figure negative if the average is lower than the median?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0260",
+      "question": "I\u2019m reviewing Farhan Roy\u2019s PMP credential for the Stormwater Drainage \u2014 Gujarat Pkg-80 scope with Trishakti Power Generation Corporation, but I\u2019m fairly certain just copying that one line item will tank our margin\u2014what\u2019s the actual combined value of every completed assignment he\u2019s delivered to them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0263",
+      "question": "phed odisha bid, how many of the five completed jobs lack a client reference letter on file?",
+      "answer_type": "count"
+    },
+    {
+      "qid": "HV-IC-0264",
+      "question": "Mahanadi Steel Corporation has a handful of assignments on our board that I\u2019m trying to verify, but I can\u2019t quite recall the exact count\u2014could you confirm if the combined figure for anything crossing the thirty-five crore mark matches what I\u2019m thinking?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0266",
+      "question": "tamil nadu municipal corporation totals look off, can you work out missing amount between commitments and our bills?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0268",
+      "question": "Just picking up Tanvir Malhotra's PMP for the Cable Stayed Bridge \u2014 Uttar Pradesh Pkg-121, and I'm still learning how we track client portfolios, but what's the mean size across every completed assignment we've delivered to that commissioning authority?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0269",
+      "question": "Mega Infrastructure Authority, 2013 and 2016\u2014what\u2019s the absolute difference in completed work value between those two years so I can lock the final bid?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0270",
+      "question": "Neha Chopra's PMP issued 2021-03-10 is the reference\u2014what is the combined value of the works she led that completed after that date, cross-checked against the completion dates?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0271",
+      "question": "I\u2019m pretty sure Lakshmi Ghosh\u2019s PMP for the Steel Truss Bridge \u2014 Gujarat Pkg-112 ties into a client portfolio where the mean contract value sits roughly fifteen lakhs above the median, but could you actually calculate the exact rupee gap between the average and median for all finished jobs under that commissioning client and confirm whether my recollection is right?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0273",
+      "question": "When I\u2019m prepping the National Expressway Development Authority breakdown and need to exclude the industrial epc segment, what\u2019s the auditable figure I should stand behind for client verification?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0276",
+      "question": "Asked by someone reconciling records. PMP; Meera Roy. Cross-checking against the client portfolio, what is the rupee difference between the average and median contract values for the works, and should the figure be negative if the average is smaller?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0278",
+      "question": "I'm reviewing Tanvir Menon's PMP for the Rail Tunnel \u2014 Jharkhand Pkg-102, but I need the mean scale across every finished assignment we've delivered to the commissioning authority for that one.",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0279",
+      "question": "Could you send me the verified completed work totals for Arunodaya Infrastructure in 2016 and 2023 for the auditor review?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0280",
+      "question": "I\u2019m half-remembering that the total for Rajesh Rao\u2019s completed work with the Public Health Engineering Dept, Odisha is just the School Building \u2014 Odisha Pkg-136 line item on his PMP (PMI-200031), but I want to confirm whether that\u2019s right or if I\u2019m missing other assignments\u2014what\u2019s the actual combined value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0282",
+      "question": "Mahanadi Steel Corporation, 2022 and 2025\u2014I\u2019m cross-checking the surface figure and it doesn\u2019t quite add up. What\u2019s the actual net shift in completed work value between those two years?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0284",
+      "question": "meridian constructors & co. awarded value seems off, can you work out the gap between secured work and billed?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0285",
+      "question": "I'm looking at Suvarna Projects Limited and the value they've put on the table doesn't match the cash flow we're showing, can you dig into the variance between the total scope they've handed over and the value we've successfully claimed?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0286",
+      "question": "That initial read on the Jal Nigam Uttar Pradesh pipeline feels off\u2014could you actually calculate the combined value for every assignment clearing the thirty-five crore mark?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0287",
+      "question": "The draft figure circulating looks off\u2014can you walk me through the actual derived gap between Mega Infrastructure Authority's 2010 baseline and 2018 completed work totals?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0289",
+      "question": "Suvarna Projects Limited, 2012 and 2014\u2014what\u2019s the movement in completed work so I can lock the bid before the 5 PM cutoff?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0290",
+      "question": "I'm still getting my bearings with the timeline tracking here, but could you help me figure out how many days Rahul Das's March 10, 2021 PMP for the Delhi Pkg-81 institutional building ran until the final handover?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0291",
+      "question": "Asha Nair\u2019s Six Sigma Black Belt ties into the School Building \u2014 Madhya Pradesh Pkg-145 job, but the figure circulating doesn\u2019t seem right\u2014what\u2019s the actual average size across every finished assignment we\u2019ve delivered to the organization that commissioned that one?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0292",
+      "question": "National Expressway Development Authority; excluding roads highways, could you please confirm the aggregate value of our remaining engagements for this client?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0293",
+      "question": "Peninsular Petroleum Corporation, 2019 versus 2021\u2014I\u2019m pretty sure the completed work value shifted by a solid margin, but I\u2019m not entirely confident in my memory, so could you confirm whether my recollection is right and what the actual difference is?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0294",
+      "question": "Mega Infrastructure Authority\u2019s current portfolio is on our books, but I need to reconcile the official award totals against our submitted claims to give the auditor a defensible variance number\u2014can you calculate the exact gap between what they\u2019ve committed us to and what we\u2019ve formally claimed?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0295",
+      "question": "What\u2019s the verified gap between the National Special Projects Office 2013 completed work total and the 2025 figure that I should lock in?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0296",
+      "question": "Just pulling Meera Roy\u2019s PMP for the ROB \u2014 Jharkhand Pkg-29 job, and I\u2019m still learning how we map out client portfolios, but what\u2019s the typical scale across every completed assignment we\u2019ve handed over to the organization that commissioned that one?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0297",
+      "question": "pheg gujarat 2010 vs 2017\u2014what\u2019s the actual move in completed work value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0299",
+      "question": "I\u2019m reviewing the National Expressway Development Authority portfolio and the first pass figure seems off\u2014could you actually run the numbers and give me the proper sum for the projects that clear the twenty-one crore threshold?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0300",
+      "question": "I\u2019m still getting my head around how we track the National Special Projects Office portfolio, but if I set aside the large bridges assignments in this file, what\u2019s the remaining value we should carry for the rest of their projects?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0301",
+      "question": "Suvarna Projects Limited is on my desk for audit prep, and I need to pin down the exact gap between the total value they\u2019ve committed us to and the amount we\u2019ve actually billed so far\u2014can you calculate that shortfall?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0302",
+      "question": "My memory is fuzzy on whether Meera Roy\u2019s PMP (PMI-200011) only shows the Hospital Block \u2014 Odisha Pkg-39 project for Peninsular Petroleum Corporation, or if there are other scopes I\u2019m missing\u2014can you confirm the actual combined value of every completed assignment she\u2019s delivered to them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0304",
+      "question": "I\u2019m fairly certain Chandan Banerjee\u2019s PMP for the Six-Lane Highway \u2014 West Bengal Pkg-116 connects to a commissioning client where the mean contract value sits a bit above the median, but could you actually calculate the exact rupee difference between the average and median for all finished jobs under that client, and should I leave the figure negative if the average turns out to be the smaller of the two?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0305",
+      "question": "I\u2019m still learning how we track these, but when I look at Meera Banerjee\u2019s PMP issued on March 10th, 2021, what\u2019s the combined value of just the works she led that finished after that certification date?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0306",
+      "question": "I\u2019m reviewing the Suvarna Projects Limited pipeline and my memory on the heavier contracts feels a bit fuzzy\u2014could you check whether the combined value for anything clearing the eleven crore mark aligns with what I\u2019m picturing?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0310",
+      "question": "subarnarekha valley corp 2016 vs 2017\u2014what\u2019s the delta on completed work value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0311",
+      "question": "Subarnarekha Valley Corporation is on my desk for the audit review, and I need the defensible figure showing exactly by how much our largest completed work exceeds the second one\u2014could you calculate that difference?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0312",
+      "question": "PMP issued 2021-03-10; Asha Nair; WTP Augmentation \u2014 Maharashtra Pkg-93 \u2014 could you please calculate the total elapsed period from that certification date through to the final completion of the project?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0313",
+      "question": "Central Works & Buildings Bureau shows two awarded works on our side, but what is the gap between the value they assigned and the value we billed?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0314",
+      "question": "I noticed the initial count for Mega Infrastructure Authority, but that seems off, so could you actually work out the share of our projects with them that carry a client sign-off and just give me the final whole number out of a hundred?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0315",
+      "question": "amit's six sigma pkg-7 needs a quick calc: avg minus median client value in r, negative if lower?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0316",
+      "question": "I\u2019m still getting my bearings with the Jal Nigam UP file here\u2014could you let me know the net difference in completed work value between 2011 and 2018?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0318",
+      "question": "The preliminary tally for Meera's March 10, 2021 PMP on the Tamil Nadu Pkg-9 WTP augmentation doesn't quite add up\u2014could you calculate the actual number of days from that certification issuance to the final handover?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0319",
+      "question": "Public Works Department, Govt of Maharashtra; excluding sewerage drainage\u2014I keep seeing the gross figure floating around, but I know that\u2019s still bundling the drainage scope, so what\u2019s the actual derived value we should be standing behind?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0322",
+      "question": "National Expressway Development Authority assignments require cross-checking against the ten crore mark\u2014can you calculate the aggregate for entries meeting that limit?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0323",
+      "question": "Arunodaya Infrastructure; excluding tunnels, is the rest of the portfolio the figure I\u2019m half-remembering?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0324",
+      "question": "I'm half-remembering the timeline for Amit Mukherjee's March 10, 2021 PMP on the Institutional Building \u2014 Uttar Pradesh Pkg-11 site\u2014could you confirm how long it actually ran from that certification date to handover?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0326",
+      "question": "Maharashtra Municipal Corporation requires the precise difference between our highest-value completed assignment and the subsequent one for the ongoing submission, could you please calculate that figure?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0327",
+      "question": "Public Health Engineering Dept, Odisha\u2014still getting my bearings with how we track these, could you let me know how much the completed work amount shifted between 2020 and 2025?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0328",
+      "question": "central works & buildings bureau excluding small buildings, what\u2019s the actual value we\u2019re carrying?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0329",
+      "question": "meera banerjee\u2019s pmp for the rigid pavement tn pkg-70, what\u2019s the mean size across our projects for that client?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0330",
+      "question": "National Special Projects Office awarded value versus our invoiced value, what is the shortfall?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0331",
+      "question": "meera roy's pmp for ut pr pkg 2 wtp augmentation, what's the collection % out of 100 on billed?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0332",
+      "question": "Subarnarekha Valley Corporation just landed on my desk\u2014could you walk me through the steps to pull the difference between our highest-value completed assignment for them and the next one down?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0333",
+      "question": "pmp; naveen roy. need rupee gap between average and median values for that client's work, negative if average lower?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0334",
+      "question": "Just pulled Jaya Desai\u2019s PMP from March 10, 2021 off the desk\u2014what\u2019s the combined value of only the assignments she headed that wrapped up after that issuance date?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0335",
+      "question": "I\u2019m cross-checking Suresh Desai\u2019s March 10, 2021 PMP for the Odisha residential quarters package and noticed the preliminary tally looks off\u2014could you actually calculate the real interval from that certification date through to final completion?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0336",
+      "question": "Cross-checking Suresh Desai PMP Handpump Installation Gujarat Pkg-155 against payment logs, what percentage of billed amount collected out of 100?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0337",
+      "question": "I\u2019m looking at Rahul Menon\u2019s PMP for the Highway Tunnel \u2014 West Bengal Pkg-120, and I\u2019m still getting my bearings with how we track client portfolios, but what\u2019s the average size across every completed project we\u2019ve handed over to the department that commissioned that one?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0338",
+      "question": "public health engineering dept odisha awarded works, what\u2019s the gap between total award value and our billed amount?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0339",
+      "question": "Could you please calculate the total number of days from the March 10, 2021 PMP issuance for Neha Chopra through to the final completion of the WTP Augmentation \u2014 West Bengal Pkg-30 assignment?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0340",
+      "question": "With reference to Rahul Menon\u2019s PMP for the Rural Road Upgradation \u2014 Jharkhand Pkg-153 assignment, what is the average contract value across all completed engagements for the commissioning authority?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0342",
+      "question": "Cross-checking the PMP for Naveen Roy on STP \u2014 Uttar Pradesh Pkg-31, what is the average size across all assignments for the client that commissioned STP \u2014 Uttar Pradesh Pkg-31?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0343",
+      "question": "I'm half-remembering that Amit Iyer's Six Sigma Black Belt scope on the Rigid Pavement \u2014 Madhya Pradesh Pkg-7 project is his only assignment for Mahanadi Steel Corporation, but I want to confirm if I'm missing other scopes\u2014what's the actual combined value of every completed work he's delivered to them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0344",
+      "question": "irrigation & waterways dept, govt of west bengal, what\u2019s the difference between our biggest and next completed jobs?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0346",
+      "question": "I\u2019m reviewing the PMP for Neha Chopra on the Bituminous Overlay \u2014 Odisha Pkg-35 and the collection rate currently showing looks suspiciously high, so what\u2019s the actual percentage out of 100 of everything billed to that client that has genuinely come in?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0347",
+      "question": "Meridian Constructors & Co. looks like it\u2019s just showing a raw count, so could you actually calculate the share of those assignments that came with a client endorsement and just give me the final whole number out of a hundred?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0348",
+      "question": "I\u2019m fairly certain Rahul Das\u2019s PMP was issued on March 10th, 2021, but could you just confirm the combined value of the works he led that finished after that certification?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0349",
+      "question": "Hey, I\u2019m just grabbing Sunita Joshi\u2019s PMP for the Uttar Pradesh residential quarters package, and since I\u2019m still learning how we track client portfolios, could you calculate the rupee difference between the average and median contract values for the commissioning client\u2019s completed jobs, and let me know if I should mark it negative whenever the average ends up lower?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0350",
+      "question": "Bid deadline is tight, so what\u2019s the collection percentage out of 100 for Rahul Menon\u2019s PMP on the Material Handling Plant \u2014 Uttar Pradesh Pkg-89 so I can lock the submission?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0351",
+      "question": "PMP issued 2021-03-10 for Rahul Menon\u2014what\u2019s the combined value of only the works he led that finished after that date, since the bid pack needs the post-certification sum right now?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0352",
+      "question": "Could you please confirm the collection percentage out of 100 for Chandan Banerjee\u2019s PMP on the Six-Lane Highway \u2014 West Bengal Pkg-116?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0356",
+      "question": "National Special Projects Office is on my desk, and I need the exact amount by which our highest-value completed assignment for them exceeds the next one down\u2014could you calculate that figure?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0357",
+      "question": "for odisha phed, what\u2019s the out of 100 figure for projects with client approval?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0361",
+      "question": "Regarding the PMP for Neha Chopra on ROB \u2014 Delhi Pkg-36, could you please confirm what percentage out of 100 of the total billed amount has actually been collected for the client?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0362",
+      "question": "Following up on the Subarnarekha Valley Corporation account, that first number you sent looks like a raw sum of the awards\u2014can you actually calculate the real gap between the total value they\u2019ve assigned us and what we\u2019ve successfully billed?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0368",
+      "question": "I\u2019m still getting my bearings on how we track these, but could you tell me how many days elapsed from Naveen\u2019s March 10, 2021 PMP for the Uttar Pradesh Pkg-31 STP site until the work actually wrapped up?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0371",
+      "question": "Public Health Engineering Dept, Odisha has awarded us a few projects, but am I right that my recollection is correct about how much of the total value is still sitting above what we\u2019ve actually invoiced?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0373",
+      "question": "I\u2019m looking at Meera Banerjee\u2019s PMP for the Pumping Station \u2014 Tamil Nadu Pkg-16 and I\u2019m still getting my bearings on how we track what we\u2019ve actually brought in, so what\u2019s the figure out of 100 that shows what portion of the total billed amount has cleared?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0374",
+      "question": "PMP; Imran Joshi\u2019s Patch Repair \u2014 Delhi Pkg-132 is on my desk, and while the dashboard flashes a quick rupee figure, I\u2019m fairly certain that\u2019s just a surface-level total rather than the actual spread\u2014could you properly derive the average and median contract values for the commissioning client behind that package, then give me the exact rupee gap between them, negative if the average ends up lower?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0376",
+      "question": "That initial read on Lakshya Engineering & Construction's contract roll feels off\u2014could you actually filter for the heavier commitments crossing the fifteen crore mark and give me the properly derived sum?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0377",
+      "question": "irr & waterways dept rajasthan roll, can you sum the values clearing the twenty six crore mark?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0380",
+      "question": "PMP; Tanvir Menon, what\u2019s the exact count of distinct work categories he\u2019s personally led to completion before we lock the submission?",
+      "answer_type": "count"
+    },
+    {
+      "qid": "HV-IC-0381",
+      "question": "Arunodaya Infrastructure, submission due, what's the outstanding balance against the total contract value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0382",
+      "question": "I\u2019m just picking up Lakshya Engineering & Construction\u2019s file here and trying to figure out how to calculate the unbilled portion of their total project value\u2014could you walk me through the steps to get from that figure down to what we\u2019ve actually invoiced?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0385",
+      "question": "Deepa Chatterjee\u2019s PMP on the Stormwater Drainage \u2014 Madhya Pradesh Pkg-24 is what I\u2019m looking at, and I\u2019m trying to verify the collection percentage out of 100, and I\u2019m fairly certain it\u2019s in the high seventies, but could you confirm if that\u2019s correct?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0386",
+      "question": "I'm still getting my bearings with the Trishakti account, but could you quickly check the heavier contracts clearing the twenty-five crore mark and let me know what they add up to?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0387",
+      "question": "Could you please confirm the exact day count from the March 10, 2021 PMP issuance for Neha Chopra on the Bituminous Overlay \u2014 Odisha Pkg-35 project to its final completion?",
+      "answer_type": "days"
+    },
+    {
+      "qid": "HV-IC-0389",
+      "question": "Trishakti Power Generation Corporation lists assignments on my end, so when I cross-check those against endorsements, what is the out of 100 figure for the portion that cleared?",
+      "answer_type": "percent"
+    },
+    {
+      "qid": "HV-IC-0390",
+      "question": "Lakshya Engineering & Construction is on my desk and I\u2019m still learning the ropes here, but what\u2019s the standard way to figure out the total amount they still owe for all the work we\u2019ve billed them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0391",
+      "question": "I know we flagged the Irrigation & Waterways Dept, Govt of Uttar Pradesh account as fully billed, but the system balance looks too high\u2014can you actually run the deduction of what they\u2019ve cleared so far versus what\u2019s still sitting on our books?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0392",
+      "question": "Quick question while I'm grabbing this\u2014since I'm still learning the ropes, could you tell me the total amount still owed by Subarnarekha Valley Corporation for all the invoices we've submitted to them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0393",
+      "question": "Suvarna Projects Limited is the client I\u2019m reviewing, and I need to know what portion of our billed totals is still pending, so could you tell me where I should look for that?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0394",
+      "question": "pwd gujarat, we sent all the bills, but what\u2019s the actual remaining balance still on their end?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0395",
+      "question": "I\u2019m still getting my bearings with the Meridian Constructors & Co. account\u2014what\u2019s the total amount still owed across all their billing?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0396",
+      "question": "Arunodaya Infrastructure shows a preliminary figure, but that doesn't account for the payments we've actually cleared against those billed amounts\u2014can you run the adjusted balance after all those credits are applied?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0397",
+      "question": "I\u2019m still getting my bearings with the Irrigation & Waterways Dept, Govt of Rajasthan file, so could you tell me what the total unpaid balance is across all the invoices we\u2019ve submitted?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0398",
+      "question": "Public Health Engineering Dept, West Bengal, could you please calculate the total remaining balance across all charged amounts for this account?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0399",
+      "question": "What is the exact unpaid balance across all the billing entries we have submitted for the Mega Infrastructure Authority account?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0400",
+      "question": "Gujarat Municipal Corporation is the client we have invoiced, and could you please confirm the total amount still outstanding across those invoices?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0401",
+      "question": "Cross-checking the Central Works & Buildings Bureau account, what is the balance still owed across the invoices?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0402",
+      "question": "National Special Projects Office, what is the exact total of all submitted charges that remain unpaid?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0403",
+      "question": "Public Health Engineering Dept, Gujarat account, what is the precise remaining balance we need to stand by after deducting all cleared payments from our total billed value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0404",
+      "question": "What is the precise net balance due for the Public Works Department, Govt of Tamil Nadu across all billed amounts?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0405",
+      "question": "National Expressway Development Authority, what\u2019s the total unpaid amount across all the invoices we\u2019ve sent them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0406",
+      "question": "When we reconcile the Jal Nigam, Jharkhand account, what is the precise net balance still due after we deduct every cleared payment from our total billed value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0407",
+      "question": "public health engineering dept, odisha, what\u2019s the total pending amount across all our submitted bills?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0408",
+      "question": "Public Works Department, Govt of West Bengal, what amount remains on the invoices we are cross-checking?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0409",
+      "question": "Mahanadi Steel Corporation was flagged with that initial tally, but that number clearly doesn't account for the actual payments they've made, so what's the true balance still on our books?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0410",
+      "question": "Jal Nigam, Gujarat, what is the balance when I cross-check invoices against the payment system?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0411",
+      "question": "Trishakti Power Generation Corporation \u2014 what\u2019s the total value of all our billed amounts that are still pending, and I need that figure in the next ten minutes for the bid submission?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0412",
+      "question": "Maharashtra Municipal Corporation has multiple invoices on file, so could you please calculate the total amount still due across all of them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0413",
+      "question": "Tamil Nadu Municipal Corporation is the relevant account; could you please confirm the total amount currently due across all our submitted charges?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0414",
+      "question": "Cross-checking against the Public Works Department, Govt of Maharashtra accounts, what is the difference in value between the expressways and water treatment work we executed?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0415",
+      "question": "trishakti power generation corp, what\u2019s the value diff between our roads highways and tunnels work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0416",
+      "question": "Suvarna Projects Limited; cross-checking against the client account, what is the value variance between the bridges flyovers and sewerage drainage scopes we delivered?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0417",
+      "question": "Jharkhand Municipal Corporation, bridges and flyovers versus water treatment\u2014what is the exact difference in total contract value between those two portfolios?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0418",
+      "question": "Subarnarekha Valley Corporation, expressways; roads highways, could you please calculate the difference in total contract value between our expressway assignments and our standard road and highway projects for that client?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0419",
+      "question": "Cross-checking Trishakti Power Generation Corporation assignments, what is the value difference between sewerage drainage and water supply?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0420",
+      "question": "I\u2019m fairly certain our Mahanadi Steel Corporation roads and highways contract was worth more than the water treatment package we took on for them, but could you quickly verify if my recollection is right on the actual difference in value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0421",
+      "question": "Can you quickly calculate the difference between our irrigation and sewerage drainage scopes for Suvarna Projects Limited before the submission deadline?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0422",
+      "question": "suvarna projects limited tunnels and water supply, what\u2019s the value difference between them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0423",
+      "question": "Mahanadi Steel Corporation is the account I\u2019m still getting my bearings on\u2014could you point me to where I\u2019d pull the difference in total value between the roads highways and sewerage drainage scopes?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0424",
+      "question": "I\u2019m just pulling up the Tamil Nadu Municipal Corporation file for the first time\u2014how do I figure out the total value difference between their expressways and water treatment scopes?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0425",
+      "question": "National Expressway Development Authority is the file I just pulled, and since I\u2019m still finding my footing on the bid desk, how do I calculate the total value difference between the roads highways work and the tunnels work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0426",
+      "question": "Subarnarekha Valley Corporation is the account in question, and could you please confirm the total value difference between the bridges and flyovers work and the roads maintenance work we have delivered?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0427",
+      "question": "National Expressway Development Authority submission is due in twenty minutes\u2014what\u2019s the total value delta between our industrial epc and roads highways scopes?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0428",
+      "question": "Regarding the Mahanadi Steel Corporation portfolio, could you please confirm the net value variance between our roads maintenance and water supply works?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0429",
+      "question": "That quick tally for the National Special Projects Office feels off\u2014could you work out the actual difference between our expressways and irrigation commitments for them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0430",
+      "question": "Trishakti Power Generation Corporation irrigation and water supply totals don't match what you flagged earlier\u2014can you actually pull the separate project values and tell me the real difference in total value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0431",
+      "question": "Arunodaya Infrastructure bridges flyovers and tunnels are currently lumped into one headline number, but that\u2019s obviously masking the real split\u2014can you actually drill down to the individual contract values and give me the true net variance between them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0432",
+      "question": "Mahanadi Steel Corporation industrial epc and water treatment work are currently merged in the draft, but I know we priced them separately\u2014can you actually pull the individual contract values and tell me the actual difference in total value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0434",
+      "question": "Could you confirm the audited spread between the roads maintenance and water treatment scopes we\u2019ve delivered for Mahanadi Steel Corporation?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0435",
+      "question": "I\u2019m half-remembering the Trishakti Power Generation Corporation account\u2014could you just confirm whether the industrial EPC portion was larger than the water treatment work, and by what total value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0436",
+      "question": "I keep seeing the headline totals for the Arunodaya Infrastructure roads highways and maintenance work, but that\u2019s clearly not the final picture\u2014what\u2019s the actual value difference across both scopes once everything\u2019s properly reconciled?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0437",
+      "question": "What is the exact value difference between the total contract value for the Subarnarekha Valley Corporation industrial EPC scope and the corresponding roads maintenance contract?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0438",
+      "question": "mah pwd: what\u2019s the total value difference between the large bridges and water treatment scopes?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0439",
+      "question": "I'm still getting my head around how we track project values, so while I'm going through this National Expressway Development Authority file, how do I find the difference in total value between the irrigation and tunnels work we've handled?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0440",
+      "question": "subarnarekha valley corp account, what\u2019s the value difference between our industrial epc and irrigation work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0441",
+      "question": "Quick question while I'm going through the Maharashtra Municipal Corporation file \u2014 how do I normally calculate the total value difference between our bridges and flyovers work and the roads maintenance projects for them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0442",
+      "question": "I\u2019m still getting my bearings here\u2014when I\u2019m reviewing the Mahanadi Steel account, how do we normally calculate the total value difference between the bridges and flyovers work and the industrial epc projects?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0443",
+      "question": "Suvarna Projects Limited irrigation and roads highways figures, cross-checking against the ledger, what is the difference between the categories?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0444",
+      "question": "Jharkhand Municipal Corporation bridges flyovers versus roads maintenance, I keep seeing a flat rate quoted but that can\u2019t be right\u2014what\u2019s the actual spread across both scopes?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0445",
+      "question": "When we lock in the auditable totals for the National Expressway Development Authority, what is the verified net variance between our industrial EPC work and the tunnels work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0447",
+      "question": "When the Public Health Engineering Dept, Odisha team requests our irrigation versus sewerage drainage portfolio totals, what precise variance should I quote to keep the audit trail clean?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0448",
+      "question": "When the Public Works Department, Govt of Maharashtra auditors ask for the defensible figure showing the net difference between our sewerage drainage and water treatment work, what exact value should I provide?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0449",
+      "question": "Cross-checking the Public Health Engineering Dept, Odisha account, what is the difference between the expressways value and the roads highways value?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0450",
+      "question": "That Trishakti Power Generation Corporation figure feels off\u2014can you actually pull the expressways and irrigation totals separately so I can work out the real difference myself?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0451",
+      "question": "I\u2019m going through the Subarnarekha Valley Corporation file and trying to get my bearings on our roads maintenance versus tunnels spend\u2014could you point me to where the totals for each are so I can work out the difference?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0452",
+      "question": "Could you please provide the difference in total value between our large bridges engagements and our roads highways engagements for Meridian Constructors & Co.?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0453",
+      "question": "Just trying to confirm my memory on the Jal Nigam account in Gujarat\u2014am I right that the total value for our bridges and flyovers work sits ahead of the tunnels work, and could you remind me what the difference is?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0454",
+      "question": "Sorry to interrupt while I\u2019m picking up this client file, but could you walk me through how to pull the total contract values for the Subarnarekha Valley Corporation industrial epc and sewerage drainage projects so I can figure out the difference myself?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0455",
+      "question": "I\u2019m still learning the ropes while sorting through this Suvarna Projects Limited file, so could you tell me the total value difference between their bridges and flyovers versus the tunnels?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0456",
+      "question": "I\u2019m fairly certain the Suvarna Projects Limited bid has us ahead on the roads and highways side compared to the tunnels, but could you just check if my recollection is right about the exact total value difference between those two workstreams?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0457",
+      "question": "Can you calculate the total value difference between the National Special Projects Office bridges and flyovers work and the expressways projects we\u2019ve delivered for that account, and send it over immediately since we\u2019re finalizing the bid submission?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0459",
+      "question": "The Mahanadi Steel Corporation account shows a quick tally for our industrial epc and roads highways scopes, but that number feels off\u2014can you pull the separate contract values for each and send me the real spread?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0460",
+      "question": "Trishakti Power Generation Corporation files are still a bit new to me, and I'm trying to figure out how to pull the total value for the industrial epc work and the roads highways work, so could you point me to where those numbers are kept?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0461",
+      "question": "mahanadi steel corp roads highways vs water supply, what\u2019s the value difference between those two?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0462",
+      "question": "National Special Projects Office irrigation and large bridges scopes, what\u2019s the verified net value between those two portfolios?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0463",
+      "question": "Hey, on the NEDA file, once I\u2019ve tallied the industrial epc and irrigation totals, is the standard way to get the final spread just to subtract the irrigation figure from the epc one?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0464",
+      "question": "That quick tally for the Public Works Department account feels off, so once you\u2019ve actually run the irrigation totals against the roads and highways spend, what\u2019s the real difference between them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0465",
+      "question": "I\u2019m still finding my way around the desk, so could you show me how to get the total value difference between the National Special Projects Office expressways and large bridges work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0466",
+      "question": "peninsular petroleum irrigation and water supply, what\u2019s the total value difference?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0467",
+      "question": "I\u2019m still getting my bearings with the Maharashtra PWD account, but how do I pull the total value difference between their large bridges and sewerage drainage work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0468",
+      "question": "Could you send over the total contract values for Trishakti\u2019s large bridges and water supply projects so I can see how they compare?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0469",
+      "question": "Could you provide the verified contract totals for the Jharkhand Municipal Corporation account, broken out by roads maintenance and water treatment, so I can confirm the exact variance?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0470",
+      "question": "Could you please confirm the total value difference between the roads maintenance and sewerage drainage works delivered to the Public Works Department, Govt of Gujarat?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0471",
+      "question": "Cross-checking the Mahanadi Steel Corporation account, what is the value difference between the bridges flyovers and water treatment work?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0472",
+      "question": "I\u2019m pretty sure the bridges and flyovers work for Suvarna Projects outweighed the industrial epc contracts, but I can\u2019t quite pin down the numbers\u2014could you confirm whether that\u2019s right and what the actual difference in total value is?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0473",
+      "question": "Mahanadi Steel Corporation, I\u2019m trying to get the bridges flyovers and sewerage drainage totals lined up\u2014could you walk me through how you usually extract those two figures so I can run the math myself?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0474",
+      "question": "Subarnarekha Valley Corporation expressways versus tunnels totals\u2014what\u2019s the net difference in total value right now so I can lock the bid pack?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0475",
+      "question": "That first pass on the Subarnarekha Valley Corporation irrigation and sewerage drainage totals looks suspicious, so what\u2019s the real difference between those two scopes once we\u2019ve properly consolidated the figures?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0476",
+      "question": "I\u2019m still getting my bearings on the Public Works Department, Govt of Maharashtra file, so once I sum the roads and highways and sewerage drainage scopes, what\u2019s the final spread between them?",
+      "answer_type": "money"
+    },
+    {
+      "qid": "HV-IC-0477",
+      "question": "I'm still getting my bearings with the Suvarna Projects account\u2014could you walk me through how to find the total value difference between our sewerage drainage work and the water supply projects for them?",
+      "answer_type": "money"
+    }
+  ]
+}

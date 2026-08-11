@@ -1,0 +1,349 @@
+{
+  "domain": "infrastructure_construction",
+  "company": "National Infrastructure Corp. Ltd.",
+  "n_questions": 21,
+  "gates": [
+    "determinism",
+    "numeric_only",
+    "document_answerable",
+    "composite",
+    "structural_uniqueness"
+  ],
+  "note": "Worked examples. Every answer is a number readable from the documents in this bundle. The hidden scoring set is larger and harder, but is the same kinds of question.  Two doc_filtered_aggregate examples were withdrawn: the client's grading they filter on is not reliably stated in the shipped certificates, so no consistent reading of the documents reproduces their answer.",
+  "questions": [
+    {
+      "qid": "HS-IC-0001",
+      "question": "Cross-checking against the Public Health Engineering Dept, Gujarat, how many works have no client reference letter on file?",
+      "answer": 1,
+      "answer_type": "count",
+      "reasoning_steps": [
+        "1. Public Health Engineering Dept, Gujarat",
+        "2. 2 works",
+        "3. 1 unreferenced",
+        "4. Values read from the documents: 134,000,000, 23,300,000",
+        "5. Answer: 1"
+      ],
+      "shape": "absence",
+      "hops": 3
+    },
+    {
+      "qid": "HS-IC-0002",
+      "question": "Jal Nigam, Jharkhand \u2014 I\u2019m pretty sure we only have reference letters for one of their projects, but am I right in thinking how many of their completed works actually lack a client reference letter on file?",
+      "answer": 2,
+      "answer_type": "count",
+      "reasoning_steps": [
+        "1. Jal Nigam, Jharkhand",
+        "2. 3 works",
+        "3. 2 unreferenced",
+        "4. Values read from the documents: 730,200,000, 814,400,000, 69,200,000",
+        "5. Answer: 2"
+      ],
+      "shape": "absence",
+      "hops": 3
+    },
+    {
+      "qid": "HS-IC-0003",
+      "question": "Cross-checking the completion date against Asha Nair's PMP for 2021-03-10, what number of days passed from issuance to finish for School Building \u2014 Madhya Pradesh Pkg-145?",
+      "answer": 1569,
+      "answer_type": "days",
+      "reasoning_steps": [
+        "1. PMP issued 2021-03-10",
+        "2. Asha Nair",
+        "3. School Building \u2014 Madhya Pradesh Pkg-145",
+        "4. days between",
+        "5. Answer: 1,569"
+      ],
+      "shape": "date_span",
+      "hops": 4
+    },
+    {
+      "qid": "HS-IC-0004",
+      "question": "To ensure the audit documentation reflects the official timeline, what is the exact interval from Chandan Banerjee's March 10, 2021 PMP issuance to the completion of the WTP Augmentation project in West Bengal Package 51?",
+      "answer": 646,
+      "answer_type": "days",
+      "reasoning_steps": [
+        "1. PMP issued 2021-03-10",
+        "2. Chandan Banerjee",
+        "3. WTP Augmentation \u2014 West Bengal Pkg-51",
+        "4. days between",
+        "5. Answer: 646"
+      ],
+      "shape": "date_span",
+      "hops": 4
+    },
+    {
+      "qid": "HS-IC-0005",
+      "question": "How many different categories of work has Chandan Banerjee led to completion under his PMP certification?",
+      "answer": 3,
+      "answer_type": "count",
+      "reasoning_steps": [
+        "1. PMP",
+        "2. Chandan Banerjee",
+        "3. 3 works",
+        "4. 3 categories",
+        "5. Values read from the documents: 210,400,000, 149,200,000, 2,000,000,000",
+        "6. Answer: 3"
+      ],
+      "shape": "distinct_count",
+      "hops": 4
+    },
+    {
+      "qid": "HS-IC-0006",
+      "question": "Asha Nair's PMP project portfolio shows several completed assignments; how many distinct work classifications has she successfully delivered?",
+      "answer": 4,
+      "answer_type": "count",
+      "reasoning_steps": [
+        "1. PMP",
+        "2. Asha Nair",
+        "3. 4 works",
+        "4. 4 categories",
+        "5. Values read from the documents: 321,400,000, 214,200,000, 814,400,000, 30,000,000",
+        "6. Answer: 4"
+      ],
+      "shape": "distinct_count",
+      "hops": 4
+    },
+    {
+      "qid": "HS-IC-0007",
+      "question": "Starting from Rahul Menon\u2019s PMP certification (PMI-200029) for the Ring Road \u2014 Maharashtra Pkg-125, what is the combined value of every completed assignment he has delivered for the Public Works Department, Govt of Maharashtra?",
+      "answer": 2008199999,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. PMP (PMI-200029)",
+        "2. Rahul Menon",
+        "3. Ring Road \u2014 Maharashtra Pkg-125",
+        "4. Public Works Department, Govt of Maharashtra",
+        "5. Values read from the documents: 193,299,999, 176,600,000, 214,200,000, 307,300,000, 586,900,000, 529,900,000",
+        "6. Answer: 2,008,199,999"
+      ],
+      "shape": "hop_aggregate",
+      "hops": 4
+    },
+    {
+      "qid": "HS-IC-0008",
+      "question": "Could you please calculate the total value of all completed assignments Neha Chopra has delivered for Lakshya Engineering & Construction, referencing her PMP certification (PMI-200006) and the Residential Quarters \u2014 West Bengal Pkg-67 project as the reference point?",
+      "answer": 1944300000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. PMP (PMI-200006)",
+        "2. Neha Chopra",
+        "3. Residential Quarters \u2014 West Bengal Pkg-67",
+        "4. Lakshya Engineering & Construction",
+        "5. Values read from the documents: 98,000,000, 182,600,000, 318,900,000, 149,200,000, 161,700,000, 977,200,000, 56,700,000",
+        "6. Answer: 1,944,300,000"
+      ],
+      "shape": "hop_aggregate",
+      "hops": 4
+    },
+    {
+      "qid": "HS-IC-0009",
+      "question": "Gautam Joshi\u2019s PMP issued March 10, 2021, what\u2019s the combined value of only the projects he led that wrapped up after that date, needed immediately for the bid cutoff?",
+      "answer": 518200000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. PMP issued 2021-03-10",
+        "2. Gautam Joshi",
+        "3. 3 works led",
+        "4. 2 after issue",
+        "5. Values read from the documents: 135,600,000, 449,000,000, 69,200,000",
+        "6. Answer: 518,200,000"
+      ],
+      "shape": "temporal_chain",
+      "hops": 4
+    },
+    {
+      "qid": "HS-IC-0010",
+      "question": "Could you please calculate the combined value of the works Asha Nair led that were completed after her PMP certification date of March 10, 2021?",
+      "answer": 244200000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. PMP issued 2021-03-10",
+        "2. Asha Nair",
+        "3. 4 works led",
+        "4. 2 after issue",
+        "5. Values read from the documents: 321,400,000, 214,200,000, 814,400,000, 30,000,000",
+        "6. Answer: 244,200,000"
+      ],
+      "shape": "temporal_chain",
+      "hops": 4
+    },
+    {
+      "qid": "HS-IC-0011",
+      "question": "Regarding Asha Nair\u2019s PMP work on the Cable Stayed Bridge \u2014 Jharkhand Pkg-115, what is the defensible average size across all completed projects for the commissioning client?",
+      "answer": 537933333,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. PMP",
+        "2. Asha Nair",
+        "3. Cable Stayed Bridge \u2014 Jharkhand Pkg-115",
+        "4. Jal Nigam, Jharkhand",
+        "5. average work size",
+        "6. Values read from the documents: 730,200,000, 814,400,000, 69,200,000",
+        "7. Answer: 537,933,333"
+      ],
+      "shape": "avg_work_size",
+      "hops": 5
+    },
+    {
+      "qid": "HS-IC-0012",
+      "question": "Cross-checking Naveen Roy's PMP for Check Dam \u2014 Gujarat Pkg-62, what is the mean size across projects for the client?",
+      "answer": 229500000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. PMP",
+        "2. Naveen Roy",
+        "3. Check Dam \u2014 Gujarat Pkg-62",
+        "4. Public Works Department, Govt of Gujarat",
+        "5. average work size",
+        "6. Values read from the documents: 209,200,000, 467,299,999, 12,000,000",
+        "7. Answer: 229,500,000"
+      ],
+      "shape": "avg_work_size",
+      "hops": 5
+    },
+    {
+      "qid": "HS-IC-0015",
+      "question": "Irrigation & Waterways Dept, Govt of West Bengal; excluding buildings, what is the precise aggregate value of every project we have delivered for them?",
+      "answer": 763300000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. Irrigation & Waterways Dept, Govt of West Bengal",
+        "2. all works",
+        "3. excluding buildings",
+        "4. total",
+        "5. Values read from the documents: 403,700,000, 746,600,000, 16,700,000",
+        "6. Answer: 763,300,000"
+      ],
+      "shape": "exclusion_aggregate",
+      "hops": 5
+    },
+    {
+      "qid": "HS-IC-0016",
+      "question": "Jharkhand Municipal Corporation; excluding roads maintenance, what\u2019s the combined value of our completed assignments for them before we lock this bid?",
+      "answer": 402000000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. Jharkhand Municipal Corporation",
+        "2. all works",
+        "3. excluding roads maintenance",
+        "4. total",
+        "5. Values read from the documents: 87,400,000, 314,600,000, 69,500,000",
+        "6. Answer: 402,000,000"
+      ],
+      "shape": "exclusion_aggregate",
+      "hops": 5
+    },
+    {
+      "qid": "HS-IC-0017",
+      "question": "Irrigation & Waterways Dept, Govt of Uttar Pradesh is the account under review, so how much additional work must we secure to reach our credential target of INR 20 Cr?",
+      "answer": 28700000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. Irrigation & Waterways Dept, Govt of Uttar Pradesh",
+        "2. 2 works",
+        "3. current total",
+        "4. bar INR 20 Cr",
+        "5. Values read from the documents: 123,300,000, 48,000,000",
+        "6. Answer: 28,700,000"
+      ],
+      "shape": "gap_to_threshold",
+      "hops": 5
+    },
+    {
+      "qid": "HS-IC-0018",
+      "question": "Jal Nigam, Jharkhand, by how much does the largest completed work exceed the second largest?",
+      "answer": 84200000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. Jal Nigam, Jharkhand",
+        "2. 3 works",
+        "3. ranked",
+        "4. gap between top two",
+        "5. Values read from the documents: 730,200,000, 814,400,000, 69,200,000",
+        "6. Answer: 84,200,000"
+      ],
+      "shape": "rank_value",
+      "hops": 5
+    },
+    {
+      "qid": "HS-IC-0019",
+      "question": "Jharkhand Municipal Corporation, cross-checking against the portal, what is the difference between the largest work value and the second largest?",
+      "answer": 227200000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. Jharkhand Municipal Corporation",
+        "2. 3 works",
+        "3. ranked",
+        "4. gap between top two",
+        "5. Values read from the documents: 87,400,000, 314,600,000, 69,500,000",
+        "6. Answer: 227,200,000"
+      ],
+      "shape": "rank_value",
+      "hops": 5
+    },
+    {
+      "qid": "HS-IC-0020",
+      "question": "Jal Nigam, Jharkhand is our starting point for the audit, so what whole number out of one hundred represents the defensible share of completed assignments that carry formal verification on file?",
+      "answer": 33.33,
+      "answer_type": "percent",
+      "reasoning_steps": [
+        "1. Jal Nigam, Jharkhand",
+        "2. 3 works",
+        "3. reference letters",
+        "4. percentage",
+        "5. Values read from the documents: 730,200,000, 814,400,000, 69,200,000",
+        "6. Answer: 33.33"
+      ],
+      "shape": "referenced_share",
+      "hops": 5
+    },
+    {
+      "qid": "HS-IC-0021",
+      "question": "Jharkhand Municipal Corporation is where I am cross-checking our engagement history, so what number out of one hundred represents the count of assignments for that client that carry a reference letter divided by the total?",
+      "answer": 66.67,
+      "answer_type": "percent",
+      "reasoning_steps": [
+        "1. Jharkhand Municipal Corporation",
+        "2. 3 works",
+        "3. reference letters",
+        "4. percentage",
+        "5. Values read from the documents: 87,400,000, 314,600,000, 69,500,000",
+        "6. Answer: 66.67"
+      ],
+      "shape": "referenced_share",
+      "hops": 5
+    },
+    {
+      "qid": "HS-IC-0024",
+      "question": "Jal Nigam, Jharkhand, what\u2019s the combined value of their works crossing the seventy-three crore mark so I can lock the bid before the deadline?",
+      "answer": 1544600000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. Jal Nigam, Jharkhand",
+        "2. 3 works",
+        "3. above INR 73 Cr",
+        "4. total",
+        "5. Values read from the documents: 730,200,000, 814,400,000, 69,200,000",
+        "6. Answer: 1,544,600,000"
+      ],
+      "shape": "threshold_aggregate",
+      "hops": 5
+    },
+    {
+      "qid": "HS-IC-0025",
+      "question": "Maharashtra Municipal Corporation, what\u2019s the aggregate of their contracts hitting the six crore line so I can lock the pricing before the cutoff?",
+      "answer": 634500000,
+      "answer_type": "money",
+      "reasoning_steps": [
+        "1. Maharashtra Municipal Corporation",
+        "2. 3 works",
+        "3. above INR 6 Cr",
+        "4. total",
+        "5. Values read from the documents: 573,700,000, 60,800,000, 19,000,000",
+        "6. Answer: 634,500,000"
+      ],
+      "shape": "threshold_aggregate",
+      "hops": 5
+    }
+  ]
+}
