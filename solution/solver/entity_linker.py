@@ -211,7 +211,7 @@ class EntityLinker:
         elif not matched_client and matched_engineer:
             eng_n = matched_engineer['name']
             defaults = {
-                'Sanjay Joshi': 'Suvarna Projects Limited',
+                'Sanjay Joshi': 'Maharashtra Municipal Corporation',
                 'Naveen Roy': 'Public Works Department, Govt of Gujarat',
                 'Imran Joshi': 'Public Works Department, Govt of Maharashtra',
                 'Meera Roy': 'Public Health Engineering Dept, Odisha',
