@@ -213,7 +213,7 @@ class EntityLinker:
             defaults = {
                 'Sanjay Joshi': 'Suvarna Projects Limited',
                 'Naveen Roy': 'Public Works Department, Govt of Gujarat',
-                'Imran Joshi': 'Jal Nigam, Jharkhand',
+                'Imran Joshi': 'Public Works Department, Govt of Maharashtra',
                 'Meera Roy': 'Mega Infrastructure Authority',
                 'Priti Pillai': 'Irrigation & Waterways Dept, Govt of West Bengal',
                 'Priya Patel': 'Irrigation & Waterways Dept, Govt of Rajasthan',
