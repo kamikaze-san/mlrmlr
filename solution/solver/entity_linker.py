@@ -248,7 +248,7 @@ class EntityLinker:
         # 7. Extract excluded category specifically AFTER exclusion keywords
         excluded_cat = None
         excl_patterns = [
-            r'(?:excluding|exclude|remove the|set aside|dropping the|after the)\s+([a-zA-Z\s\&]+?)(?:\s+(?:division|work|segment|scope|assignment|project|line|category)\b|[,\u2014\-;]|\bwhat\b|\bis\b|\bfor\b|\bbefore\b|\bsum\b|\bisn)',
+            r'(?:excluding|exclude|remove the|set aside|dropping the|after the|filter out)\s+([a-zA-Z\s\&]+?)(?:\s+(?:division|work|segment|scope|assignment|project|line|category)\b|[,\u2014\-;]|\bwhat\b|\bis\b|\bfor\b|\bbefore\b|\bsum\b|\bisn)',
             r'(?:without|minus)\s+(?:the\s+)?([a-zA-Z\s\&]+?)(?:\s+(?:division|work|segment|scope|category)\b|[,\u2014\-;]|\bwhat\b|\bis\b|\bfor\b)',
         ]
         for pat in excl_patterns:
