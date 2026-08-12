@@ -48,9 +48,29 @@ def classify_question(qtext: str, atype: str) -> str:
         
     # 2. Structural rules for MONEY
     # Temporal chain: MUST have a completion/date condition
-    if ('completed after' in txt or 'wrapped up after' in txt or 'finished after' in txt or 'reached completion after' in txt) and ('2021' in txt or 'march' in txt or 'issuance' in txt or 'date' in txt or 'certification' in txt):
+    if ('completed after' in txt or 'wrapped up after' in txt or 'finished after' in txt or 'reached completion after' in txt or 'finished after that' in txt or 'wrapped up after that' in txt or 'post-certification' in txt) and ('2021' in txt or 'march' in txt or 'issuance' in txt or 'date' in txt or 'certification' in txt or 'certified' in txt):
         return 'temporal_chain'
-        
+
+    # Hop aggregate: Starting from engineer/credential -> total/combined value of all completed assignments for client
+    if (
+        'every completed assignment' in txt or
+        'all completed assignments' in txt or
+        'every completed work' in txt or
+        'all completed work' in txt or
+        'all completed projects' in txt or
+        'every completed scope' in txt or
+        'total value of all her completed' in txt or
+        'total value of all his completed' in txt or
+        'combined value of every completed' in txt or
+        'combined value of all completed' in txt or
+        'aggregate value of all completed' in txt or
+        'full rollup of every completed' in txt or
+        'total value of all completed' in txt or
+        'combined value of completed' in txt or
+        ('completed work with' in txt and 'combined value' in txt)
+    ) and 'mean' not in txt and 'average' not in txt and 'median' not in txt and 'after' not in txt and 'excluding' not in txt and 'minus' not in txt and 'without' not in txt:
+        return 'hop_aggregate'
+
     # Exclusion
     if 'excluding' in txt or 'exclude' in txt or 'remove the' in txt or 'set aside' in txt or 'filter out' in txt or 'dropping the' in txt:
         return 'exclusion_aggregate'
@@ -128,10 +148,10 @@ def classify_question(qtext: str, atype: str) -> str:
     clf = get_semantic_classifier()
     if clf and clf.prototype_embeddings:
         try:
-            best_shape, _ = clf.classify(qtext, answer_type)
+            best_shape, _ = clf.classify(qtext, atype)
             return best_shape
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"Error in semantic classifier: {e}")
             
     # Fallback to regex if semantic classifier unavailable
     return 'hop_aggregate'
