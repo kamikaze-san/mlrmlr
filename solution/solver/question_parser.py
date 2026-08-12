@@ -17,6 +17,8 @@ import numpy as np
 sys.path.insert(0, os.path.abspath('.'))
 from solution.solver.entity_linker import EntityLinker
 from solution.solver.semantic_classifier import SemanticClassifier
+from solution.solver.llm_classifier import classify_llm
+from solution.extractors.money_parser import extract_threshold_rupees
 
 _SEMANTIC_CLF = None
 
@@ -113,10 +115,13 @@ def classify_question(qtext: str, atype: str) -> str:
     if 'additional work' in txt or 'reach our credential target' in txt or 'how much more contract value' in txt or 'bring in to hit' in txt or 'still need to secure' in txt or 'need to clear the' in txt or 'how much more value do we need' in txt:
         return 'gap_to_threshold'
 
-    # Threshold aggregate (MUST be an actual financial threshold query)
+    # Threshold aggregate (MUST be an actual financial threshold query).
+    # Requires a real parsed crore/lakh amount, not just words that happen to
+    # contain "cr" or "line" as a substring (e.g. "across", "deadline").
     if (
         ('threshold' in txt or 'mark' in txt or ('line' in txt and 'line item' not in txt) or 'hitting' in txt or 'at or over' in txt or 'meet or exceed' in txt or 'clear that mark' in txt or 'clearing the' in txt or 'or higher' in txt or 'or more' in txt or 'valued at' in txt or 'crossing the' in txt)
         and any(w in txt for w in ['crore', 'cr', 'lakh', 'valued at', 'mark', 'threshold', 'or more', 'or higher', 'at or over', 'hitting'])
+        and extract_threshold_rupees(qtext) > 0
     ):
         return 'threshold_aggregate'
 
@@ -140,7 +145,15 @@ def classify_question(qtext: str, atype: str) -> str:
     ):
         return 'hop_aggregate'
 
-    # Semantic Classifier for remaining natural language shapes
+    # Fallback for remaining natural language phrasing that no keyword rule
+    # matched. Tries a small local LLM first (tested more accurate than the
+    # embedding classifier on unfamiliar phrasing), then falls back to
+    # semantic embeddings, then a hardcoded default. Each tier only runs if
+    # the one before it is unavailable or fails — never a hard dependency.
+    llm_shape = classify_llm(qtext, atype)
+    if llm_shape:
+        return llm_shape
+
     clf = get_semantic_classifier()
     if clf and clf.prototype_embeddings:
         try:
@@ -148,8 +161,8 @@ def classify_question(qtext: str, atype: str) -> str:
             return best_shape
         except Exception as e:
             print(f"Error in semantic classifier: {e}")
-            
-    # Fallback to regex if semantic classifier unavailable
+
+    # Fallback to regex if neither the LLM nor semantic classifier is available
     return 'hop_aggregate'
 
 def test_classification():
