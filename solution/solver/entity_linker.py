@@ -174,6 +174,8 @@ class EntityLinker:
                 if score > best_score:
                     best_score = score
                     matched_proj = p
+            if best_score < 2:
+                matched_proj = None
             if not matched_proj and len(eng_projs) == 1:
                 matched_proj = eng_projs[0]
                 
