@@ -268,10 +268,7 @@ class QueryEngine:
                 v1 = cur.fetchone()[0] or 0
                 cur.execute("SELECT SUM(value_inr) FROM projects WHERE client_name = ? AND completion_date LIKE ?", (client, f"{y2}%"))
                 v2 = cur.fetchone()[0] or 0
-                diff = v2 - v1
-                if 'absolute' in question_text.lower():
-                    return int(abs(diff))
-                return int(diff)
+                return int(abs(v1 - v2))
             return 0
         # If deterministic execution produced 0 or None, fallback to LLM Text-to-SQL
         if self.llm_router and self.llm_router.is_available:
