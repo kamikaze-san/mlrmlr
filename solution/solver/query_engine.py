@@ -87,12 +87,20 @@ class QueryEngine:
             return 0
 
         elif shape == 'hop_aggregate':
-            if client:
+            txt_lower = question_text.lower()
+            is_anaphoric = bool(re.search(r'\b(that client|to them|for them|delivered to them|done for that)\b', txt_lower))
+            eng_name = eng['name'] if eng else None
+            
+            if is_anaphoric and eng_name and client:
+                cur.execute("SELECT SUM(value_inr) FROM projects WHERE lead_engineer LIKE ? AND client_name = ?", (f"%{eng_name}%", client))
+                res = cur.fetchone()[0]
+                return int(res) if res is not None else 0
+            elif client:
                 cur.execute("SELECT SUM(value_inr) FROM projects WHERE client_name = ?", (client,))
                 res = cur.fetchone()[0]
                 return int(res) if res is not None else 0
-            elif eng:
-                cur.execute("SELECT SUM(value_inr) FROM projects WHERE lead_engineer LIKE ?", (f"%{eng['name']}%",))
+            elif eng_name:
+                cur.execute("SELECT SUM(value_inr) FROM projects WHERE lead_engineer LIKE ?", (f"%{eng_name}%",))
                 res = cur.fetchone()[0]
                 return int(res) if res is not None else 0
             return 0
@@ -189,7 +197,7 @@ class QueryEngine:
                 if crow:
                     awarded = crow['total_awarded_inr'] or 0
                     invoiced = crow['total_invoiced_inr'] or 0
-                    return int(awarded - invoiced)
+                    return int(abs(awarded - invoiced))
             return 0
 
         elif shape == 'outstanding_balance':
