@@ -52,7 +52,7 @@ def classify_question(qtext: str, atype: str) -> str:
         return 'temporal_chain'
 
     # Exclusion
-    if 'excluding' in txt or 'exclude' in txt or 'remove the' in txt or 'set aside' in txt or 'filter out' in txt or 'dropping the' in txt or 'stripped out' in txt or 'strip out' in txt or 'without' in txt:
+    if 'excluding' in txt or 'exclude' in txt or 'remove the' in txt or 'set aside' in txt or 'setting aside' in txt or 'filter out' in txt or 'dropping the' in txt or 'stripped out' in txt or 'strip out' in txt or 'without' in txt or 'take out' in txt or 'taking out' in txt or 'leaving out' in txt or 'leave out' in txt or 'not counting' in txt:
         return 'exclusion_aggregate'
         
     # Mean vs Median
