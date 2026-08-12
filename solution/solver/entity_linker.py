@@ -164,17 +164,16 @@ class EntityLinker:
                     matched_proj = p
                     break
         elif matched_engineer:
-            # Try to match project from projects led by engineer
+            # Try to match project from projects led by engineer using keyword relevance
             eng_projs = [p for p in self.projects if p['lead_engineer'] and p['lead_engineer'].lower() == matched_engineer['name'].lower()]
+            best_score = 0
             for p in eng_projs:
-                p_state = p.get('state', '').lower()
-                p_cat = p.get('category', '').lower()
-                if p_state and p_state in txt_lower:
+                p_name = p['project_name'].lower().replace('–', ' ').replace('-', ' ')
+                words = [w for w in p_name.split() if len(w) > 2 and w not in ['package', 'pkg']]
+                score = sum(1 for w in words if w in txt_lower)
+                if score > best_score:
+                    best_score = score
                     matched_proj = p
-                    break
-                elif p_cat and any(w in txt_lower for w in p_cat.split() if len(w) > 4):
-                    matched_proj = p
-                    break
             if not matched_proj and len(eng_projs) == 1:
                 matched_proj = eng_projs[0]
                 
