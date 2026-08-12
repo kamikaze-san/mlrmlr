@@ -214,7 +214,7 @@ class EntityLinker:
                 'Sanjay Joshi': 'Suvarna Projects Limited',
                 'Naveen Roy': 'Public Works Department, Govt of Gujarat',
                 'Imran Joshi': 'Public Works Department, Govt of Maharashtra',
-                'Meera Roy': 'Arunodaya Infrastructure',
+                'Meera Roy': 'Public Health Engineering Dept, Odisha',
                 'Priti Pillai': 'Irrigation & Waterways Dept, Govt of West Bengal',
                 'Priya Patel': 'Irrigation & Waterways Dept, Govt of Rajasthan',
             }
