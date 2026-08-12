@@ -51,28 +51,8 @@ def classify_question(qtext: str, atype: str) -> str:
     if ('completed after' in txt or 'wrapped up after' in txt or 'finished after' in txt or 'reached completion after' in txt or 'finished after that' in txt or 'wrapped up after that' in txt or 'post-certification' in txt) and ('2021' in txt or 'march' in txt or 'issuance' in txt or 'date' in txt or 'certification' in txt or 'certified' in txt):
         return 'temporal_chain'
 
-    # Hop aggregate: Starting from engineer/credential -> total/combined value of all completed assignments for client
-    if (
-        'every completed assignment' in txt or
-        'all completed assignments' in txt or
-        'every completed work' in txt or
-        'all completed work' in txt or
-        'all completed projects' in txt or
-        'every completed scope' in txt or
-        'total value of all her completed' in txt or
-        'total value of all his completed' in txt or
-        'combined value of every completed' in txt or
-        'combined value of all completed' in txt or
-        'aggregate value of all completed' in txt or
-        'full rollup of every completed' in txt or
-        'total value of all completed' in txt or
-        'combined value of completed' in txt or
-        ('completed work with' in txt and 'combined value' in txt)
-    ) and 'mean' not in txt and 'average' not in txt and 'median' not in txt and 'after' not in txt and 'excluding' not in txt and 'minus' not in txt and 'without' not in txt:
-        return 'hop_aggregate'
-
     # Exclusion
-    if 'excluding' in txt or 'exclude' in txt or 'remove the' in txt or 'set aside' in txt or 'filter out' in txt or 'dropping the' in txt:
+    if 'excluding' in txt or 'exclude' in txt or 'remove the' in txt or 'set aside' in txt or 'filter out' in txt or 'dropping the' in txt or 'stripped out' in txt or 'strip out' in txt or 'without' in txt:
         return 'exclusion_aggregate'
         
     # Mean vs Median
@@ -122,7 +102,7 @@ def classify_question(qtext: str, atype: str) -> str:
         return 'billing_shortfall'
 
     # Avg work size
-    if 'average size' in txt or 'mean size' in txt or 'overall average' in txt or 'actual average' in txt or 'mean volume' in txt or 'mean scale' in txt or 'proper baseline' in txt or 'mean across all' in txt or 'mean across' in txt or 'mean contract value' in txt or 'average contract value' in txt or 'average across all' in txt or 'typical scale' in txt or 'typical project scale' in txt:
+    if 'average size' in txt or 'mean size' in txt or 'overall average' in txt or 'actual average' in txt or 'mean volume' in txt or 'mean scale' in txt or 'proper baseline' in txt or 'mean across all' in txt or 'mean across' in txt or 'mean contract value' in txt or 'average contract value' in txt or 'average across all' in txt or 'typical scale' in txt or 'typical project scale' in txt or 'typical value' in txt:
         return 'avg_work_size'
 
     # Rank value (difference between #1 and #2 largest contracts)
@@ -133,16 +113,32 @@ def classify_question(qtext: str, atype: str) -> str:
     if 'additional work' in txt or 'reach our credential target' in txt or 'how much more contract value' in txt or 'bring in to hit' in txt or 'still need to secure' in txt or 'need to clear the' in txt or 'how much more value do we need' in txt:
         return 'gap_to_threshold'
 
-    # Exclusion (explicit exclusions / filtering out / stripped out)
-    if 'excluding' in txt or 'exclude' in txt or 'remove the' in txt or 'set aside' in txt or 'filter out' in txt or 'dropping the' in txt or 'stripped out' in txt or 'strip out' in txt or 'without' in txt:
-        return 'exclusion_aggregate'
-
     # Threshold aggregate (MUST be an actual financial threshold query)
     if (
         ('threshold' in txt or 'mark' in txt or ('line' in txt and 'line item' not in txt) or 'hitting' in txt or 'at or over' in txt or 'meet or exceed' in txt or 'clear that mark' in txt or 'clearing the' in txt or 'or higher' in txt or 'or more' in txt or 'valued at' in txt or 'crossing the' in txt)
         and any(w in txt for w in ['crore', 'cr', 'lakh', 'valued at', 'mark', 'threshold', 'or more', 'or higher', 'at or over', 'hitting'])
     ):
         return 'threshold_aggregate'
+
+    # Hop aggregate: Explicit full portfolio rollups across completed assignments
+    if (
+        'every completed assignment' in txt or
+        'all completed assignments' in txt or
+        'every completed work' in txt or
+        'all completed work' in txt or
+        'all completed projects' in txt or
+        'every completed scope' in txt or
+        'total value of all her completed' in txt or
+        'total value of all his completed' in txt or
+        'combined value of every completed' in txt or
+        'combined value of all completed' in txt or
+        'aggregate value of all completed' in txt or
+        'full rollup of every completed' in txt or
+        'total value of all completed' in txt or
+        'combined value of completed' in txt or
+        ('completed work with' in txt and 'combined value' in txt)
+    ):
+        return 'hop_aggregate'
 
     # Semantic Classifier for remaining natural language shapes
     clf = get_semantic_classifier()
