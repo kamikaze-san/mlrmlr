@@ -119,7 +119,7 @@ def classify_question(qtext: str, atype: str) -> str:
 
     # Threshold aggregate (MUST be an actual financial threshold query)
     if (
-        ('threshold' in txt or 'mark' in txt or 'line' in txt or 'hitting' in txt or 'at or over' in txt or 'meet or exceed' in txt or 'clear that mark' in txt or 'clearing the' in txt or 'or higher' in txt or 'or more' in txt or 'valued at' in txt or 'crossing the' in txt)
+        ('threshold' in txt or 'mark' in txt or ('line' in txt and 'line item' not in txt) or 'hitting' in txt or 'at or over' in txt or 'meet or exceed' in txt or 'clear that mark' in txt or 'clearing the' in txt or 'or higher' in txt or 'or more' in txt or 'valued at' in txt or 'crossing the' in txt)
         and any(w in txt for w in ['crore', 'cr', 'lakh', 'valued at', 'mark', 'threshold', 'or more', 'or higher', 'at or over', 'hitting'])
     ):
         return 'threshold_aggregate'
