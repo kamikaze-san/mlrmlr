@@ -163,23 +163,36 @@ def populate_database(db_path: str = DB_PATH):
         
     # 6. Aggregate client stats
     cur.execute('''
-    INSERT INTO clients (client_name, total_projects_count, total_awarded_inr, referenced_projects_count, unreferenced_projects_count, total_invoiced_inr, total_received_inr, total_outstanding_inr)
+    INSERT OR REPLACE INTO clients (client_name, total_projects_count, total_awarded_inr, referenced_projects_count, unreferenced_projects_count, total_invoiced_inr, total_received_inr, total_outstanding_inr)
     SELECT 
-        p.client_name,
-        COUNT(p.id) AS total_projects_count,
-        SUM(p.value_inr) AS total_awarded_inr,
-        SUM(p.has_reference_letter) AS referenced_projects_count,
-        SUM(1 - p.has_reference_letter) AS unreferenced_projects_count,
-        COALESCE(ar.total_invoiced, 0) AS total_invoiced_inr,
-        COALESCE(ar.total_received, 0) AS total_received_inr,
-        COALESCE(ar.total_outstanding, 0) AS total_outstanding_inr
-    FROM projects p
+        all_clients.client_name,
+        COALESCE(p_stats.total_projects_count, 0),
+        COALESCE(p_stats.total_awarded_inr, 0),
+        COALESCE(p_stats.referenced_projects_count, 0),
+        COALESCE(p_stats.unreferenced_projects_count, 0),
+        COALESCE(ar.total_invoiced, 0),
+        COALESCE(ar.total_received, 0),
+        COALESCE(ar.total_outstanding, 0)
+    FROM (
+        SELECT client_name FROM projects
+        UNION
+        SELECT client_name FROM receivables_ageing
+    ) all_clients
+    LEFT JOIN (
+        SELECT 
+            client_name,
+            COUNT(id) AS total_projects_count,
+            SUM(value_inr) AS total_awarded_inr,
+            SUM(has_reference_letter) AS referenced_projects_count,
+            SUM(1 - has_reference_letter) AS unreferenced_projects_count
+        FROM projects
+        GROUP BY client_name
+    ) p_stats ON all_clients.client_name = p_stats.client_name
     LEFT JOIN (
         SELECT client_name, SUM(invoiced_inr) AS total_invoiced, SUM(received_inr) AS total_received, SUM(outstanding_inr) AS total_outstanding
         FROM receivables_ageing
         GROUP BY client_name
-    ) ar ON p.client_name = ar.client_name
-    GROUP BY p.client_name;
+    ) ar ON all_clients.client_name = ar.client_name;
     ''')
     
     conn.commit()

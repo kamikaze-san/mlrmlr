@@ -71,12 +71,11 @@ def classify_question(qtext: str, atype: str) -> str:
             if 'largest' not in txt and 'median' not in txt and '201' not in txt and '202' not in txt:
                 return 'category_diff'
             
-        if 'mean and the median' in txt or 'mean and median' in txt or 'average and median' in txt or 'avg and median' in txt or 'mean against the median' in txt or 'avg dips' in txt or 'mean-median gap' in txt:
+        if ('average' in txt or 'mean' in txt or 'avg' in txt) and 'median' in txt:
             return 'mean_vs_median'
             
-        if 'average size' in txt or 'mean size' in txt or 'overall average' in txt or 'actual average' in txt or 'mean volume' in txt or 'mean scale' in txt or 'proper baseline' in txt or 'mean across all' in txt or 'mean across' in txt or 'mean contract value' in txt:
-            if 'median' not in txt and 'gap' not in txt:
-                return 'avg_work_size'
+        if 'average size' in txt or 'mean size' in txt or 'overall average' in txt or 'actual average' in txt or 'mean volume' in txt or 'mean scale' in txt or 'proper baseline' in txt or 'mean across all' in txt or 'mean across' in txt or 'mean contract value' in txt or 'average contract value' in txt or 'average across all' in txt:
+            return 'avg_work_size'
             
         if 'additional work' in txt or 'reach our credential target' in txt or 'how much more contract value' in txt or 'bring in to hit' in txt or 'still need to secure' in txt or 'need to clear the' in txt or 'how much more value do we need' in txt:
             return 'gap_to_threshold'
@@ -84,13 +83,13 @@ def classify_question(qtext: str, atype: str) -> str:
         if 'largest' in txt and ('second' in txt or 'second-largest' in txt or 'second-biggest' in txt):
             return 'rank_value'
             
-        if 'excluding' in txt or 'remove the' in txt:
+        if 'excluding' in txt or 'remove the' in txt or 'dropping the' in txt:
             return 'exclusion_aggregate'
             
         if 'completed after' in txt or 'wrapped up after' in txt or 'finished after' in txt or 'reached completion after' in txt:
             return 'temporal_chain'
             
-        if ('threshold' in txt or 'mark' in txt or 'cutoff' in txt or 'limit' in txt or 'crossing' in txt or 'clear' in txt or 'exceed' in txt or 'hitting the' in txt or 'at or over' in txt or 'meet or exceed' in txt or 'clear that mark' in txt or 'clearing the' in txt):
+        if ('threshold' in txt or 'mark' in txt or 'cutoff' in txt or 'limit' in txt or 'crossing' in txt or 'clear' in txt or 'exceed' in txt or 'hitting' in txt or 'at or over' in txt or 'meet or exceed' in txt or 'clear that mark' in txt or 'clearing the' in txt or 'or higher' in txt or 'or more' in txt or 'valued at' in txt):
             return 'threshold_aggregate'
             
         return 'hop_aggregate'

@@ -69,7 +69,7 @@ class LLMRouter:
                 data=json.dumps(data).encode('utf-8'),
                 headers={'Content-Type': 'application/json'}
             )
-            with urllib.request.urlopen(req, timeout=15) as resp:
+            with urllib.request.urlopen(req, timeout=90) as resp:
                 res = json.loads(resp.read().decode('utf-8'))
                 text = res.get('response', '').strip()
                 if "```sql" in text:
