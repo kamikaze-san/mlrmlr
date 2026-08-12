@@ -138,15 +138,33 @@ class QueryEngine:
 
         elif shape == 'exclusion_aggregate':
             if client:
-                cur.execute("SELECT value_inr, category FROM projects WHERE client_name = ?", (client,))
-                rows = cur.fetchall()
-                total = 0
-                for r in rows:
-                    val, cat = r[0], r[1]
-                    if excl and (excl in cat.lower() or any(w in cat.lower() for w in excl.split() if len(w) > 3)):
-                        continue
-                    total += val
-                return int(total)
+                # Map the excluded keyword to the exact DB category name
+                EXCL_CAT_MAP = {
+                    'bridges and flyovers': 'bridges flyovers',
+                    'bridges flyovers': 'bridges flyovers',
+                    'large bridges': 'large bridges',
+                    'bridges': 'bridges flyovers',
+                    'water treatment': 'water treatment',
+                    'water supply': 'water supply',
+                    'sewerage drainage': 'sewerage drainage',
+                    'sewerage': 'sewerage drainage',
+                    'drainage': 'sewerage drainage',
+                    'roads and highways': 'roads highways',
+                    'roads highways': 'roads highways',
+                    'roads maintenance': 'roads maintenance',
+                    'roads': 'roads highways',
+                    'expressways': 'expressways',
+                    'tunnels': 'tunnels',
+                    'industrial epc': 'industrial epc',
+                    'epc': 'industrial epc',
+                    'irrigation': 'irrigation',
+                    'small buildings': 'small buildings',
+                    'buildings': 'buildings',
+                }
+                excl_db = EXCL_CAT_MAP.get(excl.lower(), excl.lower()) if excl else None
+                cur.execute("SELECT SUM(value_inr) FROM projects WHERE client_name = ? AND category != ?", (client, excl_db))
+                res = cur.fetchone()[0]
+                return int(res) if res is not None else 0
             return 0
 
         elif shape == 'temporal_chain':
