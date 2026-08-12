@@ -113,8 +113,16 @@ def classify_question(qtext: str, atype: str) -> str:
     if 'additional work' in txt or 'reach our credential target' in txt or 'how much more contract value' in txt or 'bring in to hit' in txt or 'still need to secure' in txt or 'need to clear the' in txt or 'how much more value do we need' in txt:
         return 'gap_to_threshold'
 
-    # Threshold aggregate
-    if ('threshold' in txt or 'mark' in txt or 'cutoff' in txt or 'limit' in txt or 'crossing' in txt or 'clear' in txt or 'exceed' in txt or 'hitting' in txt or 'at or over' in txt or 'meet or exceed' in txt or 'clear that mark' in txt or 'clearing the' in txt or 'or higher' in txt or 'or more' in txt or 'valued at' in txt):
+    # Exclusion (explicit exclusions / filtering out / stripped out)
+    if 'excluding' in txt or 'exclude' in txt or 'remove the' in txt or 'set aside' in txt or 'filter out' in txt or 'dropping the' in txt or 'stripped out' in txt or 'strip out' in txt or 'without' in txt:
+        return 'exclusion_aggregate'
+
+    # Threshold aggregate (MUST be an actual financial threshold query, not conversational 'submission cutoff')
+    if (
+        ('threshold' in txt or 'mark' in txt or 'at or over' in txt or 'meet or exceed' in txt or 'clear that mark' in txt or 'clearing the' in txt or 'or higher' in txt or 'or more' in txt or 'valued at' in txt or 'crossing the' in txt)
+        and any(w in txt for w in ['crore', 'cr', 'lakh', 'valued at', 'mark', 'threshold', 'or more', 'or higher', 'at or over'])
+        and 'submission cutoff' not in txt
+    ):
         return 'threshold_aggregate'
 
     # Semantic Classifier for remaining natural language shapes
