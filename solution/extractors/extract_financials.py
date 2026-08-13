@@ -1,15 +1,16 @@
-import glob
 import os
 import re
 import pandas as pd
 import openpyxl
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional, Tuple
 from solution.extractors.extract_projects import clean_client_name
 from solution.extractors.money_parser import parse_date, parse_money
 
-def extract_receivables_ageing() -> List[Dict[str, Any]]:
-    path = 'documents/workbooks/Receivables_Ageing.xlsx'
-    df = pd.read_excel(path, sheet_name='AR Ageing')
+def extract_receivables_ageing(source: Optional[Tuple[str, str]]) -> List[Dict[str, Any]]:
+    if not source:
+        return []
+    path, sheet_name = source
+    df = pd.read_excel(path, sheet_name=sheet_name)
     records = []
     
     for _, row in df.iterrows():
@@ -35,11 +36,11 @@ def extract_receivables_ageing() -> List[Dict[str, Any]]:
         
     return records
 
-def extract_asset_register() -> List[Dict[str, Any]]:
-    path = 'documents/workbooks/Plant_and_Machinery_Register.xlsx'
-    if not os.path.exists(path):
+def extract_asset_register(source: Optional[Tuple[str, str]]) -> List[Dict[str, Any]]:
+    if not source:
         return []
-    df = pd.read_excel(path, sheet_name='Plant Register')
+    path, sheet_name = source
+    df = pd.read_excel(path, sheet_name=sheet_name)
     records = []
     
     for _, row in df.iterrows():
@@ -76,6 +77,12 @@ def extract_asset_register() -> List[Dict[str, Any]]:
     return records
 
 if __name__ == '__main__':
-    ar = extract_receivables_ageing()
-    assets = extract_asset_register()
+    import sys
+    from solution.extractors.discover import discover_and_classify
+    root = sys.argv[1] if len(sys.argv) > 1 else 'documents'
+    grouped = discover_and_classify(root)
+    ar_src = grouped.get('receivables_ageing', [None])[0]
+    plant_src = grouped.get('plant_machinery_register', [None])[0]
+    ar = extract_receivables_ageing(ar_src)
+    assets = extract_asset_register(plant_src)
     print(f'Extracted {len(ar)} AR records and {len(assets)} Asset records.')

@@ -16,20 +16,8 @@ import numpy as np
 
 sys.path.insert(0, os.path.abspath('.'))
 from solution.solver.entity_linker import EntityLinker
-from solution.solver.semantic_classifier import SemanticClassifier
 from solution.solver.llm_classifier import classify_llm
 from solution.extractors.money_parser import extract_threshold_rupees
-
-_SEMANTIC_CLF = None
-
-def get_semantic_classifier():
-    global _SEMANTIC_CLF
-    if _SEMANTIC_CLF is None:
-        try:
-            _SEMANTIC_CLF = SemanticClassifier()
-        except Exception:
-            _SEMANTIC_CLF = None
-    return _SEMANTIC_CLF
 
 def classify_question(qtext: str, atype: str) -> str:
     txt = qtext.lower()
@@ -54,7 +42,7 @@ def classify_question(qtext: str, atype: str) -> str:
         return 'temporal_chain'
 
     # Exclusion
-    if 'excluding' in txt or 'exclude' in txt or 'remove the' in txt or 'set aside' in txt or 'setting aside' in txt or 'filter out' in txt or 'dropping the' in txt or 'stripped out' in txt or 'strip out' in txt or 'without' in txt or 'take out' in txt or 'taking out' in txt or 'leaving out' in txt or 'leave out' in txt or 'not counting' in txt:
+    if 'excluding' in txt or 'exclude' in txt or 'remove the' in txt or 'set aside' in txt or 'setting aside' in txt or 'filter out' in txt or 'dropping the' in txt or 'stripped out' in txt or 'strip out' in txt or 'without' in txt or 'take out' in txt or 'taking out' in txt or 'leaving out' in txt or 'leave out' in txt or 'not counting' in txt or 'minus the' in txt:
         return 'exclusion_aggregate'
         
     # Mean vs Median
@@ -97,7 +85,7 @@ def classify_question(qtext: str, atype: str) -> str:
         return 'category_diff'
 
     # Billing shortfall (gap between contract values/awards and billed/invoiced amounts)
-    if ('gap between' in txt or 'shortfall' in txt or 'net difference' in txt or 'amount after we cross-check' in txt or 'delta between' in txt or 'unbilled' in txt or 'missing amount' in txt or 'sitting above' in txt or 'against the total contract value' in txt or 'claims we submitted' in txt) and ('invoiced' in txt or 'billed' in txt or 'sanctioned' in txt or 'actual gap' in txt or 'submitted claims' in txt or 'claimed' in txt or 'cash flow' in txt or 'commitments' in txt or 'awards' in txt or 'total value' in txt or 'contract value' in txt or 'invoice amount' in txt):
+    if ('gap between' in txt or 'shortfall' in txt or 'net difference' in txt or 'amount after we cross-check' in txt or 'delta between' in txt or 'unbilled' in txt or 'missing amount' in txt or 'sitting above' in txt or 'against the total contract value' in txt or 'claims we submitted' in txt or 'variance between' in txt) and ('invoiced' in txt or 'billed' in txt or 'sanctioned' in txt or 'actual gap' in txt or 'submitted claims' in txt or 'claimed' in txt or 'cash flow' in txt or 'commitments' in txt or 'awards' in txt or 'total value' in txt or 'contract value' in txt or 'invoice amount' in txt):
         return 'billing_shortfall'
         
     if 'unbilled remainder' in txt or 'shortfall between' in txt or 'gap between what they\'ve sanctioned' in txt:
@@ -119,7 +107,7 @@ def classify_question(qtext: str, atype: str) -> str:
     # Requires a real parsed crore/lakh amount, not just words that happen to
     # contain "cr" or "line" as a substring (e.g. "across", "deadline").
     if (
-        ('threshold' in txt or 'mark' in txt or ('line' in txt and 'line item' not in txt) or 'hitting' in txt or 'at or over' in txt or 'meet or exceed' in txt or 'clear that mark' in txt or 'clearing the' in txt or 'or higher' in txt or 'or more' in txt or 'valued at' in txt or 'crossing the' in txt)
+        ('threshold' in txt or 'mark' in txt or ('line' in txt and 'line item' not in txt) or 'hitting' in txt or 'at or over' in txt or 'meet or exceed' in txt or 'clear that mark' in txt or 'clearing the' in txt or 'or higher' in txt or 'or more' in txt or 'valued at' in txt or 'crossing the' in txt or 'limit' in txt)
         and any(w in txt for w in ['crore', 'cr', 'lakh', 'valued at', 'mark', 'threshold', 'or more', 'or higher', 'at or over', 'hitting'])
         and extract_threshold_rupees(qtext) > 0
     ):
@@ -146,23 +134,14 @@ def classify_question(qtext: str, atype: str) -> str:
         return 'hop_aggregate'
 
     # Fallback for remaining natural language phrasing that no keyword rule
-    # matched. Tries a small local LLM first (tested more accurate than the
-    # embedding classifier on unfamiliar phrasing), then falls back to
-    # semantic embeddings, then a hardcoded default. Each tier only runs if
-    # the one before it is unavailable or fails — never a hard dependency.
+    # matched: the competition's provided LLM endpoint (the only generative
+    # model this pipeline is permitted to call). Never a hard dependency --
+    # classify_llm returns None on any failure (endpoint unset/unreachable,
+    # timeout), and the hardcoded default below covers that case.
     llm_shape = classify_llm(qtext, atype)
     if llm_shape:
         return llm_shape
 
-    clf = get_semantic_classifier()
-    if clf and clf.prototype_embeddings:
-        try:
-            best_shape, _ = clf.classify(qtext, atype)
-            return best_shape
-        except Exception as e:
-            print(f"Error in semantic classifier: {e}")
-
-    # Fallback to regex if neither the LLM nor semantic classifier is available
     return 'hop_aggregate'
 
 def test_classification():

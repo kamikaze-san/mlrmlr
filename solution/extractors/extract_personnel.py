@@ -1,12 +1,10 @@
-import glob
 import os
 import re
 import fitz
 from typing import List, Dict, Any, Tuple
 from solution.extractors.money_parser import parse_date
 
-def extract_personnel_certs() -> List[Dict[str, Any]]:
-    files = sorted(glob.glob('documents/personnel_certificate/*.pdf'))
+def extract_personnel_certs(files: List[str]) -> List[Dict[str, Any]]:
     certs = []
     
     for f in files:
@@ -61,8 +59,7 @@ def extract_personnel_certs() -> List[Dict[str, Any]]:
         
     return certs
 
-def extract_cvs() -> List[Dict[str, Any]]:
-    files = sorted(glob.glob('documents/cv/*.pdf'))
+def extract_cvs(files: List[str]) -> List[Dict[str, Any]]:
     cvs = []
     
     for f in files:
@@ -92,6 +89,10 @@ def extract_cvs() -> List[Dict[str, Any]]:
     return cvs
 
 if __name__ == '__main__':
-    certs = extract_personnel_certs()
-    cvs = extract_cvs()
+    import sys
+    from solution.extractors.discover import discover_and_classify
+    root = sys.argv[1] if len(sys.argv) > 1 else 'documents'
+    grouped = discover_and_classify(root)
+    certs = extract_personnel_certs(grouped.get('personnel_certificate', []))
+    cvs = extract_cvs(grouped.get('cv', []))
     print(f'Extracted {len(certs)} certs and {len(cvs)} CVs.')

@@ -33,45 +33,35 @@ Answer Type: {answer_type}
 """
 
 class LLMRouter:
-    def __init__(self, model_name: str = 'qwen3.5:4b', host: str = 'http://127.0.0.1:11434'):
+    """Last-resort SQL generator using the competition's provided LLM
+    endpoint (the only generative model this pipeline is permitted to
+    call). Never a hard dependency -- every method fails safe (empty
+    string / None) if the endpoint isn't configured or unreachable."""
+
+    def __init__(self, model_name: str = 'qwen3.6-35b-a3b-nvfp4', base_url: str = None):
         self.model_name = model_name
-        self.host = host
-        self.is_available = self._check_availability()
-        
-    def _check_availability(self) -> bool:
-        try:
-            req = urllib.request.Request(f"{self.host}/api/tags")
-            with urllib.request.urlopen(req, timeout=2) as resp:
-                data = json.loads(resp.read().decode('utf-8'))
-                models = [m['name'] for m in data.get('models', [])]
-                if any(self.model_name in m for m in models):
-                    return True
-                elif len(models) > 0:
-                    self.model_name = models[0]
-                    return True
-        except Exception:
-            return False
-        return False
-        
+        self.base_url = base_url or os.environ.get('LLM_BASE_URL')
+        self.is_available = bool(self.base_url)
+
     def generate_sql(self, question: str, answer_type: str) -> str:
         if not self.is_available:
             return ""
         prompt = PROMPT_TEMPLATE.format(question=question, answer_type=answer_type)
         data = {
             "model": self.model_name,
-            "prompt": prompt,
-            "stream": False,
-            "options": {"temperature": 0.0}
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": 2048,
+            "temperature": 0,
         }
         try:
             req = urllib.request.Request(
-                f"{self.host}/api/generate",
+                f"{self.base_url.rstrip('/')}/chat/completions",
                 data=json.dumps(data).encode('utf-8'),
                 headers={'Content-Type': 'application/json'}
             )
             with urllib.request.urlopen(req, timeout=90) as resp:
                 res = json.loads(resp.read().decode('utf-8'))
-                text = res.get('response', '').strip()
+                text = (res['choices'][0]['message'].get('content') or '').strip()
                 if "```sql" in text:
                     return text.split("```sql")[1].split("```")[0].strip()
                 elif "```" in text:

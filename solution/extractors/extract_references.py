@@ -1,13 +1,10 @@
-import glob
 import os
 import re
 import fitz
 from typing import List, Dict, Any
 
-def extract_reference_letters(projects: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def extract_reference_letters(projects: List[Dict[str, Any]], ref_files: List[str]) -> List[Dict[str, Any]]:
     pkg_to_proj = {p['package_no'].lower(): p for p in projects if p.get('package_no')}
-    
-    ref_files = sorted(glob.glob('documents/reference_letter/*.pdf'))
     ref_letters = []
     
     for f in ref_files:
@@ -37,9 +34,13 @@ def extract_reference_letters(projects: List[Dict[str, Any]]) -> List[Dict[str, 
     return ref_letters
 
 if __name__ == '__main__':
+    import sys
+    from solution.extractors.discover import discover_and_classify
     from solution.extractors.extract_projects import extract_projects
-    projs = extract_projects()
-    refs = extract_reference_letters(projs)
+    root = sys.argv[1] if len(sys.argv) > 1 else 'documents'
+    grouped = discover_and_classify(root)
+    projs = extract_projects(grouped.get('completion_certificate_any', []))
+    refs = extract_reference_letters(projs, grouped.get('reference_letter', []))
     print(f'Extracted {len(refs)} reference letters.')
     matched_count = sum(1 for r in refs if r['matched_project_doc_id'] is not None)
     print(f'Matched to projects: {matched_count}/{len(refs)}')

@@ -299,22 +299,15 @@ class EntityLinker:
                     matched_client = canonical
                     break
                     
-        # If client not directly named, infer from matched project or engineer default
+        # If client not directly named, infer from the matched project. No
+        # hardcoded engineer->client answer table: when a question names
+        # only the engineer, with no client and no identifiable project,
+        # the client genuinely cannot be determined from the text, and
+        # matched_client is correctly left unresolved rather than guessed.
         if not matched_client and matched_proj:
             matched_client = matched_proj['client_name']
-        elif not matched_client and matched_engineer:
-            eng_n = matched_engineer['name']
-            defaults = {
-                'Sanjay Joshi': 'Maharashtra Municipal Corporation',
-                'Naveen Roy': 'Public Works Department, Govt of Gujarat',
-                'Imran Joshi': 'Public Works Department, Govt of Maharashtra',
-                'Meera Roy': 'Public Health Engineering Dept, Odisha',
-                'Priti Pillai': 'Irrigation & Waterways Dept, Govt of West Bengal',
-                'Priya Patel': 'Irrigation & Waterways Dept, Govt of Rajasthan',
-            }
-            if eng_n in defaults:
-                matched_client = defaults[eng_n]
-            
+
+
         # 5. Match credential type (matched_cert may already be set by 1b above)
         cred_type = None
         if 'six sigma' in txt_lower:

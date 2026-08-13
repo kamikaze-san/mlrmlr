@@ -5,6 +5,7 @@ import pandas as pd
 from typing import Optional
 
 sys.path.insert(0, os.path.abspath('.'))
+from solution.extractors.discover import discover_and_classify
 from solution.extractors.extract_projects import extract_projects
 from solution.extractors.extract_personnel import extract_personnel_certs, extract_cvs
 from solution.extractors.extract_references import extract_reference_letters
@@ -110,15 +111,22 @@ def init_db(db_path: str = DB_PATH):
     conn.commit()
     return conn
 
-def populate_database(db_path: str = DB_PATH):
+def populate_database(db_path: str = DB_PATH, docs_root: str = 'documents'):
+    print(f'Discovering and classifying documents under {docs_root}/ ...')
+    grouped = discover_and_classify(docs_root)
+    for cls, files in sorted(grouped.items(), key=lambda kv: -len(kv[1])):
+        print(f'  {cls:32s}: {len(files)}')
+    if grouped.get('unreadable'):
+        print(f'  WARNING: {len(grouped["unreadable"])} file(s) could not be opened, skipped')
+
     print('Building knowledge base database...')
     conn = init_db(db_path)
     cur = conn.cursor()
-    
+
     # 1. Extract and insert projects
-    raw_projects = extract_projects()
+    raw_projects = extract_projects(grouped.get('completion_certificate_any', []))
     # Extract reference letters and match
-    ref_letters = extract_reference_letters(raw_projects)
+    ref_letters = extract_reference_letters(raw_projects, grouped.get('reference_letter', []))
     matched_refs = {r['matched_project_doc_id']: r['doc_id'] for r in ref_letters if r['matched_project_doc_id']}
     
     for p in raw_projects:
@@ -130,15 +138,15 @@ def populate_database(db_path: str = DB_PATH):
         ''', (p['doc_id'], p['project_name'], p['client_name'], p['category'], p['raw_category'], p['value_inr'], p['completion_date'], p['lead_engineer'], p['package_no'], p['state'], p['client_cert_ref'], has_ref, ref_doc_id))
     
     # 2. Extract and insert engineers (CVs)
-    cvs = extract_cvs()
+    cvs = extract_cvs(grouped.get('cv', []))
     for c in cvs:
         cur.execute('''
         INSERT OR REPLACE INTO engineers (emp_id, name, designation, business_unit, experience_years, qualification, date_of_joining)
         VALUES (?, ?, ?, ?, ?, ?, ?)
         ''', (c['emp_id'], c['name'], c['designation'], c['business_unit'], c['experience_years'], c['qualification'], c['date_of_joining']))
-        
+
     # 3. Extract and insert personnel certs
-    certs = extract_personnel_certs()
+    certs = extract_personnel_certs(grouped.get('personnel_certificate', []))
     for cert in certs:
         cur.execute('''
         INSERT INTO personnel_certs (doc_id, name, emp_id, cred_type, cred_id, issue_date, valid_through)
@@ -146,15 +154,17 @@ def populate_database(db_path: str = DB_PATH):
         ''', (cert['doc_id'], cert['name'], cert['emp_id'], cert['cred_type'], cert['cred_id'], cert['issue_date'], cert['valid_through']))
         
     # 4. Extract and insert receivables
-    ar_records = extract_receivables_ageing()
+    ar_source = grouped.get('receivables_ageing', [None])[0]
+    ar_records = extract_receivables_ageing(ar_source)
     for ar in ar_records:
         cur.execute('''
         INSERT INTO receivables_ageing (invoice_no, client_name, raw_client_name, invoice_date, invoiced_inr, status, received_inr, outstanding_inr)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         ''', (ar['invoice_no'], ar['client_name'], ar['raw_client_name'], ar['invoice_date'], ar['invoiced_inr'], ar['status'], ar['received_inr'], ar['outstanding_inr']))
-        
+
     # 5. Extract and insert assets
-    assets = extract_asset_register()
+    plant_source = grouped.get('plant_machinery_register', [None])[0]
+    assets = extract_asset_register(plant_source)
     for a in assets:
         cur.execute('''
         INSERT INTO equipment_assets (asset_id, asset_type, make, acquired_year, cost_inr, condition, location, ownership, safety_certified)
@@ -213,4 +223,6 @@ def populate_database(db_path: str = DB_PATH):
     conn.close()
 
 if __name__ == '__main__':
-    populate_database()
+    import sys
+    docs_root = sys.argv[1] if len(sys.argv) > 1 else 'documents'
+    populate_database(docs_root=docs_root)
