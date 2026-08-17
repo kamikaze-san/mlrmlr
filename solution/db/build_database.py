@@ -111,9 +111,53 @@ def init_db(db_path: str = DB_PATH):
     conn.commit()
     return conn
 
+def discover_documents(docs_root: str):
+    import glob
+    from solution.extractors.discover import classify_xlsx
+    
+    grouped = {}
+    
+    # 1. Discover all xlsx workbooks by header
+    found_xlsx = glob.glob(os.path.join(docs_root, '**', '*.xlsx'), recursive=True)
+    for f in found_xlsx:
+        cls, sheet = classify_xlsx(f)
+        if cls not in ('unreadable', 'unknown'):
+            grouped.setdefault(cls, []).append((f, sheet))
+
+    # 2. Check if document_index.csv exists in docs_root, parent, or cwd for PDFs
+    candidates = [
+        os.path.join(docs_root, 'document_index.csv'),
+        os.path.join(docs_root, '..', 'document_index.csv'),
+        'document_index.csv'
+    ]
+    index_path = next((c for c in candidates if os.path.exists(c)), None)
+    if index_path:
+        try:
+            df = pd.read_csv(index_path)
+            for _, row in df.iterrows():
+                dtype = str(row['doc_type']).strip()
+                fname = str(row['filename']).strip()
+                full_p = os.path.join(docs_root, fname)
+                if not os.path.exists(full_p):
+                    base = os.path.basename(fname)
+                    full_p = os.path.join(docs_root, base)
+                if not os.path.exists(full_p):
+                    full_p = os.path.join(docs_root, fname)
+                
+                if dtype in ('completion_certificate', 'company_completion_certificate'):
+                    grouped.setdefault('completion_certificate_any', []).append(full_p)
+                else:
+                    grouped.setdefault(dtype, []).append(full_p)
+            return grouped
+        except Exception:
+            pass
+            
+    # Fallback to content-based discovery if index not present
+    return discover_and_classify(docs_root)
+
 def populate_database(db_path: str = DB_PATH, docs_root: str = 'documents'):
-    print(f'Discovering and classifying documents under {docs_root}/ ...')
-    grouped = discover_and_classify(docs_root)
+    print(f'Discovering documents under {docs_root}/ ...')
+    grouped = discover_documents(docs_root)
     for cls, files in sorted(grouped.items(), key=lambda kv: -len(kv[1])):
         print(f'  {cls:32s}: {len(files)}')
     if grouped.get('unreadable'):
@@ -184,9 +228,9 @@ def populate_database(db_path: str = DB_PATH, docs_root: str = 'documents'):
         COALESCE(ar.total_received, 0),
         COALESCE(ar.total_outstanding, 0)
     FROM (
-        SELECT client_name FROM projects
+        SELECT client_name FROM projects WHERE client_name IS NOT NULL AND client_name != '' AND client_name != 'nan'
         UNION
-        SELECT client_name FROM receivables_ageing
+        SELECT client_name FROM receivables_ageing WHERE client_name IS NOT NULL AND client_name != '' AND client_name != 'nan'
     ) all_clients
     LEFT JOIN (
         SELECT 
@@ -196,13 +240,16 @@ def populate_database(db_path: str = DB_PATH, docs_root: str = 'documents'):
             SUM(has_reference_letter) AS referenced_projects_count,
             SUM(1 - has_reference_letter) AS unreferenced_projects_count
         FROM projects
+        WHERE client_name IS NOT NULL AND client_name != '' AND client_name != 'nan'
         GROUP BY client_name
     ) p_stats ON all_clients.client_name = p_stats.client_name
     LEFT JOIN (
         SELECT client_name, SUM(invoiced_inr) AS total_invoiced, SUM(received_inr) AS total_received, SUM(outstanding_inr) AS total_outstanding
         FROM receivables_ageing
+        WHERE client_name IS NOT NULL AND client_name != '' AND client_name != 'nan'
         GROUP BY client_name
-    ) ar ON all_clients.client_name = ar.client_name;
+    ) ar ON all_clients.client_name = ar.client_name
+    WHERE all_clients.client_name IS NOT NULL AND all_clients.client_name != '' AND all_clients.client_name != 'nan';
     ''')
     
     conn.commit()

@@ -8,6 +8,7 @@ from typing import Dict, Any, Optional, Union, Tuple
 from solution.solver.entity_linker import EntityLinker
 from solution.solver.question_parser import classify_question
 from solution.solver.llm_router import LLMRouter
+from solution.extractors.money_parser import parse_date
 
 DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'knowledge_base.db')
 
@@ -36,34 +37,41 @@ class QueryEngine:
         
         # Helper: Get all project values for a client
         def get_client_values(c_name: str) -> list[int]:
-            cur.execute("SELECT value_inr FROM projects WHERE client_name = ? ORDER BY value_inr DESC", (c_name,))
+            cur.execute("SELECT value_inr FROM projects WHERE LOWER(client_name) = LOWER(?) ORDER BY value_inr DESC", (c_name,))
             return [r[0] for r in cur.fetchall()]
 
         # Helper: Get client totals from clients table
         def get_client_row(c_name: str):
-            cur.execute("SELECT * FROM clients WHERE client_name = ?", (c_name,))
+            cur.execute("SELECT * FROM clients WHERE LOWER(client_name) = LOWER(?)", (c_name,))
             return cur.fetchone()
 
         if shape == 'absence':
             if client:
-                cur.execute("SELECT COUNT(*) FROM projects WHERE client_name = ? AND has_reference_letter = 0", (client,))
+                cur.execute("SELECT COUNT(*) FROM projects WHERE LOWER(client_name) = LOWER(?) AND has_reference_letter = 0", (client,))
                 return int(cur.fetchone()[0])
             return 0
 
         elif shape == 'referenced_share':
             if client:
-                cur.execute("SELECT COUNT(*), SUM(has_reference_letter) FROM projects WHERE client_name = ?", (client,))
+                cur.execute("SELECT COUNT(*), SUM(has_reference_letter) FROM projects WHERE LOWER(client_name) = LOWER(?)", (client,))
                 tot, refs = cur.fetchone()
                 if tot and tot > 0:
                     return round((refs / tot) * 100.0, 2)
             return 0.0
 
         elif shape == 'date_span':
-            issue_date_str = '2021-03-10'
+            issue_date_str = None
             if cert and cert.get('issue_date'):
                 issue_date_str = cert['issue_date']
-            elif 'march 10' in question_text.lower() or '2021-03-10' in question_text:
-                issue_date_str = '2021-03-10'
+            elif eng and eng.get('name'):
+                cur.execute("SELECT issue_date FROM personnel_certs WHERE name = ? ORDER BY issue_date LIMIT 1", (eng['name'],))
+                r = cur.fetchone()
+                if r: issue_date_str = r[0]
+
+            if not issue_date_str:
+                date_m = re.search(r'\b([A-Za-z]+ \d{1,2},? \d{4}|\d{4}-\d{2}-\d{2}|\d{1,2} [A-Za-z]+ \d{4})\b', question_text)
+                if date_m:
+                    issue_date_str = parse_date(date_m.group(1))
                 
             comp_date_str = None
             if proj and proj.get('completion_date'):
@@ -74,9 +82,12 @@ class QueryEngine:
                 if r: comp_date_str = r[0]
                 
             if issue_date_str and comp_date_str:
-                d_issue = datetime.strptime(issue_date_str, '%Y-%m-%d')
-                d_comp = datetime.strptime(comp_date_str, '%Y-%m-%d')
-                return abs((d_comp - d_issue).days)
+                try:
+                    d_issue = datetime.strptime(issue_date_str, '%Y-%m-%d')
+                    d_comp = datetime.strptime(comp_date_str, '%Y-%m-%d')
+                    return abs((d_comp - d_issue).days)
+                except Exception:
+                    return 0
             return 0
 
         elif shape == 'distinct_count':
@@ -88,7 +99,7 @@ class QueryEngine:
 
         elif shape == 'hop_aggregate':
             if client:
-                cur.execute("SELECT SUM(value_inr) FROM projects WHERE client_name = ?", (client,))
+                cur.execute("SELECT SUM(value_inr) FROM projects WHERE LOWER(client_name) = LOWER(?)", (client,))
                 res = cur.fetchone()[0]
                 return int(res) if res is not None else 0
             elif eng:
@@ -125,14 +136,14 @@ class QueryEngine:
 
         elif shape == 'threshold_aggregate':
             if client:
-                cur.execute("SELECT SUM(value_inr) FROM projects WHERE client_name = ? AND value_inr >= ?", (client, thresh))
+                cur.execute("SELECT SUM(value_inr) FROM projects WHERE LOWER(client_name) = LOWER(?) AND value_inr >= ?", (client, thresh))
                 res = cur.fetchone()[0]
                 return int(res) if res is not None else 0
             return 0
 
         elif shape == 'gap_to_threshold':
             if client:
-                cur.execute("SELECT SUM(value_inr) FROM projects WHERE client_name = ?", (client,))
+                cur.execute("SELECT SUM(value_inr) FROM projects WHERE LOWER(client_name) = LOWER(?)", (client,))
                 tot = cur.fetchone()[0] or 0
                 return int(thresh - tot)
             return 0
@@ -164,21 +175,31 @@ class QueryEngine:
                         'buildings': 'buildings',
                     }
                     excl_db = EXCL_CAT_MAP.get(excl.lower(), excl.lower())
-                    cur.execute("SELECT SUM(value_inr) FROM projects WHERE client_name = ? AND category != ?", (client, excl_db))
+                    cur.execute("SELECT SUM(value_inr) FROM projects WHERE LOWER(client_name) = LOWER(?) AND category != ?", (client, excl_db))
                     res = cur.fetchone()[0]
                     return int(res) if res is not None else 0
                 else:
-                    cur.execute("SELECT SUM(value_inr) FROM projects WHERE client_name = ?", (client,))
+                    cur.execute("SELECT SUM(value_inr) FROM projects WHERE LOWER(client_name) = LOWER(?)", (client,))
                     res = cur.fetchone()[0]
                     return int(res) if res is not None else 0
             return 0
 
         elif shape == 'temporal_chain':
             eng_name = eng['name'] if eng else None
-            issue_date_str = '2021-03-10'
+            issue_date_str = None
             if cert and cert.get('issue_date'):
                 issue_date_str = cert['issue_date']
-            if eng_name:
+            elif eng_name:
+                cur.execute("SELECT issue_date FROM personnel_certs WHERE name = ? ORDER BY issue_date LIMIT 1", (eng_name,))
+                r = cur.fetchone()
+                if r: issue_date_str = r[0]
+
+            if not issue_date_str:
+                date_m = re.search(r'\b([A-Za-z]+ \d{1,2},? \d{4}|\d{4}-\d{2}-\d{2}|\d{1,2} [A-Za-z]+ \d{4})\b', question_text)
+                if date_m:
+                    issue_date_str = parse_date(date_m.group(1))
+
+            if eng_name and issue_date_str:
                 cur.execute("SELECT SUM(value_inr) FROM projects WHERE lead_engineer = ? AND completion_date > ?", (eng_name, issue_date_str))
                 res = cur.fetchone()[0]
                 return int(res) if res is not None else 0
@@ -212,7 +233,7 @@ class QueryEngine:
 
         elif shape == 'category_diff':
             if client:
-                cur.execute("SELECT category, value_inr FROM projects WHERE client_name = ?", (client,))
+                cur.execute("SELECT category, value_inr FROM projects WHERE LOWER(client_name) = LOWER(?)", (client,))
                 rows = cur.fetchall()
                 
                 CAT_MAP = {
@@ -264,9 +285,9 @@ class QueryEngine:
             unique_years = sorted(list(set(years)))
             if client and len(unique_years) >= 2:
                 y1, y2 = str(unique_years[0]), str(unique_years[1])
-                cur.execute("SELECT SUM(value_inr) FROM projects WHERE client_name = ? AND completion_date LIKE ?", (client, f"{y1}%"))
+                cur.execute("SELECT SUM(value_inr) FROM projects WHERE LOWER(client_name) = LOWER(?) AND completion_date LIKE ?", (client, f"{y1}%"))
                 v1 = cur.fetchone()[0] or 0
-                cur.execute("SELECT SUM(value_inr) FROM projects WHERE client_name = ? AND completion_date LIKE ?", (client, f"{y2}%"))
+                cur.execute("SELECT SUM(value_inr) FROM projects WHERE LOWER(client_name) = LOWER(?) AND completion_date LIKE ?", (client, f"{y2}%"))
                 v2 = cur.fetchone()[0] or 0
                 return int(abs(v1 - v2))
             return 0

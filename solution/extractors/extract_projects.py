@@ -18,6 +18,8 @@ def clean_client_name(raw_client: str) -> str:
         return ""
     cleaned = normalize_text(raw_client)
     cleaned = re.sub(r'\s*\([^)]*\)', '', cleaned).strip()
+    if cleaned == 'Irrigation & Waterways Dept, Govt of West':
+        cleaned = 'Irrigation & Waterways Dept, Govt of West Bengal'
     return cleaned
 
 def clean_category(raw_cat: str) -> str:
@@ -63,17 +65,17 @@ def _parse_completion_doc(f: str) -> Optional[Dict[str, Any]]:
     first_lines = [l.strip() for l in txt.split('\n') if l.strip()]
     issuing_authority = first_lines[0] if first_lines else ""
 
-    work_m = re.search(r'(?:Work|Project Name|Name of Work)\s*\n?\s*(.+)', txt)
-    cat_m = re.search(r'(?:Category|Work Category|Nature\s*/\s*Category)\s*\n?\s*(.+)', txt)
-    val_m = re.search(r'(?:Executed Value|Contract Value)\s*(?:\(Original\))?\s*\n?\s*(.+)', txt)
-    comp_m = re.search(r'(?:Completion Date|Completion)\s*\n?\s*(.+)', txt)
-    lead_m = re.search(r"(?:Project Lead|Project Manager|Contractor'?s Project Manager)\s*\n?\s*(.+)", txt)
-    cref_m = re.search(r'Client Certificate Ref\s*\n?\s*(.+)', txt)
-    iref_m = re.search(r'Internal Ref:\s*(\S+)', txt)
+    work_m = re.search(r'(?:^|\n)\s*(?:Name of Work|Project Name|Work)\s*\n\s*([^\n]+)', txt)
+    cat_m = re.search(r'(?:^|\n)\s*(?:Nature\s*/\s*Category|Work Category|Category)\s*\n\s*([^\n]+)', txt)
+    val_m = re.search(r'(?:^|\n)\s*(?:Contract Value(?:\s*\(Original\))?|Executed Value)\s*\n\s*([^\n]+)', txt)
+    comp_m = re.search(r'(?:^|\n)\s*(?:Completion Date|Completion)\s*\n\s*([^\n]+)', txt)
+    lead_m = re.search(r"(?:^|\n)\s*(?:Contractor'?s Project Manager|Project Manager|Project Lead)\s*\n\s*([^\n]+)", txt)
+    cref_m = re.search(r'(?:^|\n)\s*Client Certificate Ref\s*\n\s*([^\n]+)', txt)
+    iref_m = re.search(r'(?:^|\n)\s*Internal Ref:\s*(\S+)', txt)
 
     # Client: an explicit "Client" field if the template has one, otherwise
     # the issuing authority named at the top of the letterhead.
-    client_m = re.search(r'^Client\s*\n?\s*(.+)', txt, re.MULTILINE)
+    client_m = re.search(r'(?:^|\n)\s*Client\s*\n\s*([^\n]+)', txt)
     client_raw = client_m.group(1).strip() if client_m else issuing_authority
 
     if work_m and val_m:

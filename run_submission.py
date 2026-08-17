@@ -14,7 +14,7 @@ import time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from solution.db.build_database import populate_database, DB_PATH
-from solution.solver.query_engine import QueryEngine
+from solution.solver.llm_engine import LLMEngine
 
 
 def load_questions(path):
@@ -41,7 +41,7 @@ def main():
     questions = load_questions(args.questions)
     print(f'[run_submission] {len(questions)} questions to answer', flush=True)
 
-    engine = QueryEngine(db_path=DB_PATH)
+    engine = LLMEngine(db_path=DB_PATH)
 
     rows = []
     t1 = time.time()
@@ -50,12 +50,12 @@ def main():
         qtext = q.get('question') or q.get('question_text')
         atype = q.get('answer_type')
         try:
-            answer = engine.solve_question(qid, qtext, atype)
+            answer = engine.solve(qtext, atype, verbose=False)
         except Exception as e:
             print(f'[run_submission] ERROR on {qid}: {e}', flush=True)
             answer = None
         rows.append((qid, answer))
-        if i % 25 == 0 or i == len(questions):
+        if i % 10 == 0 or i == len(questions):
             elapsed = time.time() - t1
             print(f'[run_submission] {i}/{len(questions)} answered ({elapsed:.1f}s elapsed)', flush=True)
 

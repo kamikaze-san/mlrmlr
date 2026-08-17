@@ -16,7 +16,11 @@ def extract_receivables_ageing(source: Optional[Tuple[str, str]]) -> List[Dict[s
     for _, row in df.iterrows():
         inv_no = str(row.get('Invoice No', '')).strip()
         client = str(row.get('Client', '')).strip()
+        if not inv_no or inv_no.lower() == 'nan' or not client or client.lower() == 'nan':
+            continue
         clean_client = clean_client_name(client)
+        if not clean_client or clean_client.lower() == 'nan':
+            continue
         inv_date = parse_date(str(row.get('Invoice Date', '')))
         invoiced = parse_money(row.get('Invoiced (INR)', 0))
         status = str(row.get('Status', '')).strip()
