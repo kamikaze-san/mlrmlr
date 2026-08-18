@@ -2,8 +2,9 @@ import sqlite3
 import os
 import re
 import json
+import numpy as np
 from datetime import datetime
-from typing import Optional, Dict, Any, Union, Tuple
+from typing import Optional, Dict, Any, Union, Tuple, List
 from solution.solver.ollama_client import OllamaClient
 
 DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'knowledge_base.db')
@@ -18,98 +19,79 @@ def days_between(d1: Any, d2: Any) -> int:
     except Exception:
         return 0
 
+def percent_calc(num: Any, denom: Any) -> float:
+    try:
+        n = float(num) if num is not None else 0.0
+        d = float(denom) if denom is not None else 0.0
+        if d == 0.0:
+            return 0.0
+        return round((n * 100.0 / d), 2)
+    except Exception:
+        return 0.0
+
+class MedianAggregate:
+    def __init__(self):
+        self.values = []
+
+    def step(self, value):
+        if value is not None:
+            try:
+                self.values.append(float(value))
+            except (ValueError, TypeError):
+                pass
+
+    def finalize(self):
+        if not self.values:
+            return 0.0
+        return float(np.median(self.values))
+
+def get_db_connection(db_path: str = DB_PATH) -> sqlite3.Connection:
+    """Creates a configured SQLite connection with custom math primitives."""
+    conn = sqlite3.connect(db_path, check_same_thread=False)
+    conn.row_factory = sqlite3.Row
+    conn.create_function("DAYS_BETWEEN", 2, days_between)
+    conn.create_function("PERCENT", 2, percent_calc)
+    conn.create_aggregate("MEDIAN", 1, MedianAggregate)
+    return conn
+
 class LLMEngine:
     def __init__(self, db_path: str = DB_PATH, ollama_client: Optional[OllamaClient] = None):
         self.db_path = db_path
         self.client = ollama_client or OllamaClient()
-        self._init_db_connection()
         self._load_dynamic_entity_catalog()
 
-    def _init_db_connection(self):
-        self.conn = sqlite3.connect(self.db_path)
-        self.conn.row_factory = sqlite3.Row
-        self.conn.create_function("DAYS_BETWEEN", 2, days_between)
-
     def _load_dynamic_entity_catalog(self):
-        cur = self.conn.cursor()
+        """Pulls distinct values dynamically from the live database at runtime."""
+        conn = get_db_connection(self.db_path)
+        cur = conn.cursor()
+        
         cur.execute("SELECT DISTINCT client_name FROM clients WHERE client_name IS NOT NULL AND client_name != '' AND client_name != 'nan'")
         self.clients = [r[0] for r in cur.fetchall()]
         
         cur.execute("SELECT DISTINCT name FROM engineers WHERE name IS NOT NULL AND name != ''")
         self.engineers = [r[0] for r in cur.fetchall()]
 
-        cur.execute("SELECT DISTINCT package_no FROM projects WHERE package_no IS NOT NULL AND package_no != ''")
-        self.packages = [r[0] for r in cur.fetchall()]
+        cur.execute("SELECT DISTINCT category FROM projects WHERE category IS NOT NULL AND category != ''")
+        self.categories = [r[0] for r in cur.fetchall()]
+        conn.close()
 
-    def step1_ground_entities(self, question: str) -> Dict[str, Any]:
-        """Step 1: LLM in-context entity grounding and decomposition."""
-        system_prompt = (
-            "You are an Entity Resolution Assistant for an infrastructure engineering database.\n"
-            "Given a user's question, map any mentioned client or engineer to the exact canonical name in the database.\n"
-            "Rules:\n"
-            "1. Match acronyms to the full company name (e.g. 'NEDA' -> 'National Expressway Development Authority', 'UP Irrigation' -> 'Irrigation & Waterways Dept, Govt of Uttar Pradesh', 'WB PWD' -> 'Public Works Department, Govt of West Bengal', 'L&C' -> 'Lakshya Engineering & Construction').\n"
-            "2. Map first names (e.g. 'Rajesh', 'Asha', 'Neha') to full engineer names ('Rajesh Rao', 'Asha Nair', 'Neha Chopra').\n"
-            "3. Reference Anchors: If a question says 'referencing X project as reference point' or 'referencing certification XYZ', that project/cert is ONLY an anchor to find the client/engineer. Do NOT put reference project names in filters or specific_package_to_query. Set filters to null unless there is an explicit exclusion like 'excluding buildings' or a date threshold like 'after March 10, 2021'.\n"
-            "Respond strictly with valid JSON."
+    def _build_system_prompt(self) -> str:
+        return (
+            "You are an expert SQLite analyst for an infrastructure corporate knowledge base.\n"
+            "Given a natural language question and database schema, write a single executable SQLite query.\n"
+            "Respond strictly in JSON format: {\"sql\": \"SELECT ...\"}"
         )
 
-        user_prompt = f"""
-Candidate Clients in Database:
-{json.dumps(self.clients, indent=2)}
-
-Candidate Engineers in Database:
-{json.dumps(self.engineers, indent=2)}
-
-User Question:
-"{question}"
-
-Output JSON format:
-{{
-  "target_client": "exact canonical client name from Candidate Clients or null",
-  "target_engineer": "exact canonical engineer name from Candidate Engineers or null",
-  "specific_package_to_query": "ONLY set if user asks for the single specific package itself (e.g. 'what was the completion date of Pkg-145'); if user asks for total/all completed assignments for a client or engineer, set this to null",
-  "operation_intent": "brief summary of math/query required (e.g. 'sum of all completed projects for client', 'days between cert and project completion', 'percentage of referenced projects')",
-  "filters": "ONLY strict mathematical filters (e.g. 'excluding buildings', 'value >= 500000000', 'completion_date > 2021-03-10'); if no category or date exclusion, set to null"
-}}
-"""
-        resp = self.client.generate(prompt=user_prompt, system=system_prompt, json_mode=True, temperature=0.0)
-        if resp:
-            try:
-                return json.loads(resp)
-            except Exception:
-                pass
-        return {
-            "target_client": None,
-            "target_engineer": None,
-            "specific_package_to_query": None,
-            "operation_intent": question,
-            "filters": None
-        }
-
-    def step2_generate_sql(self, question: str, answer_type: str, entities: Dict[str, Any], previous_error: Optional[str] = None) -> Optional[str]:
-        """Step 2: Schema-driven Text-to-SQL compiler with self-correction."""
-        system_prompt = (
-            "You are an expert SQLite developer.\n"
-            "Generate a single executable SQLite query that calculates the exact numerical answer.\n"
-            "Output ONLY the SQL code inside ```sql ... ``` block."
-        )
-
-        error_context = f"\nPREVIOUS ERROR TO FIX:\n{previous_error}\n" if previous_error else ""
-
-        target_client = entities.get('target_client')
-        target_engineer = entities.get('target_engineer')
-        specific_pkg = entities.get('specific_package_to_query')
-
-        user_prompt = f"""
-Database Schema:
+    def _build_user_prompt(self, question: str, answer_type: str, previous_error: Optional[str] = None) -> str:
+        error_section = f"\nPREVIOUS ERROR TO FIX:\n{previous_error}\n" if previous_error else ""
+        return f"""
+SQLite Database Schema:
 - projects (
     id INTEGER PRIMARY KEY,
-    doc_id TEXT,
     package_no TEXT,
     project_name TEXT,
     client_name TEXT,
     category TEXT,
-    raw_category TEXT,
     value_inr INTEGER,
     completion_date TEXT,
     lead_engineer TEXT,
@@ -148,76 +130,97 @@ Database Schema:
     total_outstanding_inr INTEGER
   )
 
-Custom Helper Functions:
-- DAYS_BETWEEN(d1, d2): Returns absolute integer number of days between two ISO date strings ('YYYY-MM-DD').
+Live Distinct Entities in Database:
+- Clients: {json.dumps(self.clients)}
+- Engineers: {json.dumps(self.engineers)}
+- Categories: {json.dumps(self.categories)}
 
-Target Calculation:
-- Goal: {entities.get('operation_intent')}
-- Target Client: {target_client}
-- Target Engineer: {target_engineer}
-- Target Package (if querying only 1 package): {specific_pkg}
-- Mathematical Filters: {entities.get('filters')}
-{error_context}
-Expected Output Unit: {answer_type}
+Available In-DB Helper Functions:
+- DAYS_BETWEEN(date1, date2): Returns integer day difference between two ISO dates ('YYYY-MM-DD').
+- PERCENT(numerator, denominator): Returns rounded percentage (num * 100.0 / denom).
+- MEDIAN(column): Computes the 50th percentile median of a column.
 
-Instructions:
-1. If the goal is the sum of completed assignments for a Client ({target_client}), write:
-   `SELECT SUM(value_inr) FROM projects WHERE LOWER(client_name) = LOWER('{target_client}')`
-2. If filtering by Engineer ({target_engineer}) and completion date after a threshold, write:
-   `SELECT SUM(value_inr) FROM projects WHERE lead_engineer = '{target_engineer}' AND completion_date > 'YYYY-MM-DD'`
-3. If calculating days between cert issue and project completion for package {specific_pkg}:
-   `SELECT DAYS_BETWEEN(c.issue_date, p.completion_date) FROM projects p, personnel_certs c WHERE p.package_no = '{specific_pkg}' AND c.name = '{target_engineer}' LIMIT 1`
-4. If calculating percentage of referenced projects for {target_client}:
-   `SELECT (SUM(has_reference_letter) * 100.0 / COUNT(*)) FROM projects WHERE LOWER(client_name) = LOWER('{target_client}')`
-5. If calculating collection rate for {target_client}:
-   `SELECT (total_received_inr * 100.0 / total_invoiced_inr) FROM clients WHERE LOWER(client_name) = LOWER('{target_client}')`
+Rules for Query Generation:
+1. Always map client abbreviations (e.g. 'NEDA' -> 'National Expressway Development Authority', 'UP Irrigation' -> 'Irrigation & Waterways Dept, Govt of Uttar Pradesh') to the exact canonical client from the live Clients list.
+2. Case-Insensitive Matching: Always use LOWER(client_name) = LOWER('canonical_name') or LOWER(lead_engineer) = LOWER('canonical_name').
+3. Scope of Total Value: When asked for the "total value of all completed assignments delivered for [Client]", compute `SELECT SUM(value_inr) FROM projects WHERE LOWER(client_name) = LOWER('canonical_client')`. Do NOT filter by a package_no mentioned only as background reference point.
+4. Aggregation by Expected Unit ({answer_type}):
+   - 'count': Use COUNT(*) or COUNT(DISTINCT col).
+   - 'percent': Use PERCENT(SUM(has_reference_letter), COUNT(*)) or PERCENT(total_received_inr, total_invoiced_inr).
+   - 'days': Use DAYS_BETWEEN(c.issue_date, p.completion_date).
+   - 'money': Use SUM(value_inr), AVG(value_inr), or (AVG(value_inr) - MEDIAN(value_inr)).
+5. Category Filters: Map keywords to exact strings from Categories list, e.g. 'excluding buildings' -> `WHERE category NOT LIKE '%building%'`.
+{error_section}
+Question: "{question}"
+Expected Unit: {answer_type}
 
-Output ONLY the SQL code inside ```sql ... ```
+Output JSON format:
+{{"sql": "SELECT ..."}}
 """
-        raw_resp = self.client.generate(prompt=user_prompt, system=system_prompt, json_mode=False, temperature=0.0)
-        if not raw_resp:
+
+    def check_semantic_plausibility(self, val: Any, answer_type: str) -> Optional[str]:
+        """Validates that execution result matches the expected unit."""
+        if val is None:
+            return "Query returned NULL. Check if WHERE filters were too restrictive."
+        
+        try:
+            num = float(val)
+        except (ValueError, TypeError):
             return None
 
-        # Extract SQL from markdown code block
-        m = re.search(r'```(?:sql)?\s*(.*?)\s*```', raw_resp, re.DOTALL | re.IGNORECASE)
-        if m:
-            return m.group(1).strip()
-        return raw_resp.strip()
+        if answer_type == 'count' and num > 1000:
+            return f"Semantic Error: Expected a small integer count (e.g. number of projects/engineers), but query returned {num} (likely a monetary sum). Use COUNT(*) instead of SUM(value_inr)."
+        
+        if answer_type == 'percent' and (num < 0.0 or num > 100.0):
+            return f"Semantic Error: Expected a percentage between 0.0 and 100.0, but query returned {num}. Check formula: PERCENT(numerator, denominator)."
+        
+        if answer_type == 'days' and (num < 0 or num > 36500):
+            return f"Semantic Error: Expected positive integer days elapsed, but got {num}. Use DAYS_BETWEEN(d1, d2)."
+        
+        return None
 
-    def execute_query(self, sql: str) -> Tuple[Optional[Any], Optional[str]]:
-        """Executes SQL in SQLite and returns (result, error)."""
-        try:
-            cur = self.conn.cursor()
-            cur.execute(sql)
-            row = cur.fetchone()
-            if row is not None:
-                val = row[0]
-                return val, None
-            return 0, None
-        except Exception as e:
-            return None, str(e)
-
-    def solve(self, question: str, answer_type: str, verbose: bool = True) -> Union[int, float]:
-        """Full end-to-end resolution with LLM Grounding + Text-to-SQL + Self-Correction."""
-        # 1. Ground entities
-        entities = self.step1_ground_entities(question)
-        if verbose:
-            print(f"[Step 1 Grounding] {entities}")
-
-        # 2. Text-to-SQL with up to 2 retries
+    def solve(self, question: str, answer_type: str, verbose: bool = False) -> Union[int, float]:
+        """Single-pass high-throughput Text-to-SQL with semantic guardrails."""
+        conn = get_db_connection(self.db_path)
+        cur = conn.cursor()
+        
         error_msg = None
+        system_prompt = self._build_system_prompt()
+
         for attempt in range(3):
-            sql = self.step2_generate_sql(question, answer_type, entities, previous_error=error_msg)
-            if verbose:
-                print(f"[Step 2 SQL (Attempt {attempt+1})] {sql}")
+            user_prompt = self._build_user_prompt(question, answer_type, previous_error=error_msg)
+            raw_resp = self.client.generate(prompt=user_prompt, system=system_prompt, json_mode=True, temperature=0.0)
+            
+            sql = None
+            if raw_resp:
+                try:
+                    data = json.loads(raw_resp)
+                    sql = data.get("sql")
+                except Exception:
+                    # Fallback regex extraction if raw JSON wrapper had extra text
+                    m = re.search(r'SELECT\s+.*', raw_resp, re.DOTALL | re.IGNORECASE)
+                    if m:
+                        sql = m.group(0).rstrip(';`"\n }')
+
             if not sql:
+                error_msg = "Could not parse valid SQL from JSON response. Output format must be {\"sql\": \"SELECT ...\"}."
                 continue
 
-            val, err = self.execute_query(sql)
             if verbose:
-                print(f"[Execute Result] val={val}, err={err}")
-            if err is None:
-                # Successfully executed
+                print(f"[SQL Attempt {attempt+1}] {sql}")
+
+            try:
+                cur.execute(sql)
+                row = cur.fetchone()
+                val = row[0] if row is not None else 0
+                
+                # Check semantic plausibility
+                semantic_err = self.check_semantic_plausibility(val, answer_type)
+                if semantic_err is not None and attempt < 2:
+                    error_msg = f"SQL: {sql}\n{semantic_err}"
+                    continue
+
+                conn.close()
                 if val is None:
                     return 0 if answer_type != 'percent' else 0.0
                 if answer_type == 'percent':
@@ -225,7 +228,11 @@ Output ONLY the SQL code inside ```sql ... ```
                 elif answer_type in ('money', 'count', 'days'):
                     return int(round(float(val)))
                 return val
-            else:
-                error_msg = f"SQL: {sql}\nError: {err}"
 
+            except Exception as e:
+                error_msg = f"SQL Error on '{sql}': {e}"
+                if verbose:
+                    print(f"[Execution Error] {e}")
+
+        conn.close()
         return 0 if answer_type != 'percent' else 0.0

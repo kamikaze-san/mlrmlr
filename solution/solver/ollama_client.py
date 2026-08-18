@@ -5,7 +5,7 @@ import urllib.error
 from typing import Optional, Dict, Any, List
 
 DEFAULT_OLLAMA_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
-DEFAULT_MODEL = os.environ.get("OLLAMA_MODEL", "qwen3:8b")
+DEFAULT_MODEL = os.environ.get("OLLAMA_MODEL", "qwen3:4b-instruct")
 
 class OllamaClient:
     def __init__(self, base_url: str = DEFAULT_OLLAMA_URL, model: str = DEFAULT_MODEL, timeout: int = 120):
