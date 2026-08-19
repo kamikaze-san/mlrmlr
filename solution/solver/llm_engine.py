@@ -6,6 +6,7 @@ import numpy as np
 from datetime import datetime
 from typing import Optional, Dict, Any, Union, Tuple, List
 from solution.solver.ollama_client import OllamaClient
+from solution.solver.entity_resolver import EntityResolver
 
 DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'knowledge_base.db')
 
@@ -59,6 +60,7 @@ class LLMEngine:
         self.db_path = db_path
         self.client = ollama_client or OllamaClient()
         self._load_dynamic_entity_catalog()
+        self.resolver = EntityResolver(db_path)
 
     def _load_dynamic_entity_catalog(self):
         """Pulls distinct values dynamically from the live database at runtime."""
@@ -82,8 +84,106 @@ class LLMEngine:
             "Respond strictly in JSON format: {\"sql\": \"SELECT ...\"}"
         )
 
+    # Rollup phrasing that, per the reasoning-trace convention checked
+    # against real gold answers, always resolves to a full-entity total --
+    # any specific project/credential named alongside these phrases is
+    # identifying context, not a filter. Not an exhaustive keyword cascade
+    # for classifying question TYPE (that's what caused the brittleness
+    # this pipeline moved away from) -- this only decides one narrow thing:
+    # given a rollup IS being asked for, should a resolved project/cred be
+    # treated as a filter. Specific-item questions ("what was Pkg-47's
+    # value") never hit this at all, since they don't use rollup phrasing.
+    _ROLLUP_PHRASES = (
+        'every completed', 'all completed', 'combined value', 'total value',
+        'aggregate value', 'full rollup', 'every assignment', 'all assignments',
+        'every project', 'all projects', 'every work', 'all work',
+        'every completed assignment', 'combined total', 'overall total',
+    )
+
+    def _is_rollup_question(self, question: str) -> bool:
+        q = question.lower()
+        return any(p in q for p in self._ROLLUP_PHRASES)
+
+    def _build_resolved_entities_section(self, question: str) -> str:
+        """Deterministic pre-resolution (no LLM call) of client/engineer/
+        category/project mentions, replacing the old flat dump of every
+        candidate with just what's actually relevant to this question --
+        plus a fallback to the full list only for whichever entity types
+        didn't resolve confidently."""
+        info: Dict[str, Any] = {}
+        lines = []
+
+        client_res = self.resolver.resolve_client(question)
+        if client_res.matched:
+            lines.append(f"- Client: {client_res.matched} (resolved via {client_res.method})")
+            info['client'] = client_res.matched
+        elif client_res.tied:
+            lines.append(f"- Client: AMBIGUOUS from wording alone -- candidates: {json.dumps(client_res.tied)}. If genuinely ambiguous, write `WHERE client_name IN (...)` over all of them, GROUP BY client_name, and use whatever other filters the question gives to pick the one group that's actually consistent with the rest of the question.")
+            info['client_tied'] = client_res.tied
+
+        scope_client = client_res.matched
+        eng_res = self.resolver.resolve_engineer(question)
+        if eng_res.matched:
+            lines.append(f"- Engineer: {eng_res.matched} (resolved via {eng_res.method})")
+            info['engineer'] = eng_res.matched
+        elif eng_res.tied:
+            lines.append(f"- Engineer: AMBIGUOUS from wording alone -- candidates: {json.dumps(eng_res.tied)}")
+            info['engineer_tied'] = eng_res.tied
+
+        cred_res = self.resolver.resolve_cred_type(question)
+        if cred_res.matched:
+            lines.append(f"- Credential type: {cred_res.matched} (this is stored in personnel_certs.cred_type -- join personnel_certs to the engineer via emp_id or name, do NOT look for it in engineers.designation)")
+            info['cred_type'] = cred_res.matched
+
+        proj_res = self.resolver.resolve_project(question, scope_engineer=eng_res.matched, scope_client=scope_client)
+        if proj_res.matched:
+            lines.append(f"- Project referenced: {proj_res.matched} (resolved via {proj_res.method})")
+            info['project'] = proj_res.matched
+        elif proj_res.tied:
+            lines.append(f"- Project referenced: AMBIGUOUS -- candidates: {json.dumps(proj_res.tied)}")
+            info['project_tied'] = proj_res.tied
+
+        # Explicit scope decision. A resolved project/credential is often
+        # only there to help identify which client/engineer is meant, not
+        # something to filter by -- the model kept over-filtering on these
+        # "scaffolding" details instead of recognizing them as landmarks
+        # (verified against real gold answers earlier: a question naming a
+        # specific cert and project, then asking for "every completed
+        # assignment ... for that client", has a gold answer scoped to the
+        # WHOLE client, ignoring the cert/project entirely). Rather than
+        # leave that judgment call to the model, make the decision here
+        # when the question's own phrasing is asking for a rollup, and
+        # state it as a fact instead of hoping it infers this each time.
+        if self._is_rollup_question(question) and (proj_res.matched or cred_res.matched):
+            scope_entity = client_res.matched or eng_res.matched
+            if scope_entity:
+                lines.append(
+                    f"- Scope: this question asks for a TOTAL/COMBINED rollup, so the resolved project/credential "
+                    f"above are identifying context only, not filters. Compute over ALL of {scope_entity}'s work -- "
+                    f"do NOT add a project_name, cred_type, or cred_id condition to the WHERE clause."
+                )
+                info['scope'] = scope_entity
+
+        mask = [v for v in (client_res.matched, eng_res.matched, proj_res.matched) if v]
+        cats = self.resolver.resolve_categories(question, top_n=3, mask=mask)
+        if cats:
+            lines.append(f"- Categories mentioned: {json.dumps(cats)}")
+            info['categories'] = cats
+
+        if not lines:
+            lines.append("- No entities confidently resolved from the question text; use the live lists below directly.")
+        if 'client' not in info and 'client_tied' not in info:
+            lines.append(f"- All known clients: {json.dumps(self.resolver.clients)}")
+        if 'engineer' not in info and 'engineer_tied' not in info:
+            lines.append(f"- All known engineers: {json.dumps(self.resolver.engineers)}")
+        if 'categories' not in info:
+            lines.append(f"- All known categories: {json.dumps(self.resolver.categories)}")
+
+        return "\n".join(lines)
+
     def _build_user_prompt(self, question: str, answer_type: str, previous_error: Optional[str] = None) -> str:
         error_section = f"\nPREVIOUS ERROR TO FIX:\n{previous_error}\n" if previous_error else ""
+        resolved_entities = self._build_resolved_entities_section(question)
         return f"""
 SQLite Database Schema:
 - projects (
@@ -130,10 +230,8 @@ SQLite Database Schema:
     total_outstanding_inr INTEGER
   )
 
-Live Distinct Entities in Database:
-- Clients: {json.dumps(self.clients)}
-- Engineers: {json.dumps(self.engineers)}
-- Categories: {json.dumps(self.categories)}
+Resolved Entities for This Question (already matched against the live database -- use these exact values, don't re-derive them from the raw question text yourself):
+{resolved_entities}
 
 Available In-DB Helper Functions:
 - DAYS_BETWEEN(date1, date2): Returns integer day difference between two ISO dates ('YYYY-MM-DD').

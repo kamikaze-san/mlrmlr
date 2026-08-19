@@ -18,9 +18,10 @@ class OllamaClient:
             "model": self.model,
             "prompt": prompt,
             "stream": False,
+            "keep_alive": "1h",
             "options": {
                 "temperature": temperature,
-                "num_predict": 2048,
+                "num_predict": 512,
             }
         }
         if system:
