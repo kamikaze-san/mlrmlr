@@ -45,6 +45,7 @@ def init_db(db_path: str = DB_PATH):
         value_inr INTEGER,
         completion_date TEXT,
         lead_engineer TEXT,
+        lead_engineer_id TEXT,
         package_no TEXT,
         state TEXT,
         client_cert_ref TEXT,
@@ -188,6 +189,23 @@ def populate_database(db_path: str = DB_PATH, docs_root: str = 'documents'):
         INSERT OR REPLACE INTO engineers (emp_id, name, designation, business_unit, experience_years, qualification, date_of_joining)
         VALUES (?, ?, ?, ?, ?, ?, ?)
         ''', (c['emp_id'], c['name'], c['designation'], c['business_unit'], c['experience_years'], c['qualification'], c['date_of_joining']))
+
+    # 2b. Backfill projects.lead_engineer_id -- a real foreign key to
+    # engineers.emp_id, populated by matching the extracted name against
+    # the engineers table. lead_engineer (the name) stays as-is for
+    # display/text matching; lead_engineer_id is the column that should
+    # actually be used to join to personnel_certs/engineers, removing the
+    # ambiguity between "this column holds a name" vs "this column holds
+    # an ID" that a name-only column leaves for a query-writer to guess at.
+    cur.execute('''
+        UPDATE projects
+        SET lead_engineer_id = (
+            SELECT e.emp_id FROM engineers e
+            WHERE LOWER(e.name) = LOWER(projects.lead_engineer)
+            LIMIT 1
+        )
+        WHERE lead_engineer IS NOT NULL AND lead_engineer != ''
+    ''')
 
     # 3. Extract and insert personnel certs
     certs = extract_personnel_certs(grouped.get('personnel_certificate', []))

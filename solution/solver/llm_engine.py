@@ -124,7 +124,9 @@ class LLMEngine:
         scope_client = client_res.matched
         eng_res = self.resolver.resolve_engineer(question)
         if eng_res.matched:
-            lines.append(f"- Engineer: {eng_res.matched} (resolved via {eng_res.method})")
+            eng_id = self.resolver.engineer_emp_ids.get(eng_res.matched.lower())
+            id_note = f", emp_id={eng_id} -- use projects.lead_engineer_id = '{eng_id}' to join, not the name" if eng_id else ""
+            lines.append(f"- Engineer: {eng_res.matched} (resolved via {eng_res.method}{id_note})")
             info['engineer'] = eng_res.matched
         elif eng_res.tied:
             lines.append(f"- Engineer: AMBIGUOUS from wording alone -- candidates: {json.dumps(eng_res.tied)}")
@@ -132,7 +134,7 @@ class LLMEngine:
 
         cred_res = self.resolver.resolve_cred_type(question)
         if cred_res.matched:
-            lines.append(f"- Credential type: {cred_res.matched} (this is stored in personnel_certs.cred_type -- join personnel_certs to the engineer via emp_id or name, do NOT look for it in engineers.designation)")
+            lines.append(f"- Credential type: {cred_res.matched} (this is stored in personnel_certs.cred_type -- join personnel_certs to the engineer via personnel_certs.name = engineers.name, do NOT use personnel_certs.emp_id which is unreliable, and do NOT look for it in engineers.designation)")
             info['cred_type'] = cred_res.matched
 
         proj_res = self.resolver.resolve_project(question, scope_engineer=eng_res.matched, scope_client=scope_client)
@@ -157,10 +159,20 @@ class LLMEngine:
         if self._is_rollup_question(question) and (proj_res.matched or cred_res.matched):
             scope_entity = client_res.matched or eng_res.matched
             if scope_entity:
+                # When a CLIENT is the resolved scope, the engineer mention
+                # is scaffolding too, same as the project/credential --
+                # verified directly against real gold answers earlier
+                # (HV-IC-0001: filtering by client+engineer gives 129.4M,
+                # wrong; client-only gives 2.9424B, the actual gold answer).
+                # Only exclude the engineer from the "don't filter" list
+                # when engineer IS the scope (no client resolved at all).
+                excluded = "project_name, cred_type, or cred_id"
+                if client_res.matched:
+                    excluded += ", or lead_engineer/lead_engineer_id"
                 lines.append(
-                    f"- Scope: this question asks for a TOTAL/COMBINED rollup, so the resolved project/credential "
+                    f"- Scope: this question asks for a TOTAL/COMBINED rollup, so the resolved project/credential/engineer "
                     f"above are identifying context only, not filters. Compute over ALL of {scope_entity}'s work -- "
-                    f"do NOT add a project_name, cred_type, or cred_id condition to the WHERE clause."
+                    f"do NOT add a {excluded} condition to the WHERE clause."
                 )
                 info['scope'] = scope_entity
 
@@ -195,6 +207,7 @@ SQLite Database Schema:
     value_inr INTEGER,
     completion_date TEXT,
     lead_engineer TEXT,
+    lead_engineer_id TEXT,
     has_reference_letter INTEGER
   )
 - engineers (
@@ -211,6 +224,13 @@ SQLite Database Schema:
     cred_id TEXT,
     issue_date TEXT
   )
+
+IMPORTANT -- join keys, don't guess: `lead_engineer` is a NAME (text), `lead_engineer_id` is an ID
+(a real foreign key to engineers.emp_id, populated for every row). To join projects to engineers,
+always use `projects.lead_engineer_id = engineers.emp_id` -- never join a name column to an ID
+column (e.g. `lead_engineer = emp_id` is always wrong, they hold different kinds of values and can
+never match). To then reach personnel_certs, join on `personnel_certs.name = engineers.name`, NOT
+`personnel_certs.emp_id` -- that column is only partially filled and unreliable.
 - receivables_ageing (
     invoice_no TEXT PRIMARY KEY,
     client_name TEXT,

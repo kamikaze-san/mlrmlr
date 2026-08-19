@@ -191,6 +191,11 @@ class EntityResolver:
         cur.execute("SELECT DISTINCT name FROM engineers WHERE name IS NOT NULL AND name != ''")
         self.engineers = self._dedup_case_insensitive([r[0] for r in cur.fetchall()])
 
+        cur.execute("SELECT emp_id, name FROM engineers WHERE name IS NOT NULL AND name != ''")
+        self.engineer_emp_ids: Dict[str, str] = {}
+        for row in cur.fetchall():
+            self.engineer_emp_ids.setdefault(row['name'].lower(), row['emp_id'])
+
         cur.execute("SELECT DISTINCT category FROM projects WHERE category IS NOT NULL AND category != ''")
         self.categories = self._dedup_case_insensitive([r[0] for r in cur.fetchall()])
 
