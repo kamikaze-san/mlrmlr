@@ -45,15 +45,29 @@ def normalize_words(text: str) -> set:
 def compute_acronyms(full_name: str) -> List[str]:
     """Derives plausible acronym forms from a real, already-extracted name --
     never from question text. Generalizes to any name on any future document
-    estate automatically, since it's a pure function of the name itself."""
-    words = _words(full_name)
+    estate automatically, since it's a pure function of the name itself.
+
+    Also computes acronyms per comma-separated segment ("Public Works
+    Department, Govt of Maharashtra" -> "PWD" from the first segment alone),
+    not just the whole string -- real usage often abbreviates only the
+    department part ("Maharashtra PWD", "gujarat pw") while spelling the
+    state out separately, and a whole-name acronym never matches that."""
     variants = set()
-    all_initials = ''.join(w[0].upper() for w in words if w)
-    if len(all_initials) >= 2:
-        variants.add(all_initials)
-    sig_initials = ''.join(w[0].upper() for w in words if w.lower() not in ACRONYM_STOPWORDS)
-    if len(sig_initials) >= 2:
-        variants.add(sig_initials)
+
+    def _add_from(words: List[str]):
+        all_initials = ''.join(w[0].upper() for w in words if w)
+        if len(all_initials) >= 2:
+            variants.add(all_initials)
+        sig_initials = ''.join(w[0].upper() for w in words if w.lower() not in ACRONYM_STOPWORDS)
+        if len(sig_initials) >= 2:
+            variants.add(sig_initials)
+
+    _add_from(_words(full_name))
+    for segment in full_name.split(','):
+        seg_words = _words(segment)
+        if seg_words:
+            _add_from(seg_words)
+
     return list(variants)
 
 
@@ -76,25 +90,38 @@ def resolve(query_text: str, candidates: List[str], min_score: float = 0.3,
 
     # 1. Exact / substring match -- cheapest, and itself can produce a tie
     # (e.g. "Public Works Department" is a literal substring of all four
-    # state-qualified variants), which is exactly the right signal to carry
-    # forward rather than silently picking one.
+    # state-qualified variants). Narrow to just the tied candidates and
+    # fall through to fuzzy scoring on that smaller set, rather than
+    # returning immediately -- other words in the same sentence ("UP" tying
+    # 2 candidates, but "irrigation" only fitting one of them) can still
+    # break the tie using signal this tier alone can't see.
     exact_hits = [c for c in candidates if c.lower() in txt_lower or txt_lower.strip() and c.lower() == txt_lower.strip()]
     if len(exact_hits) == 1:
         return ResolveResult(matched=exact_hits[0], confidence=1.0, method='exact')
     if len(exact_hits) > 1:
+        narrowed = _narrow_tie(query_text, exact_hits, fallback_method='exact')
+        if narrowed:
+            return narrowed
         return ResolveResult(tied=exact_hits, confidence=1.0, method='exact')
 
     # 2. Acronym match -- algorithmic, computed from the real name, not from
-    # having seen this abbreviation used anywhere before.
-    query_tokens = set(re.findall(r'\b[A-Z]{2,}\b', query_text or ''))
+    # having seen this abbreviation used anywhere before. Matched
+    # case-insensitively: real usage often types abbreviations in lowercase
+    # ("gujarat pw", "mah pwd") rather than all-caps, so requiring literal
+    # uppercase in the question text misses them even though the acronym
+    # itself is unambiguous once compared case-insensitively.
+    query_tokens = {t.upper() for t in re.findall(r'\b[A-Za-z]{2,6}\b', query_text or '')}
     if query_tokens:
         acro_hits = []
         for c in candidates:
-            if query_tokens & set(compute_acronyms(c)):
+            if query_tokens & {a.upper() for a in compute_acronyms(c)}:
                 acro_hits.append(c)
         if len(acro_hits) == 1:
             return ResolveResult(matched=acro_hits[0], confidence=0.95, method='acronym')
         if len(acro_hits) > 1:
+            narrowed = _narrow_tie(query_text, acro_hits, fallback_method='acronym')
+            if narrowed:
+                return narrowed
             return ResolveResult(tied=acro_hits, confidence=0.95, method='acronym')
 
     # 3. Fuzzy word-overlap -- scored against every candidate, margin-checked,
@@ -107,6 +134,11 @@ def resolve(query_text: str, candidates: List[str], min_score: float = 0.3,
     # question actually names it. This is the within-candidate-set analogue
     # of IDF: rarity is measured against this specific candidate list, not
     # general English frequency.
+    return _fuzzy_resolve(query_text, candidates, min_score, min_margin)
+
+
+def _fuzzy_resolve(query_text: str, candidates: List[str], min_score: float,
+                    min_margin: float) -> ResolveResult:
     q_words = normalize_words(query_text)
     if not q_words:
         return ResolveResult()
@@ -157,6 +189,23 @@ def resolve(query_text: str, candidates: List[str], min_score: float = 0.3,
         tied = [c for c, (_ov, fr) in ranked if top_frac - fr < min_margin]
         return ResolveResult(tied=tied, confidence=top_frac, method='fuzzy')
     return ResolveResult(matched=top_c, confidence=top_frac, method='fuzzy')
+
+
+def _narrow_tie(query_text: str, tied_candidates: List[str], fallback_method: str) -> Optional[ResolveResult]:
+    """When an earlier tier (exact substring, acronym) ties on more than one
+    candidate, don't report the tie immediately -- try fuzzy word-overlap on
+    just that narrowed set first, using the rest of the sentence to see if
+    it actually breaks the tie (e.g. "UP" acronym-matches 2 different
+    Uttar-Pradesh clients, but "irrigation" elsewhere in the same question
+    only fits one of them). Returns a confident match if fuzzy scoring finds
+    a clear winner within the narrowed set, else None so the caller reports
+    the original tie rather than a wrong guess."""
+    if len(tied_candidates) < 2:
+        return None
+    result = _fuzzy_resolve(query_text, tied_candidates, min_score=0.15, min_margin=0.1)
+    if result.matched:
+        return result
+    return None
 
 
 class EntityResolver:
@@ -255,7 +304,27 @@ class EntityResolver:
         """Project retrieval scoped by an already-resolved engineer/client
         first (keeps the candidate pool small and accurate regardless of
         total dataset size), then fuzzy-matched by name/package within that
-        narrowed scope -- not a blind scan of every project in the DB."""
+        narrowed scope -- not a blind scan of every project in the DB.
+
+        Category vocabulary is masked out of the text before scoring: a
+        category_diff question naming "roads highways" and "tunnels" has
+        nothing to do with any specific project, but project names often
+        contain the same category-descriptive words ("Road Widening",
+        "Rail Tunnel"), which was spuriously tying against 2-3 of the
+        client's own projects on every such question -- injecting a
+        fabricated "which project?" ambiguity into questions that never
+        needed one at all."""
+        category_words = set()
+        for cat in self.categories:
+            category_words |= normalize_words(cat)
+
+        def _stem(w: str) -> str:
+            wl = w.lower()
+            return wl[:-1] if wl.endswith('s') and len(wl) > 3 else wl
+
+        masked_text = ' '.join(w for w in re.findall(r"[A-Za-z]+", text or '')
+                                if _stem(w) not in category_words) if category_words else text
+
         pkg_m = re.search(r'\b(?:pkg|package)[-\s]*(\d+)\b', text, re.IGNORECASE)
         if pkg_m:
             pkg_no = f"Pkg-{pkg_m.group(1)}"
@@ -272,4 +341,17 @@ class EntityResolver:
             return ResolveResult()
 
         names = [p['project_name'] for p in pool]
-        return resolve(text, names, min_score=0.3, min_margin=0.15)
+        return resolve(masked_text, names, min_score=0.3, min_margin=0.15)
+
+    def get_project_client(self, project_name: str) -> Optional[str]:
+        """One-hop lookup: a resolved project's own client_name, straight
+        from the DB -- the deterministic equivalent of following a
+        project->client edge. Used when a question names a specific project
+        clearly enough to resolve it, but only names the client vaguely
+        (e.g. by state alone, ambiguous among several same-state clients) --
+        the project's own stored client is unambiguous once you know which
+        project it is, so there's no need to guess from the wording at all."""
+        for p in self.projects:
+            if p['project_name'] == project_name:
+                return p['client_name']
+        return None
