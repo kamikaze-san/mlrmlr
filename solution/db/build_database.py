@@ -2,7 +2,7 @@ import sqlite3
 import os
 import sys
 import pandas as pd
-from typing import Optional
+from typing import Optional, Dict
 
 sys.path.insert(0, os.path.abspath('.'))
 from solution.extractors.discover import discover_and_classify
@@ -223,6 +223,34 @@ def populate_database(db_path: str = DB_PATH, docs_root: str = 'documents'):
         INSERT INTO receivables_ageing (invoice_no, client_name, raw_client_name, invoice_date, invoiced_inr, status, received_inr, outstanding_inr)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         ''', (ar['invoice_no'], ar['client_name'], ar['raw_client_name'], ar['invoice_date'], ar['invoiced_inr'], ar['status'], ar['received_inr'], ar['outstanding_inr']))
+
+    # 4b. Canonicalize client_name casing across projects and receivables_ageing
+    # before aggregating. The two tables come from different source document
+    # types (completion certificates vs. financial workbooks), which
+    # sometimes render the same real client in different casing (a
+    # letterhead in ALL CAPS vs. a workbook in normal case) -- an exact-
+    # string join/GROUP BY on client_name then silently splits one real
+    # client into two partial rows, one from each table, with each missing
+    # the other table's data entirely. Pick one canonical spelling per
+    # client (preferring a non-all-caps form, since all-caps is typically
+    # just a letterhead formatting artifact, not the defined name) and
+    # rewrite every row in both tables to use it, so the aggregation join
+    # below actually matches.
+    cur.execute("SELECT DISTINCT client_name FROM projects WHERE client_name IS NOT NULL AND client_name != ''")
+    all_names = [r[0] for r in cur.fetchall()]
+    cur.execute("SELECT DISTINCT client_name FROM receivables_ageing WHERE client_name IS NOT NULL AND client_name != ''")
+    all_names += [r[0] for r in cur.fetchall()]
+
+    canonical_by_key: Dict[str, str] = {}
+    for name in all_names:
+        key = name.lower()
+        current = canonical_by_key.get(key)
+        if current is None or (current.isupper() and not name.isupper()):
+            canonical_by_key[key] = name
+
+    for key, canonical in canonical_by_key.items():
+        cur.execute("UPDATE projects SET client_name = ? WHERE LOWER(client_name) = ? AND client_name != ?", (canonical, key, canonical))
+        cur.execute("UPDATE receivables_ageing SET client_name = ? WHERE LOWER(client_name) = ? AND client_name != ?", (canonical, key, canonical))
 
     # 5. Extract and insert assets
     plant_source = grouped.get('plant_machinery_register', [None])[0]

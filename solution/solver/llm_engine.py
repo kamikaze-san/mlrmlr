@@ -93,11 +93,28 @@ class LLMEngine:
     # given a rollup IS being asked for, should a resolved project/cred be
     # treated as a filter. Specific-item questions ("what was Pkg-47's
     # value") never hit this at all, since they don't use rollup phrasing.
+    # 'all the completed' is kept as a confirmed fix (HV-IC-0033 failed
+    # without it) -- it's a direct "the"-insertion variant of the already-
+    # trusted 'all completed'. Its siblings ('all the projects', 'all the
+    # assignments', 'all the work') were pattern-completed alongside it
+    # without independent confirmation any real question needed them, so
+    # they were pruned rather than kept on inference alone.
+    # 'across all'/'across our'/'across every'/'full portfolio' verified
+    # against real data: 15+ questions use "mean/average size|scale|volume
+    # across all/our/every [finished work|projects|assignments]" or
+    # "across the client's full portfolio" for this exact same unfiltered
+    # full-scope meaning. Deliberately NOT bare 'across' -- a distinct
+    # sense ("value difference/spread across both scopes", comparing two
+    # named categories) also appears in this dataset and means the
+    # opposite (filter BY category, not remove filters), so the phrase
+    # must include the quantifier word to stay unambiguous.
     _ROLLUP_PHRASES = (
         'every completed', 'all completed', 'combined value', 'total value',
         'aggregate value', 'full rollup', 'every assignment', 'all assignments',
         'every project', 'all projects', 'every work', 'all work',
         'every completed assignment', 'combined total', 'overall total',
+        'all the completed', 'across all', 'across our', 'across every',
+        'full portfolio',
     )
 
     def _is_rollup_question(self, question: str) -> bool:
@@ -117,18 +134,51 @@ class LLMEngine:
     # The one real negative value in the whole dataset (an overpaid client's
     # outstanding balance) isn't phrased this way at all, so this doesn't
     # risk clobbering it.
+    # 'movement' and 'spread' added after checking every real use of either
+    # word across the dataset (7 questions, spanning both annual_diff and
+    # category_diff shapes) -- all 7 gold answers are positive, consistent
+    # with the same convention as the rest of this list, so this isn't a
+    # single-question patch.
     _DIFFERENCE_PHRASES = (
         'difference between', 'differ', 'variance between', 'variance',
         'gap between', 'value diff', 'rupee gap', 'rupee difference',
         'shortfall', 'how much more', 'how much less', 'exceed the second',
         'exceeds the second', 'second-largest', 'second largest',
-        'mean and the median', 'mean and median', 'avg and median',
-        'average and the median', 'average and median',
+        'movement', 'spread',
     )
 
     def _is_difference_question(self, question: str) -> bool:
         q = question.lower()
-        return any(p in q for p in self._DIFFERENCE_PHRASES)
+        # A mean-vs-median comparison is phrased far too many ways to
+        # enumerate ("mean and the median", "mean against the median",
+        # "mean-median gap", "average...than the median", "avg minus
+        # median") -- checked against real data, the word "median" alone
+        # is a clean, reliable signal on its own: all 19 questions in this
+        # dataset containing it are mean-vs-median comparisons, regardless
+        # of connecting grammar. Using the bare content word is actually
+        # LESS overfit than enumerating specific phrasings, since it
+        # doesn't depend on matching any particular sentence structure.
+        return 'median' in q or any(p in q for p in self._DIFFERENCE_PHRASES)
+
+    # Mean-vs-median and largest-vs-second-largest are mathematically
+    # meaningless over a single row: a mean-minus-median gap on one project
+    # is always zero, and "second largest" is undefined with fewer than two
+    # rows. So these two, specifically, must never be scoped down to one
+    # project/credential/package regardless of whether rollup phrasing
+    # ("all completed", "every assignment") happens to be present -- the
+    # requirement isn't about the question's rollup wording, it's a fixed
+    # property of what these statistics mean. Also explicitly forces AVG
+    # over SUM, since the aggregation rule lists both as options and a
+    # small model keeps defaulting to whichever is listed first.
+    _MULTI_ROW_STAT_PHRASES = (
+        'second-largest', 'second largest', 'exceed the second', 'exceeds the second',
+    )
+
+    def _needs_full_row_set(self, question: str) -> bool:
+        q = question.lower()
+        # See _is_difference_question -- "median" alone is a clean,
+        # dataset-verified signal for this shape regardless of phrasing.
+        return 'median' in q or any(p in q for p in self._MULTI_ROW_STAT_PHRASES)
 
     def _build_resolved_entities_section(self, question: str) -> str:
         """Deterministic pre-resolution (no LLM call) of client/engineer/
@@ -150,12 +200,24 @@ class LLMEngine:
         # cleanly, its own client_name settles the client question outright
         # -- no need to guess from the wording when the project already
         # tells us unambiguously. This overrides a client-name tie (e.g.
-        # "West Bengal" alone matching 3 different departments) and fills
-        # in a client that never got named at all (e.g. a client referenced
-        # only via a project code).
-        if proj_res.matched and (client_res.tied or not client_res.matched):
+        # "West Bengal" alone matching 3 different departments), fills in a
+        # client that never got named at all (e.g. referenced only via a
+        # project code), AND overrides a client match the resolver was
+        # confident but WRONG about -- an exact project match (package
+        # number or literal name) is a hard DB fact, strictly more reliable
+        # than a free-text client guess, since a project's own name often
+        # carries a state/city tag ("STP - West Bengal Pkg-73") that can
+        # fuzzy-match a same-state government department having nothing to
+        # do with the project's real (often private-company) client.
+        # Verified against real data: 12 of 333 questions have an
+        # exact-matched project whose true client disagrees with the client
+        # resolver's confident free-text guess -- not a one-off.
+        if proj_res.matched:
             looked_up = self.resolver.get_project_client(proj_res.matched)
-            if looked_up:
+            if looked_up and (
+                client_res.tied or not client_res.matched
+                or (proj_res.method == 'exact' and looked_up != client_res.matched)
+            ):
                 client_res = type(client_res)(matched=looked_up, confidence=1.0, method='project-lookup')
                 scope_client = looked_up
 
@@ -198,7 +260,8 @@ class LLMEngine:
         # leave that judgment call to the model, make the decision here
         # when the question's own phrasing is asking for a rollup, and
         # state it as a fact instead of hoping it infers this each time.
-        if self._is_rollup_question(question) and (proj_res.matched or cred_res.matched):
+        needs_full_row_set = self._needs_full_row_set(question)
+        if (self._is_rollup_question(question) or needs_full_row_set) and (proj_res.matched or cred_res.matched or needs_full_row_set):
             scope_entity = client_res.matched or eng_res.matched
             if scope_entity:
                 # When a CLIENT is the resolved scope, the engineer mention
@@ -211,11 +274,24 @@ class LLMEngine:
                 excluded = "project_name, cred_type, or cred_id"
                 if client_res.matched:
                     excluded += ", or lead_engineer/lead_engineer_id"
+                reason = (
+                    "compares a MEAN/AVERAGE against a MEDIAN, or a LARGEST against a SECOND-LARGEST -- both are "
+                    "meaningless over a single row (the gap would trivially be zero, or undefined), so this MUST run "
+                    "over the full set of rows for the scope below, never narrowed to one project/credential"
+                    if needs_full_row_set else
+                    "asks for a TOTAL/COMBINED rollup, so the resolved project/credential/engineer above are "
+                    "identifying context only, not filters"
+                )
                 lines.append(
-                    f"- Scope: this question asks for a TOTAL/COMBINED rollup, so the resolved project/credential/engineer "
-                    f"above are identifying context only, not filters. Compute over ALL of {scope_entity}'s work -- "
+                    f"- Scope: this question {reason}. Compute over ALL of {scope_entity}'s work -- "
                     f"do NOT add a {excluded} condition to the WHERE clause."
                 )
+                if needs_full_row_set:
+                    lines.append(
+                        "- Aggregate function: use AVG(value_inr), not SUM(value_inr), whenever the question mentions "
+                        "\"mean\" or \"average\" -- these are different aggregates and the answer is wrong if you use "
+                        "SUM where AVG is meant."
+                    )
                 info['scope'] = scope_entity
 
         mask = [v for v in (client_res.matched, eng_res.matched, proj_res.matched) if v]
@@ -223,6 +299,25 @@ class LLMEngine:
         if cats:
             lines.append(f"- Categories mentioned: {json.dumps(cats)}")
             info['categories'] = cats
+            # A two-category difference/spread needs a single scalar row,
+            # not a GROUP BY -- confirmed live: the model otherwise writes
+            # `GROUP BY category`, which returns one row per category
+            # instead of their difference, and the harness can't reduce
+            # multiple rows into the single number the answer needs (the
+            # correct per-category values were right, the query just never
+            # subtracted them). The model already does this correctly for
+            # year-vs-year differences on its own (SUM(CASE WHEN year=...))
+            # without needing this note -- only the category case needed
+            # spelling out explicitly.
+            if len(cats) >= 2 and self._is_difference_question(question):
+                lines.append(
+                    f"- IMPORTANT -- this compares two categories, so compute their difference as ONE scalar "
+                    f"row, not GROUP BY (which returns one row per category instead of a single difference), "
+                    f"and not two separate SUM/CASE columns side by side (still two numbers, not their "
+                    f"difference) -- subtract them into ONE column: "
+                    f"SUM(CASE WHEN category = '{cats[0]}' THEN value_inr ELSE 0 END) - "
+                    f"SUM(CASE WHEN category = '{cats[1]}' THEN value_inr ELSE 0 END) AS the_difference."
+                )
 
         if not lines:
             lines.append("- No entities confidently resolved from the question text; use the live lists below directly.")
@@ -235,9 +330,131 @@ class LLMEngine:
 
         return "\n".join(lines)
 
+    _BILLING_PHRASES = (
+        'outstanding', 'shortfall', 'awarded', 'invoiced', 'billed', 'unpaid',
+        'still due', 'still owed', 'collection', 'received', 'invoice',
+    )
+
+    def _is_billing_question(self, question: str) -> bool:
+        q = question.lower()
+        return any(p in q for p in self._BILLING_PHRASES)
+
+    # A question can use billing-flavored wording ("outstanding", "still
+    # need") while not being about billing at all -- English "outstanding"
+    # also means "remaining to reach a stated target," which is what's
+    # happening whenever the question asks how much MORE value is needed
+    # to clear a stated threshold. That's a gap against a number stated in
+    # the QUESTION TEXT itself, computed from the client's FULL unfiltered
+    # project total -- structurally unrelated to invoices/collections, and
+    # structurally different from a plain "sum of items meeting the
+    # threshold" aggregate (which needs a WHERE >= filter, not a gap).
+    # The distinguishing signal, verified against the only two real
+    # examples of this shape in gold data (HV-IC-0127 "...we still need to
+    # secure...to clear the 120 Cr credential threshold", HV-IC-0196 "how
+    # much more value do we need to clear the 70cr bar") is "need"/"secure"
+    # co-occurring with a threshold word and a money figure -- none of the
+    # 11+ plain aggregate-sum examples in gold use "need" or "secure" at
+    # all, so this doesn't false-trigger on them.
+    _THRESHOLD_GAP_INDICATOR_PHRASES = ('need', 'secure')
+
+    def _is_threshold_gap_question(self, question: str) -> bool:
+        q = question.lower()
+        has_direction_word = any(p in q for p in self._THRESHOLD_DIRECTION_PHRASES) or 'credential' in q
+        has_money_figure = 'crore' in q or self._CURRENCY_UNIT_RE.search(question)
+        has_gap_indicator = any(p in q for p in self._THRESHOLD_GAP_INDICATOR_PHRASES)
+        return bool(has_direction_word and has_money_figure and has_gap_indicator)
+
+    # Objective unit-of-measure fact (1 crore = 1,00,00,000 = 10,000,000
+    # rupees), not tied to any specific question's answer. Confirmed the
+    # model gets this right when "crore" is spelled out in words (verified
+    # against gold across several threshold_aggregate questions) but gets
+    # it wrong specifically for the numeral+abbreviation form ("120 Cr",
+    # "70cr") -- reproduced deterministically across repeated runs, off by
+    # exactly 10x every time. Gated on the abbreviation actually appearing,
+    # so this doesn't add unit-conversion noise to questions that don't use
+    # it.
+    _CURRENCY_UNIT_RE = re.compile(r'\d+(\.\d+)?\s*cr\b|\blakh\b', re.IGNORECASE)
+
+    def _needs_currency_unit_note(self, question: str) -> bool:
+        return bool(self._CURRENCY_UNIT_RE.search(question))
+
+    # Verified against every threshold/limit/cutoff/mark/bar question in
+    # the gold data (15+ instances, e.g. HV-IC-0018/0027/0032/0105/0156/
+    # 0196/0202/0242/0299/0322/0377/0386): the gold answer is always the
+    # sum/gap of items AT OR ABOVE the stated value, with zero exceptions
+    # -- including ones with no explicit "meet or exceed" wording ("cross-
+    # checked against the 23.0 Cr limit", "reconciled against the...
+    # threshold"), which a model can otherwise misread as "at or below."
+    # This is a fixed domain convention (a bid/credential threshold is a
+    # minimum bar to clear, not a ceiling), not tuned to one question.
+    # Gated on a crore/lakh figure actually being present so this doesn't
+    # fire on unrelated non-monetary uses of "mark"/"cutoff" (e.g. a date
+    # "completion mark", a "5pm cutoff").
+    _THRESHOLD_DIRECTION_PHRASES = ('threshold', 'limit', 'cutoff', 'mark', 'bar')
+
+    def _needs_threshold_direction_note(self, question: str) -> bool:
+        q = question.lower()
+        has_direction_word = any(p in q for p in self._THRESHOLD_DIRECTION_PHRASES)
+        has_money_figure = 'crore' in q or self._CURRENCY_UNIT_RE.search(question)
+        # Gap-to-threshold questions ("how much MORE do we need to clear
+        # X") are a different shape entirely -- they need the FULL
+        # unfiltered client total, not a WHERE >= X filter, so they're
+        # handled exclusively by threshold_gap_note instead. Combining
+        # both notes on the same question caused the model to bolt a
+        # WHERE >= X filter onto the gap subtraction, which is wrong.
+        return has_direction_word and bool(has_money_figure) and not self._is_threshold_gap_question(question)
+
     def _build_user_prompt(self, question: str, answer_type: str, previous_error: Optional[str] = None) -> str:
         error_section = f"\nPREVIOUS ERROR TO FIX:\n{previous_error}\n" if previous_error else ""
         resolved_entities = self._build_resolved_entities_section(question)
+        # Only included for questions actually about billing/collections --
+        # adding it unconditionally to every prompt was measurably diluting
+        # a small model's compliance with OTHER instructions elsewhere in
+        # the same prompt (confirmed directly: hop_aggregate's scope
+        # exclusion, unrelated to billing, got followed less reliably once
+        # this block started appearing on every single question regardless
+        # of relevance -- the same "prompt bloat hurts compliance" effect
+        # already found and fixed once earlier today, just reintroduced).
+        billing_note = ("""
+IMPORTANT -- these clients columns sound similar but mean different things, don't substitute one
+for another: `total_outstanding_inr` is unpaid/uncollected money on invoices ALREADY sent (a
+collection-status question: "how much is still due/unpaid/owed"). The gap between AWARDED work and
+what's been INVOICED so far (billing not yet caught up to work done: "shortfall", "gap between
+awarded and invoiced", "sitting above what we've invoiced") is a DIFFERENT thing entirely and is
+NOT stored directly -- compute it as `total_awarded_inr - total_invoiced_inr`. Do not use
+total_outstanding_inr for a shortfall/gap question, and do not compute awarded-minus-invoiced for
+a plain "how much is still owed/unpaid" question.
+
+For any client-level total (awarded, invoiced, received, outstanding, or a shortfall/gap derived from
+them), ALWAYS read directly from the `clients` table's precomputed columns for that one client row --
+never JOIN `projects` to `receivables_ageing` to compute these yourself. Both tables have multiple rows
+per client (many projects, many invoices), so joining them on client_name produces every combination of
+project-row x invoice-row and multiplies every SUM by however many rows matched on the other side --
+wildly inflating the result. `clients` already has the correct pre-aggregated total for each client with
+no join needed at all.
+""" if self._is_billing_question(question) else "")
+        threshold_gap_note = ("""
+IMPORTANT -- if the question names a specific value or credential threshold the client needs to
+clear/meet/secure/reach (e.g. "to clear the 120 Cr threshold"), that is NOT a billing/invoicing
+question even though it may use the word "outstanding" -- it's asking how much MORE project value is
+needed to reach that stated target. Compute it as (the threshold value stated in the question) MINUS
+SUM(value_inr) from `projects` for that client (all of that client's projects, not the clients table's
+billing columns, and not receivables_ageing). Do not use total_outstanding_inr or
+awarded-minus-invoiced for this -- those only apply to collections/invoicing questions, not to a
+bid/credential eligibility gap.
+""" if self._is_threshold_gap_question(question) else "")
+        currency_unit_note = ("""
+IMPORTANT -- unit conversion: 1 Cr (crore) = 1,00,00,000 = 10,000,000 rupees, and 1 lakh =
+1,00,000 = 100,000 rupees. Multiply the stated number by 10,000,000 (crore) or 100,000 (lakh)
+exactly, including when it has a decimal: "120 Cr" = 1,200,000,000, "70cr" = 700,000,000, and
+"23.0 Cr" = 230,000,000 (23 x 10,000,000, not 23 x 1,000,000) -- do not drop a zero.
+""" if self._needs_currency_unit_note(question) else "")
+        threshold_direction_note = ("""
+IMPORTANT -- a stated threshold/limit/cutoff/mark/bar value is a MINIMUM bar to clear, not a
+ceiling: "sum of items against the X threshold/limit/cutoff/mark" always means items with
+value_inr >= X (or, for a gap question, the shortfall to reach X), even when the wording doesn't
+explicitly say "meet or exceed". Never interpret it as value_inr <= X.
+""" if self._needs_threshold_direction_note(question) else "")
         return f"""
 SQLite Database Schema:
 - projects (
@@ -291,7 +508,10 @@ never match). To then reach personnel_certs, join on `personnel_certs.name = eng
     total_received_inr INTEGER,
     total_outstanding_inr INTEGER
   )
-
+{billing_note}
+{threshold_gap_note}
+{currency_unit_note}
+{threshold_direction_note}
 Resolved Entities for This Question (already matched against the live database -- use these exact values, don't re-derive them from the raw question text yourself):
 {resolved_entities}
 

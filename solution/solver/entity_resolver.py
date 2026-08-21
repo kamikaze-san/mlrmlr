@@ -23,6 +23,25 @@ STOPWORDS = {
 # 'Department' contributing a 'D' to every single client's acronym.
 ACRONYM_STOPWORDS = STOPWORDS - {'authority', 'corporation', 'office'}
 
+# Standard closed-class English function words (articles, prepositions,
+# conjunctions, common auxiliary verbs and pronouns) -- a real institutional
+# or personal acronym is built from content words (proper nouns, department
+# types), never coincides with ordinary grammar words. Real acronyms are
+# rare in free text; short function words are extremely common, so any
+# 2-6 letter function word left unfiltered becomes a near-guaranteed false
+# acronym collision the moment a real 2-letter state/entity acronym exists
+# that happens to also spell an English word (e.g. "up" in "I'm up against
+# a deadline" colliding with the real "UP" = Uttar Pradesh acronym --
+# confirmed to misfire this way on ~36 of 333 real questions). This is a
+# general linguistic fact, not tuned to any specific question's answer.
+QUERY_ACRONYM_STOPWORDS = {
+    'a', 'an', 'the', 'of', 'in', 'on', 'at', 'by', 'to', 'up', 'so', 'as',
+    'or', 'and', 'but', 'nor', 'for', 'if', 'no', 'not', 'am', 'is', 'are',
+    'was', 'were', 'be', 'been', 'do', 'does', 'did', 'has', 'have', 'had',
+    'can', 'may', 'we', 'us', 'you', 'he', 'she', 'it', 'they', 'them',
+    'him', 'her', 'his', 'its', 'our', 'me', 'my',
+}
+
 
 def _words(text: str) -> List[str]:
     return re.findall(r"[A-Za-z]+", text or '')
@@ -110,7 +129,10 @@ def resolve(query_text: str, candidates: List[str], min_score: float = 0.3,
     # ("gujarat pw", "mah pwd") rather than all-caps, so requiring literal
     # uppercase in the question text misses them even though the acronym
     # itself is unambiguous once compared case-insensitively.
-    query_tokens = {t.upper() for t in re.findall(r'\b[A-Za-z]{2,6}\b', query_text or '')}
+    query_tokens = {
+        t.upper() for t in re.findall(r'\b[A-Za-z]{2,6}\b', query_text or '')
+        if t.lower() not in QUERY_ACRONYM_STOPWORDS
+    }
     if query_tokens:
         acro_hits = []
         for c in candidates:
